@@ -245,7 +245,7 @@ nav #menu li a:hover {
 
 @media(max-width: 768px) {
       .header h1 {
-            font-size: 26px;
+            font-size: 10px;
       }
 }
 
@@ -312,7 +312,7 @@ h6 {
       color: #fff;
       display: block;
       top: 8%;
-      left: -60%;
+      left: -90%;
       right: 0;
       bottom: 0;
 }
@@ -330,7 +330,7 @@ h6 {
       color: #fff;
       display: block;
       top: 80%;
-      left: 90%;
+      left: 105%;
       right: 0;
       bottom: 0;
 }
@@ -366,7 +366,7 @@ h6 {
       color: #fff;
       display: block;
       top: 10%;
-      left: 90%;
+      left: 105%;
       right: 0;
       bottom: 0;
 }
