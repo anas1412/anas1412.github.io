@@ -10,6 +10,10 @@ profilePicture = "images/profile.jpg"
 postSectionName = "blog"
 readMore = true
 
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "Github"
+url = "https://github.com/anas1412"
 
 [[params.socialIcons]]
 icon = "fab fa-twitter"
