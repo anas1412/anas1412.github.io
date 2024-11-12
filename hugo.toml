@@ -1,12 +1,53 @@
 baseURL = 'https://anas1412.github.io'
 languageCode = 'en-us'
-title = 'Anas B | Blog'
+title = 'NAS | Blog'
 
 [params]
-title = "I'm Jane Doe"
-author = "Jane Doe"
-description = "Call me Jane"
+title = "Nas — e/acc"
+author = "Nas"
+description = "Cloud & Laravel Enthusiast ☁️ \n I trade index futures 📈"
 profilePicture = "images/profile.jpg"
+postSectionName = "blog"
+readMore = true
+
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://x.com/villainesthetic"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:anas.bassoumi@gmail.com"
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Archive"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]] 
+  name = "Portfolio"
+  weight = 800
+  identifier = "portfolio"
+  url = "/portfolio/"
+
+
+  [[menu.main]]
+  name = "About"
+  weight = 900
+  identifier = "about"
+  url = "/about/"
 
 [module]
   # uncomment line below for temporary local development of module
