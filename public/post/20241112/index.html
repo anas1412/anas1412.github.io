@@ -196,7 +196,7 @@
 
     ,
         "url" : "https:\/\/anas1412.github.io\/post\/20241112\/",
-        "wordCount" : "6",
+        "wordCount" : "533",
         "genre" : [ ],
         "keywords" : [ 
       
@@ -425,12 +425,64 @@
           </li>
           <li class="post__meta-item">
             <em class="fas fa-stopwatch post__meta-icon"></em>
-            <span class="post__meta-text">One-minute read</span>
+            <span class="post__meta-text">3-minute read</span>
           </li>
         </ul>
-      <h2 id="site-under-construction">Site under construction</h2>
+      <h2 id="1-introduction">1. Introduction</h2>
+<p>Hugo is a static site generator that allows you to create beautiful websites with minimal effort. In this guide, we will walk you through the process of setting up and customizing a Hugo website. We will cover topics such as installing Hugo, creating a new site, customizing the theme, adding content, and deploying the website.</p>
+<h2 id="2-installing-hugo">2. Installing Hugo</h2>
+<p>To install Hugo, you can follow the instructions on the official Hugo website. You can download the Hugo binary for your operating system and add it to your system&rsquo;s PATH. Alternatively, you can use a package manager to install Hugo. For example, on Ubuntu, you can use the following command:
+<code>sudo apt-get install hugo</code></p>
+<h2 id="3-creating-a-new-site">3. Creating a New Site</h2>
+<p>Once you have Hugo installed, you can create a new site by running the following command:
+<code>hugo new site username.github.io</code></p>
+<p>Change <code>username.github.io</code> to your desired username.
+This will create a new directory called mysite with the necessary files and directories for a Hugo site.</p>
+<h2 id="4-customizing-the-theme">4. Customizing the Theme</h2>
+<p>Hugo comes with a variety of themes that you can choose from. You can choose a theme from the themes available on the Hugo website. To install a theme follow their guides on how to install a theme.</p>
+<p>Once you have chosen a theme, you can customize it by modifying the files in the themes directory. For example, you can modify the layout files to change the look and feel of your website.</p>
+<h2 id="5-adding-content">5. Adding Content</h2>
+<p>You can add content to your Hugo site by creating new markdown files in the content directory. Using this command:</p>
+<p><code>hugo new post/my-post.md</code> will create a new markdown file in the content/post directory.</p>
+<h2 id="6-deploying-the-website-on-github-pages">6. Deploying the Website on Github Pages</h2>
+<p>To deploy your Hugo website on Github Pages, you need to push your site to a Github repository. You can do this by following these steps:</p>
+<ol>
+<li>
+<p>Create a new repository on Github by the name username.github.io.</p>
+</li>
+<li>
+<p>Initiating git inside your hugetest directory:</p>
+</li>
+</ol>
+<p><code>git init</code></p>
+<ol start="3">
+<li>Add the remote repository:</li>
+</ol>
+<p><code>git remote add origin https://github.com/username/username.github.io.git</code></p>
+<ol start="4">
+<li>Add all the files to the staging area:</li>
+</ol>
+<p><code>git add .</code></p>
+<ol start="5">
+<li>Commit the changes:</li>
+</ol>
+<p><code>git commit -m &quot;Initial commit&quot;</code></p>
+<ol start="6">
+<li>Push the changes to the remote repository:</li>
+</ol>
+<p><code>git push -u origin main</code></p>
+<ol start="7">
+<li>Finally, you can deploy your website by running the following command:</li>
+</ol>
+<p><code>git subtree push --prefix public origin gh-pages</code></p>
+<ol start="8">
+<li>Make sure you have the correct permissions and that your repository is set up correctly to the gh-pages branch. You can check this by going to your repository on Github and checking the branches. You should see a branch called gh-pages.</li>
+</ol>
+<h2 id="7-conclusion">7. Conclusion</h2>
+<p>In this guide, we have covered the process of setting up and customizing a Hugo website. We have covered topics such as installing Hugo, creating a new site, customizing the theme, adding content, and deploying the website. We hope this guide helps you get started with Hugo and create your own beautiful personal blogging/portfolio website. Happy coding! 🚀</p>
 <hr>
-<p>Site under construction</p>
+<h3 id="nb">N.B:</h3>
+<p>This is not a technical guide on how to 101. This is purely pouring my thoughs on how to make a personal website using Hugo. I will not cover the technical aspects of Hugo, but rather the process of setting up and customizing a Hugo website.</p>
 </div>
     <div class="post__footer">
       
