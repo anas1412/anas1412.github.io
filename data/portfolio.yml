@@ -1,58 +1,116 @@
 portfolioitems:
   # portfolio category
   - title: Coding Projects
-    description: "All my coding projects"
+    description: "A selection of my most impactful technical projects for clients as a Solopreneur (Auto-entrepreneur)"
     portfolioitem:
-      - name: Project 1
-        image: "/images/portfolio/code.jpg"
-        link: https://gohugo.io/
+      - name: "Laravel Deployment with Docker and ELK Stack with Slack alerts."
+        #image: "/images/portfolio/code.jpg"
+        link: https://github.com/anas1412/ELK-Stack-with-Laravel
         linktext: "Visit project website"
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        description: "Integrated ELK Stack for centralized logging, empowering real-time troubleshooting and performance. Set up Slack notifications for real-time alerts from log data, ensuring quick incident response and minimal downtime. Automated CI/CD Pipeline & Backups with GitHub Actions to build and deploy Laravel app in Docker and schedule automatic DB backups to AWS S3."
+        status: "On Going"
         tags:
-          - Tag 1
-          - Tag 2
+          - "Laravel"
+          - "Docker"
+          - "CI/CD"
+          - "ELK Stack"
+          - "Slack API"
+          - "AWS"
+
+      - name: "FIDO Dashboard Professional Fee Management Platform for Accountants"
+        image: "https://raw.githubusercontent.com/anas1412/Fido/refs/heads/main/Demo1.png"
+        link: https://anas1412.github.io/Fido/
+        description: "Enhanced features based on continuous feedback to align with accountants' workflows and needs. Achieved a 30% reduction in financial data processing time, boosting productivity."
+        status: "In production"
+        tags:
+          - "Laravel"
+          - "SQLite"
+          - "Docker"
+          - "Github Action"
+
+      - name: "CI/CD Pipelines Implementation on Linode Cloud"
+        image: "/images/portfolio/cicdprojectportainer.jpeg"
         status: "Finished"
-        start: "2020"
-        end: "2021"
-        authors:
-          - lxndrblz
-          - alexanderdavide
-      - name: Project 2
-        image: "/images/portfolio/code.jpg"
-        link: https://gohugo.io/
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        status: "On Hold"
+        description: "Enhanced code quality and system reliability, achieving a 33% reduction in bug reports. Integrated robust monitoring and testing frameworks to ensure consistent delivery of high-quality software."
         tags:
-          - Tag 1
-          - Tag 2
-      - name: Project 3
-        link: https://gohugo.io/
-        status: "Finished"
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        tags:
-          - Tag 1
-          - Tag 2
+          - "CI/CD"
+          - "Jenkins"
+          - "Ansible"
+          - "Docker"
+          - "Kubernetes"
+          - "Promethus, Grafana"
   # portfolio category
-  - title: Research
-    description: "All my research projects"
+  - title: "Professional Experience"
+    description: "All my professional experience related projects"
     portfolioitem:
-      - name: Project 1
-        image: "/images/portfolio/code.jpg"
-        description: "This project does not have a link attribute"
+      - name: "Solopreneur (Auto-entrepreneur)"
+        authors:
+          - "Freelance DevOps & Software Solutions"
+        #image: "/images/portfolio/code.jpg"
+        description: "Delivering high-impact, tailored software solutions to optimize client workflows and drive business efficiency. Designing and implementing automation, monitoring, and logging systems to enhance system reliability and performance at scale."
+        start: "2024"
+        end: "present"
         tags:
           - Tag 1
           - Tag 2
-      - name: Project 2
-        image: "/images/portfolio/code.jpg"
-        link: https://gohugo.io/
-        description: "You can click on [**this link**](#codingprojects) to scroll to my Coding Projects portfolio"
+
+      - name: "Part-Time Devops Engineer"
+        authors:
+          - "Kamioun"
+        image: "/images/portfolio/kamioun.png"
+        link: https://www.kamioun.com/
+        description: "Optimized CI/CD pipelines in GitLab CI, achieving a 35% reduction in deployment times and accelerating feature delivery. Proactively monitored AWS instances, reducing server downtime by 30% and ensuring uninterrupted service availability. Diagnosed and resolved critical Magento app issues, preserving user satisfaction and supporting consistent customer retention."
+        start: "Aug 2023"
+        end: "Dec 2023"
         tags:
-          - Tag 1
-          - Tag 2
-      - name: Project 3
-        image: "/images/portfolio/code.jpg"
-        link: https://gohugo.io/
-        description: "A description"
+          - Magento PHP
+          - Docker
+          - Gitlab CI
+          - SonarQube
+          - Promethus, Grafana
+          - AWS
+
+      - name: "DevOps Internship"
+        authors:
+          - "Kamioun"
+        image: "/images/portfolio/kamioun.png"
+        link: https://www.kamioun.com/
+        description: "Containerized the Magento app with Docker and automated workflows using Bash, boosting development efficiency by 25%. Designed and implemented a CI/CD production pipeline on GitLab CI, significantly streamlining deployment processes. Integrated SonarQube for code quality analysis and Grafana for performance monitoring, enhancing scalability, observability, and code reliability."
+        start: "Jan 2023"
+        end: "Jul 2023"
         tags:
-          - Tag 1
-          - Tag 2
+          - Magento
+          - Docker
+          - Gitlab CI
+          - SonarQube
+          - Promethus, Grafana
+          - AWS
+
+      - name: DevOps & System Administration Internship
+        authors:
+          - "Beirdo Digital Studio"
+        image: "/images/portfolio/code.jpg"
+        link: https://beirdostudio.com/
+        description: "Implemented and managed a GitOps-based CI/CD pipeline using Kaniko and ArgoCD, driving a 35% improvement in deployment efficiency. Deployed collaborative, monitoring, logging, and backup applications on Kubernetes, boosting system reliability and performance by 15%."
+        start: "Jun 2022"
+        end: "Aug 2022"
+        tags:
+          - Docker
+          - Gitlab CI
+          - Kubernetes
+          - ArgoCD
+          - Promethus, Grafana
+          - Velero
+          - minIO
+
+      - name: Web Development Internship
+        authors:
+          - "YES INTERNET"
+        image: "/images/portfolio/code.jpg"
+        link: https://yes-internet.com/
+        description: "Implemented APIs for various real estate websites, improving data integration by 40% and enhancing user experience, leading to a 25% increase in user engagement."
+        end: "Aug 2021"
+        tags:
+          - Symfony PHP
+          - MySQL
+          - REST API
