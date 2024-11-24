@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trading on NAS | Blog</title>
+    <link>https://anas1412.github.io/tags/trading/</link>
+    <description>Recent content in Trading on NAS | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://anas1412.github.io/tags/trading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Prop Firm Risk Calculator: A Journey in Smart Money Management</title>
+      <link>https://anas1412.github.io/post/20241124/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://anas1412.github.io/post/20241124/</guid>
+      
+        <description>&lt;p&gt;It started with a simple observation: most prop traders, including myself, struggle with position sizing. We either risk too much during drawdowns or too little during winning streaks. After blowing a few accounts (yes, I&amp;rsquo;m looking at you, my overly aggressive 2023 self), I knew there had to be a better way.&lt;/p&gt;
+&lt;h2 id=&#34;the-eureka-moment&#34;&gt;The Eureka Moment&lt;/h2&gt;
+&lt;p&gt;While studying various trading books, I stumbled upon the Kelly Criterion - a mathematical formula that professional gamblers and investors use to optimize their bet sizing. But there was a catch: the traditional Kelly formula requires you to know your win rate and risk-reward ratio beforehand. In prop trading, these numbers are constantly changing.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
