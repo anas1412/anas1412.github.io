@@ -19,9 +19,19 @@ To push a new article to the Hugo site, follow these steps:
 3. Build the site by running the following command:
 
    ```bash
-   hugo -D
+   hugo
    ```
 
    This will generate the static files in the public directory.
 
-4. Commit and push the changes with this command: `git add .; git commit -m "Added article"; git subtree push --prefix public origin gh-pages; git push origin main`
+4. Commit and push the changes with this command:
+
+   ```bash
+   git add .; git commit -m "Added article"; git subtree push --prefix public origin gh-pages; git push origin main
+   ```
+
+   or for linux:
+
+   ```bash
+   git add . && git commit -m "Added article" && git subtree push --prefix public origin gh-pages && git push origin main
+   ```
