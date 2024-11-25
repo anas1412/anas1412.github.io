@@ -89,7 +89,7 @@ portfolioitems:
       - name: DevOps & System Administration Internship
         authors:
           - "Beirdo Digital Studio"
-        image: "/images/portfolio/code.jpg"
+        #image: "/images/portfolio/beirdostudio.png"
         link: https://beirdostudio.com/
         description: "Implemented and managed a GitOps-based CI/CD pipeline using Kaniko and ArgoCD, driving a 35% improvement in deployment efficiency. Deployed collaborative, monitoring, logging, and backup applications on Kubernetes, boosting system reliability and performance by 15%."
         start: "Jun 2022"
