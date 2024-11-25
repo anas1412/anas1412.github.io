@@ -5,7 +5,7 @@ portfolioitems:
     portfolioitem:
       - name: "Laravel Deployment with Docker and ELK Stack with Slack alerts."
         #image: "/images/portfolio/code.jpg"
-        link: https://github.com/anas1412/ELK-Stack-with-Laravel
+        link: https://anas1412.github.io/ELK-Stack-with-Laravel/
         linktext: "Visit project website"
         description: "Integrated ELK Stack for centralized logging, empowering real-time troubleshooting and performance. Set up Slack notifications for real-time alerts from log data, ensuring quick incident response and minimal downtime. Automated CI/CD Pipeline & Backups with GitHub Actions to build and deploy Laravel app in Docker and schedule automatic DB backups to AWS S3."
         status: "On Going"
