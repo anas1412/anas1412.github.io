@@ -1,0 +1,570 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+  
+    class="html theme--light"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Nas
+        |
+        Git Cheat Sheet: Beginners Guide
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.138.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Nas" />
+  <meta
+    name="description"
+    content="Cloud &amp; Laravel Enthusiast ☁️ 
+ I trade index futures 📈"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://anas1412.github.io/post/20241128/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Git Cheat Sheet: Beginners Guide">
+  <meta name="twitter:description" content="Git Cheat Sheet for Beginners 🚀 Welcome to the Git Cheat Sheet, your ultimate guide to version control that will make you feel like a Git wizard (without the beard and pointy hat). If you’re new to Git, no worries! I will break things down and help you understand why and when to use each command in a fun and easy way.
+Table of Contents 1. Create a New Repo 🛠️ 2. Clone a Repo 🏡 3. Check the Status 🔍 4. Stage Your Changes 📋 5. Commit Your Work 💾 6. Pull and Push 🔄 7. Branching Out 🌿 8. Merging 🔥 9. Viewing the History 📚 10. Undo Mistakes 🔄 11. Stashing Your Work 🧳 12. Tags for Releases 🏷️ 1. Create a New Repo 🛠️ When you start a brand new project, you need to turn your folder into a Git repository.">
+
+
+
+  
+  <meta property="og:url" content="https://anas1412.github.io/post/20241128/">
+  <meta property="og:site_name" content="NAS | Blog">
+  <meta property="og:title" content="Git Cheat Sheet: Beginners Guide">
+  <meta property="og:description" content="Git Cheat Sheet for Beginners 🚀 Welcome to the Git Cheat Sheet, your ultimate guide to version control that will make you feel like a Git wizard (without the beard and pointy hat). If you’re new to Git, no worries! I will break things down and help you understand why and when to use each command in a fun and easy way.
+Table of Contents 1. Create a New Repo 🛠️ 2. Clone a Repo 🏡 3. Check the Status 🔍 4. Stage Your Changes 📋 5. Commit Your Work 💾 6. Pull and Push 🔄 7. Branching Out 🌿 8. Merging 🔥 9. Viewing the History 📚 10. Undo Mistakes 🔄 11. Stashing Your Work 🧳 12. Tags for Releases 🏷️ 1. Create a New Repo 🛠️ When you start a brand new project, you need to turn your folder into a Git repository.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-11-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-28T00:00:00+00:00">
+    <meta property="article:tag" content="Programming">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "post",
+        "name": "Git Cheat Sheet: Beginners Guide",
+        "headline": "Git Cheat Sheet: Beginners Guide",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003ch1 id=\u0022git-cheat-sheet-for-beginners-\u0022\u003eGit Cheat Sheet for Beginners 🚀\u003c\/h1\u003e\n\u003cp\u003eWelcome to the Git Cheat Sheet, your ultimate guide to version control that will make you feel like a Git wizard (without the beard and pointy hat). If you\u0026rsquo;re new to Git, no worries! I will break things down and help you understand \u003cstrong\u003ewhy\u003c\/strong\u003e and \u003cstrong\u003ewhen\u003c\/strong\u003e to use each command in a fun and easy way.\u003c\/p\u003e\n\u003chr\u003e\n\u003ch2 id=\u0022table-of-contents\u0022\u003eTable of Contents\u003c\/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\u0022#1-create-a-new-repo\u0022\u003e1. Create a New Repo 🛠️\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#2-clone-a-repo\u0022\u003e2. Clone a Repo 🏡\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#3-check-the-status\u0022\u003e3. Check the Status 🔍\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#4-stage-your-changes\u0022\u003e4. Stage Your Changes 📋\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#5-commit-your-work\u0022\u003e5. Commit Your Work 💾\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#6-pull-and-push\u0022\u003e6. Pull and Push 🔄\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#7-branching-out\u0022\u003e7. Branching Out 🌿\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#8-merging\u0022\u003e8. Merging 🔥\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#9-viewing-the-history\u0022\u003e9. Viewing the History 📚\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#10-undo-mistakes\u0022\u003e10. Undo Mistakes 🔄\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#11-stashing-your-work\u0022\u003e11. Stashing Your Work 🧳\u003c\/a\u003e\u003c\/li\u003e\n\u003cli\u003e\u003ca href=\u0022#12-tags-for-releases\u0022\u003e12. Tags for Releases 🏷️\u003c\/a\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003chr\u003e\n\u003ch2 id=\u00221-create-a-new-repo-\u0022\u003e1. Create a New Repo 🛠️\u003c\/h2\u003e\n\u003cp\u003eWhen you start a brand new project, you need to turn your folder into a Git repository.\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/anas1412.github.io\/post\/20241128\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Nas"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Nas"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Nas"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Nas"
+        },
+        "copyrightYear" : "2024",
+        "dateCreated": "2024-11-28T00:00:00.00Z",
+        "datePublished": "2024-11-28T00:00:00.00Z",
+        "dateModified": "2024-11-28T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Nas",
+            "url": "https://anas1412.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/anas1412.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/anas1412.github.io\/post\/20241128\/",
+        "wordCount" : "946",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "programming"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Nas — e/acc</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Cloud & Laravel Enthusiast ☁️ <br /> I trade index futures 📈</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/anas1412"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Github"
+            title="Github"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://x.com/villainesthetic"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Twitter"
+            title="Twitter"
+          >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:anas.bassoumi@gmail.com"
+            target="_blank"
+            rel="noopener me"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Nas
+        2024
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/post/"
+              
+              title=""
+              >Archive</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/portfolio/"
+              
+              title=""
+              >Portfolio</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/about/"
+              
+              title=""
+              >About</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+      <div class="post__thumbnail-wrapper">
+        <img class="post__thumbnail" src="/posts/git.png" alt="Thumbnail image" />
+      </div>
+    
+    <div class="post__content">
+      
+        <h1>Git Cheat Sheet: Beginners Guide</h1>
+      
+      
+        <ul class="post__meta">
+          <li class="post__meta-item">
+            <em class="fas fa-calendar-day post__meta-icon"></em>
+            <span class="post__meta-text"
+              >
+                
+                  Thu, Nov 28, 2024
+                
+
+              
+            </span>
+          </li>
+          <li class="post__meta-item">
+            <em class="fas fa-stopwatch post__meta-icon"></em>
+            <span class="post__meta-text">5-minute read</span>
+          </li>
+        </ul>
+      <h1 id="git-cheat-sheet-for-beginners-">Git Cheat Sheet for Beginners 🚀</h1>
+<p>Welcome to the Git Cheat Sheet, your ultimate guide to version control that will make you feel like a Git wizard (without the beard and pointy hat). If you&rsquo;re new to Git, no worries! I will break things down and help you understand <strong>why</strong> and <strong>when</strong> to use each command in a fun and easy way.</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#1-create-a-new-repo">1. Create a New Repo 🛠️</a></li>
+<li><a href="#2-clone-a-repo">2. Clone a Repo 🏡</a></li>
+<li><a href="#3-check-the-status">3. Check the Status 🔍</a></li>
+<li><a href="#4-stage-your-changes">4. Stage Your Changes 📋</a></li>
+<li><a href="#5-commit-your-work">5. Commit Your Work 💾</a></li>
+<li><a href="#6-pull-and-push">6. Pull and Push 🔄</a></li>
+<li><a href="#7-branching-out">7. Branching Out 🌿</a></li>
+<li><a href="#8-merging">8. Merging 🔥</a></li>
+<li><a href="#9-viewing-the-history">9. Viewing the History 📚</a></li>
+<li><a href="#10-undo-mistakes">10. Undo Mistakes 🔄</a></li>
+<li><a href="#11-stashing-your-work">11. Stashing Your Work 🧳</a></li>
+<li><a href="#12-tags-for-releases">12. Tags for Releases 🏷️</a></li>
+</ul>
+<hr>
+<h2 id="1-create-a-new-repo-">1. Create a New Repo 🛠️</h2>
+<p>When you start a brand new project, you need to turn your folder into a Git repository.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+This command initializes a new repository. It’s like planting the flag on a new planet—&ldquo;This folder is now tracked by Git!&rdquo;</p>
+<hr>
+<h2 id="2-clone-a-repo-">2. Clone a Repo 🏡</h2>
+<p>If you’re working with an existing project, you&rsquo;ll need to get your hands on it first. This command copies the entire project to your computer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone &lt;repository-url&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+This is like downloading a project from the cloud and bringing it into your local machine so you can make your magic happen.</p>
+<hr>
+<h2 id="3-check-the-status-">3. Check the Status 🔍</h2>
+<p>Before you do anything crazy, it’s good to check what’s going on. What’s changed? What files have been touched? This command gives you the lowdown.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+This is your &ldquo;safety check&rdquo; to see what files are ready to be committed or what changes are still floating around.</p>
+<hr>
+<h2 id="4-stage-your-changes-">4. Stage Your Changes 📋</h2>
+<p>Now that you know what’s changed, it’s time to <em>stage</em> those changes for the commit. Staging means preparing files to be saved in Git’s history.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add &lt;file-name&gt;
+</span></span><span style="display:flex;"><span>git add .  <span style="color:#75715e"># Add all changes</span>
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Staging is like putting your changes in a shopping cart. You decide what you’re checking out (committing) and what you’re leaving behind.</p>
+<hr>
+<h2 id="5-commit-your-work-">5. Commit Your Work 💾</h2>
+<p>Now that your changes are staged, it’s time to make them official by committing them. This saves a snapshot of your code, so you can always go back.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Your message here&#34;</span>
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Committing is like saving your game progress. With a commit message, you’re telling everyone (and future you) what you did.</p>
+<hr>
+<h2 id="6-pull-and-push-">6. Pull and Push 🔄</h2>
+<p>Now, let’s sync up with others! If you&rsquo;re collaborating, you’ll need to <strong>pull</strong> changes from the remote repository and <strong>push</strong> your changes to share them.</p>
+<h3 id="pull">Pull:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git pull origin &lt;branch-name&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Before you start working, always pull. This makes sure you have the latest updates from the cloud so you’re not working on an outdated version of the project.</p>
+<h3 id="push">Push:</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin &lt;branch-name&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Once your work is done and committed, push it to the remote repo so everyone else can see your beautiful contributions.</p>
+<hr>
+<h2 id="7-branching-out-">7. Branching Out 🌿</h2>
+<p>Branches are like parallel universes. You create a new branch when you want to work on something without messing up the main project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch &lt;branch-name&gt;
+</span></span><span style="display:flex;"><span>git checkout &lt;branch-name&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Branching is your best friend when you want to work on a feature or fix a bug without affecting the main project. Think of it like working in your own sandbox!</p>
+<hr>
+<h2 id="8-merging-">8. Merging 🔥</h2>
+<p>After playing in your branch for a while, you’ll want to bring your changes back into the main project. This is where merging comes in.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git merge &lt;branch-name&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Merging is like bringing together two storylines from different universes. It combines the work from different branches into one.</p>
+<hr>
+<h2 id="9-viewing-the-history-">9. Viewing the History 📚</h2>
+<p>Want to see what happened in the past? Check out the commit history to see what changes were made, when, and by whom.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git log
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+This is like reading the diary of your project’s life. It shows you everything that’s been committed, so you can learn from past mistakes (or brag about your brilliance).</p>
+<hr>
+<h2 id="10-undo-mistakes-">10. Undo Mistakes 🔄</h2>
+<p>Everyone makes mistakes (it’s part of the fun). Git has your back, though. You can undo changes you’ve made.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git reset &lt;file-name&gt;     <span style="color:#75715e"># Unstage changes</span>
+</span></span><span style="display:flex;"><span>git reset --hard HEAD~1   <span style="color:#75715e"># Go back to the last commit (beware! This deletes changes)</span>
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Sometimes, things go sideways, and you need to rewind. Git lets you go back in time (and not mess up your whole project) to fix things.</p>
+<hr>
+<h2 id="11-stashing-your-work-">11. Stashing Your Work 🧳</h2>
+<p>In case you’re in the middle of something but need to switch tasks, you can stash your changes temporarily and come back later.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git stash
+</span></span><span style="display:flex;"><span>git stash apply
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+It’s like putting your work in a safe place while you step out for a quick break. You can always come back and pick up where you left off.</p>
+<hr>
+<h2 id="12-tags-for-releases-">12. Tags for Releases 🏷️</h2>
+<p>When you hit a big milestone (like a release), you can &ldquo;tag&rdquo; that commit for easy reference.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git tag &lt;tag-name&gt;
+</span></span></code></pre></div><p><strong>Why?</strong><br>
+Tags are like bookmarks in your project’s journey. When you want to point to important versions (like version 1.0), you tag them.</p>
+<hr>
+<h2 id="pro-tip-">Pro Tip 💡</h2>
+<p><strong>Remember:</strong> You’re always working in a <strong>branch</strong> and committing your work. So, if you mess up, you can always go back to a previous commit, merge new updates, or stash your changes!</p>
+<hr>
+<h3 id="final-thoughts">Final Thoughts:</h3>
+<p>Git might seem a little daunting at first, but once you get the hang of it, it’s an incredibly powerful tool for tracking and managing your code. Think of it like having a time machine for your project—it’s always there when you need to undo, redo, or share your work.</p>
+<p>Thanks for reading &amp; Ship faster. 🚀</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/tags/programming/">programming</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Nas
+        2024
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

@@ -57,7 +57,7 @@ portfolioitems:
       - name: "Part-Time Devops Engineer"
         authors:
           - "Kamioun"
-        image: "/images/portfolio/kamioun.png"
+        #image: "/images/portfolio/kamioun.png"
         link: https://www.kamioun.com/
         description: "Optimized CI/CD pipelines in GitLab CI, achieving a 35% reduction in deployment times and accelerating feature delivery. Proactively monitored AWS instances, reducing server downtime by 30% and ensuring uninterrupted service availability. Diagnosed and resolved critical Magento app issues, preserving user satisfaction and supporting consistent customer retention."
         start: "Aug 2023"
@@ -73,7 +73,7 @@ portfolioitems:
       - name: "DevOps Internship"
         authors:
           - "Kamioun"
-        image: "/images/portfolio/kamioun.png"
+        #image: "/images/portfolio/kamioun.png"
         link: https://www.kamioun.com/
         description: "Containerized the Magento app with Docker and automated workflows using Bash, boosting development efficiency by 25%. Designed and implemented a CI/CD production pipeline on GitLab CI, significantly streamlining deployment processes. Integrated SonarQube for code quality analysis and Grafana for performance monitoring, enhancing scalability, observability, and code reliability."
         start: "Jan 2023"
