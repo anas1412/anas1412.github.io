@@ -195,7 +195,7 @@
 
     ,
         "url" : "https:\/\/anas1412.github.io\/post\/20241201\/",
-        "wordCount" : "741",
+        "wordCount" : "728",
         "genre" : [ ],
         "keywords" : [ 
       
@@ -420,8 +420,7 @@
             <span class="post__meta-text">4-minute read</span>
           </li>
         </ul>
-      <h1 id="-how-to-set-up-a-simple-github-actions-workflow-for-hugo-">🚀 How to Set Up a Simple GitHub Actions Workflow for Hugo 🌍</h1>
-<p>If you&rsquo;re using Hugo to build your static website and want to automatically deploy it to GitHub Pages, you can easily set up a GitHub Actions workflow to handle this process for you. In this guide, we’ll walk you through the steps to configure a simple GitHub Actions workflow for Hugo.</p>
+      <p>If you&rsquo;re using Hugo to build your static website and want to automatically deploy it to GitHub Pages, you can easily set up a GitHub Actions workflow to handle this process for you. In this guide, we’ll walk you through the steps to configure a simple GitHub Actions workflow for Hugo.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before you get started, ensure you have the following:</p>
 <ul>
@@ -436,7 +435,7 @@
 <li>Inside the <code>workflows</code> folder, create a new file named <code>hugo-deploy.yml</code>.</li>
 </ol>
 <h3 id="step-2-define-the-github-actions-workflow">Step 2: Define the GitHub Actions Workflow</h3>
-<p>Here’s a basic configuration for your <code>deploy.yml</code> file that builds the Hugo site and deploys it to GitHub Pages:</p>
+<p>Here’s a basic configuration for your <code>hugo-deploy.yml</code> file that builds the Hugo site and deploys it to GitHub Pages:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Deploy Hugo Site to GitHub Pages</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">on</span>:
@@ -500,7 +499,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">run</span>: <span style="color:#ae81ff">git push origin main</span>
 </span></span></code></pre></div><h3 id="step-3-commit-and-push-your-changes">Step 3: Commit and Push Your Changes</h3>
 <p>Once you have created the <code>hugo-deploy.yml</code> file in the <code>.github/workflows/</code> folder, commit and push your changes to the main branch.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .github/workflows/deploy.yml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add GitHub Actions workflow for Hugo deployment&#34;</span>
 </span></span><span style="display:flex;"><span>git push origin main
 </span></span></code></pre></div><h3 id="step-4-enable-github-pages-for-your-repository">Step 4: Enable GitHub Pages for Your Repository</h3>
