@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dev on NAS | Blog</title>
-    <link>http://localhost:1313/tags/dev/</link>
+    <link>https://anas1412.github.io/tags/dev/</link>
     <description>Recent content in Dev on NAS | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://anas1412.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guide on how to make a personal website using Hugo</title>
-      <link>http://localhost:1313/post/20241112/</link>
+      <link>https://anas1412.github.io/post/20241112/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/20241112/</guid>
+      <guid>https://anas1412.github.io/post/20241112/</guid>
       
         <description>Guide to  Hugo</description>
       
