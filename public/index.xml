@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NAS | Blog</title>
-    <link>https://anas1412.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on NAS | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://anas1412.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Cheat Sheet: Beginners Guide</title>
-      <link>https://anas1412.github.io/post/20241128/</link>
+      <link>http://localhost:1313/post/20241128/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://anas1412.github.io/post/20241128/</guid>
+      <guid>http://localhost:1313/post/20241128/</guid>
       
         <description>&lt;h1 id=&#34;git-cheat-sheet-for-beginners-&#34;&gt;Git Cheat Sheet for Beginners 🚀&lt;/h1&gt;
 &lt;p&gt;Welcome to the Git Cheat Sheet, your ultimate guide to version control that will make you feel like a Git wizard (without the beard and pointy hat). If you&amp;rsquo;re new to Git, no worries! I will break things down and help you understand &lt;strong&gt;why&lt;/strong&gt; and &lt;strong&gt;when&lt;/strong&gt; to use each command in a fun and easy way.&lt;/p&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>Building a Prop Firm Risk Calculator: A Journey in Smart Money Management</title>
-      <link>https://anas1412.github.io/post/20241124/</link>
+      <link>http://localhost:1313/post/20241124/</link>
       <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://anas1412.github.io/post/20241124/</guid>
+      <guid>http://localhost:1313/post/20241124/</guid>
       
         <description>&lt;p&gt;It started with a simple observation: most prop traders, including myself, struggle with position sizing. We either risk too much during drawdowns or too little during winning streaks. After blowing a few accounts (yes, I&amp;rsquo;m looking at you, my overly aggressive 2023 self), I knew there had to be a better way.&lt;/p&gt;
 &lt;h2 id=&#34;the-eureka-moment&#34;&gt;The Eureka Moment&lt;/h2&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>Ideas from Zero to One | Peter Thiel</title>
-      <link>https://anas1412.github.io/post/20241113/</link>
+      <link>http://localhost:1313/post/20241113/</link>
       <pubDate>Wed, 13 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://anas1412.github.io/post/20241113/</guid>
+      <guid>http://localhost:1313/post/20241113/</guid>
       
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;When you get inspired by Bill Gates and build another five companies like Microsoft then you go from 1 to n. But when you create something unique that did not exist before, you are going from zero to one. This book is all about inspiring you to think about grand ideas and not for those who are looking to merely tinker. Unsolved problems are hotbeds of opportunity. Conventional education leads to conventional choices. So his Thiel Fellowship program funds smart people who are under 20, to forgo their college education and start their own companies.&lt;/p&gt;</description>
@@ -65,10 +65,10 @@
     
     <item>
       <title>About</title>
-      <link>https://anas1412.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://anas1412.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       
         <description>Hugo, the world&#39;s fastest framework for building websites</description>
       
@@ -76,10 +76,10 @@
     
     <item>
       <title>Guide on how to make a personal website using Hugo</title>
-      <link>https://anas1412.github.io/post/20241112/</link>
+      <link>http://localhost:1313/post/20241112/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://anas1412.github.io/post/20241112/</guid>
+      <guid>http://localhost:1313/post/20241112/</guid>
       
         <description>Guide to  Hugo</description>
       
