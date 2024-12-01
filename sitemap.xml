@@ -2,50 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://anas1412.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/post/20241128/</loc>
+    <loc>http://localhost:1313/post/20241128/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/index/</loc>
+    <loc>http://localhost:1313/tags/index/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/programming/</loc>
+    <loc>http://localhost:1313/tags/programming/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/post/20241124/</loc>
+    <loc>http://localhost:1313/post/20241124/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/trading/</loc>
+    <loc>http://localhost:1313/tags/trading/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/books/</loc>
+    <loc>http://localhost:1313/tags/books/</loc>
     <lastmod>2024-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/post/20241113/</loc>
+    <loc>http://localhost:1313/post/20241113/</loc>
     <lastmod>2024-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/dev/</loc>
+    <loc>http://localhost:1313/tags/dev/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/tags/guide/</loc>
+    <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/post/20241112/</loc>
+    <loc>http://localhost:1313/post/20241112/</loc>
     <lastmod>2024-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://anas1412.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://anas1412.github.io/portfolio/</loc>
+    <loc>http://localhost:1313/portfolio/</loc>
   </url>
 </urlset>
