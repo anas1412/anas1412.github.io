@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://anas1412.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>🚀 How to Set Up a Simple GitHub Actions Workflow for Hugo 🌍</title>
+      <link>https://anas1412.github.io/post/20241201/</link>
+      <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://anas1412.github.io/post/20241201/</guid>
+      
+        <description>Learn how to set up a simple GitHub Actions workflow to automate the deployment of your Hugo site to GitHub Pages!</description>
+      
+    </item>
+    
+    <item>
       <title>Git Cheat Sheet: Beginners Guide</title>
       <link>https://anas1412.github.io/post/20241128/</link>
       <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
