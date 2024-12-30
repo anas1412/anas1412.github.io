@@ -1,0 +1,304 @@
+/* ===================== */
+/* General Styles        */
+/* ===================== */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-attachment: fixed; /* Fixed grid background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Shared Section Styles */
+header,
+nav,
+main,
+footer {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 10px 0;
+  border: 2px solid #fff;
+  background-color: #111;
+  box-sizing: border-box;
+}
+
+/* ===================== */
+/* Header                */
+/* ===================== */
+header {
+  text-align: center;
+  background-color: #222;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* ===================== */
+/* Navigation            */
+/* ===================== */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222;
+  border-bottom: 2px solid #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.hamburger {
+  display: none; /* Hide by default on larger screens */
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ccc;
+}
+
+/* ===================== */
+/* Main Content          */
+/* ===================== */
+main h2 {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+main ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+main a {
+  color: #fff;
+}
+
+main a:hover {
+  color: #ccc;
+}
+
+/* ===================== */
+/* Footer                */
+/* ===================== */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #ccc;
+  background-color: #222;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* ===================== */
+/* Contact Section       */
+/* ===================== */
+#contact {
+  text-align: center; /* Center-align the content */
+  padding: 1rem;
+}
+
+.contact-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 1rem; /* Add space between items */
+  font-size: 1rem; /* Default font size */
+  display: flex;
+  align-items: center; /* Align icons and text vertically */
+  justify-content: center; /* Center-align items */
+  gap: 0.5rem; /* Add space between icon and text */
+}
+
+.contact-list a {
+  color: #0f0; /* Retro green color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-list a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+/* ===================== */
+/* Terminal Styles       */
+/* ===================== */
+.terminal {
+  background-color: #000;
+  color: #0f0;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 1rem;
+  border: 2px solid #0f0;
+  border-radius: 5px;
+  max-width: 100%; /* Full width on mobile */
+  margin: 1rem auto;
+  font-size: 1rem; /* Smaller font size for mobile */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.ascii-art {
+  white-space: pre;
+  margin: 0;
+}
+
+.command {
+  color: #0f0;
+}
+
+.output {
+  color: #ccc;
+}
+
+.success {
+  color: #0f0;
+}
+
+.success-message {
+  color: #0f0;
+  font-weight: bold;
+}
+
+/* ===================== */
+/* Responsive Design     */
+/* ===================== */
+@media (max-width: 768px) {
+  /* Navbar */
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide nav links by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav links when active */
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+  }
+
+  /* Header */
+  header h1 {
+    font-size: 2rem; /* Smaller header for mobile */
+  }
+
+  header p {
+    font-size: 1rem; /* Smaller subtitle for mobile */
+  }
+
+  /* Terminal */
+  .terminal {
+    padding: 0.8rem; /* Reduce padding for mobile */
+    font-size: 0.9rem; /* Smaller font size for better readability */
+  }
+
+  /* Contact Section */
+  .contact-list li {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+    flex-direction: column; /* Stack icon and text vertically */
+    gap: 0.25rem; /* Reduce space between icon and text */
+  }
+}
+
+@media (min-width: 768px) {
+  header,
+  nav,
+  main,
+  footer {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header,
+  nav,
+  main,
+  footer {
+    width: 50%;
+  }
+}
