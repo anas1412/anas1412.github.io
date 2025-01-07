@@ -19,6 +19,11 @@ window.posts = [
       "Just finished a Laravel project. PHP is like that old friend who’s always there, even if you don’t talk every day. I love Laravel 💻❤️",
   },
   {
+    date: "2023-09-20",
+    content:
+      "Set up Slack alerts for my ELK stack. Now my team gets notified every time I cry over logs. 😭📊",
+  },
+  {
     date: "2023-07-01",
     content:
       "Spent hours optimizing Grafana dashboards. Now my metrics are so pretty, they belong in an art gallery. 🎨",
@@ -68,11 +73,7 @@ window.posts = [
     content:
       "Tried to debug a Bash script. It’s like arguing with a toddler who only speaks in riddles. 🐚🤯",
   },
-  {
-    date: "2022-02-20",
-    content:
-      "Set up Slack alerts for my ELK stack. Now my team gets notified every time I cry over logs. 😭📊",
-  },
+
   {
     date: "2021-09-15",
     content:
