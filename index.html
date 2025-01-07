@@ -100,8 +100,8 @@
         <section x-show="currentSection === 'about'" id="about">
           <h2>About Me</h2>
           <p class="about-description">
-            I'm Anas Bassoumi, a passionate DevOps & Software Engineer based in
-            Tunis, Tunisia. With a strong educational background and diverse
+            I'm Anas, a passionate DevOps & Software Engineer based in Tunis,
+            Tunisia. With a strong educational background and diverse
             professional experience, I am dedicated to creating innovative and
             efficient solutions.
           </p>
@@ -476,7 +476,7 @@
               title: "Intern DevOps Engineer",
               duration: "Kamioun | January 2023 - June 2023",
               description: [
-                "•Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+                "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
                 "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
                 "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
               ],
@@ -511,7 +511,10 @@
           ],
           currentIndex: 0,
           touchStartX: 0,
+          touchEndX: 0,
           isAnimating: false,
+
+          // Go to the previous slide
           prev() {
             if (this.currentIndex > 0 && !this.isAnimating) {
               this.isAnimating = true;
@@ -519,6 +522,8 @@
               setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
             }
           },
+
+          // Go to the next slide
           next() {
             if (
               this.currentIndex < this.experiences.length - 1 &&
@@ -529,6 +534,8 @@
               setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
             }
           },
+
+          // Go to a specific slide
           goTo(index) {
             if (!this.isAnimating) {
               this.isAnimating = true;
@@ -536,22 +543,27 @@
               setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
             }
           },
+
+          // Handle touch start event
           handleTouchStart(event) {
             this.touchStartX = event.touches[0].clientX;
           },
+
+          // Handle touch move event
           handleTouchMove(event) {
             if (!this.touchStartX || this.isAnimating) return;
 
-            const touchEndX = event.touches[0].clientX;
-            const diff = this.touchStartX - touchEndX;
+            this.touchEndX = event.touches[0].clientX;
+            const diff = this.touchStartX - this.touchEndX;
 
-            if (diff > 50) {
-              this.next(); // Swipe left
-            } else if (diff < -50) {
-              this.prev(); // Swipe right
+            if (Math.abs(diff) > 50) {
+              if (diff > 0) {
+                this.next(); // Swipe left
+              } else {
+                this.prev(); // Swipe right
+              }
+              this.touchStartX = 0; // Reset touch start position
             }
-
-            this.touchStartX = 0;
           },
         };
       }
