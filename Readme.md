@@ -1,65 +1,72 @@
 # NAS Portfolio
 
-Welcome to my **90s-inspired retro portfolio**! This single-page application (SPA) is built with **Vanilla JavaScript** and **HTML5** to showcase my skills projects and personality in a nostalgic 90s aesthetic. Dive into the retro vibes and explore my journey as a **Software Engineer** **Day Trader** and **Retro Enthusiast**.
+Welcome to my portfolio website! This is a single page application (SPA) built with Alpine.js and HTML5, showcasing my skills, projects, and professional experience. The website features a clean and modern design, utilizing TailwindCSS for styling to ensure a responsive and visually appealing user experience. The overall vibe of the site is nostalgic and approachable, with a focus on simplicity and ease of navigation.
 
----
+## Technologies Used
 
-## 🚀 Features
+This portfolio website is built using the following technologies:
 
-- **Retro Styling**: A 90s-inspired design with a monospace font and classic color palette.
-- **Single-Page Application (SPA)**: Smooth navigation without page reloads.
-- **Mobile-Friendly**: Responsive design with a collapsible hamburger menu.
-- **Dynamic Content Loading**: Sections are loaded dynamically using JavaScript.
-- **Interactive Terminal Animation**: A simulated terminal effect for added retro flair.
+- **Alpine.js:** A lightweight JavaScript framework for composing behavior directly in your HTML.
+- **HTML5:** The latest version of the HTML standard, providing the structure of the website.
+- **TailwindCSS:** A utility-first CSS framework for creating custom designs without leaving your HTML.
+- **JavaScript:** For adding interactivity and dynamic content to the website.
+- **GitHub Pages:** Hosting the website directly from the GitHub repository.
 
----
+## Table of Contents
 
-## 🛠️ Technologies Used
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
 
-- **HTML5**: For structuring the content.
-- **CSS3**: For retro styling and responsive design.
-- **JavaScript**: For dynamic content loading and interactivity.
-- **Font Awesome**: For icons.
-- **Google Fonts**: IBM Plex Mono for the monospace font.
+## About Me
 
----
+I'm Anas, a passionate DevOps & Software Engineer based in Tunis, Tunisia. With a strong educational background and diverse professional experience, I am dedicated to creating innovative and efficient solutions.
 
-## 📂 How It Works
+## Projects
 
-### **Routing and Content Switching**
+### [GeminiWire](https://anas1412.github.io/GeminiWire/)
 
-The application handles routing and dynamically loads content based on the URL path. Each section (Home About Projects Skills Contact) is stored as a separate JavaScript file. When a link is clicked the corresponding content is injected into the main section without reloading the page.
+AI-Driven Workflow Automation
 
-### **Mobile Navigation**
+- Created custom AI-powered workflows with real-time execution.
+- Designed a drag-and-drop wireflow builder, increasing workflow creation efficiency by 40%.
+- Integrated API for real-time data management, ensuring seamless workflow execution.
 
-The mobile-friendly navbar includes a collapsible hamburger menu. When clicked it toggles the visibility of the navigation links. Clicking a link closes the menu for a seamless user experience.
+### [Laravel Deployment with Docker and ELK Stack](https://anas1412.github.io/ELK-Stack-with-Laravel/)
 
-### **Terminal Animation**
+Docker and ELK Stack Integration
 
-The terminal animation simulates a command-line interface (CLI) by typing out lines of text with a delay. This effect is achieved using JavaScript's `setInterval` function.
+- Implemented ELK Stack, cutting troubleshooting time by 40% and boosting monitoring accuracy by 30%.
+- Set up 10+ real-time alerts, reducing incident response time by 50% and downtime to under 1%.
+- Built a CI/CD pipeline with 99.9% deployment success and scheduled weekly database backups to cloud storage.
 
----
+### [FIDO Dashboard](https://anas1412.github.io/Fido/)
 
-## 🎨 Retro Design
+Fee Management for Accountants
 
-The portfolio embraces a 90s aesthetic with:
+- Enhanced features to align with accountants' workflows through continuous feedback.
+- Reduced financial data processing time by 30%, increasing productivity and delivering measurable value.
+- Implemented automated reporting, cutting report generation time by 40% and improving decision-making efficiency.
 
-- **Monospace Font**: IBM Plex Mono for a classic terminal look.
-- **Retro Color Palette**: A mix of muted and vibrant colors inspired by 90s technology.
-- **Minimalist Layout**: Clean and straightforward design for easy navigation.
+## Skills
 
----
+- **DevOps & Cloud Technologies:** GitLab-CI, GitHub Actions, Ansible, Terraform, Docker, Podman, Kubernetes, ArgoCD, Helm, Kustomize, AWS, Azure, Prometheus, Grafana, Elastic, Logstash, Kibana.
+- **Frameworks & UI Libraries:** Laravel, Symfony, React, Angular, FastAPI, Flask, Spring, Bootstrap, TailwindCSS, AlpineJS.
+- **SysAdmin & Databases:** Git, Jira, Linux, Bash, MySQL, PostgreSQL, SQLite, MongoDB.
+- **Programming Languages & Concepts:** HTML5, CSS, jQuery, AJAX, JavaScript, PHP, Python, Java, REST API.
 
-## 📜 License
+## Contact
 
-This project is licensed under the MIT License.
+- **Email:** [anas.bassoumi@gmail.com](mailto:anas.bassoumi@gmail.com)
+- **Phone:** [+216 54 930 048](tel:+21654930048)
+- **WhatsApp:** [+216 54 930 048](https://wa.me/21654930048)
+- **GitHub:** [anas1412](https://github.com/anas1412)
+- **Twitter:** [@villainesthetic](https://twitter.com/villainesthetic)
+- **LinkedIn:** [Anas Bassoumi](https://www.linkedin.com/in/anas-bassoumi/)
 
----
+## License
 
-## 📬 Contact
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Feel free to reach out to me via the **Contact** section of the portfolio or connect with me on [LinkedIn](https://www.linkedin.com/in/your-profile).
-
----
-
-&copy; **2023 Anas B. Portfolio**. All rights reserved. Made with ❤️
+Thank you for visiting my portfolio! Feel free to reach out if you have any questions or opportunities.
