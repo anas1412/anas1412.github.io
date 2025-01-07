@@ -28,7 +28,7 @@
       <!-- Mobile-Friendly Navbar -->
       <nav>
         <div class="navbar">
-          <!-- <div class="logo"></div> -->
+          <!-- Hamburger Button (Left) -->
           <button
             class="hamburger"
             @click="isMenuOpen = !isMenuOpen"
@@ -36,6 +36,13 @@
           >
             <i class="fas fa-bars"></i>
           </button>
+
+          <!-- Current Page Title (Right, Mobile Only) -->
+          <div class="mobile-page-title" x-show="isMobile">
+            <span x-text="getCurrentPageTitle()"></span>
+          </div>
+
+          <!-- Navigation Links -->
           <ul class="nav-links" :class="{ 'active': isMenuOpen }">
             <li>
               <a
@@ -434,6 +441,7 @@
         return {
           currentSection: "home", // Default section
           isMenuOpen: false, // Mobile menu state
+          isMobile: window.innerWidth <= 768, // Detect mobile view
 
           // Terminal animation
           init() {
@@ -450,6 +458,24 @@
                 clearInterval(interval);
               }
             }, 500); // Adjust the delay (in milliseconds) between lines
+          },
+
+          // Get the current page title for mobile
+          getCurrentPageTitle() {
+            switch (this.currentSection) {
+              case "home":
+                return "Home";
+              case "about":
+                return "About Me";
+              case "projects":
+                return "Projects";
+              case "skills":
+                return "Skills";
+              case "contact":
+                return "Contact";
+              default:
+                return "Home";
+            }
           },
         };
       }

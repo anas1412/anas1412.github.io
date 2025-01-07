@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "IBM Plex Mono", monospace;
   background-color: #000;
@@ -81,18 +85,12 @@ header p {
   padding: 1rem;
   background-color: #222;
   border-bottom: 2px solid #fff;
-  position: relative; /* Added for dropdown positioning */
+  position: relative;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-}
-
+/* Hamburger Button */
 .hamburger {
   display: none;
-  margin-left: auto;
   background: none;
   border: none;
   color: #fff;
@@ -100,13 +98,22 @@ header p {
   cursor: pointer;
 }
 
+/* Mobile Page Title */
+.mobile-page-title {
+  display: none; /* Hidden by default */
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Navigation Links */
 .nav-links {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Center the navigation items */
-  flex: 1; /* Take up remaining space */
+  justify-content: center;
+  flex: 1;
 }
 
 .nav-links li {
@@ -123,22 +130,40 @@ header p {
   color: #ccc;
 }
 
-.nav-links.active {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: #333;
-  position: absolute;
-  top: 100%; /* Position below the navbar */
-  left: 0;
-  z-index: 10; /* Ensure it appears above other content */
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    order: 2; /* Move hamburger to the right */
+  }
 
-.nav-links.active li {
-  margin: 0;
-  text-align: center;
-  padding: 1rem;
-  border-bottom: 1px solid #444;
+  .mobile-page-title {
+    display: block; /* Show on mobile */
+    order: 1; /* Move text to the left */
+    margin-right: auto; /* Push text to the left */
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    z-index: 10;
+  }
+
+  .nav-links.active li {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+  }
 }
 
 /* ===================== */
