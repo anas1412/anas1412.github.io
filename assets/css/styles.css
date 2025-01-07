@@ -103,6 +103,8 @@ header p {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center; /* Center the navigation items */
+  flex: 1; /* Take up remaining space */
 }
 
 .nav-links li {
@@ -135,7 +137,6 @@ header p {
   padding: 1rem;
   border-bottom: 1px solid #444;
 }
-
 /* ===================== */
 /* Main Content          */
 /* ===================== */
