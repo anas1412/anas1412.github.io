@@ -110,12 +110,15 @@
             <!-- Professional Experience Slider -->
             <div class="about-category experience" x-data="experienceSlider()">
               <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
-              <div class="slider-container">
+              <div
+                class="slider-container"
+                @touchstart="handleTouchStart"
+                @touchmove="handleTouchMove"
+                @mousedown="handleMouseDown"
+              >
                 <!-- Slider Content -->
                 <div
                   class="slider-content"
-                  @touchstart="handleTouchStart"
-                  @touchmove="handleTouchMove"
                   :style="`transform: translateX(-${currentIndex * 100}%);`"
                 >
                   <template
@@ -544,12 +547,12 @@
             }
           },
 
-          // Handle touch start event
+          // Handle touch start event (for mobile)
           handleTouchStart(event) {
             this.touchStartX = event.touches[0].clientX;
           },
 
-          // Handle touch move event
+          // Handle touch move event (for mobile)
           handleTouchMove(event) {
             if (!this.touchStartX || this.isAnimating) return;
 
@@ -564,6 +567,45 @@
               }
               this.touchStartX = 0; // Reset touch start position
             }
+          },
+
+          // Handle mouse down event (for web)
+          handleMouseDown(event) {
+            this.touchStartX = event.clientX;
+            document.addEventListener(
+              "mousemove",
+              this.handleMouseMove.bind(this)
+            );
+            document.addEventListener("mouseup", this.handleMouseUp.bind(this));
+          },
+
+          // Handle mouse move event (for web)
+          handleMouseMove(event) {
+            if (!this.touchStartX || this.isAnimating) return;
+
+            this.touchEndX = event.clientX;
+            const diff = this.touchStartX - this.touchEndX;
+
+            if (Math.abs(diff) > 50) {
+              if (diff > 0) {
+                this.next(); // Swipe left
+              } else {
+                this.prev(); // Swipe right
+              }
+              this.touchStartX = 0; // Reset touch start position
+            }
+          },
+
+          // Handle mouse up event (for web)
+          handleMouseUp() {
+            document.removeEventListener(
+              "mousemove",
+              this.handleMouseMove.bind(this)
+            );
+            document.removeEventListener(
+              "mouseup",
+              this.handleMouseUp.bind(this)
+            );
           },
         };
       }
