@@ -81,6 +81,7 @@ header p {
   padding: 1rem;
   background-color: #222;
   border-bottom: 2px solid #fff;
+  position: relative; /* Added for dropdown positioning */
 }
 
 .logo {
@@ -91,6 +92,7 @@ header p {
 
 .hamburger {
   display: none;
+  margin-left: auto;
   background: none;
   border: none;
   color: #fff;
@@ -127,8 +129,9 @@ header p {
   width: 100%;
   background-color: #333;
   position: absolute;
-  top: 60px;
+  top: 100%; /* Position below the navbar */
   left: 0;
+  z-index: 10; /* Ensure it appears above other content */
 }
 
 .nav-links.active li {
@@ -137,6 +140,7 @@ header p {
   padding: 1rem;
   border-bottom: 1px solid #444;
 }
+
 /* ===================== */
 /* Main Content          */
 /* ===================== */
@@ -455,7 +459,6 @@ footer a:hover {
 .experience-item {
   flex: 0 0 100%;
   padding: 1rem;
-
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
