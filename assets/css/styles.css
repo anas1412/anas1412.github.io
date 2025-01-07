@@ -619,3 +619,101 @@ footer a:hover {
     box-sizing: border-box; /* Include padding in the width */
   }
 }
+
+/* ===================== */
+/* Microblog Section     */
+/* ===================== */
+#microblog {
+  text-align: left;
+  padding: 1rem;
+}
+
+.microblog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.post {
+  background-color: #222;
+  padding: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+.post-content {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  color: #0f0;
+  opacity: 0.8;
+}
+
+.post-date span {
+  font-weight: bold;
+}
+
+/* ===================== */
+/* Add Post Form         */
+/* ===================== */
+.add-post {
+  margin-top: 2rem;
+  background-color: #222;
+  padding: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.add-post h3 {
+  font-size: 1.25rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+}
+
+.add-post input[type="password"],
+.add-post textarea,
+.add-post input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #ccc;
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 1rem;
+}
+
+.add-post textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-post button {
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.add-post button:hover {
+  background-color: #0c0;
+}
+
+.error-message {
+  color: #ff5555; /* Red color for errors */
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}

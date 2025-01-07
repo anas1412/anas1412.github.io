@@ -56,6 +56,13 @@
             <li>
               <a
                 href="#"
+                @click.prevent="currentSection = 'microblog'; isMenuOpen = false"
+                >Microblog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
                 @click.prevent="currentSection = 'about'; isMenuOpen = false"
                 >About Me</a
               >
@@ -74,6 +81,7 @@
                 >Skills</a
               >
             </li>
+
             <li>
               <a
                 href="#"
@@ -375,6 +383,21 @@
           </div>
         </section>
 
+        <!-- Microblog Section -->
+        <section x-show="currentSection === 'microblog'" id="microblog">
+          <h2>Microblog</h2>
+          <div class="microblog-posts">
+            <template x-for="(post, index) in posts" :key="index">
+              <div class="post">
+                <p class="post-content" x-text="post.content"></p>
+                <p class="post-date">
+                  Posted on: <span x-text="post.date"></span>
+                </p>
+              </div>
+            </template>
+          </div>
+        </section>
+
         <section x-show="currentSection === 'contact'" id="contact">
           <h2>Contact</h2>
           <ul class="contact-list">
@@ -436,20 +459,20 @@
         </p>
       </footer>
     </div>
+    <script src="posts.js"></script>
 
     <script>
       // Alpine.js App Logic
       function app() {
         return {
-          currentSection: "home", // Default section
-          isMenuOpen: false, // Mobile menu state
-          isMobile: window.innerWidth <= 768, // Detect mobile view
+          currentSection: "home",
+          isMenuOpen: false,
+          isMobile: window.innerWidth <= 768,
 
-          // Terminal animation
           init() {
             const terminal = document.querySelector(".terminal pre");
             const lines = terminal.innerHTML.split("\n");
-            terminal.innerHTML = ""; // Clear the initial content
+            terminal.innerHTML = "";
 
             let index = 0;
             const interval = setInterval(() => {
@@ -459,10 +482,9 @@
               } else {
                 clearInterval(interval);
               }
-            }, 500); // Adjust the delay (in milliseconds) between lines
+            }, 500);
           },
 
-          // Get the current page title for mobile
           getCurrentPageTitle() {
             switch (this.currentSection) {
               case "home":
@@ -473,6 +495,8 @@
                 return "Projects";
               case "skills":
                 return "Skills";
+              case "microblog":
+                return "Microblog";
               case "contact":
                 return "Contact";
               default:
@@ -482,6 +506,7 @@
         };
       }
 
+      // Experience Slider Logic
       function experienceSlider() {
         return {
           experiences: [
@@ -544,6 +569,7 @@
           touchStartX: 0,
           touchEndX: 0,
           isAnimating: false,
+          posts: window.posts,
 
           // Go to the previous slide
           prev() {
