@@ -38,21 +38,37 @@
           </button>
           <ul class="nav-links" :class="{ 'active': isMenuOpen }">
             <li>
-              <a href="#" @click.prevent="currentSection = 'home'">Home</a>
+              <a
+                href="#"
+                @click.prevent="currentSection = 'home'; isMenuOpen = false"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="#" @click.prevent="currentSection = 'about'">About Me</a>
+              <a
+                href="#"
+                @click.prevent="currentSection = 'about'; isMenuOpen = false"
+                >About Me</a
+              >
             </li>
             <li>
-              <a href="#" @click.prevent="currentSection = 'projects'"
+              <a
+                href="#"
+                @click.prevent="currentSection = 'projects'; isMenuOpen = false"
                 >Projects</a
               >
             </li>
             <li>
-              <a href="#" @click.prevent="currentSection = 'skills'">Skills</a>
+              <a
+                href="#"
+                @click.prevent="currentSection = 'skills'; isMenuOpen = false"
+                >Skills</a
+              >
             </li>
             <li>
-              <a href="#" @click.prevent="currentSection = 'contact'"
+              <a
+                href="#"
+                @click.prevent="currentSection = 'contact'; isMenuOpen = false"
                 >Contact</a
               >
             </li>
@@ -80,114 +96,268 @@
 
         <section x-show="currentSection === 'about'" id="about">
           <h2>About Me</h2>
-          <p>
+          <p class="about-description">
             I'm Anas Bassoumi, a passionate DevOps & Software Engineer based in
             Tunis, Tunisia. With a strong educational background and diverse
             professional experience, I am dedicated to creating innovative and
             efficient solutions.
           </p>
-          <h3>Education</h3>
-          <p>
-            I hold a National engineering diploma in computer science from
-            ESPRIT: Private School of Engineering and Technology (2020 - 2024).
-            Prior to that, I earned a National diploma of applied license in
-            embedded systems from ISI: Higher Institute of Computer Science
-            (2017 - 2020).
-          </p>
-          <h3>Professional Experience</h3>
-          <p>
-            With more than one year of professional experience, I have developed
-            expertise in DevOps, CI/CD pipelines, and cloud infrastructure.
-            Since February 2024, I have been working as a Freelance DevOps &
-            Software Solutions provider, delivering high-impact, tailored
-            software solutions to optimize client workflows and drive business
-            efficiency. From July 2023 to January 2024, I worked part-time as a
-            DevOps Engineer at Kamioun, where I optimized CI/CD pipelines using
-            GitLab CI, monitored AWS instances, and resolved critical Magento
-            app issues. My graduation project at Kamioun, from January 2023 to
-            June 2023, involved containerizing a Magento app with Docker,
-            designing a CI/CD pipeline on GitLab CI, and integrating SonarQube
-            and Grafana. During my internship at Beirdo Digital Studio from June
-            2022 to August 2022, I implemented a GitOps-based CI/CD pipeline
-            using Kaniko and ArgoCD, and deployed applications on Kubernetes.
-            Additionally, I completed an internship at Upgrade Factory from
-            January 2020 to June 2020, where I automated cutting/folding machine
-            processes by 80% using Siemens PLC.
-          </p>
-          <h3>Languages</h3>
-          <p>I am fluent in Arabic, English, and French.</p>
+
+          <div class="about-grid">
+            <!-- Professional Experience Slider -->
+            <div class="about-category experience" x-data="experienceSlider()">
+              <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+              <div class="slider-container">
+                <!-- Slider Content -->
+                <div
+                  class="slider-content"
+                  @touchstart="handleTouchStart"
+                  @touchmove="handleTouchMove"
+                  :style="`transform: translateX(-${currentIndex * 100}%);`"
+                >
+                  <template
+                    x-for="(experience, index) in experiences"
+                    :key="index"
+                  >
+                    <div class="experience-item">
+                      <strong x-text="experience.title"></strong><br />
+                      <span class="subtext" x-text="experience.duration"></span
+                      ><br />
+                      <ul>
+                        <template
+                          x-for="(point, i) in experience.description"
+                          :key="i"
+                        >
+                          <li x-text="point"></li>
+                        </template>
+                      </ul>
+                    </div>
+                  </template>
+                </div>
+
+                <!-- Slider Navigation Dots -->
+                <div class="slider-dots">
+                  <template x-for="(_, index) in experiences" :key="index">
+                    <button
+                      class="slider-dot"
+                      :class="{ 'active': currentIndex === index }"
+                      @click="goTo(index)"
+                      :aria-label="'Go to slide ' + (index + 1)"
+                    ></button>
+                  </template>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education and Languages -->
+            <div class="about-grid-row">
+              <!-- Education -->
+              <div class="about-category">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <ul>
+                  <li>
+                    <strong
+                      >National Engineering Diploma in Computer Science</strong
+                    ><br />
+                    <span class="subtext"
+                      >ESPRIT: Private School of Engineering and
+                      Technology</span
+                    ><br /><br />
+                    <span class="subtext">Graduation year: 2024</span>
+                  </li>
+                  <br />
+                  <li>
+                    <strong
+                      >National Diploma of Applied License in Embedded
+                      Systems</strong
+                    ><br />
+                    <span class="subtext"
+                      >ISI: Higher Institute of Computer Science</span
+                    ><br /><br />
+                    <span class="subtext">Graduation year: 2020</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Languages -->
+              <div class="about-category">
+                <h3><i class="fas fa-lightbulb"></i> Work Interests</h3>
+                <ul>
+                  <li>Problem-solving and finding innovative solutions.</li>
+                  <li>Navigating and adapting to new technologies.</li>
+                  <li>
+                    Managing end-to-end product delivery while maintaining
+                    strong client relationships.
+                  </li>
+                </ul>
+                <h3><i class="fas fa-language"></i> Languages</h3>
+                <ul>
+                  <li>Arabic (Native)</li>
+                  <li>English (Fluent)</li>
+                  <li>French (Intermediate)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section x-show="currentSection === 'projects'" id="projects">
           <h2>Latest Projects</h2>
-          <ul>
-            <li>
-              <strong>GeminiWire - AI-Driven Workflow Automation: </strong
-              ><a href="https://anas1412.github.io/GeminiWire/" target="_blank"
-                >➤</a
-              ><br />
-              - Developed GeminiWire for workflow automation using Google Gemini
-              AI.<br />
-              - Integrated GeminiWireUI for a user-friendly interface.<br />
-              - Improved system reliability by 60% with robust validation and
-              error handling.<br />
-            </li>
-            <li>
-              <strong>Laravel Deployment with Docker and ELK Stack: </strong
-              ><a
+          <div class="skills-grid">
+            <!-- Project 1: GeminiWire -->
+            <div class="skill-category">
+              <h3><i class="fas fa-robot"></i> GeminiWire</h3>
+              <p class="project-description">AI-Driven Workflow Automation</p>
+              <ul>
+                <li>
+                  Created GeminiWire for custom AI-powered workflows with
+                  real-time execution.
+                </li>
+                <li>
+                  Designed a drag-and-drop wireflow builder, increasing workflow
+                  creation efficiency by 40%.
+                </li>
+                <li>
+                  Integrated API for real-time data management, ensuring
+                  seamless workflow execution.
+                </li>
+              </ul>
+              <br />
+              <a
+                href="https://anas1412.github.io/GeminiWire/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Project
+              </a>
+            </div>
+
+            <!-- Project 2: Laravel Deployment with Docker and ELK Stack -->
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Laravel Deployment</h3>
+              <p class="project-description">
+                Docker and ELK Stack Integration
+              </p>
+              <ul>
+                <li>
+                  Implemented ELK Stack, cutting troubleshooting time by 40% and
+                  boosting monitoring accuracy by 30%.
+                </li>
+                <li>
+                  Set up 10+ real-time alerts, reducing incident response time
+                  by 50% and downtime to under 1%.
+                </li>
+                <li>
+                  Built a CI/CD pipeline with 99.9% deployment success and
+                  scheduled weekly database backups to cloud storage.
+                </li>
+              </ul>
+              <br />
+              <a
                 href="https://anas1412.github.io/ELK-Stack-with-Laravel/"
                 target="_blank"
-                >➤</a
-              ><br />
-              - Integrated ELK Stack for centralized logging.<br />
-              - Set up Slack notifications for real-time alerts.<br />
-              - Automated CI/CD Pipeline & Backups with GitHub Actions.<br />
-            </li>
-            <li>
-              <strong
-                >"FIDO" Dashboard - Fee Management for Accountants: </strong
-              ><a href="https://anas1412.github.io/Fido/" target="_blank">➤</a
-              ><br />
-              - Enhanced features based on feedback.<br />
-              - Reduced financial data processing time by 30%.<br />
-            </li>
-          </ul>
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Project
+              </a>
+            </div>
+
+            <!-- Project 3: FIDO Dashboard -->
+            <div class="skill-category">
+              <h3><i class="fas fa-chart-line"></i> FIDO Dashboard</h3>
+              <p class="project-description">Fee Management for Accountants</p>
+              <ul>
+                <li>
+                  Enhanced features to align with accountants' workflows through
+                  continuous feedback.
+                </li>
+                <li>
+                  Reduced financial data processing time by 30%, increasing
+                  productivity and delivering measurable value.
+                </li>
+                <li>
+                  Implemented automated reporting, cutting report generation
+                  time by 40% and improving decision-making efficiency.
+                </li>
+              </ul>
+              <br />
+              <a
+                href="https://anas1412.github.io/Fido/"
+                target="_blank"
+                class="project-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Project
+              </a>
+            </div>
+          </div>
         </section>
 
         <section x-show="currentSection === 'skills'" id="skills">
           <h2>Skills</h2>
-          <ul>
-            <li>
-              <strong>Collaboration Tools:</strong> Git, Gitlab, Github, Jira
-            </li>
-            <li>
-              <strong>System Administration:</strong> Linux, Bash, Python
-              scripting, MySQL, PostgreSQL, SQLite
-            </li>
-            <li>
-              <strong>DevOps/Cloud Technologies:</strong> GitLab-CI, Github
-              Action, Terraform, Ansible, Helm, Docker, Kubernetes, ArgoCD, AWS,
-              Azure, ElasticSearch, ELK Stack, Prometheus, Grafana
-            </li>
-            <li>
-              <strong>Programming Languages:</strong> HTML5, CSS, JavaScript,
-              jQuery, AJAX, PHP, NodeJS, Python, Java, Object-Oriented
-              Programming, RESTful API
-            </li>
-            <li>
-              <strong>Programming Concepts:</strong> Object-Oriented
-              Programming, RESTful API
-            </li>
-            <li>
-              <strong>Frameworks:</strong> Symfony, Laravel, Angular, React,
-              FastAPI, Spring
-            </li>
-            <li><strong>Libraries:</strong> Bootstrap, TailwindCSS</li>
-            <li>
-              <strong>Soft Skills:</strong> Stress tolerance, problem-solving,
-              accountability, collaboration with cross-functional teams
-            </li>
-          </ul>
+          <div class="skills-grid">
+            <!-- DevOps/Cloud Technologies -->
+            <div class="skill-category">
+              <h3><i class="fas fa-cloud"></i> DevOps & Cloud Technologies</h3>
+              <ul>
+                <li>GitLab-CI & GitHub Actions</li>
+                <li>Ansible & Terraform</li>
+                <li>Docker & Podman</li>
+                <li>Kubernetes & ArgoCD</li>
+                <li>Helm & Kustomize</li>
+                <li>AWS & Azure</li>
+                <li>Prometheus & Grafana</li>
+                <li>Elastic, Logstash & Kibana</li>
+              </ul>
+            </div>
+
+            <!-- Frameworks & UI Libraries -->
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Frameworks & UI Libraries</h3>
+              <ul>
+                <li>Laravel</li>
+                <li>Symfony</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>FastAPI & Flask</li>
+                <li>Spring</li>
+                <li>Bootstrap</li>
+                <li>TailwindCSS</li>
+                <li>AlpineJS</li>
+              </ul>
+            </div>
+
+            <!-- Collaboration, System Administration & Databases -->
+            <div class="skill-category">
+              <h3><i class="fas fa-database"></i> SysAdmin & Databases</h3>
+              <ul>
+                <li>Git</li>
+                <li>Jira</li>
+                <li>Linux</li>
+                <li>Bash</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>SQLite</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+
+            <!-- Programming Languages & Concepts -->
+            <div class="skill-category">
+              <h3>
+                <i class="fas fa-laptop-code"></i> Programming Languages &
+                Concepts
+              </h3>
+              <ul>
+                <li>HTML5 & CSS</li>
+                <li>jQuery & AJAX</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>REST API</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         <section x-show="currentSection === 'contact'" id="contact">
@@ -274,6 +444,111 @@
                 clearInterval(interval);
               }
             }, 500); // Adjust the delay (in milliseconds) between lines
+          },
+        };
+      }
+
+      function experienceSlider() {
+        return {
+          experiences: [
+            {
+              title: "DevOps & Software Solutions Provider",
+              duration: "Freelance | Since February 2024",
+              description: [
+                "Delivering high-impact, tailored software solutions to optimize client workflows.",
+                "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
+                "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing.",
+              ],
+            },
+            {
+              title: "DevOps Engineer (Part-Time)",
+              duration: "Kamioun | July 2023 - January 2024",
+              description: [
+                "Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.",
+                "Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.",
+                "Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.",
+              ],
+            },
+            {
+              title: "Intern DevOps Engineer",
+              duration: "Kamioun | January 2023 - June 2023",
+              description: [
+                "•Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+                "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+                "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+              ],
+            },
+            {
+              title: "Intern Cloud/DevOps Engineer",
+              duration: "Beirdo Digital Studio | June 2022 - August 2022",
+              description: [
+                "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+                "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+                "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+              ],
+            },
+            {
+              title: "Intern Software Developer",
+              duration: "YES INTERNET | July 2021 - August 2021",
+              description: [
+                "Implemented APIs for real estate websites, boosting data integration by 40%.",
+                "Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.",
+                "Collaborated with backend and frontend team members to streamline functionality and optimize performance.",
+              ],
+            },
+            {
+              title: "Intern Automation Engineer",
+              duration: "Upgrade Factory | January 2020 - June 2020",
+              description: [
+                "Contacted several companies and negotiated the prices that led to 25% total reduced costs.",
+                "Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.",
+                "Collaborated with cross-functional teams to deliver solutions on time.",
+              ],
+            },
+          ],
+          currentIndex: 0,
+          touchStartX: 0,
+          isAnimating: false,
+          prev() {
+            if (this.currentIndex > 0 && !this.isAnimating) {
+              this.isAnimating = true;
+              this.currentIndex--;
+              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+            }
+          },
+          next() {
+            if (
+              this.currentIndex < this.experiences.length - 1 &&
+              !this.isAnimating
+            ) {
+              this.isAnimating = true;
+              this.currentIndex++;
+              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+            }
+          },
+          goTo(index) {
+            if (!this.isAnimating) {
+              this.isAnimating = true;
+              this.currentIndex = index;
+              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+            }
+          },
+          handleTouchStart(event) {
+            this.touchStartX = event.touches[0].clientX;
+          },
+          handleTouchMove(event) {
+            if (!this.touchStartX || this.isAnimating) return;
+
+            const touchEndX = event.touches[0].clientX;
+            const diff = this.touchStartX - touchEndX;
+
+            if (diff > 50) {
+              this.next(); // Swipe left
+            } else if (diff < -50) {
+              this.prev(); // Swipe right
+            }
+
+            this.touchStartX = 0;
           },
         };
       }

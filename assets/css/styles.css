@@ -2,7 +2,7 @@
 /* General Styles        */
 /* ===================== */
 * {
-  box-sizing: border-box; /* Include padding and border in element dimensions */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -19,15 +19,14 @@ body {
     ),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
-  background-attachment: fixed; /* Fixed grid background */
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden;
 }
 
-/* Wrapper Div */
 [x-data] {
   width: 100%;
   max-width: 100%;
@@ -36,7 +35,9 @@ body {
   align-items: center;
 }
 
+/* ===================== */
 /* Shared Section Styles */
+/* ===================== */
 header,
 nav,
 main,
@@ -44,10 +45,9 @@ footer {
   width: 90%;
   max-width: 800px;
   padding: 20px;
-  margin: 10px auto; /* Center and add spacing */
+  margin: 10px auto;
   border: 2px solid #fff;
   background-color: #111;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 /* ===================== */
@@ -62,38 +62,18 @@ header h1 {
   font-size: 2.5em;
   color: #fff;
   text-shadow: 2px 2px #000;
-  margin-bottom: 10px; /* Add spacing below the title */
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2em;
   color: #ccc;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 /* ===================== */
 /* Navigation            */
 /* ===================== */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-nav a:hover {
-  color: #ccc;
-  text-decoration: underline;
-}
-
-/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -110,7 +90,7 @@ nav a:hover {
 }
 
 .hamburger {
-  display: none; /* Hide by default on larger screens */
+  display: none;
   background: none;
   border: none;
   color: #fff;
@@ -139,14 +119,13 @@ nav a:hover {
   color: #ccc;
 }
 
-/* Mobile Menu */
 .nav-links.active {
-  display: flex; /* Show nav links when active */
+  display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #333;
   position: absolute;
-  top: 60px; /* Adjust based on header height */
+  top: 60px;
   left: 0;
 }
 
@@ -163,18 +142,18 @@ nav a:hover {
 main h2 {
   color: #fff;
   text-shadow: 1px 1px #000;
-  margin-bottom: 1rem; /* Add spacing below headings */
+  margin-bottom: 1rem;
 }
 
 main ul {
   list-style-type: square;
   padding-left: 20px;
-  margin-bottom: 1rem; /* Add spacing below lists */
+  margin-bottom: 1rem;
 }
 
 main a {
   color: #fff;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 main a:hover {
@@ -189,12 +168,12 @@ footer {
   font-size: 0.9em;
   color: #ccc;
   background-color: #222;
-  margin-top: auto; /* Push footer to the bottom */
+  margin-top: auto;
 }
 
 footer a {
   color: #fff;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
 }
 
 footer a:hover {
@@ -205,32 +184,32 @@ footer a:hover {
 /* Contact Section       */
 /* ===================== */
 #contact {
-  text-align: center; /* Center-align the content */
+  text-align: center;
   padding: 1rem;
 }
 
 .contact-list {
-  list-style: none; /* Remove default bullet points */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .contact-list li {
-  margin-bottom: 1rem; /* Add space between items */
-  font-size: 1rem; /* Default font size */
+  margin-bottom: 1rem;
+  font-size: 1rem;
   display: flex;
-  align-items: center; /* Align icons and text vertically */
-  justify-content: center; /* Center-align items */
-  gap: 0.5rem; /* Add space between icon and text */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .contact-list a {
-  color: #0f0; /* Retro green color for links */
-  text-decoration: none; /* Remove underline */
+  color: #0f0;
+  text-decoration: none;
 }
 
 .contact-list a:hover {
-  color: #ccc; /* Light gray on hover */
+  color: #ccc;
 }
 
 /* ===================== */
@@ -243,10 +222,10 @@ footer a:hover {
   padding: 1rem;
   border: 2px solid #0f0;
   border-radius: 5px;
-  max-width: 100%; /* Full width on mobile */
+  max-width: 100%;
   margin: 1rem auto;
-  font-size: 1rem; /* Smaller font size for mobile */
-  overflow-x: auto; /* Add horizontal scroll if needed */
+  font-size: 1rem;
+  overflow-x: auto;
 }
 
 .ascii-art {
@@ -272,42 +251,130 @@ footer a:hover {
 }
 
 /* ===================== */
+/* Skills Section        */
+/* ===================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background-color: #222;
+  padding: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+.skill-category h3 {
+  font-size: 1.25rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-category h3 i {
+  font-size: 1.5rem;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category ul li {
+  font-size: 1rem;
+  color: #ccc;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.skill-category ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===================== */
+/* Projects Section      */
+/* ===================== */
+.project-description {
+  font-size: 1rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.project-link {
+  color: #0f0;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.project-link:hover {
+  color: #ccc;
+}
+
+/* ===================== */
 /* Responsive Design     */
 /* ===================== */
 @media (max-width: 768px) {
-  /* Navbar */
   .hamburger {
-    display: block; /* Show hamburger on mobile */
+    display: block;
   }
 
   .nav-links {
-    display: none; /* Hide nav links by default on mobile */
+    display: none;
   }
 
   .nav-links.active {
-    display: flex; /* Show nav links when active */
+    display: flex;
   }
 
-  /* Header */
   header h1 {
-    font-size: 2rem; /* Smaller header for mobile */
+    font-size: 2rem;
   }
 
   header p {
-    font-size: 1rem; /* Smaller subtitle for mobile */
+    font-size: 1rem;
   }
 
-  /* Terminal */
   .terminal {
-    padding: 0.8rem; /* Reduce padding for mobile */
-    font-size: 0.9rem; /* Smaller font size for better readability */
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
 
-  /* Contact Section */
   .contact-list li {
-    font-size: 0.9rem; /* Smaller font size for mobile */
-    flex-direction: column; /* Stack icon and text vertically */
-    gap: 0.25rem; /* Reduce space between icon and text */
+    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.1rem;
+  }
+
+  .skill-category ul li {
+    font-size: 0.9rem;
   }
 }
 
@@ -326,5 +393,200 @@ footer a:hover {
   main,
   footer {
     width: 50%;
+  }
+}
+
+/* ===================== */
+/* About Me Section      */
+/* ===================== */
+.about-description {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-category {
+  background-color: #222;
+  padding: 1.5rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+}
+
+.about-category h3 {
+  font-size: 1.25rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-category h3 i {
+  font-size: 1.5rem;
+}
+
+/* ===================== */
+/* Slider Styles         */
+/* ===================== */
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.experience-item {
+  flex: 0 0 100%;
+  padding: 1rem;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #444;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dot.active {
+  background-color: #0f0;
+}
+
+.slider-dot:hover {
+  background-color: #0f0;
+}
+
+/* ===================== */
+/* Education and Languages Row */
+/* ===================== */
+.about-grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================== */
+/* Slider Mobile Styles  */
+/* ===================== */
+@media (max-width: 768px) {
+  .slider-content {
+    gap: 0; /* Remove gap for mobile */
+  }
+
+  .experience-item {
+    flex: 0 0 100%; /* Show one item at a time on mobile */
+  }
+
+  .slider-dots {
+    margin-top: 0.5rem; /* Adjust spacing for mobile */
+  }
+}
+
+/* ===================== */
+/* Work Experience Text Overflow Fix */
+/* ===================== */
+.experience-item {
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Alternative to word-wrap */
+  white-space: normal; /* Allow text to wrap */
+  padding: 1rem;
+  box-sizing: border-box; /* Include padding in width */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.experience-item strong,
+.experience-item .subtext,
+.experience-item span {
+  display: block; /* Ensure each piece of text is on a new line */
+  margin-bottom: 0.5rem; /* Add spacing between lines */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .experience-item {
+    padding: 0.8rem; /* Reduce padding for mobile */
+  }
+
+  .experience-item strong,
+  .experience-item .subtext,
+  .experience-item span {
+    font-size: 0.9rem; /* Slightly reduce font size for mobile */
+    word-break: break-word; /* Force break long words */
+  }
+
+  .slider-container {
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+
+  .slider-content {
+    width: 100%; /* Ensure slider content takes full width */
+  }
+}
+
+/* ===================== */
+/* Experience Item Styles */
+/* ===================== */
+.experience-item ul {
+  list-style-type: disc; /* Use bullet points */
+  word-break: break-word;
+  margin-top: 0.5rem; /* Add spacing above the list */
+}
+
+.experience-item li {
+  font-size: 0.9rem; /* Slightly smaller font size for bullet points */
+  color: #ccc; /* Light gray color for better readability */
+  margin-bottom: 0.5rem; /* Add spacing between bullet points */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .experience-item ul {
+    padding-left: 1rem; /* Reduce padding for mobile */
+  }
+
+  .experience-item li {
+    font-size: 0.85rem; /* Smaller font size for mobile */
+    padding: 0; /* Remove padding for mobile */
+    margin-bottom: 0.4rem; /* Reduce spacing between bullet points for mobile */
+  }
+
+  .experience-item {
+    padding: 0.8rem; /* Reduce padding for mobile */
+    box-sizing: border-box; /* Include padding in the width */
   }
 }
