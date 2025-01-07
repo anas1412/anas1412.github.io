@@ -1,12 +1,16 @@
 /* ===================== */
 /* General Styles        */
 /* ===================== */
+* {
+  box-sizing: border-box; /* Include padding and border in element dimensions */
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "IBM Plex Mono", monospace;
   background-color: #000;
   color: #fff;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
   background-image: linear-gradient(
       to right,
@@ -20,6 +24,16 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Wrapper Div */
+[x-data] {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Shared Section Styles */
@@ -30,10 +44,10 @@ footer {
   width: 90%;
   max-width: 800px;
   padding: 20px;
-  margin: 10px 0;
+  margin: 10px auto; /* Center and add spacing */
   border: 2px solid #fff;
   background-color: #111;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 /* ===================== */
@@ -48,11 +62,13 @@ header h1 {
   font-size: 2.5em;
   color: #fff;
   text-shadow: 2px 2px #000;
+  margin-bottom: 10px; /* Add spacing below the title */
 }
 
 header p {
   font-size: 1.2em;
   color: #ccc;
+  margin: 0; /* Remove default margin */
 }
 
 /* ===================== */
@@ -123,21 +139,42 @@ nav a:hover {
   color: #ccc;
 }
 
+/* Mobile Menu */
+.nav-links.active {
+  display: flex; /* Show nav links when active */
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 60px; /* Adjust based on header height */
+  left: 0;
+}
+
+.nav-links.active li {
+  margin: 0;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+}
+
 /* ===================== */
 /* Main Content          */
 /* ===================== */
 main h2 {
   color: #fff;
   text-shadow: 1px 1px #000;
+  margin-bottom: 1rem; /* Add spacing below headings */
 }
 
 main ul {
   list-style-type: square;
   padding-left: 20px;
+  margin-bottom: 1rem; /* Add spacing below lists */
 }
 
 main a {
   color: #fff;
+  text-decoration: none; /* Remove underline */
 }
 
 main a:hover {
@@ -152,10 +189,12 @@ footer {
   font-size: 0.9em;
   color: #ccc;
   background-color: #222;
+  margin-top: auto; /* Push footer to the bottom */
 }
 
 footer a {
   color: #fff;
+  text-decoration: none; /* Remove underline */
 }
 
 footer a:hover {
@@ -243,23 +282,10 @@ footer a:hover {
 
   .nav-links {
     display: none; /* Hide nav links by default on mobile */
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    left: 0;
   }
 
   .nav-links.active {
     display: flex; /* Show nav links when active */
-  }
-
-  .nav-links li {
-    margin: 0;
-    text-align: center;
-    padding: 1rem;
-    border-bottom: 1px solid #444;
   }
 
   /* Header */

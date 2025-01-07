@@ -13,49 +13,270 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+      defer
+    ></script>
   </head>
   <body>
-    <header>
-      <h1>NAS Portfolio</h1>
-      <p>👨‍💻 Software Engineer | 📊 Day Trader | 👾 Retro Enthusiast</p>
-    </header>
+    <div x-data="app()">
+      <header>
+        <h1>NAS Portfolio</h1>
+        <p>👨‍💻 Software Engineer | 📊 Day Trader | 👾 Retro Enthusiast</p>
+      </header>
 
-    <!-- Mobile-Friendly Navbar -->
-    <nav>
-      <div class="navbar">
-        <div class="logo">
-          <!-- <a href="/">I am Anas</a> -->
-          I am Anas
+      <!-- Mobile-Friendly Navbar -->
+      <nav>
+        <div class="navbar">
+          <div class="logo">I am Anas</div>
+          <button
+            class="hamburger"
+            @click="isMenuOpen = !isMenuOpen"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links" :class="{ 'active': isMenuOpen }">
+            <li>
+              <a href="#" @click.prevent="currentSection = 'home'">Home</a>
+            </li>
+            <li>
+              <a href="#" @click.prevent="currentSection = 'about'">About Me</a>
+            </li>
+            <li>
+              <a href="#" @click.prevent="currentSection = 'projects'"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#" @click.prevent="currentSection = 'skills'">Skills</a>
+            </li>
+            <li>
+              <a href="#" @click.prevent="currentSection = 'contact'"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-        <button class="hamburger" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-          <li><a href="/about">About Me</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
 
-    <main id="content">
-      <!-- Default content (Home) -->
-      <section id="home"></section>
-    </main>
+      <main id="content">
+        <!-- Dynamic Content -->
+        <section x-show="currentSection === 'home'" id="home">
+          <h1>Welcome, visitor! I hope you like what I did :)</h1>
+          <div class="terminal">
+            <pre class="ascii-art">
+              <span class="command">$ npm run build</span>
+              <span class="output">Creating an optimized production build...</span>
+              <span class="output">Compiling assets... <span class="success">✔</span></span>
+              <span class="output">Minifying code... <span class="success">✔</span></span>
+              <span class="output">Generating static files... <span class="success">✔</span></span>
+              <span class="command">$ npm run deploy</span>
+              <span class="output">Deploying to hosting service...</span>
+              <span class="success-message">Portfolio successfully deployed! 🚀</span>
+            </pre>
+          </div>
+        </section>
 
-    <footer>
-      <p>
-        A single page application (SPA) built with Vanilla JavaScript and
-        HTML5.<br />
-        &copy; <span id="year"></span> Anas B. Portfolio. All rights reserved.
-        Made with ❤️
-      </p>
-    </footer>
+        <section x-show="currentSection === 'about'" id="about">
+          <h2>About Me</h2>
+          <p>
+            I'm Anas Bassoumi, a passionate DevOps & Software Engineer based in
+            Tunis, Tunisia. With a strong educational background and diverse
+            professional experience, I am dedicated to creating innovative and
+            efficient solutions.
+          </p>
+          <h3>Education</h3>
+          <p>
+            I hold a National engineering diploma in computer science from
+            ESPRIT: Private School of Engineering and Technology (2020 - 2024).
+            Prior to that, I earned a National diploma of applied license in
+            embedded systems from ISI: Higher Institute of Computer Science
+            (2017 - 2020).
+          </p>
+          <h3>Professional Experience</h3>
+          <p>
+            With more than one year of professional experience, I have developed
+            expertise in DevOps, CI/CD pipelines, and cloud infrastructure.
+            Since February 2024, I have been working as a Freelance DevOps &
+            Software Solutions provider, delivering high-impact, tailored
+            software solutions to optimize client workflows and drive business
+            efficiency. From July 2023 to January 2024, I worked part-time as a
+            DevOps Engineer at Kamioun, where I optimized CI/CD pipelines using
+            GitLab CI, monitored AWS instances, and resolved critical Magento
+            app issues. My graduation project at Kamioun, from January 2023 to
+            June 2023, involved containerizing a Magento app with Docker,
+            designing a CI/CD pipeline on GitLab CI, and integrating SonarQube
+            and Grafana. During my internship at Beirdo Digital Studio from June
+            2022 to August 2022, I implemented a GitOps-based CI/CD pipeline
+            using Kaniko and ArgoCD, and deployed applications on Kubernetes.
+            Additionally, I completed an internship at Upgrade Factory from
+            January 2020 to June 2020, where I automated cutting/folding machine
+            processes by 80% using Siemens PLC.
+          </p>
+          <h3>Languages</h3>
+          <p>I am fluent in Arabic, English, and French.</p>
+        </section>
+
+        <section x-show="currentSection === 'projects'" id="projects">
+          <h2>Latest Projects</h2>
+          <ul>
+            <li>
+              <strong>GeminiWire - AI-Driven Workflow Automation: </strong
+              ><a href="https://anas1412.github.io/GeminiWire/" target="_blank"
+                >➤</a
+              ><br />
+              - Developed GeminiWire for workflow automation using Google Gemini
+              AI.<br />
+              - Integrated GeminiWireUI for a user-friendly interface.<br />
+              - Improved system reliability by 60% with robust validation and
+              error handling.<br />
+            </li>
+            <li>
+              <strong>Laravel Deployment with Docker and ELK Stack: </strong
+              ><a
+                href="https://anas1412.github.io/ELK-Stack-with-Laravel/"
+                target="_blank"
+                >➤</a
+              ><br />
+              - Integrated ELK Stack for centralized logging.<br />
+              - Set up Slack notifications for real-time alerts.<br />
+              - Automated CI/CD Pipeline & Backups with GitHub Actions.<br />
+            </li>
+            <li>
+              <strong
+                >"FIDO" Dashboard - Fee Management for Accountants: </strong
+              ><a href="https://anas1412.github.io/Fido/" target="_blank">➤</a
+              ><br />
+              - Enhanced features based on feedback.<br />
+              - Reduced financial data processing time by 30%.<br />
+            </li>
+          </ul>
+        </section>
+
+        <section x-show="currentSection === 'skills'" id="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>
+              <strong>Collaboration Tools:</strong> Git, Gitlab, Github, Jira
+            </li>
+            <li>
+              <strong>System Administration:</strong> Linux, Bash, Python
+              scripting, MySQL, PostgreSQL, SQLite
+            </li>
+            <li>
+              <strong>DevOps/Cloud Technologies:</strong> GitLab-CI, Github
+              Action, Terraform, Ansible, Helm, Docker, Kubernetes, ArgoCD, AWS,
+              Azure, ElasticSearch, ELK Stack, Prometheus, Grafana
+            </li>
+            <li>
+              <strong>Programming Languages:</strong> HTML5, CSS, JavaScript,
+              jQuery, AJAX, PHP, NodeJS, Python, Java, Object-Oriented
+              Programming, RESTful API
+            </li>
+            <li>
+              <strong>Programming Concepts:</strong> Object-Oriented
+              Programming, RESTful API
+            </li>
+            <li>
+              <strong>Frameworks:</strong> Symfony, Laravel, Angular, React,
+              FastAPI, Spring
+            </li>
+            <li><strong>Libraries:</strong> Bootstrap, TailwindCSS</li>
+            <li>
+              <strong>Soft Skills:</strong> Stress tolerance, problem-solving,
+              accountability, collaboration with cross-functional teams
+            </li>
+          </ul>
+        </section>
+
+        <section x-show="currentSection === 'contact'" id="contact">
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-envelope"></i> Email:
+              <a href="mailto:anas.bassoumi@gmail.com"
+                >anas.bassoumi@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone"></i> Phone:
+              <a href="tel:+21654930048">+216 54 930 048</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i> WhatsApp:
+              <a
+                href="https://wa.me/21654930048"
+                target="_blank"
+                rel="noopener noreferrer"
+                >+216 54 930 048</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-github"></i> GitHub:
+              <a
+                href="https://github.com/anas1412"
+                target="_blank"
+                rel="noopener noreferrer"
+                >anas1412</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-twitter"></i> Twitter:
+              <a
+                href="https://twitter.com/villainesthetic"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@villainesthetic</a
+              >
+            </li>
+            <li>
+              <i class="fab fa-linkedin"></i> LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/anas-bassoumi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Anas Bassoumi</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>
+          A single page application (SPA) built with Alpine.js and HTML5.<br />
+          &copy; <span x-text="new Date().getFullYear()"></span> Anas B.
+          Portfolio. All rights reserved. Made with ❤️
+        </p>
+      </footer>
+    </div>
+
     <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+      // Alpine.js App Logic
+      function app() {
+        return {
+          currentSection: "home", // Default section
+          isMenuOpen: false, // Mobile menu state
 
-    <script src="assets/js/main.js" type="module"></script>
+          // Terminal animation
+          init() {
+            const terminal = document.querySelector(".terminal pre");
+            const lines = terminal.innerHTML.split("\n");
+            terminal.innerHTML = ""; // Clear the initial content
+
+            let index = 0;
+            const interval = setInterval(() => {
+              if (index < lines.length) {
+                terminal.innerHTML += lines[index].trim() + "\n";
+                index++;
+              } else {
+                clearInterval(interval);
+              }
+            }, 500); // Adjust the delay (in milliseconds) between lines
+          },
+        };
+      }
+    </script>
   </body>
 </html>
