@@ -1,5 +1,10 @@
 window.posts = [
   {
+    date: "2025-01-07",
+    content:
+      "I love the $ sign in every language—whether it’s PHP or profits. 💰💸",
+  },
+  {
     date: "2024-12-10",
     content: "My Git commits are so clean. 🧹✨",
   },
