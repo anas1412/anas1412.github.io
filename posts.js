@@ -1,5 +1,10 @@
 window.posts = [
   {
+    date: "2025-01-10",
+    content:
+      "Thinking about it more. Javascript was my downfall why am I even focused on frontend? I should just focus on DevOps & Backend. 🚀",
+  },
+  {
     date: "2025-01-09",
     content:
       "I am only gonna focus on Laravel & Angular in 2025. Zero distractions. 🚀🚀",
