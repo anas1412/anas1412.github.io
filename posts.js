@@ -1,5 +1,19 @@
 window.posts = [
   {
+    date: "2025-02-07",
+    content: "My app is 37% faster using gemini 2.0 flash lite, its insane.",
+  },
+  {
+    date: "2025-02-04",
+    content:
+      "If mastering everything is what it takes to become a good generalist. I'll master everything.",
+  },
+  {
+    date: "2025-02-01",
+    content:
+      "I realized that becoming a founder was never a choice. You are born unemployable that's why you become a founder. 😐",
+  },
+  {
     date: "2025-01-10",
     content:
       "Thinking about it more. Javascript was my downfall why am I even focused on frontend? I should just focus on DevOps & Backend. 🚀",
