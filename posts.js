@@ -1,5 +1,13 @@
 window.posts = [
   {
+    date: "2025-04-14",
+    content: "I am glad I switched career",
+  },
+  {
+    date: "2025-03-298",
+    content: "81.33% WR% with 5 profit factor with 40 trades in insane",
+  },
+  {
     date: "2025-02-07",
     content: "My app is 37% faster using gemini 2.0 flash lite, its insane.",
   },
@@ -11,7 +19,7 @@ window.posts = [
   {
     date: "2025-02-01",
     content:
-      "I realized that becoming a founder was never a choice. You are born unemployable that's why you become a founder. 😐",
+      "I realized that becoming an entrepreneur was never a choice. You are born unemployable that's why you become an entrepreneur. 😐",
   },
   {
     date: "2025-01-10",

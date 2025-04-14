@@ -1,107 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anas B. Portfolio</title>
-    <!-- Add these favicon links -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-      defer
-    ></script>
-  </head>
-  <body>
-    <div x-data="app()">
-      <header>
-        <h1>Anas B. Cyberspace</h1>
-        <p>Software Engineer | LLMOps Specialist | Quant Trader</p>
-      </header>
 
-      <!-- Mobile-Friendly Navbar -->
-      <nav>
-        <div class="navbar">
-          <!-- Hamburger Button (Left) -->
-          <button
-            class="hamburger"
-            @click="isMenuOpen = !isMenuOpen"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anas B. Portfolio</title>
+  <!-- Add these favicon links -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
 
-          <!-- Current Page Title (Right, Mobile Only) -->
-          <div class="mobile-page-title" x-show="isMobile">
-            <span x-text="getCurrentPageTitle()"></span>
-          </div>
+<body>
+  <div x-data="app()">
+    <header>
+      <h1>Anas B. Cyberspace</h1>
+      <p>Portfolio Manager | Quant Trader | Ex-Software Engineer</p>
+    </header>
 
-          <!-- Navigation Links -->
-          <ul class="nav-links" :class="{ 'active': isMenuOpen }">
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'home'; isMenuOpen = false"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'microblog'; isMenuOpen = false"
-                >Microblog</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'about'; isMenuOpen = false"
-                >About Me</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'projects'; isMenuOpen = false"
-                >Projects</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'skills'; isMenuOpen = false"
-                >Skills</a
-              >
-            </li>
+    <!-- Mobile-Friendly Navbar -->
+    <nav>
+      <div class="navbar">
+        <!-- Hamburger Button (Left) -->
+        <button class="hamburger" @click="isMenuOpen = !isMenuOpen" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
-            <li>
-              <a
-                href="#"
-                @click.prevent="currentSection = 'contact'; isMenuOpen = false"
-                >Contact</a
-              >
-            </li>
-          </ul>
+        <!-- Current Page Title (Right, Mobile Only) -->
+        <div class="mobile-page-title" x-show="isMobile">
+          <span x-text="getCurrentPageTitle()"></span>
         </div>
-      </nav>
 
-      <main id="content">
-        <!-- Dynamic Content -->
-        <section x-show="currentSection === 'home'" id="home">
-          <div class="logging">
-            <h2>Logging as User</h2>
-            <p>Welcome, User! You have successfully logged in.</p>
-          </div>
-          <div class="terminal">
-            <pre class="ascii-art">
+        <!-- Navigation Links -->
+        <ul class="nav-links" :class="{ 'active': isMenuOpen }">
+          <li>
+            <a href="#" @click.prevent="currentSection = 'home'; isMenuOpen = false">Home</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="currentSection = 'microblog'; isMenuOpen = false">Microblog</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="currentSection = 'about'; isMenuOpen = false">About Me</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="currentSection = 'projects'; isMenuOpen = false">Projects</a>
+          </li>
+          <li>
+            <a href="#" @click.prevent="currentSection = 'skills'; isMenuOpen = false">Skills</a>
+          </li>
+
+          <li>
+            <a href="#" @click.prevent="currentSection = 'contact'; isMenuOpen = false">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="content">
+      <!-- Dynamic Content -->
+      <section x-show="currentSection === 'home'" id="home">
+        <div class="logging">
+          <h2>Logging as User</h2>
+          <p>Welcome, User! You have successfully logged in.</p>
+        </div>
+        <div class="terminal">
+          <pre class="ascii-art">
                 <span class="user">user@dev-laptop:~$</span> <span class="command">npm run build</span>
                 <span class="output">Creating an optimized production build...</span>
                 <span class="output">Compiling assets... <span class="success">✔</span></span>
@@ -111,601 +76,567 @@
                 <span class="output">Deploying to hosting service...</span>
                 <span class="success-message">Portfolio successfully deployed! 🚀</span>
             </pre>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section x-show="currentSection === 'about'" id="about">
-          <h2>About Me</h2>
-          <p class="about-description">
-            I'm Anas, a passionate DevOps & Software Engineer based in Tunis,
-            Tunisia. With a strong educational background and diverse
-            professional experience, I am dedicated to creating innovative and
-            efficient solutions.
-          </p>
-
-          <div class="about-grid">
-            <!-- Professional Experience Slider -->
-            <div class="about-category experience" x-data="experienceSlider()">
-              <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
-              <div
-                class="slider-container"
-                @touchstart="handleTouchStart"
-                @touchmove="handleTouchMove"
-                @mousedown="handleMouseDown"
-              >
-                <!-- Slider Content -->
-                <div
-                  class="slider-content"
-                  :style="`transform: translateX(-${currentIndex * 100}%);`"
-                >
-                  <template
-                    x-for="(experience, index) in experiences"
-                    :key="index"
-                  >
-                    <div class="experience-item">
-                      <strong x-text="experience.title"></strong><br />
-                      <span class="subtext" x-text="experience.duration"></span
-                      ><br />
-                      <ul>
-                        <template
-                          x-for="(point, i) in experience.description"
-                          :key="i"
-                        >
-                          <li x-text="point"></li>
-                        </template>
-                      </ul>
-                    </div>
-                  </template>
-                </div>
-
-                <!-- Slider Navigation Dots -->
-                <div class="slider-dots">
-                  <template x-for="(_, index) in experiences" :key="index">
-                    <button
-                      class="slider-dot"
-                      :class="{ 'active': currentIndex === index }"
-                      @click="goTo(index)"
-                      :aria-label="'Go to slide ' + (index + 1)"
-                    ></button>
-                  </template>
-                </div>
-              </div>
-            </div>
-
-            <!-- Education and Languages -->
-            <div class="about-grid-row">
-              <!-- Education -->
-              <div class="about-category">
-                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                <ul>
-                  <li>
-                    <strong
-                      >National Engineering Diploma in Computer Science</strong
-                    ><br />
-                    <span class="subtext"
-                      >ESPRIT: Private School of Engineering and
-                      Technology</span
-                    ><br /><br />
-                    <span class="subtext">Graduation year: 2024</span>
-                  </li>
-                  <br />
-                  <li>
-                    <strong
-                      >National Diploma of Applied License in Embedded
-                      Systems</strong
-                    ><br />
-                    <span class="subtext"
-                      >ISI: Higher Institute of Computer Science</span
-                    ><br /><br />
-                    <span class="subtext">Graduation year: 2020</span>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Languages -->
-              <div class="about-category">
-                <h3><i class="fas fa-lightbulb"></i> Work Interests</h3>
-                <ul>
-                  <li>Problem-solving and finding innovative solutions.</li>
-                  <li>Navigating and adapting to new technologies.</li>
-                  <li>
-                    Managing end-to-end product delivery while maintaining
-                    strong client relationships.
-                  </li>
-                </ul>
-                <h3><i class="fas fa-language"></i> Languages</h3>
-                <ul>
-                  <li>Arabic (Native)</li>
-                  <li>English (Fluent)</li>
-                  <li>French (Intermediate)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section x-show="currentSection === 'projects'" id="projects">
-          <h2>Latest Projects</h2>
-          <div class="skills-grid">
-            <!-- Project 1: accdev.ai -->
-            <div class="skill-category">
-              <h3><i class="fas fa-robot"></i> accdev.ai</h3>
-              <p class="project-description">
-                AI-Driven Code Acceleration Plateform
-              </p>
-              <ul>
-                <li>
-                  Developed an LLMOps based web application using React and
-                  Next.js.
-                </li>
-                <li>
-                  Integrated OpenAI, DeepSeek, Google Gemini & Anthropic Claude
-                  API for natural language.
-                </li>
-                <li>
-                  Implemented a custom code editor with syntax highlighting.
-                </li>
-              </ul>
-              <br />
-              <a
-                href="https://accdevai.vercel.app/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> View Project
-              </a>
-            </div>
-
-            <!-- Project 2: GeminiWire -->
-            <div class="skill-category">
-              <h3><i class="fas fa-robot"></i> GeminiWire</h3>
-              <p class="project-description">AI-Driven Workflow Automation</p>
-              <ul>
-                <li>
-                  Created GeminiWire for custom AI-powered workflows with
-                  real-time execution.
-                </li>
-                <li>
-                  Designed a drag-and-drop wireflow builder, increasing workflow
-                  creation efficiency by 40%.
-                </li>
-                <li>
-                  Integrated API for real-time data management, ensuring
-                  seamless workflow execution.
-                </li>
-              </ul>
-              <br />
-              <a
-                href="https://anas1412.github.io/GeminiWire/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> View Project
-              </a>
-            </div>
-
-            <!-- Project 3: Laravel Deployment with Docker and ELK Stack -->
-            <div class="skill-category">
-              <h3><i class="fas fa-server"></i> Laravel Deployment</h3>
-              <p class="project-description">
-                Docker and ELK Stack Integration
-              </p>
-              <ul>
-                <li>
-                  Implemented ELK Stack, cutting troubleshooting time by 40% and
-                  boosting monitoring accuracy by 30%.
-                </li>
-                <li>
-                  Set up 10+ real-time alerts, reducing incident response time
-                  by 50% and downtime to under 1%.
-                </li>
-                <li>
-                  Built a CI/CD pipeline with 99.9% deployment success and
-                  scheduled weekly database backups to cloud storage.
-                </li>
-              </ul>
-              <br />
-              <a
-                href="https://anas1412.github.io/ELK-Stack-with-Laravel/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> View Project
-              </a>
-            </div>
-
-            <!-- Project 4: FIDO Dashboard -->
-            <div class="skill-category">
-              <h3><i class="fas fa-chart-line"></i> FIDO Dashboard</h3>
-              <p class="project-description">Fee Management for Accountants</p>
-              <ul>
-                <li>
-                  Enhanced features to align with accountants' workflows through
-                  continuous feedback.
-                </li>
-                <li>
-                  Reduced financial data processing time by 30%, increasing
-                  productivity and delivering measurable value.
-                </li>
-                <li>
-                  Implemented automated reporting, cutting report generation
-                  time by 40% and improving decision-making efficiency.
-                </li>
-              </ul>
-              <br />
-              <a
-                href="https://anas1412.github.io/Fido/"
-                target="_blank"
-                class="project-link"
-              >
-                <i class="fas fa-external-link-alt"></i> View Project
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section x-show="currentSection === 'skills'" id="skills">
-          <h2>Skills</h2>
-          <div class="skills-grid">
-            <!-- LLM Technologies -->
-            <div class="skill-category">
-              <h3><i class="fas fa-cloud"></i> LLM Frameworks and Libraries</h3>
-              <ul>
-                <li>LangChain</li>
-                <li>LangGraph</li>
-                <li>LangFlow</li>
-                <li>LlamaIndex</li>
-                <li>TensorFlow</li>
-                <li>PyTorch</li>
-                <li>Pinecone (vector database)</li>
-                <li>RAG</li>
-              </ul>
-            </div>
-
-            <!-- DevOps/Cloud Technologies -->
-            <div class="skill-category">
-              <h3><i class="fas fa-cloud"></i> DevOps & Cloud Technologies</h3>
-              <ul>
-                <li>GitLab-CI & GitHub Actions</li>
-                <li>Ansible & Terraform</li>
-                <li>Docker & Podman</li>
-                <li>Kubernetes & ArgoCD</li>
-                <li>Helm & Kustomize</li>
-                <li>AWS & Azure</li>
-                <li>Prometheus & Grafana</li>
-                <li>Elastic, Logstash & Kibana</li>
-              </ul>
-            </div>
-
-            <!-- Frameworks & UI Libraries -->
-            <div class="skill-category">
-              <h3><i class="fas fa-code"></i> Frameworks & UI Libraries</h3>
-              <ul>
-                <li>Laravel</li>
-                <li>React 19</li>
-                <li>NextJs 15</li>
-                <li>FastAPI & Flask</li>
-                <li>Spring</li>
-                <li>Bootstrap</li>
-                <li>TailwindCSS</li>
-                <li>AlpineJS</li>
-              </ul>
-            </div>
-
-            <!-- Collaboration, System Administration & Databases -->
-            <div class="skill-category">
-              <h3><i class="fas fa-database"></i> SysAdmin & Databases</h3>
-              <ul>
-                <li>Git</li>
-                <li>Jira</li>
-                <li>Linux</li>
-                <li>Bash</li>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>SQLite</li>
-                <li>MongoDB</li>
-              </ul>
-            </div>
-
-            <!-- Programming Languages & Concepts -->
-            <div class="skill-category">
-              <h3>
-                <i class="fas fa-laptop-code"></i> Programming Languages &
-                Concepts
-              </h3>
-              <ul>
-                <li>HTML5 & CSS</li>
-                <li>jQuery & AJAX</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>REST API</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <!-- Microblog Section -->
-        <section x-show="currentSection === 'microblog'" id="microblog">
-          <h2>Microblog</h2>
-          <div class="microblog-posts">
-            <template x-for="(post, index) in posts" :key="index">
-              <div class="post">
-                <p class="post-content" x-text="post.content"></p>
-                <p class="post-date">
-                  Posted on: <span x-text="post.date"></span>
-                </p>
-              </div>
-            </template>
-          </div>
-        </section>
-
-        <section x-show="currentSection === 'contact'" id="contact">
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li>
-              <i class="fas fa-envelope"></i> Email:
-              <a href="mailto:anas.bassoumi@gmail.com"
-                >anas.bassoumi@gmail.com</a
-              >
-            </li>
-            <li>
-              <i class="fas fa-phone"></i> Phone:
-              <a href="tel:+21654930048">+216 54 930 048</a>
-            </li>
-            <li>
-              <i class="fab fa-whatsapp"></i> WhatsApp:
-              <a
-                href="https://wa.me/21654930048"
-                target="_blank"
-                rel="noopener noreferrer"
-                >+216 54 930 048</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-github"></i> GitHub:
-              <a
-                href="https://github.com/anas1412"
-                target="_blank"
-                rel="noopener noreferrer"
-                >anas1412</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-twitter"></i> Twitter:
-              <a
-                href="https://twitter.com/villainesthetic"
-                target="_blank"
-                rel="noopener noreferrer"
-                >@villainesthetic</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-linkedin"></i> LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/anas-bassoumi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Anas Bassoumi</a
-              >
-            </li>
-          </ul>
-        </section>
-      </main>
-
-      <footer>
-        <p>
-          A single page application (SPA) built with Alpine.js and HTML5.<br />
-          &copy; <span x-text="new Date().getFullYear()"></span> Anas B.
-          Portfolio. All rights reserved. Made with ❤️
+      <section x-show="currentSection === 'about'" id="about">
+        <h2>About Me</h2>
+        <p class="about-description">
+          I'm Anas, a passionate DevOps & Software Engineer based in Tunis,
+          Tunisia. With a strong educational background and diverse
+          professional experience, I am dedicated to creating innovative and
+          efficient solutions.
         </p>
-      </footer>
-    </div>
-    <script src="posts.js"></script>
 
-    <script>
-      // Alpine.js App Logic
-      function app() {
-        return {
-          currentSection: "home",
-          isMenuOpen: false,
-          isMobile: window.innerWidth <= 768,
+        <div class="about-grid">
+          <!-- Professional Experience Slider -->
+          <div class="about-category experience" x-data="experienceSlider()">
+            <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+            <div class="slider-container" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
+              @mousedown="handleMouseDown">
+              <!-- Slider Content -->
+              <div class="slider-content" :style="`transform: translateX(-${currentIndex * 100}%);`">
+                <template x-for="(experience, index) in experiences" :key="index">
+                  <div class="experience-item">
+                    <strong x-text="experience.title"></strong><br />
+                    <span class="subtext" x-text="experience.duration"></span><br />
+                    <ul>
+                      <template x-for="(point, i) in experience.description" :key="i">
+                        <li x-text="point"></li>
+                      </template>
+                    </ul>
+                  </div>
+                </template>
+              </div>
 
-          init() {
-            const terminal = document.querySelector(".terminal pre");
-            const lines = terminal.innerHTML.split("\n");
-            terminal.innerHTML = "";
+              <!-- Slider Navigation Dots -->
+              <div class="slider-dots">
+                <template x-for="(_, index) in experiences" :key="index">
+                  <button class="slider-dot" :class="{ 'active': currentIndex === index }" @click="goTo(index)"
+                    :aria-label="'Go to slide ' + (index + 1)"></button>
+                </template>
+              </div>
+            </div>
+          </div>
 
-            let index = 0;
-            const interval = setInterval(() => {
-              if (index < lines.length) {
-                terminal.innerHTML += lines[index].trim() + "\n";
-                index++;
-              } else {
-                clearInterval(interval);
-              }
-            }, 500);
-          },
+          <!-- Education and Languages -->
+          <div class="about-grid-row">
+            <!-- Education -->
+            <div class="about-category">
+              <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+              <ul>
+                <li>
+                  <strong>Quantitative Trading & Psychology</strong><br />
+                  <span class="subtext">Self-educated</span><br /><br />
+                  <span class="subtext">Graduation year: Never</span>
+                </li>
+                <br />
+                <li>
+                  <strong>National Engineering Diploma in Computer Science</strong><br />
+                  <span class="subtext">ESPRIT: Private School of Engineering and
+                    Technology</span><br /><br />
+                  <span class="subtext">Graduation year: 2024</span>
+                </li>
+                <br />
+                <li>
+                  <strong>National Diploma of Applied License in Embedded
+                    Systems</strong><br />
+                  <span class="subtext">ISI: Higher Institute of Computer Science</span><br /><br />
+                  <span class="subtext">Graduation year: 2020</span>
+                </li>
+              </ul>
+            </div>
 
-          getCurrentPageTitle() {
-            switch (this.currentSection) {
-              case "home":
-                return "Home";
-              case "about":
-                return "About Me";
-              case "projects":
-                return "Projects";
-              case "skills":
-                return "Skills";
-              case "microblog":
-                return "Microblog";
-              case "contact":
-                return "Contact";
-              default:
-                return "Home";
+            <!-- Languages -->
+            <div class="about-category">
+              <h3><i class="fas fa-lightbulb"></i> Interests</h3>
+              <ul>
+                <li>Financial, location and especially time freedom.</li>
+                <li>Generational wealth, healthy body, long-term relationships and the freedom of choice.</li>
+                <li>
+                  Continuous learning and leveling by reading and taking action.
+                </li>
+              </ul>
+              <h3><i class="fas fa-language"></i> Languages</h3>
+              <ul>
+                <li>Arabic (Native)</li>
+                <li>English (Fluent)</li>
+                <li>French (Intermediate)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section x-show="currentSection === 'projects'" id="projects">
+        <h2>Latest Projects</h2>
+        <div class="skills-grid">
+          <!-- Project 1: accdev.ai -->
+          <div class="skill-category">
+            <h3><i class="fas fa-robot"></i> accdev.ai</h3>
+            <p class="project-description">
+              AI-Driven Code Acceleration Plateform
+            </p>
+            <ul>
+              <li>
+                Developed an LLMOps based web application using React and
+                Next.js.
+              </li>
+              <li>
+                Integrated OpenAI, DeepSeek, Google Gemini & Anthropic Claude
+                API for natural language.
+              </li>
+              <li>
+                Implemented a custom code editor with syntax highlighting.
+              </li>
+            </ul>
+            <br />
+            <a href="https://accdevai.vercel.app/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+          </div>
+
+          <!-- Project 2: GeminiWire -->
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> GeminiWire</h3>
+            <p class="project-description">AI-Driven Workflow Automation</p>
+            <ul>
+              <li>
+                Created GeminiWire for custom AI-powered workflows with
+                real-time execution.
+              </li>
+              <li>
+                Designed a drag-and-drop wireflow builder, increasing workflow
+                creation efficiency by 40%.
+              </li>
+              <li>
+                Integrated API for real-time data management, ensuring
+                seamless workflow execution.
+              </li>
+            </ul>
+            <br />
+            <a href="https://anas1412.github.io/GeminiWire/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+          </div>
+
+          <!-- Project 3: Laravel Deployment with Docker and ELK Stack -->
+          <div class="skill-category">
+
+            <h3><i class="fas fa-server"></i> Laravel Deployment</h3>
+            <p class="project-description">
+              Docker and ELK Stack Integration
+            </p>
+            <ul>
+              <li>
+                Implemented ELK Stack, cutting troubleshooting time by 40% and
+                boosting monitoring accuracy by 30%.
+              </li>
+              <li>
+                Set up 10+ real-time alerts, reducing incident response time
+                by 50% and downtime to under 1%.
+              </li>
+              <li>
+                Built a CI/CD pipeline with 99.9% deployment success and
+                scheduled weekly database backups to cloud storage.
+              </li>
+            </ul>
+            <br />
+            <a href="https://anas1412.github.io/ELK-Stack-with-Laravel/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+          </div>
+
+          <!-- Project 4: FIDO Dashboard -->
+          <div class="skill-category">
+            <h3><i class="fas fa-chart-line"></i> FIDO Dashboard</h3>
+            <p class="project-description">Fee Management for Accountants</p>
+            <ul>
+              <li>
+                Enhanced features to align with accountants' workflows through
+                continuous feedback.
+              </li>
+              <li>
+                Reduced financial data processing time by 30%, increasing
+                productivity and delivering measurable value.
+              </li>
+              <li>
+                Implemented automated reporting, cutting report generation
+                time by 40% and improving decision-making efficiency.
+              </li>
+            </ul>
+            <br />
+            <a href="https://anas1412.github.io/Fido/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> View Project
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section x-show="currentSection === 'skills'" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Quant Trading skills -->
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> Quant Trading</h3>
+            <ul>
+              <li>Technical Analysis</li>
+              <li>Fundamental Analysis</li>
+              <li>Risk Management</li>
+              <li>Algorithmic Trading</li>
+              <li>Portfolio Optimization</li>
+              <li>Indices Trading</li>
+              <li>Process-oriented thinking</li>
+              <li>Long-term consistency over short-term impulses</li>
+            </ul>
+          </div>
+          <!-- LLM Technologies -->
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> LLM Frameworks and Libraries</h3>
+            <ul>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>LangFlow</li>
+              <li>LlamaIndex</li>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>Pinecone (vector database)</li>
+              <li>RAG</li>
+            </ul>
+          </div>
+
+          <!-- DevOps/Cloud Technologies -->
+          <div class="skill-category">
+            <h3><i class="fas fa-cloud"></i> DevOps & Cloud Technologies</h3>
+            <ul>
+              <li>GitLab-CI & GitHub Actions</li>
+              <li>Ansible & Terraform</li>
+              <li>Docker & Podman</li>
+              <li>Kubernetes & ArgoCD</li>
+              <li>Helm & Kustomize</li>
+              <li>AWS & Azure</li>
+              <li>Prometheus & Grafana</li>
+              <li>Elastic, Logstash & Kibana</li>
+            </ul>
+          </div>
+
+          <!-- Frameworks & UI Libraries -->
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frameworks & UI Libraries</h3>
+            <ul>
+              <li>Laravel</li>
+              <li>React 19</li>
+              <li>NextJs 15</li>
+              <li>FastAPI & Flask</li>
+              <li>Spring</li>
+              <li>Bootstrap</li>
+              <li>TailwindCSS</li>
+              <li>AlpineJS</li>
+            </ul>
+          </div>
+
+          <!-- Collaboration, System Administration & Databases -->
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> SysAdmin & Databases</h3>
+            <ul>
+              <li>Git</li>
+              <li>Jira</li>
+              <li>Linux</li>
+              <li>Bash</li>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+
+          <!-- Programming Languages & Concepts -->
+          <div class="skill-category">
+            <h3>
+              <i class="fas fa-laptop-code"></i> Programming Languages &
+              Concepts
+            </h3>
+            <ul>
+              <li>HTML5 & CSS</li>
+              <li>jQuery & AJAX</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Microblog Section -->
+      <section x-show="currentSection === 'microblog'" id="microblog">
+        <h2>Microblog</h2>
+        <div class="microblog-posts">
+          <template x-for="(post, index) in posts" :key="index">
+            <div class="post">
+              <p class="post-content" x-text="post.content"></p>
+              <p class="post-date">
+                Posted on: <span x-text="post.date"></span>
+              </p>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <section x-show="currentSection === 'contact'" id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-envelope"></i> Email:
+            <a href="mailto:anas.bassoumi@gmail.com">anas.bassoumi@gmail.com</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i> Phone:
+            <a href="tel:+21654930048">+216 54 930 048</a>
+          </li>
+          <li>
+            <i class="fab fa-whatsapp"></i> WhatsApp:
+            <a href="https://wa.me/21654930048" target="_blank" rel="noopener noreferrer">+216 54 930 048</a>
+          </li>
+          <li>
+            <i class="fab fa-github"></i> GitHub:
+            <a href="https://github.com/anas1412" target="_blank" rel="noopener noreferrer">anas1412</a>
+          </li>
+          <li>
+            <i class="fab fa-twitter"></i> Twitter:
+            <a href="https://twitter.com/villainesthetic" target="_blank" rel="noopener noreferrer">@villainesthetic</a>
+          </li>
+          <li>
+            <i class="fab fa-linkedin"></i> LinkedIn:
+            <a href="https://www.linkedin.com/in/anas-bassoumi/" target="_blank" rel="noopener noreferrer">Anas
+              Bassoumi</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        A single page application (SPA) built with Alpine.js and HTML5.<br />
+        &copy; <span x-text="new Date().getFullYear()"></span> Anas B.
+        Portfolio. All rights reserved. Made with ❤️
+      </p>
+    </footer>
+  </div>
+  <script src="posts.js"></script>
+
+  <script>
+    // Alpine.js App Logic
+    function app() {
+      return {
+        currentSection: "home",
+        isMenuOpen: false,
+        isMobile: window.innerWidth <= 768,
+
+        init() {
+          const terminal = document.querySelector(".terminal pre");
+          const lines = terminal.innerHTML.split("\n");
+          terminal.innerHTML = "";
+
+          let index = 0;
+          const interval = setInterval(() => {
+            if (index < lines.length) {
+              terminal.innerHTML += lines[index].trim() + "\n";
+              index++;
+            } else {
+              clearInterval(interval);
             }
-          },
-        };
-      }
+          }, 500);
+        },
 
-      // Experience Slider Logic
-      function experienceSlider() {
-        return {
-          experiences: [
-            {
-              title: "DevOps & Software Solutions Provider",
-              duration: "Freelance | Since February 2024",
-              description: [
-                "Delivering high-impact, tailored software solutions to optimize client workflows.",
-                "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
-                "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing.",
-              ],
-            },
-            {
-              title: "DevOps Engineer (Part-Time)",
-              duration: "Kamioun | July 2023 - January 2024",
-              description: [
-                "Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.",
-                "Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.",
-                "Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.",
-              ],
-            },
-            {
-              title: "Intern DevOps Engineer",
-              duration: "Kamioun | January 2023 - June 2023",
-              description: [
-                "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
-                "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
-                "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
-              ],
-            },
-            {
-              title: "Intern Cloud/DevOps Engineer",
-              duration: "Beirdo Digital Studio | June 2022 - August 2022",
-              description: [
-                "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
-                "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
-                "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
-              ],
-            },
-            {
-              title: "Intern Software Developer",
-              duration: "YES INTERNET | July 2021 - August 2021",
-              description: [
-                "Implemented APIs for real estate websites, boosting data integration by 40%.",
-                "Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.",
-                "Collaborated with backend and frontend team members to streamline functionality and optimize performance.",
-              ],
-            },
-            {
-              title: "Intern Automation Engineer",
-              duration: "Upgrade Factory | January 2020 - June 2020",
-              description: [
-                "Contacted several companies and negotiated the prices that led to 25% total reduced costs.",
-                "Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.",
-                "Collaborated with cross-functional teams to deliver solutions on time.",
-              ],
-            },
+        getCurrentPageTitle() {
+          switch (this.currentSection) {
+            case "home":
+              return "Home";
+            case "about":
+              return "About Me";
+            case "projects":
+              return "Projects";
+            case "skills":
+              return "Skills";
+            case "microblog":
+              return "Microblog";
+            case "contact":
+              return "Contact";
+            default:
+              return "Home";
+          }
+        },
+      };
+    }
+
+    // Experience Slider Logic
+    function experienceSlider() {
+      return {
+        experiences: [{
+          title: "Full Time Trader & Portfolio Manager",
+          duration: "Self-employed | October 2022 - Present",
+          description: [
+            "Managing 6 figures and funded from multiple modern prop firms.",
+            "Implemented a precise systematic edge on the M5 timeframe with precise risk management that yields consistently minimum 4% monthly.",
+            "Rewarded with countless verified payouts, averaging 5 figures per month.",
           ],
-          currentIndex: 0,
-          touchStartX: 0,
-          touchEndX: 0,
-          isAnimating: false,
-          posts: window.posts,
+        },
+        {
+          title: "DevOps & Software Solutions Provider",
+          duration: "Freelance | August 2023 - November 2024",
+          description: [
+            "Delivering high-impact, tailored software solutions to optimize client workflows.",
+            "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
+            "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing."
+          ],
+        },
+        {
+          title: "DevOps Engineer (Part-Time)",
+          duration: "Kamioun | July 2023 - January 2024",
+          description: [
+            "Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.",
+            "Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.",
+            "Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.",
+          ],
+        },
+        {
+          title: "Intern DevOps Engineer",
+          duration: "Kamioun | January 2023 - June 2023",
+          description: [
+            "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+            "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+            "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+          ],
+        },
+        {
+          title: "Intern Cloud/DevOps Engineer",
+          duration: "Beirdo Digital Studio | June 2022 - August 2022",
+          description: [
+            "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+            "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+            "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+          ],
+        },
+        {
+          title: "Intern Software Developer",
+          duration: "YES INTERNET | July 2021 - August 2021",
+          description: [
+            "Implemented APIs for real estate websites, boosting data integration by 40%.",
+            "Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.",
+            "Collaborated with backend and frontend team members to streamline functionality and optimize performance.",
+          ],
+        },
+        {
+          title: "Intern Automation Engineer",
+          duration: "Upgrade Factory | January 2020 - June 2020",
+          description: [
+            "Contacted several companies and negotiated the prices that led to 25% total reduced costs.",
+            "Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.",
+            "Collaborated with cross-functional teams to deliver solutions on time.",
+          ],
+        },
+        ],
+        currentIndex: 0,
+        touchStartX: 0,
+        touchEndX: 0,
+        isAnimating: false,
+        posts: window.posts,
 
-          // Go to the previous slide
-          prev() {
-            if (this.currentIndex > 0 && !this.isAnimating) {
-              this.isAnimating = true;
-              this.currentIndex--;
-              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+        // Go to the previous slide
+        prev() {
+          if (this.currentIndex > 0 && !this.isAnimating) {
+            this.isAnimating = true;
+            this.currentIndex--;
+            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+          }
+        },
+
+        // Go to the next slide
+        next() {
+          if (
+            this.currentIndex < this.experiences.length - 1 &&
+            !this.isAnimating
+          ) {
+            this.isAnimating = true;
+            this.currentIndex++;
+            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+          }
+        },
+
+        // Go to a specific slide
+        goTo(index) {
+          if (!this.isAnimating) {
+            this.isAnimating = true;
+            this.currentIndex = index;
+            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+          }
+        },
+
+        // Handle touch start event (for mobile)
+        handleTouchStart(event) {
+          this.touchStartX = event.touches[0].clientX;
+        },
+
+        // Handle touch move event (for mobile)
+        handleTouchMove(event) {
+          if (!this.touchStartX || this.isAnimating) return;
+
+          this.touchEndX = event.touches[0].clientX;
+          const diff = this.touchStartX - this.touchEndX;
+
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+              this.next(); // Swipe left
+            } else {
+              this.prev(); // Swipe right
             }
-          },
+            this.touchStartX = 0; // Reset touch start position
+          }
+        },
 
-          // Go to the next slide
-          next() {
-            if (
-              this.currentIndex < this.experiences.length - 1 &&
-              !this.isAnimating
-            ) {
-              this.isAnimating = true;
-              this.currentIndex++;
-              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+        // Handle mouse down event (for web)
+        handleMouseDown(event) {
+          this.touchStartX = event.clientX;
+          document.addEventListener(
+            "mousemove",
+            this.handleMouseMove.bind(this)
+          );
+          document.addEventListener("mouseup", this.handleMouseUp.bind(this));
+        },
+
+        // Handle mouse move event (for web)
+        handleMouseMove(event) {
+          if (!this.touchStartX || this.isAnimating) return;
+
+          this.touchEndX = event.clientX;
+          const diff = this.touchStartX - this.touchEndX;
+
+          if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+              this.next(); // Swipe left
+            } else {
+              this.prev(); // Swipe right
             }
-          },
+            this.touchStartX = 0; // Reset touch start position
+          }
+        },
 
-          // Go to a specific slide
-          goTo(index) {
-            if (!this.isAnimating) {
-              this.isAnimating = true;
-              this.currentIndex = index;
-              setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
-            }
-          },
+        // Handle mouse up event (for web)
+        handleMouseUp() {
+          document.removeEventListener(
+            "mousemove",
+            this.handleMouseMove.bind(this)
+          );
+          document.removeEventListener(
+            "mouseup",
+            this.handleMouseUp.bind(this)
+          );
+        },
+      };
+    }
+  </script>
+</body>
 
-          // Handle touch start event (for mobile)
-          handleTouchStart(event) {
-            this.touchStartX = event.touches[0].clientX;
-          },
-
-          // Handle touch move event (for mobile)
-          handleTouchMove(event) {
-            if (!this.touchStartX || this.isAnimating) return;
-
-            this.touchEndX = event.touches[0].clientX;
-            const diff = this.touchStartX - this.touchEndX;
-
-            if (Math.abs(diff) > 50) {
-              if (diff > 0) {
-                this.next(); // Swipe left
-              } else {
-                this.prev(); // Swipe right
-              }
-              this.touchStartX = 0; // Reset touch start position
-            }
-          },
-
-          // Handle mouse down event (for web)
-          handleMouseDown(event) {
-            this.touchStartX = event.clientX;
-            document.addEventListener(
-              "mousemove",
-              this.handleMouseMove.bind(this)
-            );
-            document.addEventListener("mouseup", this.handleMouseUp.bind(this));
-          },
-
-          // Handle mouse move event (for web)
-          handleMouseMove(event) {
-            if (!this.touchStartX || this.isAnimating) return;
-
-            this.touchEndX = event.clientX;
-            const diff = this.touchStartX - this.touchEndX;
-
-            if (Math.abs(diff) > 50) {
-              if (diff > 0) {
-                this.next(); // Swipe left
-              } else {
-                this.prev(); // Swipe right
-              }
-              this.touchStartX = 0; // Reset touch start position
-            }
-          },
-
-          // Handle mouse up event (for web)
-          handleMouseUp() {
-            document.removeEventListener(
-              "mousemove",
-              this.handleMouseMove.bind(this)
-            );
-            document.removeEventListener(
-              "mouseup",
-              this.handleMouseUp.bind(this)
-            );
-          },
-        };
-      }
-    </script>
-  </body>
 </html>
