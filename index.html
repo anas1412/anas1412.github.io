@@ -24,15 +24,14 @@
     <!-- Mobile-Friendly Navbar -->
     <nav>
       <div class="navbar">
-        <!-- Hamburger Button (Left) -->
-        <button class="hamburger" @click="isMenuOpen = !isMenuOpen" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <!-- Current Page Title (Right, Mobile Only) -->
+        <!-- Current Page Title (Mobile Only) -->
         <div class="mobile-page-title" x-show="isMobile">
           <span x-text="getCurrentPageTitle()"></span>
         </div>
+        <!-- Hamburger Button -->
+        <button class="hamburger" @click="isMenuOpen = !isMenuOpen" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
 
         <!-- Navigation Links -->
         <ul class="nav-links" :class="{ 'active': isMenuOpen }">

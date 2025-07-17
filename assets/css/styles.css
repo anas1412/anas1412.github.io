@@ -161,16 +161,13 @@ header p {
   .hamburger {
     display: block;
     order: 2;
-    /* Move hamburger to the right */
+    margin-left: auto;
   }
 
   .mobile-page-title {
     display: block;
-    /* Show on mobile */
     order: 1;
-    /* Move text to the left */
     margin-right: auto;
-    /* Push text to the left */
   }
 
   .nav-links {
