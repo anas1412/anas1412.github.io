@@ -181,9 +181,6 @@ header p {
 /* ===================== */
 /* Main Content          */
 /* ===================== */
-main {
-  /* Spacing handled by parent gap */
-}
 
 main h2 {
   color: #fff;
