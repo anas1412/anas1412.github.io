@@ -142,16 +142,18 @@ header p {
 
 /* Mobile Styles */
 @media (max-width: 48rem) { /* 768px / 16px = 48rem */
+
+
   .hamburger {
     display: block;
-    order: 2;
-    margin-left: auto;
+    order: 2; /* Hamburger first */
+    margin-left: 0; /* Remove auto margin */
   }
 
   .mobile-page-title {
     display: block;
-    order: 1;
-    margin-right: auto;
+    order: 1; /* Title second */
+    margin-right: 0; /* Remove auto margin */
   }
 
   .nav-links {
