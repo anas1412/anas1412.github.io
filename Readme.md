@@ -15,6 +15,7 @@ Here's a breakdown of which file controls which section:
 *   **`assets/js/header.js`**: Controls the main header of the page.
     *   `title`: The main title of your portfolio.
     *   `subtitle`: The subtitle displayed beneath the main title.
+    *   `aboutMe`: The description displayed in aboutMe section. 
 
 *   **`assets/js/posts.js`**: Manages the microblog section.
     *   `date`: The date of the blog post.
