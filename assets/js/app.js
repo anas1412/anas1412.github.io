@@ -8,6 +8,16 @@ function app() {
     skills: window.skillsData,
     contact: window.contactData,
     posts: window.posts,
+    postsPerPage: 5,
+    currentPage: 1,
+    get paginatedPosts() {
+      const start = (this.currentPage - 1) * this.postsPerPage;
+      const end = start + this.postsPerPage;
+      return this.posts.slice(start, end);
+    },
+    get totalPages() {
+      return Math.ceil(this.posts.length / this.postsPerPage);
+    },
     currentSection: "home",
     isMenuOpen: false,
     isMobile: window.innerWidth <= 768,

@@ -195,13 +195,19 @@
       <section x-show="currentSection === 'microblog'" id="microblog">
         <h2>Microblog</h2>
         <div class="microblog-posts">
-          <template x-for="(post, index) in posts" :key="index">
+          <template x-for="(post, index) in paginatedPosts" :key="index">
             <div class="post">
               <p class="post-content" x-text="post.content"></p>
               <p class="post-date">
                 Posted on: <span x-text="post.date"></span>
               </p>
             </div>
+          </template>
+        </div>
+        <div class="pagination-controls">
+          <button @click="postsPerPage = 5; currentPage = 1">Show 5 per page</button>
+          <template x-for="page in totalPages" :key="page">
+            <button @click="currentPage = page" :class="{ 'active': currentPage === page }" x-text="page"></button>
           </template>
         </div>
       </section>
