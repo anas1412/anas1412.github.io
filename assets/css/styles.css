@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px; /* Base font size for rem units */
 }
 
 body {
@@ -16,11 +17,6 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.6;
-  background-image: linear-gradient(to right,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 20px 20px;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -45,11 +41,29 @@ nav,
 main,
 footer {
   width: 90%;
-  max-width: 800px;
-  padding: 20px;
-  margin: 10px auto;
-  border: 2px solid #fff;
+  max-width: 50rem; /* 800px / 16px = 50rem */
+  padding: 1.25rem; /* 20px / 16px = 1.25rem */
+  border: 0.125rem solid #fff; /* 2px / 16px = 0.125rem */
   background-color: #111;
+}
+
+header {
+  margin-top: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+/* Apply consistent top margin to all sections except the first one */
+nav,
+main,
+footer {
+  margin-top: 0.625rem; /* 10px / 16px = 0.625rem */
+}
+
+main {
+  margin-bottom: 0.625rem; /* Consistent spacing below main content */
+}
+
+footer {
+  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
 }
 
 /* ===================== */
@@ -61,14 +75,14 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem; /* 2.5em * 16px = 40px */
   color: #fff;
-  text-shadow: 2px 2px #000;
-  margin-bottom: 10px;
+  text-shadow: 0.125rem 0.125rem #000; /* 2px / 16px = 0.125rem */
+  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.2rem; /* 1.2em * 16px = 19.2px */
   color: #ccc;
   margin: 0;
 }
@@ -80,9 +94,9 @@ header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.25rem; /* Standardized to match other sections */
   background-color: #222;
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 0.125rem solid #fff; Removed redundant border */
   position: relative;
 }
 
@@ -129,8 +143,21 @@ header p {
   color: #ccc;
 }
 
+.background-toggle-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+.background-toggle-button:hover {
+  color: #ccc;
+}
+
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px / 16px = 48rem */
   .hamburger {
     display: block;
     order: 2;
@@ -166,22 +193,26 @@ header p {
     margin: 0;
     text-align: center;
     padding: 1rem;
-    border-bottom: 1px solid #444;
+    border-bottom: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
   }
 }
 
 /* ===================== */
 /* Main Content          */
 /* ===================== */
+main {
+  margin-bottom: 0.625rem; /* Consistent spacing below main content */
+}
+
 main h2 {
   color: #fff;
-  text-shadow: 1px 1px #000;
+  text-shadow: 0.0625rem 0.0625rem #000; /* 1px / 16px = 0.0625rem */
   margin-bottom: 1rem;
 }
 
 main ul {
   list-style-type: square;
-  padding-left: 20px;
+  padding-left: 1.25rem; /* 20px / 16px = 1.25rem */
   margin-bottom: 1rem;
 }
 
@@ -199,10 +230,9 @@ main a:hover {
 /* ===================== */
 footer {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.9rem; /* 0.9em * 16px = 14.4px */
   color: #ccc;
   background-color: #222;
-  margin-top: auto;
 }
 
 footer a {
@@ -254,8 +284,8 @@ footer a:hover {
   color: #0f0;
   font-family: "IBM Plex Mono", monospace;
   padding: 1rem;
-  border: 2px solid #0f0;
-  border-radius: 5px;
+  border: 0.125rem solid #0f0; /* 2px / 16px = 0.125rem */
+  border-radius: 0.3125rem; /* 5px / 16px = 0.3125rem */
   max-width: 100%;
   margin: 1rem auto;
   font-size: 1rem;
@@ -289,21 +319,21 @@ footer a:hover {
 /* ===================== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px / 16px = 15.625rem */
   gap: 1.5rem;
 }
 
 .skill-category {
   background-color: #222;
   padding: 1.5rem;
-  border: 1px solid #444;
-  border-radius: 8px;
+  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
+  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+  transform: translateY(-0.3125rem); /* 5px / 16px = 0.3125rem */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 0, 0.2); /* 4px / 16px = 0.25rem, 8px / 16px = 0.5rem */
 }
 
 .skill-category h3 {
@@ -329,7 +359,7 @@ footer a:hover {
   font-size: 1rem;
   color: #ccc;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #444;
+  border-bottom: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
 }
 
 .skill-category ul li:last-child {
@@ -345,7 +375,7 @@ footer a:hover {
   margin-bottom: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem; /* 1px / 16px = 0.0625rem */
   opacity: 0.9;
 }
 
@@ -363,7 +393,7 @@ footer a:hover {
 /* ===================== */
 /* Responsive Design     */
 /* ===================== */
-@media (max-width: 768px) {
+@media (max-width: 48rem) { /* 768px / 16px = 48rem */
   .hamburger {
     display: block;
   }
@@ -412,7 +442,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) { /* 768px / 16px = 48rem */
 
   header,
   nav,
@@ -422,7 +452,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) { /* 1024px / 16px = 64rem */
 
   header,
   nav,
@@ -458,7 +488,7 @@ footer a:hover {
 
 .experience-item {
   /* No special positioning needed. x-show handles the layout. */
-  min-height: 150px; /* Provide a sensible default height */
+  min-height: 9.375rem; /* 150px / 16px = 9.375rem */
 }
 
 .slider-buttons {
@@ -472,11 +502,11 @@ footer a:hover {
 
 .slider-buttons button {
   background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
+  border: 0.0625rem solid #fff; /* 1px / 16px = 0.0625rem */
   color: #fff;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px / 16px = 1.25rem */
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -511,14 +541,14 @@ footer a:hover {
 .post {
   background-color: #222;
   padding: 1.5rem;
-  border: 1px solid #444;
-  border-radius: 8px;
+  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
+  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+  transform: translateY(-0.3125rem); /* 5px / 16px = 0.3125rem */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 0, 0.2); /* 4px / 16px = 0.25rem, 8px / 16px = 0.5rem */
 }
 
 .post-content {
@@ -544,8 +574,8 @@ footer a:hover {
   margin-top: 2rem;
   background-color: #222;
   padding: 1.5rem;
-  border: 1px solid #444;
-  border-radius: 8px;
+  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
+  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
 }
 
 .add-post h3 {
@@ -560,8 +590,8 @@ footer a:hover {
   width: 100%;
   padding: 0.5rem;
   background-color: #333;
-  border: 1px solid #444;
-  border-radius: 4px;
+  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
+  border-radius: 0.25rem; /* 4px / 16px = 0.25rem */
   color: #ccc;
   font-family: "IBM Plex Mono", monospace;
   margin-bottom: 1rem;
@@ -569,7 +599,7 @@ footer a:hover {
 
 .add-post textarea {
   resize: vertical;
-  min-height: 100px;
+  min-height: 6.25rem; /* 100px / 16px = 6.25rem */
 }
 
 .add-post button {
@@ -577,7 +607,7 @@ footer a:hover {
   color: #000;
   border: none;
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 0.25rem; /* 4px / 16px = 0.25rem */
   cursor: pointer;
   font-family: "IBM Plex Mono", monospace;
 }

@@ -11,6 +11,16 @@ function app() {
     currentSection: "home",
     isMenuOpen: false,
     isMobile: window.innerWidth <= 768,
+    currentBackgroundIndex: 0,
+    backgrounds: [
+      "default-bg",
+      "cyberspace-bg-1",
+      "cyberspace-bg-2",
+      "cyberspace-bg-3",
+      "matrix-bg",
+      "digital-glitch-bg",
+      "abstract-code-bg",
+    ],
 
     init() {
       const terminal = document.querySelector(".terminal pre");
@@ -26,6 +36,9 @@ function app() {
           clearInterval(interval);
         }
       }, 500);
+
+      // Set initial background
+      document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
     },
 
     getCurrentPageTitle() {
@@ -45,6 +58,12 @@ function app() {
         default:
           return "Home";
       }
+    },
+
+    nextBackground() {
+      document.body.classList.remove(this.backgrounds[this.currentBackgroundIndex]);
+      this.currentBackgroundIndex = (this.currentBackgroundIndex + 1) % this.backgrounds.length;
+      document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
     },
   };
 }
