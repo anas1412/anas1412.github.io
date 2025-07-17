@@ -72,6 +72,14 @@ window.skillsData = [
   {
     category: "Programming Languages & Concepts",
     icon: "fas fa-laptop-code",
-    skills: ["HTML5 & CSS", "jQuery & AJAX", "JavaScript", "PHP", "Python", "Java", "REST API"],
+    skills: [
+      "HTML5 & CSS", 
+      "jQuery & AJAX", 
+      "JavaScript", 
+      "PHP", 
+      "Python", 
+      "Java", 
+      "REST API"
+    ],
   },
 ];

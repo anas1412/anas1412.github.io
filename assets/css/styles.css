@@ -31,6 +31,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.625rem; /* 10px / 16px = 0.625rem */
+  padding: 0.625rem 0; /* Add consistent padding top and bottom */
 }
 
 /* ===================== */
@@ -47,24 +49,13 @@ footer {
   background-color: #111;
 }
 
-header {
-  margin-top: 0.625rem; /* 10px / 16px = 0.625rem */
-}
-
-/* Apply consistent top margin to all sections except the first one */
+header,
 nav,
 main,
 footer {
-  margin-top: 0.625rem; /* 10px / 16px = 0.625rem */
+  /* Margins handled by parent gap */
 }
 
-main {
-  margin-bottom: 0.625rem; /* Consistent spacing below main content */
-}
-
-footer {
-  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
-}
 
 /* ===================== */
 /* Header                */
@@ -78,7 +69,7 @@ header h1 {
   font-size: 2.5rem; /* 2.5em * 16px = 40px */
   color: #fff;
   text-shadow: 0.125rem 0.125rem #000; /* 2px / 16px = 0.125rem */
-  margin-bottom: 0.625rem; /* 10px / 16px = 0.625rem */
+  /* margin-bottom: 0.625rem; */
 }
 
 header p {
@@ -198,7 +189,7 @@ header p {
 /* Main Content          */
 /* ===================== */
 main {
-  margin-bottom: 0.625rem; /* Consistent spacing below main content */
+  /* Spacing handled by parent gap */
 }
 
 main h2 {
