@@ -21,14 +21,28 @@ The project has a simple and straightforward file structure:
 ```
 /
 ├── index.html          # The main HTML file containing the structure of the website.
-├── posts.js            # A JavaScript file that stores the data for the microblog posts.
-├── Readme.md           # The original README file for the project.
+├── Readme.md           # The main README file for the project.
+├── LICENSE             # The license file for the project.
+├── gemini.md           # This documentation file for the Gemini CLI.
+├── .git/...            # Git version control directory.
 └── assets/
     ├── css/
     │   └── styles.css  # The main stylesheet for the website.
-    └── images/
-        ├── favicon.ico # Favicon for the website.
-        └── favicon.png # Favicon for the website.
+    ├── images/
+    │   ├── favicon.ico # Favicon for the website.
+    │   └── favicon.png # Favicon for the website.
+    └── js/
+        ├── app.js
+        ├── contact.js
+        ├── education.js
+        ├── experienceSlider.js
+        ├── header.js
+        ├── interests.js
+        ├── languages.js
+        ├── main.js
+        ├── posts.js
+        ├── projects.js
+        ├── skills.js
 ```
 
 ## How to Run the Project
@@ -37,28 +51,16 @@ This is a static website, so there is no build process required. To run the proj
 
 ## How to Customize the Content
 
-### Modifying the Microblog
+All content for the portfolio is managed through a series of JavaScript files located in the `assets/js/` directory. Each `.js` file corresponds to a specific section of the portfolio. To change the content, simply open the relevant file and modify the data within the `window` object.
 
-The content for the microblog is stored in the `posts.js` file. To add, remove, or edit a blog post, you can modify the `window.posts` array in this file. Each post is an object with two properties:
+Here's a breakdown of which file controls which section:
 
-*   `date`: A string representing the date of the post (e.g., `"2025-04-14"`).
-*   `content`: A string containing the content of the post.
-
-**Example of adding a new post:**
-
-1.  Open the `posts.js` file.
-2.  Add a new object to the `window.posts` array:
-
-```javascript
-window.posts = [
-  {
-    date: "2025-07-18",
-    content: "This is a new blog post added for demonstration purposes.",
-  },
-  // ... existing posts
-];
-```
-
-### Modifying Other Sections
-
-All other content, such as the "About Me," "Projects," and "Skills" sections, is located directly in the `index.html` file. You can edit the text and links in the corresponding sections of the HTML to update the content.
+*   **`assets/js/header.js`**: Controls the main header of the page (`title` and `subtitle`).
+*   **`assets/js/posts.js`**: Manages the microblog section (`date` and `content` for each post).
+*   **`assets/js/education.js`**: Controls the "Education" section (`degree`, `institution`, `year`).
+*   **`assets/js/interests.js`**: Manages the "Interests" section (an array of strings).
+*   **`assets/js/languages.js`**: Manages the "Languages" section (an array of strings).
+*   **`assets/js/projects.js`**: Controls the "Latest Projects" section (`name`, `description`, `points`, `link`).
+*   **`assets/js/skills.js`**: Manages the "Skills" section (`category`, `icon`, `skills`).
+*   **`assets/js/contact.js`**: Controls the "Contact" section (`platform`, `icon`, `link`, `text`).
+*   **`assets/js/experienceSlider.js`**: Manages the "Professional Experience" slider (`title`, `duration`, `description`).
