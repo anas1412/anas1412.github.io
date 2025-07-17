@@ -20,6 +20,7 @@ function app() {
       "matrix-bg",
       "digital-glitch-bg",
       "abstract-code-bg",
+      "deep-space-warp-bg"
     ],
 
     init() {
