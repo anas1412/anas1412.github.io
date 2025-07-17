@@ -87,41 +87,40 @@
           of my life making money and spending the other half giving it away.
         </p>
 
-        <div class="about-grid">
-          <!-- Professional Experience Slider -->
-          <div class="about-category experience" x-data="experienceSlider()">
+        <div class="about-layout">
+          <!-- Professional Experience Slider (Full Width) -->
+          <div class="skill-category" x-data="experienceSlider()">
             <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
-            <div class="slider-container" @touchstart="handleTouchStart" @touchmove="handleTouchMove"
-              @mousedown="handleMouseDown">
-              <!-- Slider Content -->
-              <div class="slider-content" :style="`transform: translateX(-${currentIndex * 100}%);`">
-                <template x-for="(experience, index) in experiences" :key="index">
-                  <div class="experience-item">
-                    <strong x-text="experience.title"></strong><br />
-                    <span class="subtext" x-text="experience.duration"></span><br />
-                    <ul>
-                      <template x-for="(point, i) in experience.description" :key="i">
-                        <li x-text="point"></li>
-                      </template>
-                    </ul>
-                  </div>
-                </template>
-              </div>
+            <div class="slider-container">
+              <!-- Slides -->
+              <template x-for="(experience, index) in experiences" :key="index">
+                <div class="experience-item" x-show="currentIndex === index">
+                  <strong x-text="experience.title"></strong>
+                  <span class="subtext" x-text="experience.duration"></span>
+                  <ul>
+                    <template x-for="point in experience.description" :key="point">
+                      <li x-text="point"></li>
+                    </template>
+                  </ul>
+                </div>
+              </template>
 
-              <!-- Slider Navigation Dots -->
-              <div class="slider-dots">
-                <template x-for="(_, index) in experiences" :key="index">
-                  <button class="slider-dot" :class="{ 'active': currentIndex === index }" @click="goTo(index)"
-                    :aria-label="'Go to slide ' + (index + 1)"></button>
-                </template>
+              <!-- Slider Navigation Buttons -->
+              <div class="slider-buttons">
+                <button @click="prev()" :disabled="currentIndex === 0">
+                  <i class="fas fa-chevron-left"></i> Prev
+                </button>
+                <button @click="next()" :disabled="currentIndex === experiences.length - 1">
+                  Next <i class="fas fa-chevron-right"></i>
+                </button>
               </div>
             </div>
           </div>
 
-          <!-- Education and Languages -->
-          <div class="about-grid-row">
+          <!-- Education and Interests (Side-by-Side) -->
+          <div class="skills-grid">
             <!-- Education -->
-            <div class="about-category">
+            <div class="skill-category">
               <h3><i class="fas fa-graduation-cap"></i> Education</h3>
               <ul>
                 <li>
@@ -146,8 +145,8 @@
               </ul>
             </div>
 
-            <!-- Languages -->
-            <div class="about-category">
+            <!-- Interests and Languages -->
+            <div class="skill-category">
               <h3><i class="fas fa-lightbulb"></i> Interests</h3>
               <ul>
                 <li>New experiences and exploring the world and the unknown</li>
@@ -474,165 +473,86 @@
     // Experience Slider Logic
     function experienceSlider() {
       return {
-        experiences: [{
-          title: "Full Time Trader & Portfolio Manager",
-          duration: "Self-employed | October 2022 - Present",
-          description: [
-            "Managing 6 figures and funded from multiple modern prop firms.",
-            "Implemented a precise systematic edge on the M5 timeframe with precise risk management that yields consistently minimum 4% monthly.",
-            "Rewarded with countless verified payouts, averaging 5 figures per month.",
-          ],
-        },
-        {
-          title: "DevOps & Software Solutions Provider",
-          duration: "Freelance | August 2023 - November 2024",
-          description: [
-            "Delivering high-impact, tailored software solutions to optimize client workflows.",
-            "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
-            "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing."
-          ],
-        },
-        {
-          title: "DevOps Engineer (Part-Time)",
-          duration: "Kamioun | July 2023 - January 2024",
-          description: [
-            "Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.",
-            "Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.",
-            "Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.",
-          ],
-        },
-        {
-          title: "Intern DevOps Engineer",
-          duration: "Kamioun | January 2023 - June 2023",
-          description: [
-            "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
-            "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
-            "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
-          ],
-        },
-        {
-          title: "Intern Cloud/DevOps Engineer",
-          duration: "Beirdo Digital Studio | June 2022 - August 2022",
-          description: [
-            "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
-            "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
-            "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
-          ],
-        },
-        {
-          title: "Intern Software Developer",
-          duration: "YES INTERNET | July 2021 - August 2021",
-          description: [
-            "Implemented APIs for real estate websites, boosting data integration by 40%.",
-            "Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.",
-            "Collaborated with backend and frontend team members to streamline functionality and optimize performance.",
-          ],
-        },
-        {
-          title: "Intern Automation Engineer",
-          duration: "Upgrade Factory | January 2020 - June 2020",
-          description: [
-            "Contacted several companies and negotiated the prices that led to 25% total reduced costs.",
-            "Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.",
-            "Collaborated with cross-functional teams to deliver solutions on time.",
-          ],
-        },
-        ],
         currentIndex: 0,
-        touchStartX: 0,
-        touchEndX: 0,
-        isAnimating: false,
-        posts: window.posts,
+        experiences: [{
+            title: "Full Time Trader & Portfolio Manager",
+            duration: "Self-employed | October 2022 - Present",
+            description: [
+              "Managing 6 figures and funded from multiple modern prop firms.",
+              "Implemented a precise systematic edge on the M5 timeframe with precise risk management that yields consistently minimum 4% monthly.",
+              "Rewarded with countless verified payouts, averaging 5 figures per month.",
+            ],
+          },
+          {
+            title: "DevOps & Software Solutions Provider",
+            duration: "Freelance | August 2023 - November 2024",
+            description: [
+              "Delivering high-impact, tailored software solutions to optimize client workflows.",
+              "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
+              "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing."
+            ],
+          },
+          {
+            title: "DevOps Engineer (Part-Time)",
+            duration: "Kamioun | July 2023 - January 2024",
+            description: [
+              "Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.",
+              "Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.",
+              "Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.",
+            ],
+          },
+          {
+            title: "Intern DevOps Engineer",
+            duration: "Kamioun | January 2023 - June 2023",
+            description: [
+              "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+              "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+              "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+            ],
+          },
+          {
+            title: "Intern Cloud/DevOps Engineer",
+            duration: "Beirdo Digital Studio | June 2022 - August 2022",
+            description: [
+              "Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.",
+              "Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.",
+              "Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.",
+            ],
+          },
+          {
+            title: "Intern Software Developer",
+            duration: "YES INTERNET | July 2021 - August 2021",
+            description: [
+              "Implemented APIs for real estate websites, boosting data integration by 40%.",
+              "Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.",
+              "Collaborated with backend and frontend team members to streamline functionality and optimize performance.",
+            ],
+          },
+          {
+            title: "Intern Automation Engineer",
+            duration: "Upgrade Factory | January 2020 - June 2020",
+            description: [
+              "Contacted several companies and negotiated the prices that led to 25% total reduced costs.",
+              "Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.",
+              "Collaborated with cross-functional teams to deliver solutions on time.",
+            ],
+          },
+        ],
 
-        // Go to the previous slide
-        prev() {
-          if (this.currentIndex > 0 && !this.isAnimating) {
-            this.isAnimating = true;
-            this.currentIndex--;
-            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
-          }
+        get currentExperience() {
+          return this.experiences[this.currentIndex];
         },
 
-        // Go to the next slide
         next() {
-          if (
-            this.currentIndex < this.experiences.length - 1 &&
-            !this.isAnimating
-          ) {
-            this.isAnimating = true;
+          if (this.currentIndex < this.experiences.length - 1) {
             this.currentIndex++;
-            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
           }
         },
 
-        // Go to a specific slide
-        goTo(index) {
-          if (!this.isAnimating) {
-            this.isAnimating = true;
-            this.currentIndex = index;
-            setTimeout(() => (this.isAnimating = false), 300); // Match transition duration
+        prev() {
+          if (this.currentIndex > 0) {
+            this.currentIndex--;
           }
-        },
-
-        // Handle touch start event (for mobile)
-        handleTouchStart(event) {
-          this.touchStartX = event.touches[0].clientX;
-        },
-
-        // Handle touch move event (for mobile)
-        handleTouchMove(event) {
-          if (!this.touchStartX || this.isAnimating) return;
-
-          this.touchEndX = event.touches[0].clientX;
-          const diff = this.touchStartX - this.touchEndX;
-
-          if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-              this.next(); // Swipe left
-            } else {
-              this.prev(); // Swipe right
-            }
-            this.touchStartX = 0; // Reset touch start position
-          }
-        },
-
-        // Handle mouse down event (for web)
-        handleMouseDown(event) {
-          this.touchStartX = event.clientX;
-          document.addEventListener(
-            "mousemove",
-            this.handleMouseMove.bind(this)
-          );
-          document.addEventListener("mouseup", this.handleMouseUp.bind(this));
-        },
-
-        // Handle mouse move event (for web)
-        handleMouseMove(event) {
-          if (!this.touchStartX || this.isAnimating) return;
-
-          this.touchEndX = event.clientX;
-          const diff = this.touchStartX - this.touchEndX;
-
-          if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-              this.next(); // Swipe left
-            } else {
-              this.prev(); // Swipe right
-            }
-            this.touchStartX = 0; // Reset touch start position
-          }
-        },
-
-        // Handle mouse up event (for web)
-        handleMouseUp() {
-          document.removeEventListener(
-            "mousemove",
-            this.handleMouseMove.bind(this)
-          );
-          document.removeEventListener(
-            "mouseup",
-            this.handleMouseUp.bind(this)
-          );
         },
       };
     }

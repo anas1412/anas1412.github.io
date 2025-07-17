@@ -16,11 +16,9 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.6;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px
-    ),
+      transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
   background-attachment: fixed;
@@ -100,7 +98,8 @@ header p {
 
 /* Mobile Page Title */
 .mobile-page-title {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
@@ -134,13 +133,17 @@ header p {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
-    order: 2; /* Move hamburger to the right */
+    order: 2;
+    /* Move hamburger to the right */
   }
 
   .mobile-page-title {
-    display: block; /* Show on mobile */
-    order: 1; /* Move text to the left */
-    margin-right: auto; /* Push text to the left */
+    display: block;
+    /* Show on mobile */
+    order: 1;
+    /* Move text to the left */
+    margin-right: auto;
+    /* Push text to the left */
   }
 
   .nav-links {
@@ -153,7 +156,8 @@ header p {
     width: 100%;
     background-color: #333;
     position: absolute;
-    top: 100%; /* Position below the navbar */
+    top: 100%;
+    /* Position below the navbar */
     left: 0;
     z-index: 10;
   }
@@ -409,6 +413,7 @@ footer a:hover {
 }
 
 @media (min-width: 768px) {
+
   header,
   nav,
   main,
@@ -418,6 +423,7 @@ footer a:hover {
 }
 
 @media (min-width: 1024px) {
+
   header,
   nav,
   main,
@@ -436,36 +442,10 @@ footer a:hover {
   text-align: center;
 }
 
-.about-grid {
+.about-layout {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.about-category {
-  background-color: #222;
-  padding: 1.5rem;
-  border: 1px solid #444;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
-}
-
-.about-category h3 {
-  font-size: 1.25rem;
-  color: #0f0;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.about-category h3 i {
-  font-size: 1.5rem;
 }
 
 /* ===================== */
@@ -473,152 +453,46 @@ footer a:hover {
 /* ===================== */
 .slider-container {
   position: relative;
-  overflow: hidden;
-}
-
-.slider-content {
-  display: flex;
-  transition: transform 0.3s ease;
+  padding-bottom: 3.5rem; /* Make space for the buttons below the content */
 }
 
 .experience-item {
-  flex: 0 0 100%;
-  padding: 1rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* No special positioning needed. x-show handles the layout. */
+  min-height: 150px; /* Provide a sensible default height */
 }
 
-.slider-dots {
+.slider-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 1rem;
 }
 
-.slider-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #444;
-  border: none;
+.slider-buttons button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  transition: background-color 0.2s ease;
 }
 
-.slider-dot.active {
-  background-color: #0f0;
+.slider-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.slider-dot:hover {
-  background-color: #0f0;
+.slider-buttons button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
-/* ===================== */
-/* Education and Languages Row */
-/* ===================== */
-.about-grid-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-grid-row {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ===================== */
-/* Slider Mobile Styles  */
-/* ===================== */
-@media (max-width: 768px) {
-  .slider-content {
-    gap: 0; /* Remove gap for mobile */
-  }
-
-  .experience-item {
-    flex: 0 0 100%; /* Show one item at a time on mobile */
-  }
-
-  .slider-dots {
-    margin-top: 0.5rem; /* Adjust spacing for mobile */
-  }
-}
-
-/* ===================== */
-/* Work Experience Text Overflow Fix */
-/* ===================== */
-.experience-item {
-  word-wrap: break-word; /* Break long words */
-  overflow-wrap: break-word; /* Alternative to word-wrap */
-  white-space: normal; /* Allow text to wrap */
-  padding: 1rem;
-  box-sizing: border-box; /* Include padding in width */
-  width: 100%; /* Ensure it takes full width */
-}
-
-.experience-item strong,
-.experience-item .subtext,
-.experience-item span {
-  display: block; /* Ensure each piece of text is on a new line */
-  margin-bottom: 0.5rem; /* Add spacing between lines */
-  max-width: 100%; /* Prevent overflow */
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-  .experience-item {
-    padding: 0.8rem; /* Reduce padding for mobile */
-  }
-
-  .experience-item strong,
-  .experience-item .subtext,
-  .experience-item span {
-    font-size: 0.9rem; /* Slightly reduce font size for mobile */
-    word-break: break-word; /* Force break long words */
-  }
-
-  .slider-container {
-    overflow: hidden; /* Ensure content doesn't overflow */
-  }
-
-  .slider-content {
-    width: 100%; /* Ensure slider content takes full width */
-  }
-}
-
-/* ===================== */
-/* Experience Item Styles */
-/* ===================== */
-.experience-item ul {
-  list-style-type: disc; /* Use bullet points */
-  word-break: break-word;
-  margin-top: 0.5rem; /* Add spacing above the list */
-}
-
-.experience-item li {
-  font-size: 0.9rem; /* Slightly smaller font size for bullet points */
-  color: #ccc; /* Light gray color for better readability */
-  margin-bottom: 0.5rem; /* Add spacing between bullet points */
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-  .experience-item ul {
-    padding-left: 1rem; /* Reduce padding for mobile */
-  }
-
-  .experience-item li {
-    font-size: 0.85rem; /* Smaller font size for mobile */
-    padding: 0; /* Remove padding for mobile */
-    margin-bottom: 0.4rem; /* Reduce spacing between bullet points for mobile */
-  }
-
-  .experience-item {
-    padding: 0.8rem; /* Reduce padding for mobile */
-    box-sizing: border-box; /* Include padding in the width */
-  }
-}
 
 /* ===================== */
 /* Microblog Section     */
@@ -713,7 +587,8 @@ footer a:hover {
 }
 
 .error-message {
-  color: #ff5555; /* Red color for errors */
+  color: #ff5555;
+  /* Red color for errors */
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
