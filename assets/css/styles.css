@@ -49,13 +49,6 @@ footer {
   background-color: #111;
 }
 
-header,
-nav,
-main,
-footer {
-  /* Margins handled by parent gap */
-}
-
 
 /* ===================== */
 /* Header                */
