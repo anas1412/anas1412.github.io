@@ -1,0 +1,50 @@
+function app() {
+  return {
+    header: window.headerData,
+    education: window.educationData,
+    interests: window.interestsData,
+    languages: window.languagesData,
+    projects: window.projectsData,
+    skills: window.skillsData,
+    contact: window.contactData,
+    posts: window.posts,
+    currentSection: "home",
+    isMenuOpen: false,
+    isMobile: window.innerWidth <= 768,
+
+    init() {
+      const terminal = document.querySelector(".terminal pre");
+      const lines = terminal.innerHTML.split("\n");
+      terminal.innerHTML = "";
+
+      let index = 0;
+      const interval = setInterval(() => {
+        if (index < lines.length) {
+          terminal.innerHTML += lines[index].trim() + "\n";
+          index++;
+        } else {
+          clearInterval(interval);
+        }
+      }, 500);
+    },
+
+    getCurrentPageTitle() {
+      switch (this.currentSection) {
+        case "home":
+          return "Home";
+        case "about":
+          return "About Me";
+        case "projects":
+          return "Projects";
+        case "skills":
+          return "Skills";
+        case "microblog":
+          return "Microblog";
+        case "contact":
+          return "Contact";
+        default:
+          return "Home";
+      }
+    },
+  };
+}
