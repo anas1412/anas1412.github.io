@@ -74,14 +74,14 @@
 .toc {
   background-color: rgba(20, 20, 20, 0.9);
   border: 1px solid #0f0;
-  padding: 1.5rem;
+  padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
 }
 
 .toc h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .toc ol {
@@ -91,10 +91,11 @@
 
 .toc li {
   color: #ccc;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   cursor: pointer;
   transition: color 0.2s ease;
   border-bottom: 1px solid #333;
+  font-size: 0.9rem;
 }
 
 .toc li:hover {
@@ -140,21 +141,21 @@
 /* Responsive adjustments for the article content */
 @media (max-width: 48rem) {
   #article-content .post {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   #article-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #article-content p {
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 
   #article-content blockquote {
-    font-size: 1.1rem;
-    padding: 0.8rem 1.2rem;
-    margin: 1.5rem 0.5rem;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0.3rem;
   }
 }
