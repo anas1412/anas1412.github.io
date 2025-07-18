@@ -2,13 +2,13 @@ window.article = {
     title: "Notes from the Edge",
     sections: [
         {
-            title: "1. Introduction: Unveiling the Paradigms of Success",
+            title: "Introduction: Unveiling the Paradigms of Success",
             content: [
                 { type: 'p', text: "Greetings, Seeker. In your quest for a fulfilling life and meaningful achievements, you've likely encountered various approaches to success. Many of these are deeply ingrained in our societal structures, often unconsciously shaping our beliefs and actions. This message is an invitation to explore a different perspective, one that challenges conventional wisdom and offers a path to more profound and sustainable fulfillment. Let's delve into fundamental paradigms that govern our pursuit of goals: Have-Do-Be, Do-Have-Be, and the transformative Be-Do-Have." }
             ]
         },
         {
-            title: "2. The Man and His Horse: An Analogy for Mind and Body",
+            title: "The Man and His Horse: An Analogy for Mind and Body",
             content: [
                 { type: 'p', text: "Before we explore these paradigms, let's consider a powerful analogy that will help illuminate the dynamics at play within ourselves: the man and his horse. Imagine you are a rider, and your body is a magnificent, powerful horse." },
                 { type: 'ul', items: [
@@ -19,7 +19,7 @@ window.article = {
             ]
         },
         {
-            title: "3. Shadow Work: Making the Unconscious Conscious",
+            title: "Shadow Work: Making the Unconscious Conscious",
             content: [
                 { type: 'p', text: "The psychologist Carl Jung introduced a profound concept for self-mastery: the <strong>Shadow</strong>. The Shadow is the part of our unconscious mind that contains all the traits, impulses, and desires we repress or deny—the aspects of ourselves we deem unacceptable. Engaging in <strong>Shadow Work</strong> is the courageous process of bringing these hidden elements into conscious awareness, not to eliminate them, but to understand and integrate them." },
                 { type: 'blockquote', text: '"Until you make the unconscious conscious, it will direct your life and you will call it fate."<br>— Carl Jung' },
@@ -27,7 +27,7 @@ window.article = {
             ]
         },
         {
-            title: "4. The Have-Do-Be Model: The Illusion of External Success",
+            title: "The Have-Do-Be Model: The Illusion of External Success",
             content: [
                 { type: 'p', text: "This is the most common, yet often least effective, approach. In the <strong>Have-Do-Be</strong> model, people believe they first need to <em>have</em> something (e.g., a degree, money, a specific relationship) in order to <em>do</em> something (e.g., get a good job, start a business, be happy), which then allows them to <em>be</em> a certain way (e.g., successful, fulfilled, loved)." },
                 { type: 'blockquote', text: '"If only I had X, then I could do Y, and then I would be Z."' },
@@ -35,7 +35,7 @@ window.article = {
             ]
         },
         {
-            title: "5. The Do-Have-Be Model: The Treadmill of Action",
+            title: "The Do-Have-Be Model: The Treadmill of Action",
             content: [
                 { type: 'p', text: "A slight improvement, the <strong>Do-Have-Be</strong> model focuses on action. Here, individuals believe they must first <em>do</em> something (e.g., work hard, hustle relentlessly, network constantly) to <em>have</em> something (e.g., a promotion, wealth, recognition), which then allows them to <em>be</em> a certain way (e.g., respected, powerful, secure). This model is heavily promoted in professional life and the hustle culture." },
                 { type: 'blockquote', text: '"I will do everything it takes to have success, so I can finally be happy."' },
@@ -43,7 +43,7 @@ window.article = {
             ]
         },
         {
-            title: "6. The Power of Self-Image: Who You Believe You Are",
+            title: "The Power of Self-Image: Who You Believe You Are",
             content: [
                 { type: 'p', text: "Before we delve into the transformative Be-Do-Have model, it's crucial to understand the foundational role of your <strong>self-image</strong>. Your self-image is the mental picture you have of yourself – your beliefs about who you are, what you're capable of, and what you deserve. It's the blueprint that dictates your actions and ultimately, your results." },
                 { type: 'blockquote', text: '"Man cannot consistently act beyond what he believes himself to be."<br>— Maxwell Maltz, Psycho-Cybernetics' },
@@ -51,7 +51,7 @@ window.article = {
             ]
         },
         {
-            title: '7. The Dunning-Kruger Effect: The Peak of "Mount Stupid"',
+            title: 'The Dunning-Kruger Effect: The Peak of "Mount Stupid"',
             content: [
                 { type: 'p', text: 'As we explore the power of self-image, we must also acknowledge a significant pitfall: the <strong>Dunning-Kruger effect</strong>. This cognitive bias describes a phenomenon where individuals with low ability in a specific area tend to overestimate their competence. In essence, they are too unskilled to recognize their own lack of skill. This can lead to a dangerous, unearned confidence—a phenomenon sometimes humorously called the "Peak of Mount Stupid."' },
                 { type: 'blockquote', text: '"The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts."<br>— Bertrand Russell' },
@@ -59,7 +59,7 @@ window.article = {
             ]
         },
         {
-            title: "8. Mindset: From Fear to Faith and Trust",
+            title: "Mindset: From Fear to Faith, Trust & Confidence",
             content: [
                 { type: 'p', text: "Underlying all these models is our fundamental mindset. Are we operating from a place of <strong>fear</strong> or <strong>faith/trust</strong>? Fear-based thinking often drives the Have-Do-Be and Do-Have-Be models. We fear not having enough, not being good enough, or not achieving external markers of success. This fear can lead to anxiety, constant striving, and a feeling of never being truly satisfied." },
                 { type: 'blockquote', text: '"Fear is a habit, so is faith. The one you practice most will dominate your life."<br>— Unknown' },
@@ -67,7 +67,7 @@ window.article = {
             ]
         },
         {
-            title: "9. Emotional Intelligence: Navigating Your Inner World",
+            title: "Emotional Intelligence: Navigating Your Inner World",
             content: [
                 { type: 'p', text: "Beyond models and thinking paradigms, our emotional state plays a pivotal role in our journey. True mastery involves not just intellectual understanding, but also the ability to navigate and leverage our emotions. <strong>Emotional awareness</strong> is the capacity to recognize and understand our own feelings, as well as those of others. It's about being present with your emotions, rather than suppressing or being overwhelmed by them." },
                 { type: 'blockquote', text: '"Anyone can be angry – that is easy. But to be angry with the right person, to the right degree, at the right time, for the right purpose, and in the right way – that is not easy."<br>— Aristotle' },
@@ -75,7 +75,7 @@ window.article = {
             ]
         },
         {
-            title: "10. The State of High Performance: Energy, Clarity, and Flow",
+            title: "The State of High Performance: Energy, Clarity, and Flow",
             content: [
                 { type: 'p', text: "To truly excel in the 'Doing' phase, it is essential to master your state of being. This goes beyond mere action and delves into the quality of your performance, which hinges on three pillars: <strong>Energy, Clarity, and Focus.</strong>" },
                 { type: 'p', text: "First, <strong>Energy</strong> is the fuel of ambition. High achievement is not sustained by willpower alone, but by vibrant physical and mental energy. This means prioritizing sleep, nutrition, and exercise not as chores, but as critical components of your success architecture. A tired mind cannot think clearly, and a weary body cannot execute with precision. In our analogy, this is ensuring the horse is well-fed, rested, and in peak condition before a long journey." },
@@ -88,7 +88,7 @@ window.article = {
             ]
         },
         {
-            title: "11. The Engine of Progress: Discipline, Consistency, and Reflection",
+            title: "The Engine of Progress: Discipline, Consistency, and Reflection",
             content: [
                 { type: 'p', text: "Flow states are powerful, but they are not accidental. They are the result of a deep, underlying structure of <strong>discipline</strong> and <strong>consistency</strong>. While focus gets you into the zone, it is discipline that builds the runway for takeoff. Discipline is the conscious choice to do what needs to be done, even when you don't feel like it. It is the bridge between your goals and your accomplishments." },
                 { type: 'blockquote', text: '"We are what we repeatedly do. Excellence, then, is not an act, but a habit."<br>— Will Durant' },
@@ -97,7 +97,7 @@ window.article = {
             ]
         },
         {
-            title: "12. Thinking Paradigms: Process, Probability, and Beyond Dualism",
+            title: "Thinking Paradigms: Process, Probability, and Beyond Dualism",
             content: [
                 { type: 'p', text: "Our approach to goals is also shaped by how we perceive reality. A crucial distinction lies between <strong>process-oriented thinking</strong> and <strong>outcome-oriented thinking</strong>. The Have-Do-Be and Do-Have-Be models are heavily outcome-oriented. The focus is solely on the end result, and if that result isn't achieved, it can lead to disappointment and a sense of failure. This can make the journey feel like a means to an end, rather than a valuable experience in itself." },
                 { type: 'blockquote', text: '"The journey of a thousand miles begins with a single step."<br>— Lao Tzu' },
@@ -107,7 +107,7 @@ window.article = {
             ]
         },
         {
-            title: "13. Navigating Reality: The Power of Mental Models",
+            title: "Navigating Reality: The Power of Mental Models",
             content: [
                 { type: 'p', text: "To effectively navigate the complexities of life, the Seeker must cultivate a toolbox of <strong>mental models</strong>. These are frameworks for thinking that help you simplify and understand the world, allowing you to make better decisions. They are like different maps for different terrains; having a variety of them prevents you from getting lost." },
                 { type: 'blockquote', text: '"The map is not the territory."<br>— Alfred Korzybski' },
@@ -122,7 +122,7 @@ window.article = {
             ]
         },
         {
-            title: "14. Embracing the Unfair Game: Paradox and Contrarian Thinking",
+            title: "Embracing the Unfair Game: Paradox and Contrarian Thinking",
             content: [
                 { type: 'p', text: "The Seeker must accept a fundamental truth: life is not fair. It is a complex, chaotic, and often paradoxical game. The universe does not distribute talent, opportunity, or luck evenly. To pretend otherwise is to set yourself up for resentment and frustration. The key is not to demand fairness, but to learn to play the hand you are dealt with skill and wisdom." },
                 { type: 'blockquote', text: '"The world is not a just place. It is a relentless and amoral arena where the strong, the clever, and the lucky prevail."<br>— Unknown' },
@@ -142,7 +142,7 @@ window.article = {
             ]
         },
         {
-            title: "15. The Be-Do-Have Model: Attracting Your Reality",
+            title: "The Be-Do-Have Model: Attracting Your Reality",
             content: [
                 { type: 'p', text: "The <strong>Be-Do-Have</strong> model flips the conventional approach on its head and is a powerful framework for sustainable success and fulfillment. It starts with an internal shift:" },
                 { type: 'h3', text: 'BE' },
@@ -155,7 +155,7 @@ window.article = {
             ]
         },
         {
-            title: "16. Conclusion: Your Transformative Journey",
+            title: "Conclusion: Your Transformative Journey",
             content: [
                 { type: 'p', text: "My final message to you, Seeker, is this: The path to a truly fulfilling life isn't about accumulating more, or even just doing more. It's about becoming more. It's about aligning your inner self with your aspirations, trusting the process, and embracing the journey with an open mind and a resilient spirit. May your journey be filled with purpose, growth, and genuine fulfillment." }
             ]
