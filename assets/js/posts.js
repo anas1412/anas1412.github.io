@@ -1,10 +1,14 @@
 window.posts = [
   {
+    date: "2025-07-18",
+    content: "Follow the success formula: Be-Do-Have",
+  },
+  {
     date: "2025-04-14",
     content: "I am glad I switched career",
   },
   {
-    date: "2025-03-298",
+    date: "2025-03-29",
     content: "81.33% WR% with 5 profit factor with 40 trades in insane",
   },
   {

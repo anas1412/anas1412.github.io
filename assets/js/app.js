@@ -8,7 +8,7 @@ function app() {
     skills: window.skillsData,
     contact: window.contactData,
     posts: window.posts,
-    postsPerPage: 5,
+    postsPerPage: 3,
     currentPage: 1,
     get paginatedPosts() {
       const start = (this.currentPage - 1) * this.postsPerPage;
@@ -34,22 +34,45 @@ function app() {
     ],
 
     init() {
-      const terminal = document.querySelector(".terminal pre");
-      const lines = terminal.innerHTML.split("\n");
-      terminal.innerHTML = "";
-
-      let index = 0;
-      const interval = setInterval(() => {
-        if (index < lines.length) {
-          terminal.innerHTML += lines[index].trim() + "\n";
-          index++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 500);
-
       // Set initial background
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
+
+      // Dynamic Typing Effect for Home Section
+      const typedTextSpan = document.getElementById("typed-text");
+      const phrases = [
+        "Hello, I'm Anas B.",
+        "A Full-stack Developer",
+        "and a Quant Trader",
+        "Welcome to my Cyberspace!"
+      ];
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      const type = () => {
+        const currentPhrase = phrases[phraseIndex];
+        if (isDeleting) {
+          typedTextSpan.textContent = currentPhrase.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typedTextSpan.textContent = currentPhrase.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          setTimeout(() => isDeleting = true, 1500); // Pause at end of phrase
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
+        }
+
+        const typeSpeed = isDeleting ? 50 : 100; // Typing vs. deleting speed
+        setTimeout(type, typeSpeed);
+      };
+
+      if (typedTextSpan) {
+        type(); // Start the typing effect
+      }
     },
 
     getCurrentPageTitle() {
