@@ -1,5 +1,11 @@
 window.contactData = [
   {
+    platform: "Resume",
+    icon: "fas fa-file-pdf",
+    link: "AnasBassoumiResume.pdf",
+    text: "Download PDF",
+  },
+  {
     platform: "Email",
     icon: "fas fa-envelope",
     link: "mailto:anas.bassoumi@gmail.com",
