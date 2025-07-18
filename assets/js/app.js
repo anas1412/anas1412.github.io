@@ -35,6 +35,7 @@ function app() {
 
     init() {
       // Set initial background
+      this.currentBackgroundIndex = parseInt(localStorage.getItem('backgroundIndex')) || 0;
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
 
       // Dynamic Typing Effect for Home Section
