@@ -22,17 +22,8 @@ function app() {
     isMenuOpen: false,
     isMobile: window.innerWidth <= 768,
     currentBackgroundIndex: 0,
-    backgrounds: [
-      "default-bg",
-      "cyberspace-bg-1",
-      "cyberspace-bg-2",
-      "cyberspace-bg-3",
-      "matrix-bg",
-      "digital-glitch-bg",
-      "abstract-code-bg",
-      "deep-space-warp-bg"
-    ],
-    // Properties for 1412/index.html
+backgrounds: ['default-bg', 'matrix-grid-bg', 'starfield-bg', 'deep-space-bg', 'circuit-board-bg', 'scrolling-code-bg'],
+    // Properties for notes/index.html
     article: null,
     currentIndex: 0,
     isTocOpen: false,
@@ -42,7 +33,7 @@ function app() {
       this.currentBackgroundIndex = parseInt(localStorage.getItem('backgroundIndex')) || 0;
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
 
-      // Initialize article data if available (for 1412/index.html)
+      // Initialize article data if available (for notes/index.html)
       if (window.article) {
         this.article = window.article;
       }
@@ -111,7 +102,7 @@ function app() {
       localStorage.setItem('backgroundIndex', this.currentBackgroundIndex);
     },
 
-    // Methods for 1412/index.html
+    // Methods for notes/index.html
     next() {
       if (this.article && this.currentIndex < this.article.sections.length - 1) {
         this.currentIndex++;

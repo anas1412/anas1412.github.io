@@ -30,6 +30,10 @@ Here's a breakdown of which file controls which section:
 
 *   **`assets/js/languages.js`**: Manages the "Languages" section. This is a simple array of strings.
 
+*   **`assets/css/backgrounds.css`**: Manages the dynamic background styles.
+
+*   **`assets/js/notes.js`**: Manages the content for the notes section.
+
 *   **`assets/js/projects.js`**: Controls the "Latest Projects" section.
     *   `name`: The name of the project.
     *   `description`: A brief description of the project.

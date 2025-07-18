@@ -1,141 +1,106 @@
 /*
 ================================================================================
-  ENHANCED CYBERSPACE & RETRO BACKGROUNDS
+  FINAL, SIMPLE & UNIQUE BACKGROUNDS (REVISED SET)
 ================================================================================
-  Based on the original set, but with added animation and detail.
+  A clean, simple set of backgrounds based on your direct feedback.
 */
 
-/* Default Background -> Now an "Active Grid" with a slow pulse */
+/* --- 1. Default (Pulsing Grid - FIXED) --- */
+/* The background now pulses on a separate layer, preventing scrollbars. */
+@keyframes default-pulse {
+  0%   { background-color: #080808; transform: scale(1); }
+  50%  { background-color: #1a1a1a; transform: scale(1.02); } /* Fades to grey, zooms slightly */
+  100% { background-color: #080808; transform: scale(1); }
+}
+
 .default-bg {
-  background-color: #000;
+  /* The body no longer has the background image or animation */
+  background-color: #080808;
+  position: relative; /* Required for the pseudo-element */
+}
+
+.default-bg::before {
+  content: '';
+  position: fixed; /* Sticks to the viewport, behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places it behind all your text and sections */
+  
+  /* All background and animation styles are moved here */
   background-image:
     linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
-  animation: grid-pulse 8s linear infinite;
-}
-@keyframes grid-pulse {
-  0% { background-color: #050505; background-position: 0 0; }
-  50% { background-color: #1a1a1a; }
-  100% { background-color: #050505; background-position: -80px 80px; }
+  animation: default-pulse 8s ease-in-out infinite;
 }
 
-/* Cyberspace Background 1: Binary Rain -> Now with more layers for depth */
-.cyberspace-bg-1 {
-  background-color: #0a0a0a;
-  /* ENHANCEMENT: Added two more gradient layers for parallax depth */
-  background-image:
-    radial-gradient(circle, #00ff00 1px, transparent 1px), /* Fast, bright */
-    radial-gradient(circle, #00ffff 1px, transparent 1px), /* Medium, cyan */
-    radial-gradient(circle, #008080 1px, transparent 1px), /* Slow, darker */
-    radial-gradient(circle, #00ff00 2px, transparent 2px); /* Slow, large, dim */
-  background-size: 20px 20px, 40px 40px, 60px 60px, 80px 80px;
-  animation: binary-rain-enhanced 8s linear infinite;
-}
-@keyframes binary-rain-enhanced {
-  from { background-position: 0 0, 20px 20px, 30px 30px, 40px 40px; }
-  /* ENHANCEMENT: Each layer moves at a different speed */
-  to { background-position: 0 640px, 20px 340px, 30px 150px, 40px 120px; }
-}
-
-/* Cyberspace Background 2: Neon Grid -> Now with a breathing glow */
-.cyberspace-bg-2 {
-  background-color: #00001a;
-  background-image:
-    linear-gradient(to right, rgba(0, 255, 255, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 0, 255, 0.2) 1px, transparent 1px);
-  background-size: 50px 50px;
-  /* ENHANCEMENT: Animation now controls the glow and grid movement */
-  animation: neon-grid-breathe 6s ease-in-out infinite;
-}
-@keyframes neon-grid-breathe {
-  0% {
-    box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 15px rgba(255, 0, 255, 0.4);
-    background-position: 0 0;
-  }
-  50% {
-    box-shadow: inset 0 0 30px rgba(0, 255, 255, 0.7), inset 0 0 30px rgba(255, 0, 255, 0.7);
-  }
-  100% {
-    box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 15px rgba(255, 0, 255, 0.4);
-    background-position: -50px -50px;
-  }
-}
-
-/* Cyberspace Background 3: Circuit Board -> Now with an energy pulse */
-.cyberspace-bg-3 {
-  background-color: #021002; /* Dark green base */
-  background-image:
-    linear-gradient(0deg, transparent 24%, rgba(0, 255, 0, 0.1) 25%, rgba(0, 255, 0, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 255, 0, 0.1) 75%, rgba(0, 255, 0, 0.1) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, rgba(0, 255, 0, 0.1) 25%, rgba(0, 255, 0, 0.1) 26%, transparent 27%, transparent 74%, rgba(0, 255, 0, 0.1) 75%, rgba(0, 255, 0, 0.1) 76%, transparent 77%, transparent);
-  background-size: 50px 50px;
-  /* ENHANCEMENT: Animation adds a pulsing energy flow effect */
-  animation: circuit-pulse 4s linear infinite;
-}
-@keyframes circuit-pulse {
-  0% { box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2); }
-  50% { box-shadow: inset 0 0 25px rgba(128, 255, 128, 0.5); }
-  100% { box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.2); }
-}
-
-
-/* Matrix Theme -> Now with more authentic "falling code" appearance */
-.matrix-bg {
-  background-color: #000;
-  /* ENHANCEMENT: Gradient creates a "leader" character illusion */
-  background-image:
-    repeating-linear-gradient(0deg,
-      transparent, transparent 15px, /* Gaps between streams */
-      rgba(0, 255, 0, 0.2) 15px, rgba(0, 255, 0, 0.5) 20px, /* Fading tail */
-      #aff 20px, #aff 22px /* Bright "leader" character */
-    );
-  background-size: 20px 20px;
-  animation: matrix-rain-enhanced 1.5s linear infinite;
-}
-@keyframes matrix-rain-enhanced {
+/* --- 2. Matrix Grid (Scrolling) --- */
+/* The working, visible green grid that slowly scrolls. */
+@keyframes matrix-grid-scroll {
   from { background-position: 0 0; }
-  to { background-position: 0 100%; }
+  to { background-position: 50px 50px; }
 }
-
-
-/* Digital Glitch Theme -> Now with a more frantic, unpredictable glitch */
-.digital-glitch-bg {
-  background-color: #1a0a1a;
-  background-image:
-    linear-gradient(45deg, rgba(255, 0, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 255, 255, 0.2) 75%, rgba(0, 255, 255, 0.2)),
-    linear-gradient(-45deg, rgba(255, 0, 255, 0.2) 25%, transparent 25%, transparent 75%, rgba(0, 255, 255, 0.2) 75%, rgba(0, 255, 255, 0.2));
-  background-size: 40px 40px;
-  /* ENHANCEMENT: Keyframes are now more erratic for a better glitch effect */
-  animation: glitch-effect-enhanced 0.4s steps(1, end) infinite;
-}
-@keyframes glitch-effect-enhanced {
-  0%   { background-position: 0 0; }
-  20%  { background-position: 5px 10px; }
-  40%  { background-position: -5px -5px; }
-  60%  { background-position: 10px -8px; }
-  80%  { background-position: -2px 4px; }
-  100% { background-position: 0 0; }
-}
-
-
-/* Abstract Code Theme -> Now with active scrolling and a pulsing core */
-.abstract-code-bg {
+.matrix-grid-bg {
   background-color: #000;
   background-image:
-    linear-gradient(to right, rgba(0, 128, 0, 0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 128, 0, 0.2) 1px, transparent 1px);
-  background-size: 15px 15px;
-  /* ENHANCEMENT: Added two separate animations for movement and glow */
-  animation:
-    abstract-scroll 15s linear infinite,
-    abstract-glow 5s ease-in-out infinite;
+    repeating-linear-gradient(to right, rgba(0, 255, 0, 0.4) 0, rgba(0, 255, 0, 0.4) 1px, transparent 1px, transparent 50px),
+    repeating-linear-gradient(to bottom, rgba(0, 255, 0, 0.4) 0, rgba(0, 255, 0, 0.4) 1px, transparent 1px, transparent 50px);
+  animation: matrix-grid-scroll 20s linear infinite;
 }
-@keyframes abstract-scroll {
+.matrix-grid-bg * { text-shadow: 0 0 5px #000; }
+
+/* --- 3. Starfield (Moving in Space) --- */
+/* A simple, multi-layered scrolling starfield for a "cyberspace" feel. */
+@keyframes move-stars { to { background-position: -1000px 500px; } }
+.starfield-bg {
+  background-color: #000008;
+  background-image:
+    radial-gradient(1px 1px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px, rgba(255,255,255,0.4), transparent);
+  background-repeat: repeat;
+  background-size: 150px 150px, 300px 300px;
+  animation: move-stars 100s linear infinite;
+}
+.starfield-bg * { text-shadow: 0 0 5px #000; }
+
+/* --- 4. Deep Space (Depth with Shadow) --- */
+/* A pure black background with an inner shadow to create a sense of depth. */
+.deep-space-bg {
+  background-color: #000;
+  box-shadow: inset 0 0 100px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* --- 5. Circuit Board (Static) --- */
+/* A simple, non-animated circuit board pattern. */
+.circuit-board-bg {
+  background-color: #001a00;
+  background-image:
+    linear-gradient(rgba(0, 255, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+  background-size: 75px 75px, 75px 75px, 25px 25px, 25px 25px;
+  background-position: -1px -1px, -1px -1px, 0 0, 0 0;
+}
+.circuit-board-bg * { text-shadow: 0 0 5px #000; }
+
+/* --- 6. Scrolling Code (NEW) --- */
+/* An illusion of scrolling lines of code, like a terminal feed. */
+@keyframes scrolling-code {
   from { background-position: 0 0; }
-  to { background-position: 300px -300px; }
+  to { background-position: 0 -200px; } /* Scrolls upwards */
 }
-@keyframes abstract-glow {
-  0% { box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.3); }
-  50% { box-shadow: inset 0 0 30px rgba(0, 255, 0, 0.8); }
-  100% { box-shadow: inset 0 0 15px rgba(0, 255, 0, 0.3); }
+.scrolling-code-bg {
+  background-color: #05080a; /* Dark blue-grey */
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 5px, /* Gaps between lines */
+    rgba(255, 255, 255, 0.1) 5px,
+    rgba(255, 255, 255, 0.1) 10px /* The "text" lines */
+  );
+  background-size: 100% 200px;
+  animation: scrolling-code 25s linear infinite;
 }
+.scrolling-code-bg * { text-shadow: 0 0 5px #000; }

@@ -27,6 +27,7 @@ The project has a simple and straightforward file structure:
 ├── .git/...            # Git version control directory.
 └── assets/
     ├── css/
+    │   ├── backgrounds.css # Styles for dynamic backgrounds.
     │   └── styles.css  # The main stylesheet for the website.
     ├── images/
     │   ├── favicon.ico # Favicon for the website.
@@ -40,6 +41,7 @@ The project has a simple and straightforward file structure:
         ├── interests.js
         ├── languages.js
         ├── main.js
+        ├── notes.js    # Manages content for the notes section.
         ├── posts.js
         ├── projects.js
         ├── skills.js
@@ -60,6 +62,7 @@ Here's a breakdown of which file controls which section:
 *   **`assets/js/education.js`**: Controls the "Education" section (`degree`, `institution`, `year`).
 *   **`assets/js/interests.js`**: Manages the "Interests" section (an array of strings).
 *   **`assets/js/languages.js`**: Manages the "Languages" section (an array of strings).
+*   **`assets/js/notes.js`**: Manages content for the notes section.
 *   **`assets/js/projects.js`**: Controls the "Latest Projects" section (`name`, `description`, `points`, `link`).
 *   **`assets/js/skills.js`**: Manages the "Skills" section (`category`, `icon`, `skills`).
 *   **`assets/js/contact.js`**: Controls the "Contact" section (`platform`, `icon`, `link`, `text`).
