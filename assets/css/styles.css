@@ -6,7 +6,6 @@
   display: none !important;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,55 +28,6 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
-}
-
-/* ===================== */
-/* Home Section - Dynamic Typing */
-/* ===================== */
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px; /* Adjust as needed */
-  text-align: center;
-}
-
-.dynamic-text-container {
-  font-size: 2.5rem; /* Default font size */
-  color: #0f0; /* Green text for terminal feel */
-  text-align: center; /* Ensure text is centered */
-  margin-bottom: 1rem;
-  word-wrap: break-word; /* Allow long words to break */
-}
-
-@media (max-width: 48rem) { /* 768px / 16px = 48rem */
-  .dynamic-text-container {
-    font-size: 1.5rem; /* Smaller font size for mobile */
-  }
-}
-
-@media (max-width: 30rem) { /* 480px / 16px = 30rem */
-  .dynamic-text-container {
-    font-size: 1.2rem; /* Even smaller for very small screens */
-  }
-}
-
-#typed-text {
-  display: inline-block;
-}
-
-.blink {
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-  from, to {
-    border-right-color: transparent;
-  }
-  50% {
-    border-right-color: #0f0;
-  }
 }
 
 [x-data] {
@@ -117,7 +67,6 @@ header h1 {
   font-size: 2.5rem; /* 2.5em * 16px = 40px */
   color: #fff;
   text-shadow: 0.125rem 0.125rem #000; /* 2px / 16px = 0.125rem */
-  /* margin-bottom: 0.625rem; */
 }
 
 header p {
@@ -133,9 +82,8 @@ header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem; /* Standardized to match other sections */
+  padding: 1.25rem;
   background-color: #222;
-  /* border-bottom: 0.125rem solid #fff; Removed redundant border */
   position: relative;
 }
 
@@ -151,8 +99,7 @@ header p {
 
 /* Mobile Page Title */
 .mobile-page-title {
-  display: none;
-  /* Hidden by default */
+  display: none; /* Hidden by default */
   font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
@@ -196,19 +143,15 @@ header p {
 }
 
 /* Mobile Styles */
-@media (max-width: 48rem) { /* 768px / 16px = 48rem */
-
-
+@media (max-width: 48rem) { /* 768px */
   .hamburger {
     display: block;
-    order: 2; /* Hamburger first */
-    margin-left: 0; /* Remove auto margin */
+    order: 2;
   }
 
   .mobile-page-title {
     display: block;
-    order: 1; /* Title second */
-    margin-right: 0; /* Remove auto margin */
+    order: 1;
   }
 
   .nav-links {
@@ -222,7 +165,6 @@ header p {
     background-color: #333;
     position: absolute;
     top: 100%;
-    /* Position below the navbar */
     left: 0;
     z-index: 10;
   }
@@ -231,7 +173,7 @@ header p {
     margin: 0;
     text-align: center;
     padding: 1rem;
-    border-bottom: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
+    border-bottom: 0.0625rem solid #444; /* 1px */
   }
 }
 
@@ -241,13 +183,13 @@ header p {
 
 main h2 {
   color: #fff;
-  text-shadow: 0.0625rem 0.0625rem #000; /* 1px / 16px = 0.0625rem */
+  text-shadow: 0.0625rem 0.0625rem #000; /* 1px */
   margin-bottom: 1rem;
 }
 
 main ul {
   list-style-type: square;
-  padding-left: 1.25rem; /* 20px / 16px = 1.25rem */
+  padding-left: 1.25rem; /* 20px */
   margin-bottom: 1rem;
 }
 
@@ -261,22 +203,188 @@ main a:hover {
 }
 
 /* ===================== */
-/* Footer                */
+/* Home Section - Dynamic Typing */
 /* ===================== */
-footer {
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
   text-align: center;
-  font-size: 0.9rem; /* 0.9em * 16px = 14.4px */
+}
+
+.dynamic-text-container {
+  font-size: 2.5rem;
+  color: #0f0;
+  text-align: center;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 48rem) { /* 768px */
+  .dynamic-text-container {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 30rem) { /* 480px */
+  .dynamic-text-container {
+    font-size: 1.2rem;
+  }
+}
+
+#typed-text {
+  display: inline-block;
+}
+
+.blink {
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #0f0;
+  }
+}
+
+/* ===================== */
+/* About Me Section      */
+/* ===================== */
+.about-description {
+  font-size: 1rem;
   color: #ccc;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===================== */
+/* Skills & Projects Grid      */
+/* ===================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px */
+  gap: 1.5rem;
+}
+
+.skill-category {
   background-color: #222;
+  padding: 1.5rem;
+  border: 0.0625rem solid #444; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
+.skill-category:hover {
+  transform: translateY(-0.3125rem); /* 5px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 0, 0.2); /* 4px 8px */
 }
 
-footer a:hover {
+.skill-category h3 {
+  font-size: 1.25rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-category h3 i {
+  font-size: 1.5rem;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category ul li {
+  font-size: 1rem;
   color: #ccc;
+  padding: 0.5rem 0;
+  border-bottom: 0.0625rem solid #444; /* 1px */
+}
+
+.skill-category ul li:last-child {
+  border-bottom: none;
+}
+
+/* ===================== */
+/* Projects Section Specifics  */
+/* ===================== */
+.project-description {
+  font-size: 1rem;
+  color: #0f0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem; /* 1px */
+  opacity: 0.9;
+}
+
+.project-link {
+  color: #0f0;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.project-link:hover {
+  color: #ccc;
+}
+
+
+/* ===================== */
+/* Slider Styles         */
+/* ===================== */
+.slider-container {
+  position: relative;
+  padding-bottom: 3.5rem; /* Make space for buttons */
+}
+
+.experience-item {
+  min-height: 9.375rem; /* 150px */
+}
+
+.slider-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.slider-buttons button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0.0625rem solid #fff; /* 1px */
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem; /* 20px */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  transition: background-color 0.2s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.slider-buttons button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 /* ===================== */
@@ -284,7 +392,6 @@ footer a:hover {
 /* ===================== */
 #contact {
   text-align: center;
-  padding: 1rem;
 }
 
 .contact-list {
@@ -312,146 +419,169 @@ footer a:hover {
 }
 
 /* ===================== */
-/* Terminal Styles       */
+/* Footer                */
 /* ===================== */
-.terminal {
-  background-color: #000;
-  color: #0f0;
-  font-family: "IBM Plex Mono", monospace;
-  padding: 1rem;
-  border: 0.125rem solid #0f0; /* 2px / 16px = 0.125rem */
-  border-radius: 0.3125rem; /* 5px / 16px = 0.3125rem */
-  max-width: 100%;
-  margin: 1rem auto;
-  font-size: 1rem;
-  overflow-x: auto;
-}
-
-.ascii-art {
-  white-space: pre;
-  margin: 0;
-}
-
-.command {
-  color: #0f0;
-}
-
-.output {
+footer {
+  text-align: center;
+  font-size: 0.9rem;
   color: #ccc;
-}
-
-.success {
-  color: #0f0;
-}
-
-.success-message {
-  color: #0f0;
-  font-weight: bold;
-}
-
-/* ===================== */
-/* Skills Section        */
-/* ===================== */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* 250px / 16px = 15.625rem */
-  gap: 1.5rem;
-}
-
-.skill-category {
   background-color: #222;
-  padding: 1.5rem;
-  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
-  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-category:hover {
-  transform: translateY(-0.3125rem); /* 5px / 16px = 0.3125rem */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 0, 0.2); /* 4px / 16px = 0.25rem, 8px / 16px = 0.5rem */
-}
-
-.skill-category h3 {
-  font-size: 1.25rem;
-  color: #0f0;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.skill-category h3 i {
-  font-size: 1.5rem;
-}
-
-.skill-category ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category ul li {
-  font-size: 1rem;
-  color: #ccc;
-  padding: 0.5rem 0;
-  border-bottom: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
-}
-
-.skill-category ul li:last-child {
-  border-bottom: none;
-}
-
-/* ===================== */
-/* Projects Section      */
-/* ===================== */
-.project-description {
-  font-size: 1rem;
-  color: #0f0;
-  margin-bottom: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.0625rem; /* 1px / 16px = 0.0625rem */
-  opacity: 0.9;
-}
-
-.project-link {
-  color: #0f0;
+footer a {
+  color: #fff;
   text-decoration: none;
-  display: inline-block;
-  margin-top: 0.5rem;
 }
 
-.project-link:hover {
+footer a:hover {
   color: #ccc;
 }
+
+
+/* =========================================== */
+/* STYLES FOR NOTES PAGE (1412.html)           */
+/* =========================================== */
+
+/* Navbar layout for Notes page */
+.navbar .nav-left {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.navbar .nav-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+/* Article-Specific Styling Enhancements */
+#article-content .post {
+  background-color: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(5px);
+  border: 1px solid #0f0;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+  padding: 2rem;
+  margin-top: 1rem; /* Add some space from the nav */
+}
+
+#article-content h2 {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0;
+  border-bottom: 2px solid #0f0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#article-content p {
+  color: #ccc;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+#article-content blockquote {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #0ff;
+  border-left: 5px solid #0ff;
+  padding: 1rem 1.5rem;
+  margin: 2rem 1rem;
+  background-color: rgba(0, 255, 255, 0.05);
+  position: relative;
+  text-shadow: 0 0 3px #0ff;
+}
+
+#article-content blockquote::before {
+  content: '\201C';
+  font-size: 4rem;
+  color: rgba(0, 255, 255, 0.2);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  line-height: 1;
+}
+
+#article-content ul {
+  list-style-type: disc;
+  color: #ccc;
+  padding-left: 20px;
+  margin-top: 1rem;
+}
+
+#article-content li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  line-height: 1.7;
+}
+
+#article-content h3 {
+  color: #0f0;
+  font-size: 1.5em;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #0f0;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Table of Contents Styling */
+.toc {
+  background-color: rgba(20, 20, 20, 0.9);
+  border: 1px solid #0f0;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.toc h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.toc ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.toc li {
+  color: #ccc;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+.toc li:hover {
+  color: #0ff;
+}
+
+.toc li.active {
+    color: #0f0;
+    font-weight: bold;
+}
+
 
 /* ===================== */
 /* Responsive Design     */
 /* ===================== */
-@media (max-width: 48rem) { /* 768px / 16px = 48rem */
-  .hamburger {
-    display: block;
-  }
 
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
+@media (max-width: 48rem) { /* 768px */
   header h1 {
     font-size: 1.8rem;
   }
 
   header p {
     font-size: 0.9rem;
-  }
-
-  .terminal {
-    padding: 0.7rem;
-    font-size: 0.8rem;
   }
 
   .contact-list li {
@@ -475,10 +605,29 @@ footer a:hover {
   .skill-category ul li {
     font-size: 0.8rem;
   }
+  
+  /* Responsive adjustments for the article content */
+  #article-content .post {
+    padding: 1rem;
+  }
+
+  #article-content h2 {
+    font-size: 1.3rem;
+  }
+
+  #article-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  #article-content blockquote {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0.3rem;
+  }
 }
 
-@media (min-width: 48rem) { /* 768px / 16px = 48rem */
-
+@media (min-width: 48rem) { /* 768px */
   header,
   nav,
   main,
@@ -487,8 +636,7 @@ footer a:hover {
   }
 }
 
-@media (min-width: 64rem) { /* 1024px / 16px = 64rem */
-
+@media (min-width: 64rem) { /* 1024px */
   header,
   nav,
   main,
@@ -497,190 +645,14 @@ footer a:hover {
   }
 }
 
-/* ===================== */
-/* About Me Section      */
-/* ===================== */
-.about-description {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.about-layout {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* ===================== */
-/* Slider Styles         */
-/* ===================== */
-.slider-container {
-  position: relative;
-  padding-bottom: 3.5rem; /* Make space for the buttons below the content */
-}
-
-.experience-item {
-  /* No special positioning needed. x-show handles the layout. */
-  min-height: 9.375rem; /* 150px / 16px = 9.375rem */
-}
-
-.slider-buttons {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
-}
-
-.slider-buttons button {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 0.0625rem solid #fff; /* 1px / 16px = 0.0625rem */
-  color: #fff;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 1.25rem; /* 20px / 16px = 1.25rem */
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: "IBM Plex Mono", monospace;
-  transition: background-color 0.2s ease;
-}
-
-.slider-buttons button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.slider-buttons button:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
-
-
-/* ===================== */
-/* Microblog Section     */
-/* ===================== */
-#microblog {
-  text-align: left;
-  padding: 1rem;
-}
-
-.microblog-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.post {
-  background-color: #222;
-  padding: 1.5rem;
-  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
-  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.post:hover {
-  transform: translateY(-0.3125rem); /* 5px / 16px = 0.3125rem */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 0, 0.2); /* 4px / 16px = 0.25rem, 8px / 16px = 0.5rem */
-}
-
-.post-content {
-  font-size: 1rem;
-  color: #ccc;
-  margin-bottom: 0.5rem;
-}
-
-.post-date {
-  font-size: 0.9rem;
-  color: #0f0;
-  opacity: 0.8;
-}
-
-.post-date span {
-  font-weight: bold;
-}
-
-.pagination-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-  gap: 0.5rem;
-}
-
-.pagination-controls button {
-  background-color: #0f0;
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  font-family: "IBM Plex Mono", monospace;
-  transition: background-color 0.2s ease;
-}
-
-.pagination-controls button:hover {
-  background-color: #0c0;
-}
-
-.pagination-controls button.active {
-  background-color: #0a0;
-  color: #fff;
-}
-
-/* ===================== */
-/* Add Post Form         */
-/* ===================== */
-.add-post {
-  margin-top: 2rem;
-  background-color: #222;
-  padding: 1.5rem;
-  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
-  border-radius: 0.5rem; /* 8px / 16px = 0.5rem */
-}
-
-.add-post h3 {
-  font-size: 1.25rem;
-  color: #0f0;
-  margin-bottom: 1rem;
-}
-
-.add-post input[type="password"],
-.add-post textarea,
-.add-post input[type="date"] {
-  width: 100%;
-  padding: 0.5rem;
-  background-color: #333;
-  border: 0.0625rem solid #444; /* 1px / 16px = 0.0625rem */
-  border-radius: 0.25rem; /* 4px / 16px = 0.25rem */
-  color: #ccc;
-  font-family: "IBM Plex Mono", monospace;
-  margin-bottom: 1rem;
-}
-
-.add-post textarea {
-  resize: vertical;
-  min-height: 6.25rem; /* 100px / 16px = 6.25rem */
-}
-
-.add-post button {
-  background-color: #0f0;
-  color: #000;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem; /* 4px / 16px = 0.25rem */
-  cursor: pointer;
-  font-family: "IBM Plex Mono", monospace;
-}
-
-.add-post button:hover {
-  background-color: #0c0;
-}
-
-.error-message {
-  color: #ff5555;
-  /* Red color for errors */
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
+/* NOTE: The Microblog styles were removed as per the commented-out HTML in index.html, to keep the CSS lean. */
+/* If you re-enable the microblog, you can add these styles back. */
+/*
+#microblog { ... }
+.microblog-posts { ... }
+.post { ... }
+.post:hover { ... }
+.post-content { ... }
+.post-date { ... }
+.pagination-controls { ... }
+*/
