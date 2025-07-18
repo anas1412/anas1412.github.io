@@ -99,6 +99,7 @@ function app() {
       document.body.classList.remove(this.backgrounds[this.currentBackgroundIndex]);
       this.currentBackgroundIndex = (this.currentBackgroundIndex + 1) % this.backgrounds.length;
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
+      localStorage.setItem('backgroundIndex', this.currentBackgroundIndex);
     },
   };
 }

@@ -1,98 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Message to the Seeker</title>
-    <style>
-        body {
-            background-color: #000;
-            color: #0f0;
-            font-family: 'IBM Plex Mono', monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            overflow: auto; /* Changed to auto to allow scrolling for longer content */
-            flex-direction: column;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            text-align: left; /* Changed to left for article readability */
-            padding: 20px;
-            border: 2px solid #0f0;
-            box-shadow: 0 0 10px #0f0;
-            animation: flicker 1.5s infinite alternate;
-            max-width: 800px; /* Added max-width for better readability */
-            width: 100%;
-        }
-        h1, h2, h3 {
-            font-size: 2em;
-            text-shadow: 0 0 5px #0f0;
-            text-align: center; /* Center headings */
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-        p {
-            font-size: 1.1em;
-            margin-top: 10px;
-            line-height: 1.6;
-        }
-        blockquote {
-            font-style: italic;
-            margin: 20px 0;
-            padding: 10px 20px;
-            border-left: 3px solid #0f0;
-            color: #0ff;
-        }
-        @keyframes flicker {
-            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-                box-shadow: 0 0 10px #0f0;
-                opacity: 1;
-            }
-            20%, 24%, 55% {
-                box-shadow: none;
-                opacity: 0.8;
-            }
-        }
-    </style>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <script src="1412.js"></script>
-</head>
-<body x-data="article">
-    <div class="container">
-        <h1 x-text="title"></h1>
 
-        <template x-for="section in sections" :key="section.title">
-            <div>
-                <h2 x-text="section.title"></h2>
-                <template x-for="item in section.content">
-                    <div>
-                        <template x-if="item.type === 'p'">
-                            <p x-html="item.text"></p>
-                        </template>
-                        <template x-if="item.type === 'blockquote'">
-                            <blockquote x-html="item.text"></blockquote>
-                        </template>
-                        <template x-if="item.type === 'ul'">
-                            <ul>
-                                <template x-for="li in item.items">
-                                    <li x-html="li"></li>
-                                </template>
-                            </ul>
-                        </template>
-                        <template x-if="item.type === 'h3'">
-                            <h3 x-text="item.text"></h3>
-                        </template>
-                    </div>
-                </template>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notes from the Edge</title>
+  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/backgrounds.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <style>
+    /* Article-Specific Styling Enhancements */
+    #article-content .post {
+      background-color: rgba(17, 17, 17, 0.85);
+      backdrop-filter: blur(5px);
+      border: 1px solid #0f0;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+      padding: 2rem;
+      margin-top: 1rem; /* Add some space from the nav */
+    }
+
+    #article-content h2 {
+      color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+      border-bottom: 2px solid #0f0;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    #article-content p {
+      color: #ccc;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    #article-content blockquote {
+      font-family: 'Georgia', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #0ff;
+      border-left: 5px solid #0ff;
+      padding: 1rem 1.5rem;
+      margin: 2rem 1rem;
+      background-color: rgba(0, 255, 255, 0.05);
+      position: relative;
+      text-shadow: 0 0 3px #0ff;
+    }
+
+    #article-content blockquote::before {
+      content: '\201C';
+      font-size: 4rem;
+      color: rgba(0, 255, 255, 0.2);
+      position: absolute;
+      left: -10px;
+      top: -10px;
+      line-height: 1;
+    }
+
+    #article-content ul {
+      list-style-type: square;
+      color: #ccc;
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    #article-content li {
+      margin-bottom: 0.75rem;
+      padding-left: 0.5rem;
+      line-height: 1.7;
+    }
+
+    #article-content h3 {
+      color: #0f0;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px dashed #0f0;
+      padding-bottom: 0.5rem;
+      text-align: left;
+    }
+
+    /* Table of Contents Styling */
+    .toc {
+      background-color: rgba(20, 20, 20, 0.9);
+      border: 1px solid #0f0;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+    }
+
+    .toc h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .toc ol {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    .toc li {
+      color: #ccc;
+      padding: 0.5rem 0;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      border-bottom: 1px solid #333;
+    }
+
+    .toc li:hover {
+      color: #0ff;
+    }
+
+    .toc li.active {
+        color: #0f0;
+        font-weight: bold;
+    }
+
+    /* Responsive adjustments for the article content */
+    @media (max-width: 48rem) {
+      #article-content .post {
+        padding: 1.5rem;
+      }
+
+      #article-content h2 {
+        font-size: 1.5rem;
+      }
+
+      #article-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      #article-content blockquote {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.2rem;
+        margin: 1.5rem 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div x-data="app()" x-cloak>
+    <header>
+      <h1 x-text="article.title"></h1>
+    </header>
+
+    <nav>
+      <div class="navbar">
+        <ul class="nav-links" :class="{ 'active': isMenuOpen }">
+          <li>
+            <a href="../index.html"> <i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+          </li>
+          <li>
+            <button @click="isTocOpen = !isTocOpen" aria-label="Toggle Table of Contents" class="background-toggle-button">
+              <i class="fas fa-list-alt"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main id="content">
+      <!-- Table of Contents -->
+      <div class="toc" x-show="isTocOpen" x-transition>
+        <h2>Table of Contents</h2>
+        <ol>
+          <template x-for="(section, index) in article.sections" :key="index">
+            <li @click="currentIndex = index; isTocOpen = false" :class="{ 'active': currentIndex === index }">
+              <span x-text="section.title"></span>
+            </li>
+          </template>
+        </ol>
+      </div>
+
+      <section id="article-content">
+        <div class="slider-container" style="padding-bottom: 3.5rem;">
+          <!-- Article Sections -->
+          <template x-for="(section, index) in article.sections" :key="index">
+            <div class="post" x-show="currentIndex === index">
+              <h2 x-text="section.title"></h2>
+              <template x-for="item in section.content">
+                <div>
+                  <template x-if="item.type === 'p'">
+                    <p x-html="item.text"></p>
+                  </template>
+                  <template x-if="item.type === 'blockquote'">
+                    <blockquote x-html="item.text"></blockquote>
+                  </template>
+                  <template x-if="item.type === 'ul'">
+                    <ul>
+                      <template x-for="li in item.items">
+                        <li x-html="li"></li>
+                      </template>
+                    </ul>
+                  </template>
+                  <template x-if="item.type === 'h3'">
+                    <h3 x-text="item.text"></h3>
+                  </template>
+                </div>
+              </template>
             </div>
-        </template>
-    </div>
+          </template>
+
+          <!-- Slider Navigation Buttons -->
+          <div class="slider-buttons">
+            <button @click="prev()" :disabled="currentIndex === 0">
+              <i class="fas fa-chevron-left"></i> Prev
+            </button>
+            <button @click="next()" :disabled="currentIndex === article.sections.length - 1">
+              Next <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+        <p>
+            A single page application (SPA) built with Alpine.js and HTML5 <a href="https://github.com/anas1412/anas1412.github.io" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github fa-lg"></i>
+    </a><br />
+            &copy; <span x-text="new Date().getFullYear()"></span> Anas B. Portfolio. All rights reserved.
+        </p>
+    </footer>
+  </div>
+
+  <script src="1412.js"></script>
+  <script>
+    function app() {
+      return {
+        article: window.article,
+        currentIndex: 0,
+        isMenuOpen: false,
+        isTocOpen: false,
+        backgrounds: ['default-bg', 'cyberspace-bg-1', 'cyberspace-bg-2', 'cyberspace-bg-3', 'matrix-bg', 'digital-glitch-bg', 'abstract-code-bg'],
+        currentBackgroundIndex: 0,
+        init() {
+          this.currentBackgroundIndex = parseInt(localStorage.getItem('backgroundIndex')) || 0;
+          document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
+        },
+        next() {
+            if (this.currentIndex < this.article.sections.length - 1) {
+                this.currentIndex++;
+            }
+        },
+        prev() {
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+            }
+        }
+      };
+    }
+  </script>
 </body>
+
 </html>
