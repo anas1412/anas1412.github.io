@@ -32,47 +32,55 @@ function app() {
       "abstract-code-bg",
       "deep-space-warp-bg"
     ],
+    // Properties for 1412/index.html
+    article: null,
+    currentIndex: 0,
+    isTocOpen: false,
 
     init() {
       // Set initial background
       this.currentBackgroundIndex = parseInt(localStorage.getItem('backgroundIndex')) || 0;
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
 
-      // Dynamic Typing Effect for Home Section
+      // Initialize article data if available (for 1412/index.html)
+      if (window.article) {
+        this.article = window.article;
+      }
+
+      // Dynamic Typing Effect for Home Section (only if on index.html)
       const typedTextSpan = document.getElementById("typed-text");
-      const phrases = [
-        "Hello, I'm Anas B.",
-        "A Full-stack Developer",
-        "and a Quant Trader.",
-        "Welcome to my Cyberspace!",
-        "If you are lost try 1412"
-      ];
-      let phraseIndex = 0;
-      let charIndex = 0;
-      let isDeleting = false;
-
-      const type = () => {
-        const currentPhrase = phrases[phraseIndex];
-        if (isDeleting) {
-          typedTextSpan.textContent = currentPhrase.substring(0, charIndex - 1);
-          charIndex--;
-        } else {
-          typedTextSpan.textContent = currentPhrase.substring(0, charIndex + 1);
-          charIndex++;
-        }
-
-        if (!isDeleting && charIndex === currentPhrase.length) {
-          setTimeout(() => isDeleting = true, 1500); // Pause at end of phrase
-        } else if (isDeleting && charIndex === 0) {
-          isDeleting = false;
-          phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
-        }
-
-        const typeSpeed = isDeleting ? 50 : 100; // Typing vs. deleting speed
-        setTimeout(type, typeSpeed);
-      };
-
       if (typedTextSpan) {
+        const phrases = [
+          "Hello, I'm Anas B.",
+          "A Full-stack Developer",
+          "and a Quant Trader.",
+          "Welcome to my Cyberspace!",
+          "If you are lost try 1412"
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const type = () => {
+          const currentPhrase = phrases[phraseIndex];
+          if (isDeleting) {
+            typedTextSpan.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+          } else {
+            typedTextSpan.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
+          }
+
+          if (!isDeleting && charIndex === currentPhrase.length) {
+            setTimeout(() => isDeleting = true, 1500); // Pause at end of phrase
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length; // Move to next phrase
+          }
+
+          const typeSpeed = isDeleting ? 50 : 100; // Typing vs. deleting speed
+          setTimeout(type, typeSpeed);
+        };
         type(); // Start the typing effect
       }
     },
@@ -102,6 +110,20 @@ function app() {
       document.body.classList.add(this.backgrounds[this.currentBackgroundIndex]);
       localStorage.setItem('backgroundIndex', this.currentBackgroundIndex);
     },
+
+    // Methods for 1412/index.html
+    next() {
+      if (this.article && this.currentIndex < this.article.sections.length - 1) {
+        this.currentIndex++;
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    prev() {
+      if (this.article && this.currentIndex > 0) {
+        this.currentIndex--;
+        document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 }
 
