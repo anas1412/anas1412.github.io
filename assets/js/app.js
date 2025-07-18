@@ -78,3 +78,7 @@ function app() {
     },
   };
 }
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('app', app);
+});

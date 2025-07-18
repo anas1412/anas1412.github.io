@@ -17,7 +17,7 @@ function experienceSlider() {
         description: [
           "Delivering high-impact, tailored software solutions to optimize client workflows.",
           "Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.",
-          "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing."
+          "Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing.",
         ],
       },
       {
@@ -84,3 +84,7 @@ function experienceSlider() {
     },
   };
 }
+
+document.addEventListener('alpine:init', () => {
+    Alpine.data('experienceSlider', experienceSlider);
+});
