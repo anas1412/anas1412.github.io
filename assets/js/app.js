@@ -42,8 +42,9 @@ function app() {
       const phrases = [
         "Hello, I'm Anas B.",
         "A Full-stack Developer",
-        "and a Quant Trader",
-        "Welcome to my Cyberspace!"
+        "and a Quant Trader.",
+        "Welcome to my Cyberspace!",
+        "If you are lost try 1412"
       ];
       let phraseIndex = 0;
       let charIndex = 0;
