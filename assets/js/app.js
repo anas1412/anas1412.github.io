@@ -55,7 +55,7 @@ function app() {
           "A Full-stack Developer",
           "and a Quant Trader.",
           "Welcome to my Cyberspace!",
-          "If you are lost try 1412"
+          "If you're lost check my notes."
         ];
         let phraseIndex = 0;
         let charIndex = 0;
