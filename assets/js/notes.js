@@ -84,7 +84,7 @@ window.article = {
             ]
         },
         {
-            title: "The State of High Performance: Energy, Clarity, and Flow",
+            title: "The State of High Performance: Energy, Clarity, and Focus",
             content: [
                 { type: 'p', text: "To truly excel in the \'Doing\' phase, it is essential to master your state of being. This goes beyond mere action and delves into the quality of your performance, which hinges on three pillars: <strong>Energy, Clarity, and Focus.</strong>" },
                 { type: 'p', text: "First, <strong>Energy</strong> is the fuel of ambition. High achievement is not sustained by willpower alone, but by vibrant physical and mental energy. This means prioritizing sleep, nutrition, and exercise not as chores, but as critical components of your success architecture. A tired mind cannot think clearly, and a weary body cannot execute with precision. In our analogy, this is ensuring the horse is well-fed, rested, and in peak condition before a long journey." },
