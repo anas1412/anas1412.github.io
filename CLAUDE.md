@@ -141,7 +141,16 @@ To change what the pages show, edit `month_page()` in the script, not the
 markdown.
 
 It is deliberately a **journal, not a dashboard** — no win rate, profit factor
-or equity curve. Just the trades, month by month.
+or equity curve. Each month page is: a table of that month's trades for
+scanning, then **one block per trade** — heading, the TradingView chart
+inline, the note at full width — for re-reading.
+
+Charts are hotlinked from TradingView's snapshot bucket:
+`s3.tradingview.com/snapshots/<first letter, lowercased>/<ID>.png`, derived
+from the `tradingview.com/x/<ID>/` share links in the sheet (`snapshot()` in
+the script). 96% of trades have one. If that URL scheme ever changes, every
+inline chart breaks at once — the `view` link in the table still works, and
+the fix is one function.
 
 ## File naming
 

@@ -54,6 +54,17 @@ def parse_date(s):
     return None
 
 
+def snapshot(url):
+    """TradingView share link -> the raw PNG it serves.
+
+    https://www.tradingview.com/x/J91ofAr4/  ->
+    https://s3.tradingview.com/snapshots/j/J91ofAr4.png   (first letter lowercased)
+    Verified against trades from both journals; returns None if the link
+    isn't a TradingView share URL."""
+    m = re.search(r"tradingview\.com/x/([A-Za-z0-9]+)", url or "")
+    return f"https://s3.tradingview.com/snapshots/{m.group(1)[0].lower()}/{m.group(1)}.png" if m else None
+
+
 def rows_from(text):
     out = []
     for r in csv.DictReader(io.StringIO(text)):
@@ -181,6 +192,24 @@ def month_page(month, rows, when):
         out.append(f"| {day} | {t.get('instrument','')} | {t['direction']} | "
                    f"{t['result']} | {r} | {pnl} | {chart} | {note} |")
     out.append("")
+
+    # The table is for scanning. Below it, one block per trade with the chart
+    # inline and the note at full width - that is the part you actually re-read.
+    mon = datetime.strptime(rows[0]["date"], "%Y-%m-%d").strftime("%b")
+    for t in rows:
+        day = datetime.strptime(t["date"], "%Y-%m-%d").strftime("%-d")
+        bits = [f"{day} {mon}", t.get("instrument", ""), t["direction"], t["result"]]
+        if t["r"] is not None:
+            bits.append(f"{t['r']:+.2f}R")
+        out.append("### " + " · ".join(b for b in bits if b))
+        out.append("")
+        img = snapshot(t["chart"])
+        if img:
+            out.append(f"![{day} {mon} {t['direction']} {t['result']}]({img})")
+            out.append("")
+        if t["notes"]:
+            out.append(t["notes"])
+            out.append("")
     return "\n".join(out)
 
 
