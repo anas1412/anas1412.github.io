@@ -210,7 +210,8 @@ series. Blowfish renders the full part list on every post in it.
 
 ### Shortcodes for visuals
 
-All verified working in this setup.
+Full reference for all 46: [`docs/shortcodes.md`](docs/shortcodes.md).
+The ones below are verified working in this setup.
 
 Chart — Chart.js config as the body:
 
