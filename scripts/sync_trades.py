@@ -10,7 +10,7 @@ columns the page shows are kept - date, direction, result, R, P&L, chart, notes.
 
 The sheet must stay viewable by anyone with the link.
 """
-import argparse, csv, io, json, os, sys, urllib.request
+import argparse, csv, io, json, os, re, sys, urllib.request
 from collections import OrderedDict
 from datetime import datetime
 
@@ -21,7 +21,7 @@ TABS = ["301248474", "114438852", "1001618359", "2141663714"]   # oldest -> newe
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # not under data/ - Hugo treats that as a data directory and fails to parse CSV
 SNAPSHOT = os.path.join(ROOT, "scripts", "data", "trades.json")
-PAGE = os.path.join(ROOT, "content", "trading", "_index.md")
+TRADING = os.path.join(ROOT, "content", "trading")
 
 # older tabs spell outcomes differently; "Tape Reading" rows have no P&L or
 # risk at all, so they are days the trade was not taken
@@ -96,38 +96,69 @@ def fetch():
     return trades
 
 
-def page(trades):
+def month_page(month, rows, when):
+    """One article per month."""
+    out = [
+        "---",
+        f'title: "{month}"',
+        f"date: {when}",
+        "draft: false",
+        'tags: ["trading"]',
+        f'summary: "{len(rows)} trades logged in {month}."',
+        "---",
+        "",
+        "| Day | Dir | Result | R | P&L | Chart | Notes |",
+        "|---:|---|---|---:|---:|---|---|",
+    ]
+    for t in rows:
+        day = datetime.strptime(t["date"], "%Y-%m-%d").strftime("%-d")
+        r = f"{t['r']:+.2f}" if t["r"] is not None else ""
+        p = t["pnl"]
+        pnl = "" if p is None else f"{'-' if p < 0 else ''}${abs(p):,.0f}"
+        chart = f"[view]({t['chart']})" if t["chart"] else ""
+        note = t["notes"].replace("|", "\\|")
+        out.append(f"| {day} | {t['direction']} | {t['result']} | {r} | {pnl} | {chart} | {note} |")
+    out.append("")
+    return "\n".join(out)
+
+
+def index_page(total, months):
+    return "\n".join([
+        "---",
+        'title: "Trading"',
+        'description: "Every trade I take, logged."',
+        "showDate: false",
+        "---",
+        "",
+        "Every trade, win or lose, with the chart I took it from.",
+        f"{total} logged across {len(months)} months, newest first.",
+        f"Last synced {datetime.now():%-d %B %Y}.",
+        "",
+    ])
+
+
+def write_all(trades):
     by_month = OrderedDict()
     for t in trades:
         key = datetime.strptime(t["date"], "%Y-%m-%d").strftime("%B %Y")
         by_month.setdefault(key, []).append(t)
 
-    out = [
-        "---",
-        'title: "Trading"',
-        'description: "Every trade I take, logged."',
-        "showTableOfContents: true",
-        "showDate: false",
-        "---",
-        "",
-        "Every trade, win or lose, with the chart I took it from.",
-        f"Last synced {datetime.now():%-d %B %Y}.",
-        "",
-    ]
+    os.makedirs(TRADING, exist_ok=True)
+    # drop previously generated month files; the sheet is the source of truth
+    for f in os.listdir(TRADING):
+        if re.fullmatch(r"\d{4}-\d{2}\.md", f):
+            os.remove(os.path.join(TRADING, f))
+
     for month, rows in by_month.items():
-        out += [f"## {month}", "",
-                "| Day | Dir | Result | R | P&L | Chart | Notes |",
-                "|---:|---|---|---:|---:|---|---|"]
-        for t in rows:
-            day = datetime.strptime(t["date"], "%Y-%m-%d").strftime("%-d")
-            r = f"{t['r']:+.2f}" if t["r"] is not None else ""
-            p = t["pnl"]
-            pnl = "" if p is None else f"{'-' if p < 0 else ''}${abs(p):,.0f}"
-            chart = f"[view]({t['chart']})" if t["chart"] else ""
-            note = t["notes"].replace("|", "\\|")
-            out.append(f"| {day} | {t['direction']} | {t['result']} | {r} | {pnl} | {chart} | {note} |")
-        out.append("")
-    return "\n".join(out)
+        # dated to the last trade of that month, so the list sorts correctly
+        when = rows[-1]["date"]
+        slug = datetime.strptime(when, "%Y-%m-%d").strftime("%Y-%m")
+        open(os.path.join(TRADING, f"{slug}.md"), "w", encoding="utf-8").write(
+            month_page(month, rows, when))
+
+    open(os.path.join(TRADING, "_index.md"), "w", encoding="utf-8").write(
+        index_page(len(trades), by_month))
+    return by_month
 
 
 def main():
@@ -150,9 +181,9 @@ def main():
     if not trades:
         print("no trades parsed - has the sheet layout changed?", file=sys.stderr)
         return 1
-    os.makedirs(os.path.dirname(PAGE), exist_ok=True)
-    open(PAGE, "w", encoding="utf-8").write(page(trades))
-    print(f"wrote {PAGE} from {len(trades)} trades ({trades[0]['date']} -> {trades[-1]['date']})")
+    months = write_all(trades)
+    print(f"wrote {len(months)} month pages from {len(trades)} trades "
+          f"({trades[0]['date']} -> {trades[-1]['date']})")
     return 0
 
 

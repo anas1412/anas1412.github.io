@@ -12,7 +12,7 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
 | `content/projects/` | one file per project |
-| `content/trading/_index.md` | **generated** — do not hand-edit, see below |
+| `content/trading/` | **generated** — one article per month, do not hand-edit |
 | `scripts/sync_trades.py` | pulls the journal from Google Sheets |
 | `scripts/data/trades.json` | committed snapshot, so builds work offline |
 | `content/templates/post.md` | Obsidian template for a standalone post |
@@ -119,7 +119,12 @@ newest one:
 The snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats `data/` as
 a data directory and fails the build trying to parse files there.
 
-To change what the page shows, edit `page()` in the script, not the markdown.
+The script writes one article per month (`YYYY-MM.md`) plus `_index.md`, and
+deletes any month file matching that pattern before regenerating — the sheet is
+the source of truth, so hand edits are lost.
+
+To change what the pages show, edit `month_page()` in the script, not the
+markdown.
 
 It is deliberately a **journal, not a dashboard** — no win rate, profit factor
 or equity curve. Just the trades, month by month.
