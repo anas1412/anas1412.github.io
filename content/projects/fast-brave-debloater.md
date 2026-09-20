@@ -15,6 +15,19 @@ promotions, rewards notifications, AI chat suggestions.
 
 A browser that advertises to you is adware with good PR.
 
+## Get it
+
+```bash
+git clone https://github.com/anas1412/fast-brave-debloater
+cd fast-brave-debloater
+chmod +x brave_debloat.sh
+sudo ./brave_debloat.sh
+```
+
+## Screenshot
+
+![fast-brave-debloater](https://raw.githubusercontent.com/anas1412/fast-brave-debloater/main/screenshot.png)
+
 ---
 
 [Source](https://github.com/anas1412/fast-brave-debloater) · 8★

@@ -18,6 +18,18 @@ branch and a PR — makes it reviewable instead of disposable.
 
 Not affiliated with opencode; built by a user, not the team.
 
+## Get it
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/anas1412/opencode-pinboard/main/pinboard.sh | bash
+```
+
+There's a compiled installer binary on the releases page too.
+
+## Screenshot
+
+![opencode-pinboard](https://raw.githubusercontent.com/anas1412/opencode-pinboard/main/public/OG-preview.png)
+
 ---
 
 [Source](https://github.com/anas1412/opencode-pinboard) · [Live](https://anas1412.github.io/opencode-pinboard/) · 1★

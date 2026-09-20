@@ -13,6 +13,22 @@ Tokyo Night across the whole desktop — Plasma 6 on Wayland, Kitty, Fish, Kvant
 Managed with GNU Stow so each config is a symlink farm rather than a pile of
 copies. Same palette as this site.
 
+## Get it
+
+```bash
+sudo pacman -S stow
+git clone https://github.com/anas1412/dotfiles ~/dotfiles
+cd ~/dotfiles
+./install.sh
+```
+
+Or just some of it: `./install.sh fish kitty`. Stow refuses rather than
+overwriting an existing config — move the old one aside and re-run.
+
+## Screenshot
+
+![dotfiles](https://raw.githubusercontent.com/anas1412/dotfiles/main/screenshot.png)
+
 ---
 
 [Source](https://github.com/anas1412/dotfiles) · 3★

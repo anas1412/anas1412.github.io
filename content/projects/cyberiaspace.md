@@ -23,6 +23,22 @@ into it; the metaphor should be a view, not a cage.
 Local-only. No authentication, no cloud, everything in the browser's IndexedDB.
 The AI assistant runs on OpenRouter, bring your own key.
 
+## Get it
+
+```bash
+git clone https://github.com/anas1412/cyberiaspace
+cd cyberiaspace
+bun install
+bun run dev
+```
+
+Serves on `http://localhost:5173`. Or use the hosted build — it's local-only
+either way, nothing leaves the browser.
+
+## Screenshot
+
+![cyberiaspace](https://raw.githubusercontent.com/anas1412/cyberiaspace/main/public/preview.png)
+
 ---
 
 [Source](https://github.com/anas1412/cyberiaspace) · [Live](https://cyberiaspace.app) · 2★

@@ -19,6 +19,20 @@ routing and watching.
 
 Deployed to Kubernetes with Kustomize on k3d.
 
+## Get it
+
+One command builds the images, creates the k3d cluster, applies the manifests
+and waits for readiness:
+
+```bash
+./scripts/k3d-up.sh      # http://localhost:30080/
+./scripts/k3d-down.sh    # tears everything back down
+```
+
+## Screenshot
+
+![envoy-fullstack-k8s](https://raw.githubusercontent.com/anas1412/envoy-fullstack-k8s/main/preview.png)
+
 ---
 
 [Source](https://github.com/anas1412/envoy-fullstack-k8s)

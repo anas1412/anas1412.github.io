@@ -21,6 +21,18 @@ UTC internally, so the results don't shift twice a year.
 
 Pure-Python engine with a FastAPI dashboard on top.
 
+## Get it
+
+```bash
+python3 run.py
+```
+
+Creates the venv, installs deps and serves on `http://localhost:8000`.
+
+## Screenshot
+
+![orb-backtest-script](https://raw.githubusercontent.com/anas1412/orb-backtest-script/main/docs/screenshot.png)
+
 ---
 
 [Source](https://github.com/anas1412/orb-backtest-script) · [Live](https://orb-backtest-script--anasbassoumi1.replit.app/)

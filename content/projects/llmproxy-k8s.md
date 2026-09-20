@@ -22,6 +22,14 @@ running any state of your own.
 Every LLM gateway I looked at wanted Postgres and Redis to store what Kubernetes
 already stores. CRDs and Secrets are the database.
 
+## Get it
+
+```bash
+kubectl create namespace llmproxy-system
+kubectl apply -f deploy/crds.yaml
+kubectl apply -f deploy/operator.yaml
+```
+
 ---
 
 [Source](https://github.com/anas1412/llmproxy-k8s)

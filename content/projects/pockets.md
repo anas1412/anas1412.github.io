@@ -18,6 +18,11 @@ essentials 55%, long-term wealth 15%, short-term goals 15%, guilt-free spending
 Budgeting apps want an account, your bank login and a subscription. This is one
 page that never leaves your browser — no sign-up, no tracking.
 
+## Get it
+
+Nothing to install — [open it](https://anas1412.github.io/pockets/) and type
+your income. One page, no account, nothing stored anywhere but your browser.
+
 ---
 
 [Source](https://github.com/anas1412/pockets) · [Live](https://anas1412.github.io/pockets/)

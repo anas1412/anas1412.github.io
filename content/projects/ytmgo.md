@@ -21,6 +21,28 @@ a terminal, the music should too.
 
 Written in Go, MIT licensed. The most-starred thing I've published.
 
+## Get it
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/anas1412/ytmgo/main/install.sh | bash
+```
+
+Detects your system: on Arch it installs `ytmgo-bin` via `paru` or `yay`,
+elsewhere it pulls the static binary and its deps. Nothing compiles unless you
+ask. From source instead:
+
+```bash
+go build -o ytmgo . && ./ytmgo
+```
+
+`Tab` focuses search, `Enter` queues a result, `↑↓`/`jk` move.
+
+## Screenshot
+
+![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/ytmgo.png)
+
+![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/screenshot-catppuccin.png)
+
 ---
 
 [Source](https://github.com/anas1412/ytmgo) · [Live](https://anas1412.github.io/ytmgo/) · 16★

@@ -26,6 +26,24 @@ python3 orb.py compile      # build the EA
 
 MQL5 for the EA, Python for the harness. Runs on Windows and on Linux under Wine.
 
+## Get it
+
+Copy `mql5/` into your terminal's data folder (**File → Open Data Folder**),
+compile, and attach to an **XAUUSD M1** chart. The panel starts off.
+
+| From the repo | Goes to |
+|---|---|
+| `mql5/ORB.mq5` | `MQL5/Experts/` |
+| `mql5/CheckBrokerOffset.mq5` | `MQL5/Scripts/` |
+| `mql5/TimeZones.mqh` | `MQL5/Include/` |
+| `mql5/Panel.mqh` | `MQL5/Include/` |
+
+```bash
+python3 orb.py compile     # or F7 in MetaEditor
+```
+
+Releases ship source, not a compiled `.ex5`.
+
 ---
 
 [Source](https://github.com/anas1412/orb-mt5) · [Live](https://anas1412.github.io/orb-mt5/) · 5★
