@@ -2,7 +2,7 @@
 title: "The Have-Do-Be Model: The Illusion of External Success"
 date: 2025-07-25
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 4
 ---

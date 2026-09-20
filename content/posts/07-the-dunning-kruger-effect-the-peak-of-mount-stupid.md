@@ -2,7 +2,7 @@
 title: "The Dunning-Kruger Effect: The Peak of \"Mount Stupid\""
 date: 2025-07-31
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 7
 ---

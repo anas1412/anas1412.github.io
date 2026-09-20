@@ -2,7 +2,7 @@
 title: "The Energetic Blueprint: Frequencies, Mindsets, and Manifestation"
 date: 2025-08-02
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 8
 ---

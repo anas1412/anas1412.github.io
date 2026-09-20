@@ -2,7 +2,7 @@
 title: "The Engine of Progress: Discipline, Consistency, and Reflection"
 date: 2025-08-08
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 11
 ---

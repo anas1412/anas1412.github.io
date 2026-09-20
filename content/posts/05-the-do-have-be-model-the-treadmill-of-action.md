@@ -2,7 +2,7 @@
 title: "The Do-Have-Be Model: The Treadmill of Action"
 date: 2025-07-27
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 5
 ---

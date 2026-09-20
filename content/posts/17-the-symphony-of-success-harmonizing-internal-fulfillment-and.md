@@ -2,7 +2,7 @@
 title: "The Symphony of Success: Harmonizing Internal Fulfillment and External Achievement"
 date: 2025-08-20
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 17
 ---

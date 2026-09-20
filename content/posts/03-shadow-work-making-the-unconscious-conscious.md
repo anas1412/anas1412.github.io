@@ -2,7 +2,7 @@
 title: "Shadow Work: Making the Unconscious Conscious"
 date: 2025-07-23
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 3
 ---

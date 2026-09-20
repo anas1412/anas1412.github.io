@@ -2,7 +2,7 @@
 title: "The Power of Self-Image: Who You Believe You Are"
 date: 2025-07-29
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 6
 ---

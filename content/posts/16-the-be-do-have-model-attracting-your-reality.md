@@ -2,7 +2,7 @@
 title: "The Be-Do-Have Model: Attracting Your Reality"
 date: 2025-08-18
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 16
 ---

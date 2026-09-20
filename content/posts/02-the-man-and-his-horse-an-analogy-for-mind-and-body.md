@@ -2,7 +2,7 @@
 title: "The Man and His Horse: An Analogy for Mind and Body"
 date: 2025-07-21
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 2
 ---

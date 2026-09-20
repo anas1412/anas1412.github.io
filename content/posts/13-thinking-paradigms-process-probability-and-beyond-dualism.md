@@ -2,7 +2,7 @@
 title: "Thinking Paradigms: Process, Probability, and Beyond Dualism"
 date: 2025-08-12
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 13
 ---

@@ -2,7 +2,7 @@
 title: "Introduction: The Rider's Quest to the Edge"
 date: 2025-07-19
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 1
 ---

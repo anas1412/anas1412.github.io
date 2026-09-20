@@ -2,7 +2,7 @@
 title: "Embracing the Unfair Game: Paradox and Contrarian Thinking"
 date: 2025-08-16
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 15
 ---

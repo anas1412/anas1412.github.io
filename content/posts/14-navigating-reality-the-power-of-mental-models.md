@@ -2,7 +2,7 @@
 title: "Navigating Reality: The Power of Mental Models"
 date: 2025-08-14
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 14
 ---

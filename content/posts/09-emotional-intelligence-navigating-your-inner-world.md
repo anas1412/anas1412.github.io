@@ -2,7 +2,7 @@
 title: "Emotional Intelligence: Navigating Your Inner World"
 date: 2025-08-04
 draft: false
-tags: []
+tags: ["notes-from-the-edge"]
 series: ["Notes from the Edge"]
 series_order: 9
 ---
