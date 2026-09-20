@@ -12,7 +12,8 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
 | `content/projects.md` | projects |
-| `content/templates/post.md` | Obsidian note template (never published) |
+| `content/templates/post.md` | Obsidian template for a standalone post |
+| `content/templates/series-post.md` | Obsidian template for a post in a series |
 | `config/_default/languages.en.toml` | name, headline, bio, social links, site title |
 | `config/_default/params.toml` | `colorScheme` (15 options), dark mode, article display |
 | `config/_default/menus.en.toml` | the navbar |
@@ -124,12 +125,16 @@ tags: ["topic"]
 ---
 ```
 
-Series posts add two more lines:
+Series posts add two more lines — use the **series-post** template, which
+includes them:
 
 ```yaml
 series: ["Notes from the Edge"]
 series_order: 3
 ```
+
+Change the series name and set `series_order` to the next free number in that
+series. Blowfish renders the full part list on every post in it.
 
 ## Writing style
 

@@ -1,6 +1,7 @@
 ---
 title: "Posts"
 ---
+
 Notes on personal development, life, business, psychology, software
 engineering, and trading.
 

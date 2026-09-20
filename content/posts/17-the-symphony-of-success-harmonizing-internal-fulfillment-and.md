@@ -7,7 +7,7 @@ series: ["Notes from the Edge"]
 series_order: 17
 ---
 
-The ultimate aim of the Seeker's journey is not merely external achievement, but a profound sense of **internal fulfillment** that accompanies and transcends it. The Be-Do-Have model inherently bridges this gap, revealing that true success is a symphony where both internal and external elements play in harmony.
+The ultimate aim of the Seeker's journey is not merely external achievement, but a profound sense of **internal fulfillment** that accompanies and transcends it. The [[16-the-be-do-have-model-attracting-your-reality|Be-Do-Have]] model inherently bridges this gap, revealing that true success is a symphony where both internal and external elements play in harmony.
 
 The Be-Do-Have model reverses this. By first cultivating your 'Being' – your core identity, values, and purpose – you lay the foundation for authentic action. When your 'Doing' is aligned with this internal truth, the 'Having' that follows is not just a material gain, but a natural extension of your integrated self. This creates a virtuous cycle: external achievements become reflections of your internal growth, and each success reinforces your sense of purpose and fulfillment.
 
