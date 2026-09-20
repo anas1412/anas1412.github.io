@@ -5,8 +5,6 @@ showReadingTime: false
 showWordCount: false
 showAuthor: false
 ---
-
-
 ## [accdev.ai](https://accdevai.vercel.app/)
 
 AI-Driven Code Acceleration Plateform
