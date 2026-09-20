@@ -7,9 +7,9 @@ showWordCount: false
 ---
 
 
-Portfolio Manager | Quant Trader | Ex-Software Engineer
+Site Reliability Engineer | Software Engineer | Propfirm Trader
 
-I'm Anas, a portfolio manager & quant trader based in Tunisia. Self-educated in finance, business and psychology with a strong educational background in software engineering. I am passionate about spending half of my life making money and spending the other half giving it away.
+I'm Anas, a site reliability and software engineer based in Tunisia, trading funded prop firm accounts on the side. Formally trained in software engineering, self-educated in markets and psychology. I am passionate about spending half of my life making money and spending the other half giving it away.
 
 ## Experience
 

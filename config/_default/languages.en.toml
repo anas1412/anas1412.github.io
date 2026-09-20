@@ -17,7 +17,7 @@ title = "Anas B."
 [params.author]
   name = "Anas Bassoumi"
   headline = "Site Reliability Engineer | Software Engineer | Propfirm Trader"
-  bio = "Based in Tunisia. Self-educated in finance, business and psychology, with a background in software engineering."
+  bio = "Based in Tunisia. Site reliability and software engineering, with funded prop firm trading on the side."
   links = [
     { email = "mailto:anas.bassoumi@gmail.com" },
     { github = "https://github.com/anas1412" },
