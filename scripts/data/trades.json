@@ -1,6 +1,1107 @@
 [
  {
+  "date": "2024-01-04",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/e6asSnV3/",
+  "notes": ""
+ },
+ {
+  "date": "2024-01-09",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ad0fZiX0/",
+  "notes": ""
+ },
+ {
+  "date": "2024-01-10",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/QnWCJvhj/",
+  "notes": "day before cpi (only reversals)"
+ },
+ {
+  "date": "2024-01-11",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/NOZuVa7d/",
+  "notes": ""
+ },
+ {
+  "date": "2024-01-17",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/VemVT46C/",
+  "notes": "PWL reversal?"
+ },
+ {
+  "date": "2024-01-22",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/7VlauTh4/",
+  "notes": ""
+ },
+ {
+  "date": "2024-11-25",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "",
+  "notes": "old losses"
+ },
+ {
+  "date": "2024-11-29",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "",
+  "notes": ""
+ },
+ {
+  "date": "2024-12-03",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "",
+  "notes": "old losses"
+ },
+ {
+  "date": "2024-12-09",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "",
+  "notes": "old losses"
+ },
+ {
+  "date": "2024-12-12",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "",
+  "notes": "old losses"
+ },
+ {
+  "date": "2025-01-16",
+  "instrument": "NQ",
+  "direction": "",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "",
+  "notes": "old losses"
+ },
+ {
+  "date": "2025-03-10",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/OhUtyaEv/",
+  "notes": ""
+ },
+ {
+  "date": "2025-03-12",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/EXjg13wb/",
+  "notes": "DATA HIGH not taken & SMT & 2 candles m5"
+ },
+ {
+  "date": "2025-03-13",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/3b882dbF/",
+  "notes": "Use 40% of the range instead of 50% in entry"
+ },
+ {
+  "date": "2025-03-13",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/3b882dbF/",
+  "notes": "Use 40% of the range instead of 50% in entry"
+ },
+ {
+  "date": "2025-03-17",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/GZGpeOxe/",
+  "notes": "DATA HIGH DATA LOW setup"
+ },
+ {
+  "date": "2025-03-17",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/GZGpeOxe/",
+  "notes": "DATA HIGH DATA LOW setup"
+ },
+ {
+  "date": "2025-03-18",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/xpRiovyU/",
+  "notes": "Day before CPI"
+ },
+ {
+  "date": "2025-03-20",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/bo9Xn4Lf/",
+  "notes": ""
+ },
+ {
+  "date": "2025-03-24",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/qZui53c4/",
+  "notes": "There was no HTF or Liquidity context"
+ },
+ {
+  "date": "2025-03-25",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/G7DAABGh/",
+  "notes": "Traded in news time, SL widened due to spread"
+ },
+ {
+  "date": "2025-03-26",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Ma01SYOS/",
+  "notes": "Perfect loss ES took asia high already"
+ },
+ {
+  "date": "2025-03-27",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/vcVT45iQ/",
+  "notes": "Entry should be either cisd or 40%"
+ },
+ {
+  "date": "2025-03-27",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/vcVT45iQ/",
+  "notes": "Entry should be either cisd or 40%"
+ },
+ {
+  "date": "2025-03-28",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/78ixJjYP/",
+  "notes": ""
+ },
+ {
+  "date": "2025-03-31",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/wKXIczMg/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-01",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/jprKN7hu/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-02",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/2F0KQLF5/",
+  "notes": "21:00 trump speaks (bad idea to participate)"
+ },
+ {
+  "date": "2025-04-07",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/IcERS8SE/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-08",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/A7BogeeS/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-08",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/l4d1xov4/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-08",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/l4d1xov4/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-09",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 0.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/JBlGXMrq/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-10",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ycR9Ss97/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-11",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Fhogg9hP/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Q8pdJYkv/",
+  "notes": "Fed Chair Speaks later"
+ },
+ {
+  "date": "2025-04-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Q8pdJYkv/",
+  "notes": "Fed Chair Speaks later"
+ },
+ {
+  "date": "2025-04-17",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/9UUcLDxb/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-21",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/LLJmlA9U/",
+  "notes": "Monday, day after holiday (Friday)"
+ },
+ {
+  "date": "2025-04-22",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.6666666666666666,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/2N1Rt0gZ/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-23",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/2GTd01zs/",
+  "notes": "10 am data high sweep"
+ },
+ {
+  "date": "2025-04-24",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/oK9r5X3l/",
+  "notes": "Swept previous day high but a valid loss"
+ },
+ {
+  "date": "2025-04-28",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/DMCyoHhz/",
+  "notes": "there was no setup long and the short was correct"
+ },
+ {
+  "date": "2025-04-29",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/pkjLOtsU/",
+  "notes": ""
+ },
+ {
+  "date": "2025-04-30",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Gi4ikZu2/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-02",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/kuqvtesT/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-15",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/01P1FStw/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/buTfR4hU/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-19",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/y3dhSpay/",
+  "notes": "If position takes more than 30m / 6 M5 candles close it"
+ },
+ {
+  "date": "2025-05-20",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -0.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/BvUx3uFV/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-20",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/miaCZsBp/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-20",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/miaCZsBp/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-22",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/N3zh1Jdr/",
+  "notes": ""
+ },
+ {
+  "date": "2025-05-29",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ETnmrn7A/",
+  "notes": "no pd array close + 2 candle formation (not 3)"
+ },
+ {
+  "date": "2025-05-29",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ETnmrn7A/",
+  "notes": "did not close 1RR partial (BE)"
+ },
+ {
+  "date": "2025-06-05",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/KPfjIN7I/",
+  "notes": "traded this demo"
+ },
+ {
+  "date": "2025-06-06",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/jsUwA7zo/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-09",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/kTY3R5o8/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ax3IeNG3/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-17",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/QzYq7vtm/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-19",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/noYBsySH/",
+  "notes": "fake cisd no trade day"
+ },
+ {
+  "date": "2025-06-20",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ph9p0fNs/",
+  "notes": "quad witching day (always bearish/tradable)"
+ },
+ {
+  "date": "2025-06-20",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ph9p0fNs/",
+  "notes": "quad witching day (always bearish/tradable)"
+ },
+ {
+  "date": "2025-06-23",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/0nbtJaFb/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-23",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/E1JwZdui/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-26",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/CQFvVph5/",
+  "notes": "IM NEVER MOVING SL TO BE"
+ },
+ {
+  "date": "2025-06-27",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 2.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/45Wfe4DT/",
+  "notes": ""
+ },
+ {
+  "date": "2025-06-30",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/4MdUU9ru/",
+  "notes": ""
+ },
+ {
+  "date": "2025-07-01",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/LuNaeQXQ/",
+  "notes": "powell speaks"
+ },
+ {
+  "date": "2025-07-01",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/LuNaeQXQ/",
+  "notes": "powell speaks"
+ },
+ {
+  "date": "2025-07-02",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/6Zxdn3wZ/",
+  "notes": "when a big move wait for an extra m5 candle or appropriate lot size"
+ },
+ {
+  "date": "2025-07-03",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/HChWUZpy/",
+  "notes": "no reason to trade"
+ },
+ {
+  "date": "2025-07-08",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Byq3JZRc/",
+  "notes": "no ifvg"
+ },
+ {
+  "date": "2025-07-10",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/hfALPKyk/",
+  "notes": "less than 0.10 lot means 40% ml range"
+ },
+ {
+  "date": "2025-07-10",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/GYMXXzKG/",
+  "notes": "should have waited for 40% ml range"
+ },
+ {
+  "date": "2025-07-11",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/TIUiwUtN/",
+  "notes": ""
+ },
+ {
+  "date": "2025-07-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/gPSnh1F7/",
+  "notes": "good trade but red news dropped 1.5 target"
+ },
+ {
+  "date": "2025-07-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/gPSnh1F7/",
+  "notes": "winning trade turned losing bc of trump...."
+ },
+ {
+  "date": "2025-07-23",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/j6POpcWl/",
+  "notes": ""
+ },
+ {
+  "date": "2025-07-25",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/WaVXl2un/",
+  "notes": "i missed watch out the wicks"
+ },
+ {
+  "date": "2025-07-29",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/U3D3h4Sf/",
+  "notes": "valdi continuation"
+ },
+ {
+  "date": "2025-07-31",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/zPW6V3Sb/",
+  "notes": "small ifvg"
+ },
+ {
+  "date": "2025-08-07",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/bXaFCJ3O/",
+  "notes": ""
+ },
+ {
+  "date": "2025-08-26",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/4sGsnuCE/",
+  "notes": ""
+ },
+ {
+  "date": "2025-08-27",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/9RqD3oNn/",
+  "notes": "NEVER MOVE SL TO BE (was a win)"
+ },
+ {
+  "date": "2025-08-27",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/9RqD3oNn/",
+  "notes": "NEVER MOVE SL TO BE"
+ },
+ {
+  "date": "2025-09-02",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/jxUatcc3/",
+  "notes": "hard trade data ghi/low"
+ },
+ {
+  "date": "2025-09-02",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/jxUatcc3/",
+  "notes": "data high/low trade"
+ },
+ {
+  "date": "2025-09-03",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ZwMBDIdn/",
+  "notes": "[mistake] m5 cisd did not close - performance mistake"
+ },
+ {
+  "date": "2025-09-04",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/g2Xfbbrz/",
+  "notes": "TP edging me i closed -$15.5"
+ },
+ {
+  "date": "2025-09-05",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/BdaktBSY/",
+  "notes": "NFP NEWS SETUP"
+ },
+ {
+  "date": "2025-09-09",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/XyjbTcax/",
+  "notes": "[mistake] cisd didnt close on futures (watch last leg ifvg m1)"
+ },
+ {
+  "date": "2025-09-09",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/XyjbTcax/",
+  "notes": "cisd didnt close on futures (watch last leg ifvg m1)"
+ },
+ {
+  "date": "2025-09-11",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/IyiqBkfD/",
+  "notes": "CPI day: small ifvg maybe?"
+ },
+ {
+  "date": "2025-09-16",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/TrriwAvE/",
+  "notes": ""
+ },
+ {
+  "date": "2025-09-18",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ikpaaH9L/",
+  "notes": "check description"
+ },
+ {
+  "date": "2025-09-18",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/ikpaaH9L/",
+  "notes": "check description"
+ },
+ {
+  "date": "2025-09-23",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/cqiRSu5G/",
+  "notes": "IFVG should be at the last leg inside the m5 CISD"
+ },
+ {
+  "date": "2025-09-26",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/8mwwOp2m/",
+  "notes": "[mistake] NO IFVG BIG MISTAKE"
+ },
+ {
+  "date": "2025-09-26",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/AZBaT2M9/",
+  "notes": "the real trade but NQ did not close properly"
+ },
+ {
+  "date": "2025-09-29",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/r8wD5sJ1/",
+  "notes": "Never trade continuation again"
+ },
+ {
+  "date": "2025-09-30",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.3333333333333333,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/DTNHzKLE/",
+  "notes": ""
+ },
+ {
+  "date": "2025-10-02",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/0dv0wgeL/",
+  "notes": "high resistance liquidity / no dol"
+ },
+ {
+  "date": "2025-10-06",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/tQFEW9Rs/",
+  "notes": ""
+ },
+ {
+  "date": "2025-10-17",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/PIjEE5a9/",
+  "notes": "[mistake] ES took asia high but before market open invalid trade"
+ },
+ {
+  "date": "2025-10-17",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/8QfSrhXR/",
+  "notes": "EQL paired with m15 FVG reversed from"
+ },
+ {
+  "date": "2025-10-21",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/7wwttqli/",
+  "notes": "ES took london high when im trying to long"
+ },
+ {
+  "date": "2025-10-22",
+  "instrument": "NQ",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/nw0jsyoq/",
+  "notes": ""
+ },
+ {
+  "date": "2025-10-24",
+  "instrument": "NQ",
+  "direction": "short",
+  "result": "W",
+  "r": 1.5,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/jtp9xdju/",
+  "notes": ""
+ },
+ {
   "date": "2025-11-03",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.16,
@@ -10,6 +1111,7 @@
  },
  {
   "date": "2025-11-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.06,
@@ -19,6 +1121,7 @@
  },
  {
   "date": "2025-11-05",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -28,6 +1131,7 @@
  },
  {
   "date": "2025-11-06",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.09,
@@ -37,6 +1141,7 @@
  },
  {
   "date": "2025-11-07",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.45,
@@ -46,6 +1151,7 @@
  },
  {
   "date": "2025-11-10",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.89,
@@ -55,6 +1161,7 @@
  },
  {
   "date": "2025-11-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.0,
@@ -64,6 +1171,7 @@
  },
  {
   "date": "2025-11-13",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -73,6 +1181,7 @@
  },
  {
   "date": "2025-11-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.07,
@@ -82,6 +1191,7 @@
  },
  {
   "date": "2025-11-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -91,6 +1201,7 @@
  },
  {
   "date": "2025-11-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 2.51,
@@ -100,6 +1211,7 @@
  },
  {
   "date": "2025-11-18",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.97,
@@ -109,6 +1221,7 @@
  },
  {
   "date": "2025-11-19",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.46,
@@ -118,6 +1231,7 @@
  },
  {
   "date": "2025-11-20",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.01,
@@ -127,6 +1241,7 @@
  },
  {
   "date": "2025-11-20",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 4.64,
@@ -136,6 +1251,7 @@
  },
  {
   "date": "2025-11-21",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.04,
@@ -145,6 +1261,7 @@
  },
  {
   "date": "2025-11-24",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.87,
@@ -154,6 +1271,7 @@
  },
  {
   "date": "2025-11-24",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.01,
@@ -163,6 +1281,7 @@
  },
  {
   "date": "2025-11-25",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": -0.08,
@@ -172,6 +1291,7 @@
  },
  {
   "date": "2025-11-26",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -181,6 +1301,7 @@
  },
  {
   "date": "2025-11-27",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -190,6 +1311,7 @@
  },
  {
   "date": "2025-12-01",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -199,6 +1321,7 @@
  },
  {
   "date": "2025-12-02",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -208,6 +1331,7 @@
  },
  {
   "date": "2025-12-02",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -217,6 +1341,7 @@
  },
  {
   "date": "2025-12-03",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.16,
@@ -226,6 +1351,7 @@
  },
  {
   "date": "2025-12-03",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -235,6 +1361,7 @@
  },
  {
   "date": "2025-12-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.09,
@@ -244,6 +1371,7 @@
  },
  {
   "date": "2025-12-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.05,
@@ -253,6 +1381,7 @@
  },
  {
   "date": "2025-12-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.94,
@@ -262,6 +1391,7 @@
  },
  {
   "date": "2025-12-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.07,
@@ -271,6 +1401,7 @@
  },
  {
   "date": "2025-12-08",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -280,6 +1411,7 @@
  },
  {
   "date": "2025-12-09",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.06,
@@ -289,6 +1421,7 @@
  },
  {
   "date": "2025-12-15",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.23,
@@ -298,6 +1431,7 @@
  },
  {
   "date": "2025-12-16",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.05,
@@ -307,6 +1441,7 @@
  },
  {
   "date": "2025-12-16",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -316,6 +1451,7 @@
  },
  {
   "date": "2025-12-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.02,
@@ -325,6 +1461,7 @@
  },
  {
   "date": "2025-12-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 2.17,
@@ -334,6 +1471,7 @@
  },
  {
   "date": "2025-12-19",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.02,
@@ -343,6 +1481,7 @@
  },
  {
   "date": "2025-12-19",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.96,
@@ -352,6 +1491,7 @@
  },
  {
   "date": "2026-01-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.99,
@@ -361,6 +1501,7 @@
  },
  {
   "date": "2026-01-05",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.11,
@@ -370,6 +1511,7 @@
  },
  {
   "date": "2026-01-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -379,6 +1521,7 @@
  },
  {
   "date": "2026-01-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.16,
@@ -388,6 +1531,7 @@
  },
  {
   "date": "2026-01-06",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -397,6 +1541,7 @@
  },
  {
   "date": "2026-01-06",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -406,6 +1551,7 @@
  },
  {
   "date": "2026-01-06",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "missed",
   "r": null,
@@ -415,6 +1561,7 @@
  },
  {
   "date": "2026-01-06",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.02,
@@ -424,6 +1571,7 @@
  },
  {
   "date": "2026-01-07",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.0,
@@ -433,6 +1581,7 @@
  },
  {
   "date": "2026-01-07",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.04,
@@ -442,6 +1591,7 @@
  },
  {
   "date": "2026-01-08",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.84,
@@ -451,6 +1601,7 @@
  },
  {
   "date": "2026-01-08",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": -0.05,
@@ -460,6 +1611,7 @@
  },
  {
   "date": "2026-01-08",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 2.1,
@@ -469,6 +1621,7 @@
  },
  {
   "date": "2026-01-08",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": null,
@@ -478,6 +1631,7 @@
  },
  {
   "date": "2026-01-09",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.08,
@@ -487,6 +1641,7 @@
  },
  {
   "date": "2026-01-09",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.01,
@@ -496,6 +1651,7 @@
  },
  {
   "date": "2026-01-09",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.98,
@@ -505,6 +1661,7 @@
  },
  {
   "date": "2026-01-09",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.19,
@@ -514,6 +1671,7 @@
  },
  {
   "date": "2026-01-12",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": -0.14,
@@ -523,6 +1681,7 @@
  },
  {
   "date": "2026-01-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": -0.24,
@@ -532,6 +1691,7 @@
  },
  {
   "date": "2026-01-13",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.6,
@@ -541,6 +1701,7 @@
  },
  {
   "date": "2026-01-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.0,
@@ -550,6 +1711,7 @@
  },
  {
   "date": "2026-01-13",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.06,
@@ -559,6 +1721,7 @@
  },
  {
   "date": "2026-01-14",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.03,
@@ -568,6 +1731,7 @@
  },
  {
   "date": "2026-01-15",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.01,
@@ -577,6 +1741,7 @@
  },
  {
   "date": "2026-01-16",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.02,
@@ -586,6 +1751,7 @@
  },
  {
   "date": "2026-01-16",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -595,6 +1761,7 @@
  },
  {
   "date": "2026-01-16",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.69,
@@ -604,6 +1771,7 @@
  },
  {
   "date": "2026-01-19",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.3,
@@ -613,6 +1781,7 @@
  },
  {
   "date": "2026-01-20",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": -0.06,
@@ -622,6 +1791,7 @@
  },
  {
   "date": "2026-01-20",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.0,
@@ -631,6 +1801,7 @@
  },
  {
   "date": "2026-01-21",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.98,
@@ -640,6 +1811,7 @@
  },
  {
   "date": "2026-01-22",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.06,
@@ -649,6 +1821,7 @@
  },
  {
   "date": "2026-01-23",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.91,
@@ -658,6 +1831,7 @@
  },
  {
   "date": "2026-01-23",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.25,
@@ -667,6 +1841,7 @@
  },
  {
   "date": "2026-01-23",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -676,6 +1851,7 @@
  },
  {
   "date": "2026-01-26",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.03,
@@ -685,6 +1861,7 @@
  },
  {
   "date": "2026-01-27",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.99,
@@ -694,6 +1871,7 @@
  },
  {
   "date": "2026-01-29",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.01,
@@ -703,6 +1881,7 @@
  },
  {
   "date": "2026-02-02",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.03,
@@ -712,6 +1891,7 @@
  },
  {
   "date": "2026-02-03",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 0.96,
@@ -721,6 +1901,7 @@
  },
  {
   "date": "2026-02-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.03,
@@ -730,6 +1911,7 @@
  },
  {
   "date": "2026-02-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.09,
@@ -739,6 +1921,7 @@
  },
  {
   "date": "2026-02-09",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.18,
@@ -748,6 +1931,7 @@
  },
  {
   "date": "2026-02-10",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.0,
@@ -757,6 +1941,7 @@
  },
  {
   "date": "2026-02-10",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.97,
@@ -766,6 +1951,7 @@
  },
  {
   "date": "2026-02-11",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.43,
@@ -775,6 +1961,7 @@
  },
  {
   "date": "2026-02-12",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.05,
@@ -784,6 +1971,7 @@
  },
  {
   "date": "2026-02-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.44,
@@ -793,6 +1981,7 @@
  },
  {
   "date": "2026-02-16",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.88,
@@ -802,6 +1991,7 @@
  },
  {
   "date": "2026-02-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.0,
@@ -811,6 +2001,7 @@
  },
  {
   "date": "2026-02-18",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.34,
@@ -820,6 +2011,7 @@
  },
  {
   "date": "2026-02-19",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.92,
@@ -829,6 +2021,7 @@
  },
  {
   "date": "2026-02-25",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.56,
@@ -838,6 +2031,7 @@
  },
  {
   "date": "2026-02-27",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.1,
@@ -847,6 +2041,7 @@
  },
  {
   "date": "2026-03-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.05,
@@ -856,6 +2051,7 @@
  },
  {
   "date": "2026-03-06",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": -0.14,
@@ -865,6 +2061,7 @@
  },
  {
   "date": "2026-03-10",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.08,
@@ -874,6 +2071,7 @@
  },
  {
   "date": "2026-03-11",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": -0.07,
@@ -883,6 +2081,7 @@
  },
  {
   "date": "2026-03-12",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.02,
@@ -892,6 +2091,7 @@
  },
  {
   "date": "2026-03-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.08,
@@ -901,6 +2101,7 @@
  },
  {
   "date": "2026-03-16",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.1,
@@ -910,6 +2111,7 @@
  },
  {
   "date": "2026-03-17",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.01,
@@ -919,6 +2121,7 @@
  },
  {
   "date": "2026-03-18",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.0,
@@ -928,6 +2131,7 @@
  },
  {
   "date": "2026-03-23",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.1,
@@ -937,6 +2141,7 @@
  },
  {
   "date": "2026-03-24",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.0,
@@ -946,6 +2151,7 @@
  },
  {
   "date": "2026-05-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.05,
@@ -955,6 +2161,7 @@
  },
  {
   "date": "2026-05-05",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.08,
@@ -964,6 +2171,7 @@
  },
  {
   "date": "2026-05-06",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.0,
@@ -973,6 +2181,7 @@
  },
  {
   "date": "2026-05-07",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.0,
@@ -982,6 +2191,7 @@
  },
  {
   "date": "2026-05-08",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.02,
@@ -991,6 +2201,7 @@
  },
  {
   "date": "2026-05-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.02,
@@ -1000,6 +2211,7 @@
  },
  {
   "date": "2026-05-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.03,
@@ -1009,6 +2221,7 @@
  },
  {
   "date": "2026-05-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.08,
@@ -1018,6 +2231,7 @@
  },
  {
   "date": "2026-05-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -1027,6 +2241,7 @@
  },
  {
   "date": "2026-05-14",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.09,
@@ -1036,6 +2251,7 @@
  },
  {
   "date": "2026-05-15",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.63,
@@ -1045,6 +2261,7 @@
  },
  {
   "date": "2026-05-15",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.09,
@@ -1054,6 +2271,7 @@
  },
  {
   "date": "2026-05-15",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.06,
@@ -1063,6 +2281,7 @@
  },
  {
   "date": "2026-05-18",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.39,
@@ -1072,6 +2291,7 @@
  },
  {
   "date": "2026-05-20",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.01,
@@ -1081,6 +2301,7 @@
  },
  {
   "date": "2026-05-21",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.09,
@@ -1090,6 +2311,7 @@
  },
  {
   "date": "2026-05-26",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.21,
@@ -1099,6 +2321,7 @@
  },
  {
   "date": "2026-05-28",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": -0.01,
@@ -1108,6 +2331,7 @@
  },
  {
   "date": "2026-05-28",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.98,
@@ -1117,6 +2341,7 @@
  },
  {
   "date": "2026-05-28",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.29,
@@ -1126,6 +2351,7 @@
  },
  {
   "date": "2026-05-29",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 0.57,
@@ -1135,6 +2361,7 @@
  },
  {
   "date": "2026-05-29",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 0.53,
@@ -1144,6 +2371,7 @@
  },
  {
   "date": "2026-06-01",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.56,
@@ -1153,6 +2381,7 @@
  },
  {
   "date": "2026-06-01",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.05,
@@ -1162,6 +2391,7 @@
  },
  {
   "date": "2026-06-02",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.52,
@@ -1171,6 +2401,7 @@
  },
  {
   "date": "2026-06-02",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.12,
@@ -1180,6 +2411,7 @@
  },
  {
   "date": "2026-06-03",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.02,
@@ -1189,6 +2421,7 @@
  },
  {
   "date": "2026-06-03",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.14,
@@ -1198,6 +2431,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": -0.02,
@@ -1207,6 +2441,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 0.46,
@@ -1216,6 +2451,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.56,
@@ -1225,6 +2461,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.04,
@@ -1234,6 +2471,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.0,
@@ -1243,6 +2481,7 @@
  },
  {
   "date": "2026-06-04",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -1252,6 +2491,7 @@
  },
  {
   "date": "2026-06-05",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.95,
@@ -1261,6 +2501,7 @@
  },
  {
   "date": "2026-06-08",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 0.41,
@@ -1270,6 +2511,7 @@
  },
  {
   "date": "2026-06-09",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.03,
@@ -1279,6 +2521,7 @@
  },
  {
   "date": "2026-06-09",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.66,
@@ -1288,6 +2531,7 @@
  },
  {
   "date": "2026-06-10",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.02,
@@ -1297,6 +2541,7 @@
  },
  {
   "date": "2026-06-10",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.09,
@@ -1306,6 +2551,7 @@
  },
  {
   "date": "2026-06-11",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.28,
@@ -1315,6 +2561,7 @@
  },
  {
   "date": "2026-06-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.07,
@@ -1324,6 +2571,7 @@
  },
  {
   "date": "2026-06-15",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.04,
@@ -1333,6 +2581,7 @@
  },
  {
   "date": "2026-06-16",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.05,
@@ -1342,6 +2591,7 @@
  },
  {
   "date": "2026-06-17",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.06,
@@ -1351,6 +2601,7 @@
  },
  {
   "date": "2026-06-18",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.11,
@@ -1360,6 +2611,7 @@
  },
  {
   "date": "2026-06-19",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.1,
@@ -1369,6 +2621,7 @@
  },
  {
   "date": "2026-06-23",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.61,
@@ -1378,6 +2631,7 @@
  },
  {
   "date": "2026-06-24",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.0,
@@ -1387,6 +2641,7 @@
  },
  {
   "date": "2026-06-25",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 2.37,
@@ -1396,6 +2651,7 @@
  },
  {
   "date": "2026-06-26",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.51,
@@ -1405,6 +2661,7 @@
  },
  {
   "date": "2026-06-29",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.7,
@@ -1414,6 +2671,7 @@
  },
  {
   "date": "2026-06-29",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.55,
@@ -1423,6 +2681,7 @@
  },
  {
   "date": "2026-06-30",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.08,
@@ -1432,6 +2691,7 @@
  },
  {
   "date": "2026-07-01",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -0.98,
@@ -1441,6 +2701,7 @@
  },
  {
   "date": "2026-07-02",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.09,
@@ -1450,6 +2711,7 @@
  },
  {
   "date": "2026-07-03",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.43,
@@ -1459,6 +2721,7 @@
  },
  {
   "date": "2026-07-08",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.5,
@@ -1468,6 +2731,7 @@
  },
  {
   "date": "2026-07-09",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "BE",
   "r": 0.0,
@@ -1477,6 +2741,7 @@
  },
  {
   "date": "2026-07-09",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.07,
@@ -1486,6 +2751,7 @@
  },
  {
   "date": "2026-07-10",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.17,
@@ -1495,6 +2761,7 @@
  },
  {
   "date": "2026-07-14",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.03,
@@ -1504,6 +2771,7 @@
  },
  {
   "date": "2026-07-16",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": -0.04,
@@ -1513,6 +2781,7 @@
  },
  {
   "date": "2026-07-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.0,
@@ -1522,6 +2791,7 @@
  },
  {
   "date": "2026-07-20",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.04,
@@ -1531,6 +2801,7 @@
  },
  {
   "date": "2026-07-21",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.98,
@@ -1540,6 +2811,7 @@
  },
  {
   "date": "2026-07-23",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.86,
@@ -1549,6 +2821,7 @@
  },
  {
   "date": "2026-07-28",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.05,
@@ -1558,6 +2831,7 @@
  },
  {
   "date": "2026-07-30",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.06,
@@ -1567,6 +2841,7 @@
  },
  {
   "date": "2026-07-31",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.53,
@@ -1576,6 +2851,7 @@
  },
  {
   "date": "2026-08-03",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.52,
@@ -1585,6 +2861,7 @@
  },
  {
   "date": "2026-08-04",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.99,
@@ -1594,6 +2871,7 @@
  },
  {
   "date": "2026-08-05",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.12,
@@ -1603,6 +2881,7 @@
  },
  {
   "date": "2026-08-07",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.02,
@@ -1612,6 +2891,7 @@
  },
  {
   "date": "2026-08-10",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.02,
@@ -1621,6 +2901,7 @@
  },
  {
   "date": "2026-08-11",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 0.98,
@@ -1630,6 +2911,7 @@
  },
  {
   "date": "2026-08-12",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.01,
@@ -1639,6 +2921,7 @@
  },
  {
   "date": "2026-08-13",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "missed",
   "r": 0.0,
@@ -1648,6 +2931,7 @@
  },
  {
   "date": "2026-08-14",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 1.27,
@@ -1657,6 +2941,7 @@
  },
  {
   "date": "2026-08-17",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "W",
   "r": 1.83,
@@ -1666,6 +2951,7 @@
  },
  {
   "date": "2026-08-18",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -0.64,
@@ -1675,6 +2961,7 @@
  },
  {
   "date": "2026-08-19",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.06,
@@ -1684,6 +2971,7 @@
  },
  {
   "date": "2026-08-20",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.08,
@@ -1693,6 +2981,7 @@
  },
  {
   "date": "2026-08-21",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "BE",
   "r": 0.03,
@@ -1702,6 +2991,7 @@
  },
  {
   "date": "2026-08-26",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "W",
   "r": 2.07,
@@ -1711,6 +3001,7 @@
  },
  {
   "date": "2026-08-27",
+  "instrument": "GOLD",
   "direction": "short",
   "result": "L",
   "r": -1.02,
@@ -1720,6 +3011,7 @@
  },
  {
   "date": "2026-08-31",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -1729,6 +3021,7 @@
  },
  {
   "date": "2026-09-01",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.09,
@@ -1738,6 +3031,7 @@
  },
  {
   "date": "2026-09-02",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.31,
@@ -1747,6 +3041,7 @@
  },
  {
   "date": "2026-09-07",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.04,
@@ -1756,6 +3051,7 @@
  },
  {
   "date": "2026-09-16",
+  "instrument": "GOLD",
   "direction": "long",
   "result": "L",
   "r": -1.02,

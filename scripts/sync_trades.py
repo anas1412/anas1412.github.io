@@ -14,9 +14,15 @@ import argparse, csv, io, json, os, re, sys, urllib.request
 from collections import OrderedDict
 from datetime import datetime
 
-SHEET = "1tXcf-haO-wSi0uQiPA6xDRSOdIcv_mRSULE8tIPbsBU"
-TABS = ["301248474", "114438852", "1001618359", "2141663714"]   # oldest -> newest
-# gid 0 is an empty template tab (TOTAL trades: 0) - deliberately not listed
+# Two journals with different schemas. The gold one logs dollars; the NQ one
+# logs risk/return as percentages. Its tabs overlap heavily - a master tab plus
+# per-period subsets - so everything is de-duplicated after parsing.
+GOLD = ("1tXcf-haO-wSi0uQiPA6xDRSOdIcv_mRSULE8tIPbsBU",
+        ["301248474", "114438852", "1001618359", "2141663714"])
+# gid 0 there is an empty template tab (TOTAL trades: 0) - deliberately skipped
+NQ = ("1SN30Q2lYVwNmVNKQ48uu-n2LyKz1_4jlvDJb06HiydY",
+      ["0", "1372946359", "1394420374", "479439999", "627707102",
+       "705926544", "953688439"])
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # not under data/ - Hugo treats that as a data directory and fails to parse CSV
@@ -42,7 +48,7 @@ def num(s):
 
 
 def parse_date(s):
-    for fmt in ("%B %d, %Y", "%Y-%m-%d", "%m/%d/%Y"):
+    for fmt in ("%B %d, %Y", "%Y-%m-%d", "%d/%m/%Y"):
         try: return datetime.strptime((s or "").strip(), fmt)
         except ValueError: pass
     return None
@@ -77,6 +83,7 @@ def rows_from(text):
 
         out.append({
             "date": d.strftime("%Y-%m-%d"),
+            "instrument": inst,
             "direction": (r.get("direction") or "").strip(),
             "result": result,
             "r": rr,
@@ -87,11 +94,65 @@ def rows_from(text):
     return out
 
 
+def rows_from_nq(text):
+    """The NQ journal: percentages instead of dollars, DD/MM/YYYY dates."""
+    out = []
+    for r in csv.DictReader(io.StringIO(text)):
+        d = parse_date(r.get("date") or r.get("x"))
+        if not d:
+            continue                                   # blank + "Nbr of trades" footers
+        raw = (r.get("outcome") or "").strip()
+        key = raw.lower()
+        if not raw or "%" in raw:
+            continue                                   # no-trade rows and stray stats
+        if key in OUTCOME:
+            result = OUTCOME[key]
+        elif key.startswith("mistake"):
+            result = "L"
+        else:
+            continue
+
+        notes = (r.get("notes") or "").strip()
+        if key.startswith("mistake"):
+            notes = f"[mistake] {notes}".strip()
+
+        risk, ret = num(r.get("risk in %")), num(r.get("return in %"))
+        out.append({
+            "date": d.strftime("%Y-%m-%d"),
+            "instrument": (r.get("pair") or "NQ").strip(),
+            "direction": (r.get("direction") or "").strip().lower(),
+            "result": result,
+            "r": (ret / risk) if (risk and ret is not None) else None,
+            "pnl": None,                               # this journal never logged dollars
+            "chart": (r.get("screenshot (m5)") or "").strip(),
+            "notes": notes,
+        })
+    return out
+
+
+def grab(sheet, gids, parser):
+    out = []
+    for gid in gids:
+        url = f"https://docs.google.com/spreadsheets/d/{sheet}/export?format=csv&gid={gid}"
+        out += parser(urllib.request.urlopen(url, timeout=30).read().decode("utf-8"))
+    return out
+
+
 def fetch():
-    trades = []
-    for gid in TABS:
-        url = f"https://docs.google.com/spreadsheets/d/{SHEET}/export?format=csv&gid={gid}"
-        trades += rows_from(urllib.request.urlopen(url, timeout=30).read().decode("utf-8"))
+    # Gold: tabs cover distinct periods, so every row is a real trade. Several
+    # days hold two or three trades sharing one screenshot - do NOT de-duplicate.
+    trades = grab(*GOLD, rows_from)
+
+    # NQ: a master tab plus per-period subsets that repeat it, so this one must
+    # be de-duplicated. Key includes R and notes so two same-day trades survive.
+    seen = set()
+    for t in grab(*NQ, rows_from_nq):
+        k = (t["date"], t["chart"], t["result"], t["r"], t["notes"])
+        if k in seen:
+            continue
+        seen.add(k)
+        trades.append(t)
+
     trades.sort(key=lambda t: t["date"])
     return trades
 
@@ -107,8 +168,8 @@ def month_page(month, rows, when):
         f'summary: "{len(rows)} trades logged in {month}."',
         "---",
         "",
-        "| Day | Dir | Result | R | P&L | Chart | Notes |",
-        "|---:|---|---|---:|---:|---|---|",
+        "| Day | Pair | Dir | Result | R | P&L | Chart | Notes |",
+        "|---:|---|---|---|---:|---:|---|---|",
     ]
     for t in rows:
         day = datetime.strptime(t["date"], "%Y-%m-%d").strftime("%-d")
@@ -117,7 +178,8 @@ def month_page(month, rows, when):
         pnl = "" if p is None else f"{'-' if p < 0 else ''}${abs(p):,.0f}"
         chart = f"[view]({t['chart']})" if t["chart"] else ""
         note = t["notes"].replace("|", "\\|")
-        out.append(f"| {day} | {t['direction']} | {t['result']} | {r} | {pnl} | {chart} | {note} |")
+        out.append(f"| {day} | {t.get('instrument','')} | {t['direction']} | "
+                   f"{t['result']} | {r} | {pnl} | {chart} | {note} |")
     out.append("")
     return "\n".join(out)
 

@@ -100,9 +100,20 @@ python3 scripts/sync_trades.py     # fetch the sheet, rebuild the page
 python3 scripts/sync_trades.py --local   # rebuild from the committed CSV
 ```
 
-The sheet must stay link-viewable. The script reads **all four journal tabs**
-(2025, 2026, 2026/2 and the newest) and merges them chronologically — 196
-trades from November 2025. `gid=0` is an empty template tab and is skipped.
+The sheets must stay link-viewable. The script reads **two journals**:
+
+| Journal | Instrument | Tabs | Logs |
+|---|---|---|---|
+| gold | GOLD | 4 (gid 0 is an empty template, skipped) | dollars + R |
+| trading edge | NQ | 7 | risk/return as percentages, no dollars |
+
+They cover different periods, so together they run from January 2024.
+
+**De-duplication is asymmetric, deliberately.** The gold tabs cover distinct
+periods and several days hold two or three trades sharing one screenshot — so
+gold is never de-duplicated. The NQ sheet is a master tab plus per-period
+subsets that repeat it, so it is, on date + chart + result + R + notes.
+Widening that key is what stops real same-day trades being collapsed.
 
 Each tab's last rows are a TOTAL plus blank padding; the script drops them, so
 `TOTAL trades` never leaks onto the page.
