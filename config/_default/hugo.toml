@@ -16,6 +16,9 @@ buildFuture = false
 
 enableEmoji = true
 
+# Obsidian keeps its config and trash inside the vault; never build them.
+ignoreFiles = ['\.obsidian', '\.trash', 'content/templates/']
+
 # googleAnalytics = "G-XXXXXXXXX"
 
 [pagination]

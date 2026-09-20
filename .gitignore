@@ -1,3 +1,6 @@
 public/
 resources/_gen/
 .hugo_build.lock
+
+# Obsidian workspace config — local to your machine
+.obsidian/
