@@ -25,9 +25,13 @@ Never commit `_vendor/`.
 ## Commands
 
 ```sh
-hugo server     # localhost:1313, live reload
-hugo --quiet    # production build into public/
+./scripts/build.sh serve    # preview on localhost:1313
+./scripts/build.sh          # production build into public/
+python3 scripts/test_wikilinks.py   # self-check for the converter
 ```
+
+**Use the script, not bare `hugo`** — it converts wikilinks first. Bare `hugo`
+builds fine but leaves `[[links]]` as visible brackets on the page.
 
 Always build before committing. A malformed frontmatter value fails the
 **entire site**, not just one page.
@@ -36,8 +40,9 @@ Always build before committing. A malformed frontmatter value fails the
 
 These are all things that have already broken this site once.
 
-- **No `[[wikilinks]]`.** Hugo renders them as literal `[[text]]`. Use
-  `[label](/posts/the-slug/)`.
+- **Wikilinks are supported, but only through `scripts/build.sh`.** Running
+  bare `hugo` renders `[[text]]` literally on the page with no error. Always
+  build via the script.
 - **Escape `"` inside frontmatter titles**, or the build dies with a YAML
   error and nothing deploys:
   `title: "The Peak of \"Mount Stupid\""`
@@ -48,11 +53,37 @@ These are all things that have already broken this site once.
   already taken this way — it belongs to a different repo.
 - **`draft: true` is not privacy.** The post stays out of the build but the
   repo is public, so the file is still readable on GitHub.
-- **`series:` is Hugo-only. `tags:` works in both Hugo and Obsidian.** Obsidian's
-  graph draws edges from links and tags, and knows nothing about `series`. Use
-  tags for anything that should connect in both places.
+- **`series:` is Hugo-only. `tags:` and `[[wikilinks]]` work in both.**
+  Obsidian's graph draws edges from links and tags, and knows nothing about
+  `series`.
 - Blowfish warns it caps at Hugo 0.165 while we run 0.166. Benign — it builds
   correctly. Don't downgrade to silence it.
+
+## Wikilinks
+
+Write `[[wikilinks]]` normally — Obsidian's graph, autocomplete and backlinks
+all work, and `scripts/wikilinks.py` converts them at build time.
+
+**Source files are never modified.** The script copies `content/` to
+`.wikilinks-build/`, converts there, and Hugo builds from the copy. What you
+edit always stays in Obsidian's own syntax.
+
+| You write | Becomes |
+|---|---|
+| `[[03-shadow-work]]` | link labelled with that post's `title:` |
+| `[[03-shadow-work\|the shadow]]` | link labelled *the shadow* |
+| `[[03-shadow-work#Some Heading]]` | link to `#some-heading` |
+| `![[pic.png]]` | image, resolved from `static/` or `content/` |
+
+Resolution is by **filename first, then frontmatter title** — the same order
+Obsidian uses. Code spans and fenced blocks are skipped. A link that resolves
+to nothing is left as-is and reported, never silently dropped.
+
+Check before pushing:
+
+```sh
+python3 scripts/wikilinks.py --check    # lists unresolved links, changes nothing
+```
 
 ## Writing a post
 

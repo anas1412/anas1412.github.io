@@ -2,5 +2,9 @@
 title: "Posts"
 ---
 
-Engineering, markets, and whatever I'm working out at the time. Published as I
-go rather than once it's tidy — so expect revisions.
+Notes on personal development, life, business, psychology, software
+engineering, and trading.
+
+Different subjects, same questions: how to think clearly under pressure, how
+to build a process you'll actually follow, and how to tell real progress from
+noise.

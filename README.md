@@ -25,8 +25,11 @@ built. Remove it to publish.
 ## Local preview
 
 ```sh
-hugo server     # localhost:1313, live reload
+./scripts/build.sh serve    # localhost:1313
 ```
+
+Use the script rather than bare `hugo` — it converts `[[wikilinks]]` into real
+links first, in a throwaway copy, so your notes keep Obsidian's syntax.
 
 ## Layout
 
@@ -37,6 +40,7 @@ hugo server     # localhost:1313, live reload
 | `content/posts/` | your writing — add `.md` files here |
 | `content/projects.md` | projects |
 | `content/templates/` | Obsidian templates (never published) |
+| `scripts/wikilinks.py` | converts `[[wikilinks]]` at build time |
 | `config/_default/params.toml` | `colorScheme` — 15 options ship with the theme |
 
 The theme is a Hugo Module, not vendored code — update with

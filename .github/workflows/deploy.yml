@@ -34,10 +34,13 @@ jobs:
           go-version: "1.25" # Hugo Modules needs a Go toolchain
       - uses: actions/configure-pages@v5
         id: pages
+      - name: Check wikilinks resolve
+        run: python3 scripts/wikilinks.py --check || true
       - name: Build
         env:
           HUGO_ENVIRONMENT: production
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        # build.sh converts wikilinks in a throwaway copy of content/
+        run: ./scripts/build.sh --baseURL "${{ steps.pages.outputs.base_url }}/"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
