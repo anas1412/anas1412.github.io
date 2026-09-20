@@ -62,6 +62,8 @@ def build_index(content_dir, static_dir):
 def convert(text, pages, titles, assets, unresolved):
     def one(m):
         bang, inner = m.group(1), m.group(2)
+        # inside a markdown table Obsidian writes the alias pipe as \|
+        inner = inner.replace("\\|", "|")
         target, _, alias = inner.partition("|")
         target, _, head = target.partition("#")
         target, alias, head = target.strip(), alias.strip(), head.strip()

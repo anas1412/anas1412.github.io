@@ -84,6 +84,9 @@ Resolution is by **filename first, then frontmatter title** — the same order
 Obsidian uses. Code spans and fenced blocks are skipped. A link that resolves
 to nothing is left as-is and reported, never silently dropped.
 
+Inside a markdown table write the alias pipe as `\|` — `[[note\|label]]` —
+exactly as Obsidian does. The converter unescapes it.
+
 Check before pushing:
 
 ```sh

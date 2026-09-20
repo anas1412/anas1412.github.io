@@ -19,6 +19,7 @@ FILES = {
         "image ![[pic.png]]\n"
         "missing [[does-not-exist]]\n"
         "code `[[shadow-work]]` stays\n"
+        "| a | b |\n|---|---|\n| [[shadow-work\\|in table]] | x |\n"
         "```\n[[shadow-work]]\n```\n"
     ),
 }
@@ -32,6 +33,7 @@ EXPECT = [
     "image ![](/images/pic.png)",
     "missing [[does-not-exist]]",            # unresolved left alone
     "code `[[shadow-work]]` stays",          # code span untouched
+    "| [in table](/posts/shadow-work/) | x |",  # escaped pipe inside a table
 ]
 
 d = tempfile.mkdtemp()

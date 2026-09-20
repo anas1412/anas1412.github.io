@@ -46,5 +46,6 @@ Releases ship source, not a compiled `.ex5`.
 
 ---
 
-[Source](https://github.com/anas1412/orb-mt5) · [Live](https://anas1412.github.io/orb-mt5/) · 5★
-*MQL5, Python, MetaTrader 5*
+{{< github repo="anas1412/orb-mt5" showThumbnail=false >}}
+
+{{< button href="https://anas1412.github.io/orb-mt5/" target="_blank" >}}Open the live version{{< /button >}}

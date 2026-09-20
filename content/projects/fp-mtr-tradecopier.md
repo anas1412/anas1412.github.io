@@ -36,5 +36,4 @@ Go, against the MatchTrader platform API.
 
 ---
 
-[Source](https://github.com/anas1412/fp-mtr-tradecopier)
-*Go, MatchTrader*
+{{< github repo="anas1412/fp-mtr-tradecopier" showThumbnail=false >}}

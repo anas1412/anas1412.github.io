@@ -45,5 +45,6 @@ go build -o ytmgo . && ./ytmgo
 
 ---
 
-[Source](https://github.com/anas1412/ytmgo) · [Live](https://anas1412.github.io/ytmgo/) · 16★
-*Go, yt-dlp*
+{{< github repo="anas1412/ytmgo" showThumbnail=false >}}
+
+{{< button href="https://anas1412.github.io/ytmgo/" target="_blank" >}}Open the live version{{< /button >}}

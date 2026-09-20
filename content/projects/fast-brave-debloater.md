@@ -30,5 +30,4 @@ sudo ./brave_debloat.sh
 
 ---
 
-[Source](https://github.com/anas1412/fast-brave-debloater) · 8★
-*Bash*
+{{< github repo="anas1412/fast-brave-debloater" showThumbnail=false >}}

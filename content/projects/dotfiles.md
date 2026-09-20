@@ -31,5 +31,4 @@ overwriting an existing config — move the old one aside and re-run.
 
 ---
 
-[Source](https://github.com/anas1412/dotfiles) · 3★
-*Fish, Kitty, Kvantum, GNU Stow*
+{{< github repo="anas1412/dotfiles" showThumbnail=false >}}

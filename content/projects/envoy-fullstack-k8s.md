@@ -35,5 +35,4 @@ and waits for readiness:
 
 ---
 
-[Source](https://github.com/anas1412/envoy-fullstack-k8s)
-*Envoy, Kubernetes, k3d, Kustomize, React, NestJS, Postgres*
+{{< github repo="anas1412/envoy-fullstack-k8s" showThumbnail=false >}}

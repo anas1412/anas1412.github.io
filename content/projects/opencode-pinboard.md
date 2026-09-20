@@ -32,5 +32,6 @@ There's a compiled installer binary on the releases page too.
 
 ---
 
-[Source](https://github.com/anas1412/opencode-pinboard) · [Live](https://anas1412.github.io/opencode-pinboard/) · 1★
-*Bun, React, Fastify, SQLite, Electrobun*
+{{< github repo="anas1412/opencode-pinboard" showThumbnail=false >}}
+
+{{< button href="https://anas1412.github.io/opencode-pinboard/" target="_blank" >}}Open the live version{{< /button >}}

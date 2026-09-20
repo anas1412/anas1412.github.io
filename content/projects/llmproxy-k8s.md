@@ -32,5 +32,4 @@ kubectl apply -f deploy/operator.yaml
 
 ---
 
-[Source](https://github.com/anas1412/llmproxy-k8s)
-*TypeScript, NestJS, Kubernetes, Prometheus*
+{{< github repo="anas1412/llmproxy-k8s" showThumbnail=false >}}

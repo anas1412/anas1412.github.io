@@ -41,5 +41,6 @@ either way, nothing leaves the browser.
 
 ---
 
-[Source](https://github.com/anas1412/cyberiaspace) · [Live](https://cyberiaspace.app) · 2★
-*TypeScript, IndexedDB, OpenRouter*
+{{< github repo="anas1412/cyberiaspace" showThumbnail=false >}}
+
+{{< button href="https://cyberiaspace.app" target="_blank" >}}Open the live version{{< /button >}}
