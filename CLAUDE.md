@@ -160,8 +160,11 @@ content/posts/03-shadow-work-making-the-unconscious-conscious.md
 content/posts/18-conclusion-the-edge-of-transformation.md
 ```
 
-- **`NN`** - two digits, zero-padded (`01`, not `1`). For a series it matches
-  `series_order`. Otherwise continue from the highest number in `content/posts/`.
+- **`NN`** - two digits, zero-padded (`01`, not `1`). Always continue from the
+  highest number already in `content/posts/`, **including for a series**. It is
+  a filename counter, not the series position: with more than one series the two
+  cannot match, and `series_order` is what orders a series. "Getting Funded"
+  starts at file 19 with `series_order: 1`.
 - **slug** - the title, lowercased, non-alphanumerics collapsed to single
   hyphens, no trailing hyphen. Keep it under ~60 characters.
 - The number is part of the URL: `03-shadow-work-…` serves at
