@@ -6,7 +6,7 @@ GitHub Pages on every push to `main`.
 
 ## Writing from Obsidian
 
-Open **`content/`** as your Obsidian vault. Notes go in `content/notes/`.
+Open **`content/`** as your Obsidian vault. Write into `content/posts/`.
 
 ```sh
 git add -A && git commit -m "new note" && git push   # ~1 min to live
@@ -34,10 +34,16 @@ hugo server     # localhost:1313, live reload
 |---|---|
 | `content/_index.md` | home page bio |
 | `content/about.md` | experience, education, skills |
-| `content/notes/` | your notes — add `.md` files here |
+| `content/posts/` | your writing — add `.md` files here |
 | `content/projects.md` | projects |
 | `content/templates/` | Obsidian templates (never published) |
 | `config/_default/params.toml` | `colorScheme` — 15 options ship with the theme |
 
 The theme is a Hugo Module, not vendored code — update with
 `hugo mod get -u`.
+
+## Note on paths
+
+`anas1412.github.io/notes/` is served by a separate project repo, not this
+one. A repo named `x` always shadows `/x/` on the user site, so avoid those
+names for sections here.
