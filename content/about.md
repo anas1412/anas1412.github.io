@@ -5,6 +5,18 @@ showDate: false
 showReadingTime: false
 showWordCount: false
 ---
+## Interests
+
+- New experiences and exploring the world and the unknown
+- Financial, location and time freedom.
+- Generational wealth, healthy body, long-term relationships and the freedom of choice.
+- Continuous learning and leveling by reading and taking action.
+
+## Education
+
+- **National Engineering Diploma in Computer Science** — ESPRIT: Private School of Engineering and Technology (2024)
+- **National Diploma of Applied License in Embedded Systems** — ISI: Higher Institute of Computer Science (2020)
+
 ## Experience
 
 ### Site Reliability Engineer & IT Consultant
@@ -70,48 +82,3 @@ showWordCount: false
 - Contacted several companies and negotiated the prices that led to 25% total reduced costs.
 - Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.
 - Collaborated with cross-functional teams to deliver solutions on time.
-
-## Education
-
-- **Quantitative Trading & Psychology** — Self-educated (Never)
-- **National Engineering Diploma in Computer Science** — ESPRIT: Private School of Engineering and Technology (2024)
-- **National Diploma of Applied License in Embedded Systems** — ISI: Higher Institute of Computer Science (2020)
-
-## Skills
-
-### Quant Trading
-
-Technical Analysis, Fundamental Analysis, Risk Management, Algorithmic Trading, Portfolio Optimization, Indices Trading, Process-oriented thinking, Long-term consistency over short-term impulses
-
-### LLM Frameworks and Libraries
-
-LangChain, LangGraph, LangFlow, LlamaIndex, TensorFlow, PyTorch, Pinecone (vector database), RAG
-
-### DevOps & Cloud Technologies
-
-GitLab-CI & GitHub Actions, Ansible & Terraform, Docker & Podman, Kubernetes & ArgoCD, Helm & Kustomize, AWS & Azure, Prometheus & Grafana, Elastic, Logstash & Kibana
-
-### Frameworks & UI Libraries
-
-Laravel, React 19, NextJs 15, FastAPI & Flask, Spring, Bootstrap, TailwindCSS, AlpineJS
-
-### SysAdmin & Databases
-
-Git, Jira, Linux, Bash, MySQL, PostgreSQL, SQLite, MongoDB
-
-### Programming Languages & Concepts
-
-HTML5 & CSS, jQuery & AJAX, JavaScript, PHP, Python, Java, REST API
-
-## Languages
-
-- Arabic (Native)
-- English (Fluent)
-- French (Intermediate)
-
-## Interests
-
-- New experiences and exploring the world and the unknown
-- Financial, location and especially time freedom.
-- Generational wealth, healthy body, long-term relationships and the freedom of choice.
-- Continuous learning and leveling by reading and taking action.

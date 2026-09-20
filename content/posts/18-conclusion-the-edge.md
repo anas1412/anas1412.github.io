@@ -1,9 +1,11 @@
 ---
-title: "Conclusion: The Edge of Transformation"
+title: The Edge
 date: 2025-08-22
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 18
 ---
 
