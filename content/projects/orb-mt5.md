@@ -1,0 +1,32 @@
+---
+title: "ORB for MetaTrader 5"
+date: 2026-09-16
+draft: false
+tags: ["trading", "mql5", "python"]
+summary: "A configurable opening-range breakout EA for MT5, with a reproducible research harness behind it."
+repo: "https://github.com/anas1412/orb-mt5"
+demo: "https://anas1412.github.io/orb-mt5/"
+tech: ["MQL5", "Python", "MetaTrader 5"]
+showDate: false
+---
+An opening-range breakout expert advisor where **every parameter is an input** —
+any session, any range length, any signal timeframe, any symbol. Daylight saving
+is handled properly, which is where most session-based strategies quietly break.
+
+## Why
+
+Backtests that can't be reproduced aren't research, they're anecdotes. This ships
+the harness alongside the EA so a result can be re-run.
+
+```bash
+python3 orb.py compile      # build the EA
+```
+
+## Stack
+
+MQL5 for the EA, Python for the harness. Runs on Windows and on Linux under Wine.
+
+---
+
+[Source](https://github.com/anas1412/orb-mt5) · [Live](https://anas1412.github.io/orb-mt5/) · 5★
+*MQL5, Python, MetaTrader 5*

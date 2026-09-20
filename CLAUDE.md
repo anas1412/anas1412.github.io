@@ -11,12 +11,13 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/posts/` | all writing. One `.md` per post |
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
-| `content/projects.md` | projects |
+| `content/projects/` | one file per project |
 | `content/trading/_index.md` | **generated** — do not hand-edit, see below |
 | `scripts/sync_trades.py` | pulls the journal from Google Sheets |
 | `scripts/data/trades.json` | committed snapshot, so builds work offline |
 | `content/templates/post.md` | Obsidian template for a standalone post |
 | `content/templates/series-post.md` | Obsidian template for a post in a series |
+| `content/templates/project.md` | Obsidian template for a project |
 | `config/_default/languages.en.toml` | name, headline, bio, social links, site title |
 | `config/_default/params.toml` | `colorScheme` (15 options), dark mode, article display |
 | `config/_default/menus.en.toml` | the navbar |
