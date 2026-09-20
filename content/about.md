@@ -21,7 +21,7 @@ showWordCount: false
 
 ### Site Reliability Engineer & IT Consultant
 
-*Full-time | August 2026 - Present
+*Full-time | August 2026 - Present*
 
 - Recovered a production ingress outage onto a new OVH Octavia load balancer, restoring all 134 hostnames with zero Ingress changes and keeping git and cluster state in sync.
 - Migrated production log shipping from end-of-life Promtail to Grafana Alloy and fixed Loki persistence, preventing volume loss on scale-down and eliminating a silent log-drop window on every restart.
@@ -37,7 +37,7 @@ showWordCount: false
 
 ### DevOps & Software Solutions Provider
 
-*Self-employed | August 2023 - August 2026
+*Self-employed | August 2023 - August 2026*
 
 - Delivering high-impact, tailored software solutions to optimize client workflows.
 - Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.
