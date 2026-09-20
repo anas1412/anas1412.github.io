@@ -1,7 +1,7 @@
 ---
 title: "Notes from the Edge"
 showTableOfContents: true
-showDate: false
+date: 2025-07-19
 ---
 
 
