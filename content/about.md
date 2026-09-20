@@ -43,21 +43,14 @@ showWordCount: false
 - Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.
 - Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing.
 
-### DevOps Engineer (Part-Time)
+### DevOps Engineer
 
-*Kamioun | July 2023 - January 2024*
+*Kamioun | January 2023 - January 2024*
 
-- Optimized GitLab CI pipelines, reducing deployment times by 35% and speeding up feature delivery.
-- Monitored AWS instances, cutting server downtime by 30% and ensuring high service availability.
-- Resolved critical Magento app issues, enhancing user satisfaction and boosting customer retention.
-
-### Intern DevOps Engineer
-
-*Kamioun | January 2023 - June 2023*
-
-- Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.
-- Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.
-- Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.
+- Containerized Magento infrastructure using Docker.
+- Built CI/CD pipelines using GitLab CI for automated deployments.
+- Integrated monitoring and code quality tools (Grafana, SonarQube).
+- Improved deployment efficiency by ~25%.
 
 ### Intern Cloud/DevOps Engineer
 
