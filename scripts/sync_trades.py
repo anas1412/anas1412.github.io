@@ -109,10 +109,12 @@ def page(rows):
 
     for month, trades in by_month.items():
         out += [f"## {month}", "",
-                "| Date | Dir | Outcome | R | P&L | Chart | Notes |",
-                "|---|---|---|---:|---:|---|---|"]
+                # day only - the month is the heading, and a wrapping date
+                # column squeezes everything else
+                "| Day | Dir | Result | R | P&L | Chart | Notes |",
+                "|---:|---|---|---:|---:|---|---|"]
         for r in trades:
-            d = datetime.strptime(r["date"], "%B %d, %Y").strftime("%-d %b")
+            d = datetime.strptime(r["date"], "%B %d, %Y").strftime("%-d")
             rr = num(r["RR Return"])
             pnl = money(r["pnl ($)"])
             shot = f"[view]({r['screenshot']})" if r.get("screenshot") else ""
