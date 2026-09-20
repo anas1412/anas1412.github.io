@@ -12,6 +12,9 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
 | `content/projects.md` | projects |
+| `content/trading/_index.md` | **generated** — do not hand-edit, see below |
+| `scripts/sync_trades.py` | pulls the journal from Google Sheets |
+| `scripts/data/trades.csv` | committed snapshot of the sheet |
 | `content/templates/post.md` | Obsidian template for a standalone post |
 | `content/templates/series-post.md` | Obsidian template for a post in a series |
 | `config/_default/languages.en.toml` | name, headline, bio, social links, site title |
@@ -85,6 +88,23 @@ Check before pushing:
 ```sh
 python3 scripts/wikilinks.py --check    # lists unresolved links, changes nothing
 ```
+
+## Trading journal
+
+`content/trading/_index.md` is **generated**. Edits to it are overwritten.
+To refresh after logging trades:
+
+```sh
+python3 scripts/sync_trades.py     # fetch the sheet, rebuild the page
+python3 scripts/sync_trades.py --local   # rebuild from the committed CSV
+```
+
+The sheet must stay link-viewable. Its last rows are a TOTAL and blank
+padding — the script drops them, so `TOTAL trades` never leaks onto the page.
+The CSV snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats
+`data/` as a data directory and fails the build trying to parse the CSV.
+
+To change what the page shows, edit `page()` in the script, not the markdown.
 
 ## File naming
 

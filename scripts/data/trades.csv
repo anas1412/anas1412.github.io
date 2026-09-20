@@ -1,0 +1,23 @@
+date,size,instrument,outcome,risk ($),risk (%),pnl ($),pnl (%),RR Return,MAE,MFE,direction,type,rating,BE?,1 RR?,1.5 RR?,2 RR?,emotions,screenshot,notes
+"August 10, 2026","$5,000",GOLD,L,$100,2.00%,-$102,-2.03%,-1.02,,,short,continuation,A+,FALSE,FALSE,FALSE,FALSE,3,https://www.tradingview.com/x/J91ofAr4/,becareful of NH and NL and becareful of JPY gap at 3
+"August 11, 2026","$5,000",GOLD,W,$100,2.00%,$98,1.96%,0.98,0.1,1,long,continuation,A+,FALSE,TRUE,FALSE,FALSE,4,https://www.tradingview.com/x/kzzG8vBS/,
+"August 12, 2026","$5,000",GOLD,W,$100,2.00%,$101,2.03%,1.01,0.42,6,long,continuation,A+,TRUE,TRUE,TRUE,TRUE,3,https://www.tradingview.com/x/dB5fU2js/,
+"August 13, 2026","$5,000",GOLD,missed,$0,0.00%,$0,0.00%,0.00,0,5,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,0,https://www.tradingview.com/x/8ihEMfLk/,
+"August 14, 2026","$5,000",GOLD,W,$100,2.00%,$127,2.54%,1.27,1.1,5,short,continuation,A+,FALSE,TRUE,FALSE,FALSE,4,https://www.tradingview.com/x/tSpCta0z/,
+"August 17, 2026","$5,000",GOLD,W,$100,2.00%,$183,3.67%,1.83,0,4,long,continuation,A+,TRUE,TRUE,TRUE,TRUE,5,https://www.tradingview.com/x/MTYaGDdv/,
+"August 18, 2026","$5,000",GOLD,L,$100,2.00%,-$64,-1.29%,-0.64,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,4,https://www.tradingview.com/x/BWNso42R/,
+"August 19, 2026","$5,000",GOLD,L,$100,2.00%,-$106,-2.13%,-1.06,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,3,https://www.tradingview.com/x/8ObVySzN/,
+"August 20, 2026","$5,000",GOLD,L,$100,2.00%,-$108,-2.15%,-1.08,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,2,https://www.tradingview.com/x/rzLWiMJK/,
+"August 21, 2026","$5,000",GOLD,BE,$100,2.00%,$3,0.06%,0.03,,,short,continuation,A+,TRUE,TRUE,TRUE,FALSE,2,https://www.tradingview.com/x/j4RasAuX/,supposedly losing trade
+"August 26, 2026","$5,000",GOLD,W,$100,2.00%,$207,4.14%,2.07,0,5.2,short,continuation,A+,TRUE,TRUE,TRUE,TRUE,4,https://www.tradingview.com/x/Cr7aonXU/,never move to BE
+"August 27, 2026","$5,000",GOLD,L,$100,2.00%,-$102,-2.04%,-1.02,,,short,continuation,A+,FALSE,FALSE,FALSE,FALSE,,https://www.tradingview.com/x/4Wr1MOCF/,
+"August 31, 2026","$5,000",GOLD,L,$100,2.00%,-$104,-2.08%,-1.04,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,,https://www.tradingview.com/x/K7FSUOxE/,
+"September 1, 2026","$5,000",GOLD,L,$150,3.00%,-$163,-3.26%,-1.09,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,0,https://www.tradingview.com/x/fC3Y5E3h/,i risked 3% and even so its a loss
+"September 2, 2026","$5,000",GOLD,L,$50,1.00%,-$65,-1.31%,-1.31,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,0,https://www.tradingview.com/x/jn2f9NLM/,
+"September 7, 2026","$5,000",GOLD,L,$50,1.00%,-$52,-1.04%,-1.04,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,3,https://www.tradingview.com/x/tRwu6oVy/,
+"September 16, 2026","$5,000",GOLD,L,$50,1.00%,-$51,-1.02%,-1.02,,,long,continuation,A+,FALSE,FALSE,FALSE,FALSE,0,https://www.tradingview.com/x/trPf18bn/,
+,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,,,
+,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,0,,
+,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,0,,
+,,,,,,,,,,,,,,FALSE,FALSE,FALSE,FALSE,0,,
+TOTAL,,TOTAL trades: 17,WR: 29.4%,AVG Risk: $88.24,AVG Risk: 1.76%,TOTAL PnL: $-198.32,TOTAL PnL: -3.97%,TOTAL RR: -3.12,,,Profit Factor: 0.7,,,,,,,Average Emotion = Neutral,"1% RISK PER TRADE, 2 SHOTS MAX",Average EV should be = 1%

@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: About
 showTableOfContents: true
 showDate: false
 showReadingTime: false
@@ -7,7 +7,7 @@ showWordCount: false
 ---
 ## Experience
 
-### Full Time Trader & Portfolio Manager
+### ProTrader
 
 *Self-employed | October 2022 - Present*
 
