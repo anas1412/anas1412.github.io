@@ -10,8 +10,7 @@ tech: ["MQL5", "Python", "MetaTrader 5"]
 showDate: false
 ---
 
-An opening-range breakout expert advisor where **every parameter is an input** —
-any session, any range length, any signal timeframe, any symbol. Daylight saving
+An opening-range breakout expert advisor where **every parameter is an input** - any session, any range length, any signal timeframe, any symbol. Daylight saving
 is handled properly, which is where most session-based strategies quietly break.
 
 <div class="mt-8">{{< button href="https://anas1412.github.io/orb-mt5/" target="_blank" >}}Open the live version{{< /button >}}</div>

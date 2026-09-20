@@ -37,7 +37,7 @@ bun install
 bun run dev
 ```
 
-Serves on `http://localhost:5173`. Or use the hosted build — it's local-only
+Serves on `http://localhost:5173`. Or use the hosted build - it's local-only
 either way, nothing leaves the browser.
 
 ---

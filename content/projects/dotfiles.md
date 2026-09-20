@@ -9,7 +9,7 @@ tech: ["Fish", "Kitty", "Kvantum", "GNU Stow"]
 showDate: false
 ---
 
-Tokyo Night across the whole desktop — Plasma 6 on Wayland, Kitty, Fish, Kvantum.
+Tokyo Night across the whole desktop - Plasma 6 on Wayland, Kitty, Fish, Kvantum.
 
 Managed with GNU Stow so each config is a symlink farm rather than a pile of
 copies. Same palette as this site.
@@ -26,7 +26,7 @@ cd ~/dotfiles
 ```
 
 Or just some of it: `./install.sh fish kitty`. Stow refuses rather than
-overwriting an existing config — move the old one aside and re-run.
+overwriting an existing config - move the old one aside and re-run.
 
 ---
 

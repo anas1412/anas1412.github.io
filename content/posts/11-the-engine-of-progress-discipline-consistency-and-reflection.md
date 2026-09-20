@@ -10,7 +10,7 @@ series_order: 11
 Flow states are powerful, but they are not accidental. They are the result of a deep, underlying structure of **discipline** and **consistency**. While focus gets you into the zone, it is discipline that builds the runway for takeoff. Discipline is the conscious choice to do what needs to be done, even when you don't feel like it. It is the bridge between your goals and your accomplishments.
 
 > "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
-> — Will Durant
+> Will Durant
 
 **Consistency** is the force multiplier of discipline. It is the relentless application of effort over time, in significant volume, that forges new habits and rewires your subconscious. A single, heroic effort is impressive, but it is the steady, daily practice that creates lasting change. In our analogy, this is the rider training the horse every single day, not just when the mood strikes. This consistent training builds the trust and muscle memory that makes complex maneuvers seem effortless in the future.
 

@@ -3,7 +3,7 @@ title: "llmproxy-k8s"
 date: 2026-07-17
 draft: false
 tags: ["kubernetes", "llm", "typescript"]
-summary: "A Kubernetes-native LLM proxy that issues per-tenant API keys using CRDs and Secrets — no database, no Redis."
+summary: "A Kubernetes-native LLM proxy that issues per-tenant API keys using CRDs and Secrets - no database, no Redis."
 repo: "https://github.com/anas1412/llmproxy-k8s"
 tech: ["TypeScript", "NestJS", "Kubernetes", "Prometheus"]
 showDate: false

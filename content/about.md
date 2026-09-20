@@ -14,8 +14,8 @@ showWordCount: false
 
 ## Education
 
-- **National Engineering Diploma in Computer Science** — ESPRIT: Private School of Engineering and Technology (2024)
-- **National Diploma of Applied License in Embedded Systems** — ISI: Higher Institute of Computer Science (2020)
+- **National Engineering Diploma in Computer Science** - ESPRIT: Private School of Engineering and Technology (2024)
+- **National Diploma of Applied License in Embedded Systems** - ISI: Higher Institute of Computer Science (2020)
 
 ## Experience
 

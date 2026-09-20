@@ -1,6 +1,6 @@
 # anas1412.github.io
 
-Personal site. Plain markdown in, static site out — [Hugo](https://gohugo.io)
+Personal site. Plain markdown in, static site out - [Hugo](https://gohugo.io)
 with the [Blowfish](https://github.com/nunocoracao/blowfish) theme, deployed to
 GitHub Pages on every push to `main`.
 
@@ -12,7 +12,7 @@ Open **`content/`** as your Obsidian vault. Write into `content/posts/`.
 git add -A && git commit -m "new post" && git push   # ~1 min to live
 ```
 
-**Every post needs frontmatter** — without a `title:` Hugo publishes an
+**Every post needs frontmatter** - without a `title:` Hugo publishes an
 untitled page. Set it up once so you never think about it again:
 
 1. Obsidian → Settings → Core plugins → enable **Templates**
@@ -28,7 +28,7 @@ built. Remove it to publish.
 ./scripts/build.sh serve    # localhost:1313
 ```
 
-Use the script rather than bare `hugo` — it converts `[[wikilinks]]` into real
+Use the script rather than bare `hugo` - it converts `[[wikilinks]]` into real
 links first, in a throwaway copy, so your notes keep Obsidian's syntax.
 
 ## Layout
@@ -37,13 +37,13 @@ links first, in a throwaway copy, so your notes keep Obsidian's syntax.
 |---|---|
 | `content/_index.md` | home page bio |
 | `content/about.md` | experience, education, skills |
-| `content/posts/` | your writing — add `.md` files here |
+| `content/posts/` | your writing - add `.md` files here |
 | `content/projects.md` | projects |
 | `content/templates/` | Obsidian templates (never published) |
 | `scripts/wikilinks.py` | converts `[[wikilinks]]` at build time |
-| `config/_default/params.toml` | `colorScheme` — 15 options ship with the theme |
+| `config/_default/params.toml` | `colorScheme` - 15 options ship with the theme |
 
-The theme is a Hugo Module, not vendored code — update with
+The theme is a Hugo Module, not vendored code - update with
 `hugo mod get -u`.
 
 ## Note on paths

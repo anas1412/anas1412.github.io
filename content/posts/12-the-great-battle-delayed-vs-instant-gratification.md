@@ -7,10 +7,10 @@ series: ["Notes from the Edge"]
 series_order: 12
 ---
 
-At the heart of discipline lies a fundamental conflict that every Seeker must master: the battle between **instant gratification** and **delayed gratification**. This is the daily struggle between the [[02-the-man-and-his-horse-an-analogy-for-mind-and-body|man and his horse]]. The horse, driven by instinct, craves immediate pleasure—the sugar cube now, the easy path, the rest in the shade. It operates on the principle of 'I want it now.' The rider, however, understands the map. He knows that indulging every immediate whim of the horse will lead them astray, far from their ultimate destination. He must train the horse to forgo the immediate, lesser pleasure for the greater, future reward.
+At the heart of discipline lies a fundamental conflict that every Seeker must master: the battle between **instant gratification** and **delayed gratification**. This is the daily struggle between the [[02-the-man-and-his-horse-an-analogy-for-mind-and-body|man and his horse]]. The horse, driven by instinct, craves immediate pleasure - the sugar cube now, the easy path, the rest in the shade. It operates on the principle of 'I want it now.' The rider, however, understands the map. He knows that indulging every immediate whim of the horse will lead them astray, far from their ultimate destination. He must train the horse to forgo the immediate, lesser pleasure for the greater, future reward.
 
 > "Discipline is choosing between what you want now and what you want most."
-> — Attributed to Abraham Lincoln
+> Attributed to Abraham Lincoln
 
 ## Instant gratification
 
@@ -22,4 +22,4 @@ At the heart of discipline lies a fundamental conflict that every Seeker must ma
 
 ## Training the horse, not punishing it
 
-Mastering this internal conflict does not mean punishing the horse for its desires. It means training it. It means breaking down the long journey into manageable steps and celebrating the completion of those steps—finding joy in the process. It means keeping the vision of the destination so clear and compelling that the horse begins to trust the rider's guidance, understanding that the temporary sacrifice is part of a much grander adventure. By consistently choosing the path of delayed gratification, you are not just moving towards a goal; you are forging an unbreakable will and a powerful partnership between your mind and your body.
+Mastering this internal conflict does not mean punishing the horse for its desires. It means training it. It means breaking down the long journey into manageable steps and celebrating the completion of those steps - finding joy in the process. It means keeping the vision of the destination so clear and compelling that the horse begins to trust the rider's guidance, understanding that the temporary sacrifice is part of a much grander adventure. By consistently choosing the path of delayed gratification, you are not just moving towards a goal; you are forging an unbreakable will and a powerful partnership between your mind and your body.

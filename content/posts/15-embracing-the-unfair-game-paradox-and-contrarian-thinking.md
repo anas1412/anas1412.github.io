@@ -10,7 +10,7 @@ series_order: 15
 The Seeker must accept a fundamental truth: life is not fair. It is a complex, chaotic, and often paradoxical game. The universe does not distribute talent, opportunity, or luck evenly. To pretend otherwise is to set yourself up for resentment and frustration. The key is not to demand fairness, but to learn to play the hand you are dealt with skill and wisdom.
 
 > "The world is not a just place. It is a relentless and amoral arena where the strong, the clever, and the lucky prevail."
-> — Unknown
+> Unknown
 
 ## Paradoxical thinking
 
@@ -28,4 +28,4 @@ This acceptance leads to the power of **paradoxical thinking**. Life is woven wi
 
 ## Contrarian thinking
 
-This understanding naturally gives rise to **contrarian thinking**. If most people are following conventional wisdom—often rooted in the ineffective [[04-the-have-do-be-model-the-illusion-of-external-success|Have-Do-Be]] model—then exceptional results will be found by doing the opposite. When everyone else is chasing the same carrot, the contrarian finds a different, more abundant field. This is not about being different for the sake of being different, but about thinking independently and questioning the assumptions that hold the masses captive. The contrarian path is often lonely and requires immense conviction, but it is the only path to extraordinary outcomes. In the analogy of the [[02-the-man-and-his-horse-an-analogy-for-mind-and-body|man and his horse]], this is like the rider who, instead of following the well-trodden but inefficient path with the crowd, bravely chooses a less popular but ultimately more direct and rewarding route, trusting his own judgment and the horse's capabilities, even when others doubt.
+This understanding naturally gives rise to **contrarian thinking**. If most people are following conventional wisdom - often rooted in the ineffective [[04-the-have-do-be-model-the-illusion-of-external-success|Have-Do-Be]] model - then exceptional results will be found by doing the opposite. When everyone else is chasing the same carrot, the contrarian finds a different, more abundant field. This is not about being different for the sake of being different, but about thinking independently and questioning the assumptions that hold the masses captive. The contrarian path is often lonely and requires immense conviction, but it is the only path to extraordinary outcomes. In the analogy of the [[02-the-man-and-his-horse-an-analogy-for-mind-and-body|man and his horse]], this is like the rider who, instead of following the well-trodden but inefficient path with the crowd, bravely chooses a less popular but ultimately more direct and rewarding route, trusting his own judgment and the horse's capabilities, even when others doubt.

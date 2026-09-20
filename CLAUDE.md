@@ -7,12 +7,12 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 
 | Path | What it holds |
 |---|---|
-| `content/` | **the Obsidian vault** — open this folder in Obsidian, not the repo root |
+| `content/` | **the Obsidian vault** - open this folder in Obsidian, not the repo root |
 | `content/posts/` | all writing. One `.md` per post |
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
 | `content/projects/` | one file per project |
-| `content/trading/` | **generated** — one article per month, do not hand-edit |
+| `content/trading/` | **generated** - one article per month, do not hand-edit |
 | `scripts/sync_trades.py` | pulls the journal from Google Sheets |
 | `scripts/data/trades.json` | committed snapshot, so builds work offline |
 | `content/templates/post.md` | Obsidian template for a standalone post |
@@ -22,7 +22,7 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `config/_default/params.toml` | `colorScheme` (15 options), dark mode, article display |
 | `config/_default/menus.en.toml` | the navbar |
 | `config/_default/hugo.toml` | baseURL, taxonomies, `ignoreFiles` |
-| `archetypes/posts.md` | Hugo CLI template — filename must match the section folder |
+| `archetypes/posts.md` | Hugo CLI template - filename must match the section folder |
 
 The theme is a **Hugo Module**, not vendored code. Update with `hugo mod get -u`.
 Never commit `_vendor/`.
@@ -35,7 +35,7 @@ Never commit `_vendor/`.
 python3 scripts/test_wikilinks.py   # self-check for the converter
 ```
 
-**Use the script, not bare `hugo`** — it converts wikilinks first. Bare `hugo`
+**Use the script, not bare `hugo`** - it converts wikilinks first. Bare `hugo`
 builds fine but leaves `[[links]]` as visible brackets on the page.
 
 Always build before committing. A malformed frontmatter value fails the
@@ -51,22 +51,21 @@ These are all things that have already broken this site once.
 - **Escape `"` inside frontmatter titles**, or the build dies with a YAML
   error and nothing deploys:
   `title: "The Peak of \"Mount Stupid\""`
-- **Every post needs `title:`.** Without it Hugo publishes an untitled page —
-  it does not fall back to the filename.
+- **Every post needs `title:`.** Without it Hugo publishes an untitled page - it does not fall back to the filename.
 - **Never name a section after one of Anas's repos.** A repo named `x` serves
   at `anas1412.github.io/x/` and shadows that path on this site. `/notes/` is
-  already taken this way — it belongs to a different repo.
+  already taken this way - it belongs to a different repo.
 - **`draft: true` is not privacy.** The post stays out of the build but the
   repo is public, so the file is still readable on GitHub.
 - **`series:` is Hugo-only. `tags:` and `[[wikilinks]]` work in both.**
   Obsidian's graph draws edges from links and tags, and knows nothing about
   `series`.
-- Blowfish warns it caps at Hugo 0.165 while we run 0.166. Benign — it builds
+- Blowfish warns it caps at Hugo 0.165 while we run 0.166. Benign - it builds
   correctly. Don't downgrade to silence it.
 
 ## Wikilinks
 
-Write `[[wikilinks]]` normally — Obsidian's graph, autocomplete and backlinks
+Write `[[wikilinks]]` normally - Obsidian's graph, autocomplete and backlinks
 all work, and `scripts/wikilinks.py` converts them at build time.
 
 **Source files are never modified.** The script copies `content/` to
@@ -80,12 +79,11 @@ edit always stays in Obsidian's own syntax.
 | `[[03-shadow-work#Some Heading]]` | link to `#some-heading` |
 | `![[pic.png]]` | image, resolved from `static/` or `content/` |
 
-Resolution is by **filename first, then frontmatter title** — the same order
+Resolution is by **filename first, then frontmatter title** - the same order
 Obsidian uses. Code spans and fenced blocks are skipped. A link that resolves
 to nothing is left as-is and reported, never silently dropped.
 
-Inside a markdown table write the alias pipe as `\|` — `[[note\|label]]` —
-exactly as Obsidian does. The converter unescapes it.
+Inside a markdown table write the alias pipe as `\|` - `[[note\|label]]` - exactly as Obsidian does. The converter unescapes it.
 
 Check before pushing:
 
@@ -113,7 +111,7 @@ The sheets must stay link-viewable. The script reads **two journals**:
 They cover different periods, so together they run from January 2024.
 
 **De-duplication is asymmetric, deliberately.** The gold tabs cover distinct
-periods and several days hold two or three trades sharing one screenshot — so
+periods and several days hold two or three trades sharing one screenshot - so
 gold is never de-duplicated. The NQ sheet is a master tab plus per-period
 subsets that repeat it, so it is, on date + chart + result + R + notes.
 Widening that key is what stops real same-day trades being collapsed.
@@ -127,34 +125,34 @@ newest one:
 | Older tabs | Becomes | Why |
 |---|---|---|
 | `Win` / `Loss` / `Breakeven` | `W` / `L` / `BE` | newest tab's spelling |
-| `Tape Reading` | `missed` | no P&L, risk or RR — the trade wasn't taken |
+| `Tape Reading` | `missed` | no P&L, risk or RR - the trade wasn't taken |
 | `Performance Mistake`, `Analysis Mistake` | `W`/`L`/`BE` by P&L | real trades; the label is prepended to the notes so it isn't lost |
 
 The snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats `data/` as
 a data directory and fails the build trying to parse files there.
 
 The script writes one article per month (`YYYY-MM.md`) plus `_index.md`, and
-deletes any month file matching that pattern before regenerating — the sheet is
+deletes any month file matching that pattern before regenerating - the sheet is
 the source of truth, so hand edits are lost.
 
 To change what the pages show, edit `month_page()` in the script, not the
 markdown.
 
-It is deliberately a **journal, not a dashboard** — no win rate, profit factor
+It is deliberately a **journal, not a dashboard** - no win rate, profit factor
 or equity curve. Each month page is: a table of that month's trades for
-scanning, then **one block per trade** — heading, the TradingView chart
-inline, the note at full width — for re-reading.
+scanning, then **one block per trade** - heading, the TradingView chart
+inline, the note at full width - for re-reading.
 
 Charts are hotlinked from TradingView's snapshot bucket:
 `s3.tradingview.com/snapshots/<first letter, lowercased>/<ID>.png`, derived
 from the `tradingview.com/x/<ID>/` share links in the sheet (`snapshot()` in
 the script). 96% of trades have one. If that URL scheme ever changes, every
-inline chart breaks at once — the `view` link in the table still works, and
+inline chart breaks at once - the `view` link in the table still works, and
 the fix is one function.
 
 ## File naming
 
-Posts are named `NN-slug.md` — a zero-padded two-digit number, then the title
+Posts are named `NN-slug.md` - a zero-padded two-digit number, then the title
 slugified.
 
 ```
@@ -162,9 +160,9 @@ content/posts/03-shadow-work-making-the-unconscious-conscious.md
 content/posts/18-conclusion-the-edge-of-transformation.md
 ```
 
-- **`NN`** — two digits, zero-padded (`01`, not `1`). For a series it matches
+- **`NN`** - two digits, zero-padded (`01`, not `1`). For a series it matches
   `series_order`. Otherwise continue from the highest number in `content/posts/`.
-- **slug** — the title, lowercased, non-alphanumerics collapsed to single
+- **slug** - the title, lowercased, non-alphanumerics collapsed to single
   hyphens, no trailing hyphen. Keep it under ~60 characters.
 - The number is part of the URL: `03-shadow-work-…` serves at
   `/posts/03-shadow-work-…/`.
@@ -191,7 +189,7 @@ tags: ["topic"]
 ---
 ```
 
-Series posts add two more lines — use the **series-post** template, which
+Series posts add two more lines - use the **series-post** template, which
 includes them:
 
 ```yaml
@@ -204,16 +202,21 @@ series. Blowfish renders the full part list on every post in it.
 
 ## Writing style
 
+**Never use em dashes, en dashes, or emojis.** Not in prose, not in frontmatter, not in
+commit messages. Where an em dash would go, use a spaced hyphen ( - ), a
+comma, a colon, or a full stop. `scripts/sync_trades.py` strips em and en dashes from
+sheet notes on every sync so the trading pages comply automatically.
+
 **Clarity beats everything else.** If a sentence needs re-reading, rewrite it.
 
 - **Show, don't tell.** A number, a screenshot, or a worked example instead of
-  an adjective. Not "performance improved dramatically" — "p99 went from 840ms
+  an adjective. Not "performance improved dramatically" - "p99 went from 840ms
   to 120ms."
 - **Simple language.** Short words, short sentences. Cut jargon unless the
   reader needs the term itself.
 - **Break up prose.** Bullet points and tables over paragraphs. If a paragraph
   runs past four or five lines, it is probably a list.
-- **Visuals wherever they carry meaning** — see the shortcodes below. A diagram
+- **Visuals wherever they carry meaning** - see the shortcodes below. A diagram
   of a flow beats three paragraphs describing it.
 - **Quote when the source says it better**, and attribute it. Don't pad with
   quotes that only decorate.
@@ -225,7 +228,7 @@ series. Blowfish renders the full part list on every post in it.
 Full reference for all 46: [`docs/shortcodes.md`](docs/shortcodes.md).
 The ones below are verified working in this setup.
 
-Chart — Chart.js config as the body:
+Chart - Chart.js config as the body:
 
 ```
 {{< chart >}}
@@ -234,7 +237,7 @@ data: { labels: ['Jan','Feb'], datasets: [{ label: 'PnL', data: [4, 9] }] }
 {{< /chart >}}
 ```
 
-Diagram — mermaid:
+Diagram - mermaid:
 
 ```
 {{< mermaid >}}
@@ -243,7 +246,7 @@ graph LR
 {{< /mermaid >}}
 ```
 
-Images — put the file next to the post and reference it relatively, or use
+Images - put the file next to the post and reference it relatively, or use
 `{{< figure src="x.png" caption="..." >}}` for a caption.
 
 Also available: `alert`, `lead`, `badge`, `timeline`, `steps`, `tabs`,

@@ -10,7 +10,7 @@ series_order: 14
 To effectively navigate the complexities of life, the Seeker must cultivate a toolbox of **mental models**. These are frameworks for thinking that help you simplify and understand the world, allowing you to make better decisions. They are like different maps for different terrains; having a variety of them prevents you from getting lost.
 
 > "The map is not the territory."
-> — Alfred Korzybski
+> Alfred Korzybski
 
 Here are a few essential models to begin with:
 

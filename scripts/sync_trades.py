@@ -65,6 +65,11 @@ def snapshot(url):
     return f"https://s3.tradingview.com/snapshots/{m.group(1)[0].lower()}/{m.group(1)}.png" if m else None
 
 
+def clean(s):
+    """House style: no em or en dashes, whatever the sheet has in it."""
+    return re.sub(r"\s*[\u2013\u2014]\s*", " - ", (s or "")).strip()
+
+
 def rows_from(text):
     out = []
     for r in csv.DictReader(io.StringIO(text)):
@@ -83,7 +88,7 @@ def rows_from(text):
         else:                                          # mistake labels: judge by result
             result = "W" if pnl > 1 else ("L" if pnl < -1 else "BE")
 
-        notes = (r.get("notes") or "").strip()
+        notes = clean(r.get("notes"))
         if key in MISTAKES:
             notes = f"[{raw}] {notes}".strip()          # keep the label, don't lose it
 
@@ -123,7 +128,7 @@ def rows_from_nq(text):
         else:
             continue
 
-        notes = (r.get("notes") or "").strip()
+        notes = clean(r.get("notes"))
         if key.startswith("mistake"):
             notes = f"[mistake] {notes}".strip()
 

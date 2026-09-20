@@ -9,7 +9,7 @@ tech: ["Envoy", "Kubernetes", "k3d", "Kustomize", "React", "NestJS", "Postgres"]
 showDate: false
 ---
 
-A reference stack where **one gateway does everything** — L7 path routing, L4 raw
+A reference stack where **one gateway does everything** - L7 path routing, L4 raw
 TCP proxying for Postgres, per-route basic auth, and native Prometheus metrics
 into Grafana.
 

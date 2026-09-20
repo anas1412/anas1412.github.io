@@ -10,7 +10,7 @@ series_order: 16
 The **Be-Do-Have** model flips the conventional approach on its head and is a powerful framework for sustainable success and fulfillment. It starts with an internal shift:
 
 > "The best way to predict the future is to create it."
-> — Peter Drucker
+> Peter Drucker
 
 ## BE
 
@@ -24,4 +24,4 @@ This approach encourages **process-oriented thinking**. While outcomes are impor
 
 ## HAVE
 
-Finally, as a direct and inevitable result of *being* the right person and *doing* the aligned actions, you will *have* the desired outcomes. The success, the wealth, the fulfilling relationships, the vibrant health – these are the natural consequences of embodying the person you need to be and and taking inspired action. This model emphasizes attracting what you desire through internal congruence, rather than endlessly chasing external validation. In the analogy, this is the harmonious arrival at the destination, a natural outcome of the rider's clear guidance and the horse's willing cooperation.
+Finally, as a direct and inevitable result of *being* the right person and *doing* the aligned actions, you will *have* the desired outcomes. The success, the wealth, the fulfilling relationships, the vibrant health - these are the natural consequences of embodying the person you need to be and and taking inspired action. This model emphasizes attracting what you desire through internal congruence, rather than endlessly chasing external validation. In the analogy, this is the harmonious arrival at the destination, a natural outcome of the rider's clear guidance and the horse's willing cooperation.

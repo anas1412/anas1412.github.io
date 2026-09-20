@@ -1,6 +1,6 @@
 # Blowfish shortcodes
 
-Every shortcode available in the installed theme (v3.6.0) — 46 of them,
+Every shortcode available in the installed theme (v3.6.0) - 46 of them,
 verified against `layouts/shortcodes/` in the module, not just the website.
 
 Upstream docs: <https://blowfish.page/docs/shortcodes/>
@@ -20,7 +20,7 @@ renders it as markdown first.
 | `feature-grid` / `feature` | responsive feature section | grid: `columns` (3 or 4); feature: `icon`, `title`, `url`, `label` |
 | `stats` / `stat` | metrics grid | stat: `value`, `label` |
 | `keywordList` / `keyword` | highlighted terms | keyword: `icon` |
-| `ltr` / `rtl` | direction switch for mixed scripts | — |
+| `ltr` / `rtl` | direction switch for mixed scripts | - |
 
 ```
 {{< steps >}}
@@ -40,7 +40,7 @@ renders it as markdown first.
 | `cta` | call-to-action button | `url`, `label`, `style` (primary/outline) |
 | `typeit` | typewriter effect | `tag`, `speed`, `loop`, `lifeLike`, `startDelay` |
 
-Admonitions need no shortcode — Hugo renders GitHub/Obsidian syntax natively:
+Admonitions need no shortcode - Hugo renders GitHub/Obsidian syntax natively:
 
 ```
 > [!TIP]
@@ -63,7 +63,7 @@ Admonitions need no shortcode — Hugo renders GitHub/Obsidian syntax natively:
 
 | Shortcode | What it does |
 |---|---|
-| `chart` | Chart.js — body is a Chart.js config |
+| `chart` | Chart.js - body is a Chart.js config |
 | `mermaid` | Mermaid diagrams |
 | `katex` | maths, inline `\(…\)` or block `$$…$$` |
 
@@ -102,7 +102,7 @@ graph LR
 - **Block shortcodes carry no outer margin.** `github`, `button`, `cta`,
   `chart` and friends render as bare `<div>`/`<a>` elements, not paragraphs,
   so a blank line between two of them produces **zero** visual gap. Wrapping
-  in `<p>` does *not* work — goldmark drops it. Wrap in a `<div>` with one of
+  in `<p>` does *not* work - goldmark drops it. Wrap in a `<div>` with one of
   the theme's spacing classes instead; these are confirmed present in the
   compiled CSS: `mt-4 mt-6 mt-8 my-8 mb-6 mb-8 pt-8`.
 
@@ -112,8 +112,7 @@ graph LR
   <div class="mt-8">{{< button href="…" >}}Open the live version{{< /button >}}</div>
   ```
 
-- Shortcodes render only through Hugo. **Obsidian shows them as raw text** —
-  expected, not a bug.
+- Shortcodes render only through Hugo. **Obsidian shows them as raw text** - expected, not a bug.
 - `{{< … >}}` vs `{{% … %}}` matters: use the percent form when the body is
   markdown you want parsed.
 - `chart`, `mermaid` and `typeit` pull JavaScript at runtime; they inflate the

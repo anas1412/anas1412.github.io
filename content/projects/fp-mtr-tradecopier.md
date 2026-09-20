@@ -9,7 +9,7 @@ tech: ["Go", "MatchTrader"]
 showDate: false
 ---
 
-Copies trades — positions and pending limit/stop orders — from one master
+Copies trades - positions and pending limit/stop orders - from one master
 account to one or more slave accounts on the FundingPips MatchTrader platform.
 
 ## Why
