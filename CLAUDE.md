@@ -14,7 +14,7 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/projects.md` | projects |
 | `content/trading/_index.md` | **generated** — do not hand-edit, see below |
 | `scripts/sync_trades.py` | pulls the journal from Google Sheets |
-| `scripts/data/trades.csv` | committed snapshot of the sheet |
+| `scripts/data/trades.json` | committed snapshot, so builds work offline |
 | `content/templates/post.md` | Obsidian template for a standalone post |
 | `content/templates/series-post.md` | Obsidian template for a post in a series |
 | `config/_default/languages.en.toml` | name, headline, bio, social links, site title |
@@ -99,10 +99,24 @@ python3 scripts/sync_trades.py     # fetch the sheet, rebuild the page
 python3 scripts/sync_trades.py --local   # rebuild from the committed CSV
 ```
 
-The sheet must stay link-viewable. Its last rows are a TOTAL and blank
-padding — the script drops them, so `TOTAL trades` never leaks onto the page.
-The CSV snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats
-`data/` as a data directory and fails the build trying to parse the CSV.
+The sheet must stay link-viewable. The script reads **all four journal tabs**
+(2025, 2026, 2026/2 and the newest) and merges them chronologically — 196
+trades from November 2025. `gid=0` is an empty template tab and is skipped.
+
+Each tab's last rows are a TOTAL plus blank padding; the script drops them, so
+`TOTAL trades` never leaks onto the page.
+
+The tabs use three different outcome vocabularies. They are normalised to the
+newest one:
+
+| Older tabs | Becomes | Why |
+|---|---|---|
+| `Win` / `Loss` / `Breakeven` | `W` / `L` / `BE` | newest tab's spelling |
+| `Tape Reading` | `missed` | no P&L, risk or RR — the trade wasn't taken |
+| `Performance Mistake`, `Analysis Mistake` | `W`/`L`/`BE` by P&L | real trades; the label is prepended to the notes so it isn't lost |
+
+The snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats `data/` as
+a data directory and fails the build trying to parse files there.
 
 To change what the page shows, edit `page()` in the script, not the markdown.
 

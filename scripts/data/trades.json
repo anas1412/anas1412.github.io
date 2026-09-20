@@ -1,0 +1,1766 @@
+[
+ {
+  "date": "2025-11-03",
+  "direction": "long",
+  "result": "L",
+  "r": -1.16,
+  "pnl": -57.76,
+  "chart": "https://www.tradingview.com/x/dQW9zzr8/",
+  "notes": "[Performance Mistake] News dropped, something I can't control. Funny how it went to my TP later on haha."
+ },
+ {
+  "date": "2025-11-04",
+  "direction": "short",
+  "result": "L",
+  "r": -1.06,
+  "pnl": -52.8,
+  "chart": "https://www.tradingview.com/x/rwcRWCKn/",
+  "notes": "[Performance Mistake] Went straight to target and below after 2.5 hours of consolidation and I didnt respect SL spread"
+ },
+ {
+  "date": "2025-11-05",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/v34GOOk1/",
+  "notes": "Is it fear or is it wisdom? Avoid market opens and avoid news at all costs"
+ },
+ {
+  "date": "2025-11-06",
+  "direction": "long",
+  "result": "L",
+  "r": -1.09,
+  "pnl": -54.46,
+  "chart": "https://www.tradingview.com/x/M9ifQmq5/",
+  "notes": "[Analysis Mistake] from where price is delivering (buyside or sellside)"
+ },
+ {
+  "date": "2025-11-07",
+  "direction": "short",
+  "result": "W",
+  "r": 2.45,
+  "pnl": 122.32,
+  "chart": "https://www.tradingview.com/x/8XblPJxO/",
+  "notes": "price delivery is so important to decide where is the next draw"
+ },
+ {
+  "date": "2025-11-10",
+  "direction": "long",
+  "result": "W",
+  "r": 1.89,
+  "pnl": 94.5,
+  "chart": "https://www.tradingview.com/x/tRRE5Id2/",
+  "notes": ""
+ },
+ {
+  "date": "2025-11-12",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": -100.02,
+  "chart": "https://www.tradingview.com/x/4NEkTyPK/",
+  "notes": "[Performance Mistake] risked 2%, one for CISD entry and one for iFVG apprently it always retrace to ifvg, i was curious"
+ },
+ {
+  "date": "2025-11-13",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/Jvfpfo4H/",
+  "notes": "Fear of executing due to weird price action"
+ },
+ {
+  "date": "2025-11-17",
+  "direction": "long",
+  "result": "L",
+  "r": -1.07,
+  "pnl": -53.28,
+  "chart": "https://www.tradingview.com/x/lKvkvpQo/",
+  "notes": "got wicked out first time then reentered"
+ },
+ {
+  "date": "2025-11-17",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -52.24,
+  "chart": "https://www.tradingview.com/x/I81XI42e/",
+  "notes": "fair loss"
+ },
+ {
+  "date": "2025-11-17",
+  "direction": "long",
+  "result": "W",
+  "r": 2.51,
+  "pnl": 100.38,
+  "chart": "https://www.tradingview.com/x/DmyYJHth/",
+  "notes": "price was consolidating in london but not a bad trade (no cisd tho)"
+ },
+ {
+  "date": "2025-11-18",
+  "direction": "short",
+  "result": "L",
+  "r": -0.97,
+  "pnl": -48.3,
+  "chart": "https://www.tradingview.com/x/tvyliD4I/",
+  "notes": "[Performance Mistake] did not wait for CISD or a stop hunt (big mistake)"
+ },
+ {
+  "date": "2025-11-19",
+  "direction": "long",
+  "result": "W",
+  "r": 1.46,
+  "pnl": 73.01,
+  "chart": "https://www.tradingview.com/x/kjRcDSEF/",
+  "notes": ""
+ },
+ {
+  "date": "2025-11-20",
+  "direction": "short",
+  "result": "W",
+  "r": 2.01,
+  "pnl": 100.61,
+  "chart": "https://www.tradingview.com/x/jfCilUoc/",
+  "notes": "DATA HIGH/LOW setup"
+ },
+ {
+  "date": "2025-11-20",
+  "direction": "short",
+  "result": "W",
+  "r": 4.64,
+  "pnl": 231.84,
+  "chart": "https://www.tradingview.com/x/jfCilUoc/",
+  "notes": "EQH swept on m1 (discretion)"
+ },
+ {
+  "date": "2025-11-21",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.04,
+  "pnl": 2.0,
+  "chart": "https://www.tradingview.com/x/FHxRGgR0/",
+  "notes": "watched my trade go from 2.8RR to 0RR"
+ },
+ {
+  "date": "2025-11-24",
+  "direction": "short",
+  "result": "L",
+  "r": -0.87,
+  "pnl": -43.66,
+  "chart": "https://www.tradingview.com/x/vxV4I7EM/",
+  "notes": "[Performance Mistake] impulsive entry without ifvg and without cisd"
+ },
+ {
+  "date": "2025-11-24",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.01,
+  "pnl": 0.27,
+  "chart": "https://www.tradingview.com/x/uAeDRSnb/",
+  "notes": "take 3RR if entry m3 IFVG else 2RR if CISD entry"
+ },
+ {
+  "date": "2025-11-25",
+  "direction": "long",
+  "result": "BE",
+  "r": -0.08,
+  "pnl": -3.85,
+  "chart": "https://www.tradingview.com/x/PInMg6jW/",
+  "notes": "Ukraine agrees to terms of peace deal"
+ },
+ {
+  "date": "2025-11-26",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/YhzJzyXG/",
+  "notes": "hesitation, waiting for m3 cisd is useless, m1 cisd with m3 ifvg"
+ },
+ {
+  "date": "2025-11-27",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/igKMaJNj/",
+  "notes": "never wait for m3 cisd. m1 stop hunt and cisd with m3 ifvg entry are enough"
+ },
+ {
+  "date": "2025-12-01",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/xdXg7aRM/",
+  "notes": "no m3 ifvg no entry"
+ },
+ {
+  "date": "2025-12-02",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/F0DAajdx/",
+  "notes": "no clear m3 ifvg with m1 cisd"
+ },
+ {
+  "date": "2025-12-02",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/xoxO3GLv/",
+  "notes": "it was at 16:00 outside my trading window... but shouldve taken it"
+ },
+ {
+  "date": "2025-12-03",
+  "direction": "short",
+  "result": "L",
+  "r": -1.16,
+  "pnl": -57.8,
+  "chart": "https://www.tradingview.com/x/jOLuFKWU/",
+  "notes": "[Performance Mistake] did not wait for a stop hunt or m3 ifvg proper close"
+ },
+ {
+  "date": "2025-12-03",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/uFVptJhZ/",
+  "notes": "price delivery already bullish we dont need to wait for a sweep"
+ },
+ {
+  "date": "2025-12-04",
+  "direction": "short",
+  "result": "L",
+  "r": -1.09,
+  "pnl": -54.6,
+  "chart": "https://www.tradingview.com/x/SX9luBn5/",
+  "notes": "the m3 ifvg was small and stop hunt was weird"
+ },
+ {
+  "date": "2025-12-04",
+  "direction": "short",
+  "result": "W",
+  "r": 2.05,
+  "pnl": 102.69,
+  "chart": "https://www.tradingview.com/x/C4t40ImL/",
+  "notes": "perfect trade if u ask me"
+ },
+ {
+  "date": "2025-12-05",
+  "direction": "short",
+  "result": "L",
+  "r": -0.94,
+  "pnl": -46.83,
+  "chart": "https://www.tradingview.com/x/Z32Apzye/",
+  "notes": "nothing i can do more"
+ },
+ {
+  "date": "2025-12-05",
+  "direction": "short",
+  "result": "W",
+  "r": 2.07,
+  "pnl": 103.7,
+  "chart": "https://www.tradingview.com/x/dtQWjvgR/",
+  "notes": ""
+ },
+ {
+  "date": "2025-12-08",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/yizgpQVg/",
+  "notes": ""
+ },
+ {
+  "date": "2025-12-09",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.06,
+  "pnl": 3.08,
+  "chart": "https://www.tradingview.com/x/d3utYlpl/",
+  "notes": ""
+ },
+ {
+  "date": "2025-12-15",
+  "direction": "long",
+  "result": "L",
+  "r": -1.23,
+  "pnl": -61.52,
+  "chart": "https://www.tradingview.com/x/nQMgf6Gh/",
+  "notes": ""
+ },
+ {
+  "date": "2025-12-16",
+  "direction": "long",
+  "result": "L",
+  "r": -1.05,
+  "pnl": -52.6,
+  "chart": "https://www.tradingview.com/x/ZX1kJPju/",
+  "notes": "small ifvg? against bias? idk"
+ },
+ {
+  "date": "2025-12-16",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/XGZtPsOF/",
+  "notes": "i was afraid bc loss of yesterday lol (ASIA HIGH/LOW are the STRONGEST)"
+ },
+ {
+  "date": "2025-12-17",
+  "direction": "long",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -50.96,
+  "chart": "https://www.tradingview.com/x/1GNaB8b0/",
+  "notes": "always wait for m3 ifvg in the displacement leg"
+ },
+ {
+  "date": "2025-12-17",
+  "direction": "long",
+  "result": "W",
+  "r": 2.17,
+  "pnl": 108.4,
+  "chart": "https://www.tradingview.com/x/Uc2IaOBz/",
+  "notes": "I was afraid so i took only 2RR, the plan was to take 3RR and price reversed from there"
+ },
+ {
+  "date": "2025-12-19",
+  "direction": "short",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -51.24,
+  "chart": "https://www.tradingview.com/x/dxjW3qmX/",
+  "notes": "im thinking of using ifvgs as SL"
+ },
+ {
+  "date": "2025-12-19",
+  "direction": "short",
+  "result": "L",
+  "r": -0.96,
+  "pnl": -48.24,
+  "chart": "https://www.tradingview.com/x/GJkdZJgy/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-05",
+  "direction": "short",
+  "result": "L",
+  "r": -0.99,
+  "pnl": -49.6,
+  "chart": "https://www.tradingview.com/x/CULpvLkH/",
+  "notes": "m1/m3 fvg got inversed but m5 one did not wait across all timeframes"
+ },
+ {
+  "date": "2026-01-05",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.11,
+  "pnl": 5.6,
+  "chart": "https://www.tradingview.com/x/gv7OuMzo/",
+  "notes": "take whats given dont be greedy, I GOT A BE for a winner trade"
+ },
+ {
+  "date": "2026-01-05",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/UrhGGHX1/",
+  "notes": "FEAR OF LOSS HHHHHHH IM STUPID"
+ },
+ {
+  "date": "2026-01-05",
+  "direction": "short",
+  "result": "W",
+  "r": 1.16,
+  "pnl": 57.9,
+  "chart": "https://www.tradingview.com/x/JUNi2mz6/",
+  "notes": "AMD setup short after 14H"
+ },
+ {
+  "date": "2026-01-06",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/gL9kuWzN/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-06",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/MdkUyMy1/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-06",
+  "direction": "short",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/48GTx8Ft/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-06",
+  "direction": "long",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -50.88,
+  "chart": "https://www.tradingview.com/x/2gUaGqZ5/",
+  "notes": "SL was tiny? idk but was a correct trade"
+ },
+ {
+  "date": "2026-01-07",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/GBvEbyXO/",
+  "notes": "very close to TP took BE lol"
+ },
+ {
+  "date": "2026-01-07",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.04,
+  "pnl": 0.98,
+  "chart": "https://www.tradingview.com/x/qeilHPUo/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-08",
+  "direction": "long",
+  "result": "L",
+  "r": -0.84,
+  "pnl": -20.88,
+  "chart": "https://www.tradingview.com/x/Zxei5XUH/",
+  "notes": "this is not even a setup"
+ },
+ {
+  "date": "2026-01-08",
+  "direction": "long",
+  "result": "BE",
+  "r": -0.05,
+  "pnl": -1.22,
+  "chart": "https://www.tradingview.com/x/qfbJfwvZ/",
+  "notes": "taking a lot of breakevens"
+ },
+ {
+  "date": "2026-01-08",
+  "direction": "long",
+  "result": "W",
+  "r": 2.1,
+  "pnl": 52.48,
+  "chart": "https://www.tradingview.com/x/WJiiVNKe/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-08",
+  "direction": "long",
+  "result": "missed",
+  "r": null,
+  "pnl": null,
+  "chart": "https://www.tradingview.com/x/s3hHNag3/",
+  "notes": "news soon"
+ },
+ {
+  "date": "2026-01-09",
+  "direction": "long",
+  "result": "W",
+  "r": 1.08,
+  "pnl": 27.09,
+  "chart": "https://www.tradingview.com/x/8PfOT4b9/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-09",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.01,
+  "pnl": 0.36,
+  "chart": "https://www.tradingview.com/x/YoURXcPa/",
+  "notes": "BE then TP its fine"
+ },
+ {
+  "date": "2026-01-09",
+  "direction": "short",
+  "result": "L",
+  "r": -0.98,
+  "pnl": -24.48,
+  "chart": "",
+  "notes": "data high/low setup big gap"
+ },
+ {
+  "date": "2026-01-09",
+  "direction": "short",
+  "result": "L",
+  "r": -1.19,
+  "pnl": -29.84,
+  "chart": "",
+  "notes": "data high/low setup big gap"
+ },
+ {
+  "date": "2026-01-12",
+  "direction": "short",
+  "result": "BE",
+  "r": -0.14,
+  "pnl": -3.5,
+  "chart": "https://www.tradingview.com/x/h9LLRCkA/",
+  "notes": "moved SL to BE fast, only move SL when structure"
+ },
+ {
+  "date": "2026-01-12",
+  "direction": "long",
+  "result": "BE",
+  "r": -0.24,
+  "pnl": -6.08,
+  "chart": "https://www.tradingview.com/x/paSvki3L/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-13",
+  "direction": "short",
+  "result": "L",
+  "r": -0.6,
+  "pnl": -14.88,
+  "chart": "",
+  "notes": "[Performance Mistake] 50/50 area where both condition for longs and shorts are present"
+ },
+ {
+  "date": "2026-01-13",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.09,
+  "chart": "https://www.tradingview.com/x/3NPJWqsI/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-13",
+  "direction": "short",
+  "result": "W",
+  "r": 1.06,
+  "pnl": 26.46,
+  "chart": "https://www.tradingview.com/x/90AvqEfU/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-14",
+  "direction": "long",
+  "result": "W",
+  "r": 1.03,
+  "pnl": 25.76,
+  "chart": "https://www.tradingview.com/x/Nve6B903/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-15",
+  "direction": "long",
+  "result": "W",
+  "r": 1.01,
+  "pnl": 25.36,
+  "chart": "https://www.tradingview.com/x/yW7kXMO8/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-16",
+  "direction": "long",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -25.4,
+  "chart": "https://www.tradingview.com/x/Y3L4YbCa/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-16",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -26.01,
+  "chart": "https://www.tradingview.com/x/Y3L4YbCa/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-16",
+  "direction": "short",
+  "result": "L",
+  "r": -1.69,
+  "pnl": -42.35,
+  "chart": "https://www.tradingview.com/x/muAzpRNn/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-19",
+  "direction": "short",
+  "result": "W",
+  "r": 1.3,
+  "pnl": 32.4,
+  "chart": "https://www.tradingview.com/x/gwZDIoYD/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-20",
+  "direction": "short",
+  "result": "BE",
+  "r": -0.06,
+  "pnl": -2.8,
+  "chart": "",
+  "notes": "I was attempting to short ATH, setup is present but i dont care if it works or not"
+ },
+ {
+  "date": "2026-01-20",
+  "direction": "long",
+  "result": "W",
+  "r": 1.0,
+  "pnl": 49.98,
+  "chart": "https://www.tradingview.com/x/V1DptfUB/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-21",
+  "direction": "long",
+  "result": "L",
+  "r": -0.98,
+  "pnl": -49.01,
+  "chart": "https://www.tradingview.com/x/3zKQx4hp/",
+  "notes": "my target is bad, its not ITH or ITL and there is target down"
+ },
+ {
+  "date": "2026-01-22",
+  "direction": "long",
+  "result": "W",
+  "r": 1.06,
+  "pnl": 53.16,
+  "chart": "https://www.tradingview.com/x/DqvILsdf/",
+  "notes": ""
+ },
+ {
+  "date": "2026-01-23",
+  "direction": "long",
+  "result": "L",
+  "r": -0.91,
+  "pnl": -45.42,
+  "chart": "https://www.tradingview.com/x/OxvwjX75/",
+  "notes": "longing ITL instead of a lo without m5 or higher FVG"
+ },
+ {
+  "date": "2026-01-23",
+  "direction": "long",
+  "result": "L",
+  "r": -1.25,
+  "pnl": -62.7,
+  "chart": "https://www.tradingview.com/x/OxvwjX75/",
+  "notes": "longing ITL instead of a lo without m5 or higher FVG"
+ },
+ {
+  "date": "2026-01-23",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -52.02,
+  "chart": "https://www.tradingview.com/x/OxvwjX75/",
+  "notes": "longing ITL instead of a lo without m5 or higher FVG"
+ },
+ {
+  "date": "2026-01-26",
+  "direction": "long",
+  "result": "W",
+  "r": 1.03,
+  "pnl": 103.0,
+  "chart": "https://www.tradingview.com/x/ht2VUUiZ/",
+  "notes": "none"
+ },
+ {
+  "date": "2026-01-27",
+  "direction": "long",
+  "result": "W",
+  "r": 0.99,
+  "pnl": 99.0,
+  "chart": "https://www.tradingview.com/x/r53pktUz/",
+  "notes": "SL should be under the body's close instead"
+ },
+ {
+  "date": "2026-01-29",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.01,
+  "pnl": 1.0,
+  "chart": "https://www.tradingview.com/x/d0GLAc3J/",
+  "notes": "0.04 lot size is small (0.17-0.19) big SL bc ifvg"
+ },
+ {
+  "date": "2026-02-02",
+  "direction": "short",
+  "result": "L",
+  "r": -1.03,
+  "pnl": -103.0,
+  "chart": "https://www.tradingview.com/x/TVhm2Ob9/",
+  "notes": "there was an internal ITL"
+ },
+ {
+  "date": "2026-02-03",
+  "direction": "short",
+  "result": "W",
+  "r": 0.96,
+  "pnl": 96.0,
+  "chart": "https://www.tradingview.com/x/bHfAqTFv/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-04",
+  "direction": "short",
+  "result": "L",
+  "r": -1.03,
+  "pnl": -103.0,
+  "chart": "https://www.tradingview.com/x/01fJZavu/",
+  "notes": "Never execute when price takes internal ITH/ITL after confirmation, thats where u place ur SL at BE or target"
+ },
+ {
+  "date": "2026-02-05",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.09,
+  "pnl": 9.0,
+  "chart": "https://www.tradingview.com/x/JV87vMk2/",
+  "notes": "i closed a profitable trade. only move SL to BE thats it no more"
+ },
+ {
+  "date": "2026-02-09",
+  "direction": "short",
+  "result": "L",
+  "r": -1.18,
+  "pnl": -118.0,
+  "chart": "https://www.tradingview.com/x/Ocp3VxG7/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-10",
+  "direction": "short",
+  "result": "L",
+  "r": -1.0,
+  "pnl": -100.0,
+  "chart": "https://www.tradingview.com/x/m9tcvHEY/",
+  "notes": "[Performance Mistake] plateform is shit first its fake confirmation"
+ },
+ {
+  "date": "2026-02-10",
+  "direction": "short",
+  "result": "L",
+  "r": -0.97,
+  "pnl": -97.0,
+  "chart": "https://www.tradingview.com/x/m9tcvHEY/",
+  "notes": "[Performance Mistake] then again gave me fake confirmation"
+ },
+ {
+  "date": "2026-02-11",
+  "direction": "long",
+  "result": "W",
+  "r": 1.43,
+  "pnl": 143.0,
+  "chart": "https://www.tradingview.com/x/07nLLTKO/",
+  "notes": "have fait"
+ },
+ {
+  "date": "2026-02-12",
+  "direction": "short",
+  "result": "W",
+  "r": 1.05,
+  "pnl": 105.0,
+  "chart": "https://www.tradingview.com/x/doN2Y06T/",
+  "notes": "wait more for ur TP next time"
+ },
+ {
+  "date": "2026-02-13",
+  "direction": "long",
+  "result": "L",
+  "r": -0.44,
+  "pnl": -44.0,
+  "chart": "https://www.tradingview.com/x/AJ1J57Mm/",
+  "notes": "[Performance Mistake] it shouldve been a BE"
+ },
+ {
+  "date": "2026-02-16",
+  "direction": "short",
+  "result": "L",
+  "r": -0.88,
+  "pnl": -88.0,
+  "chart": "https://www.tradingview.com/x/6Yc6blhB/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-17",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/3pyQ0N3S/",
+  "notes": "missed the trade bc i didnt execute with the close"
+ },
+ {
+  "date": "2026-02-18",
+  "direction": "long",
+  "result": "L",
+  "r": -1.34,
+  "pnl": -134.0,
+  "chart": "https://www.tradingview.com/x/PmIZWb6S/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-19",
+  "direction": "short",
+  "result": "L",
+  "r": -0.92,
+  "pnl": -92.0,
+  "chart": "https://www.tradingview.com/x/6MmPSanG/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-25",
+  "direction": "long",
+  "result": "W",
+  "r": 1.56,
+  "pnl": 156.0,
+  "chart": "https://www.tradingview.com/x/RgwP7xok/",
+  "notes": ""
+ },
+ {
+  "date": "2026-02-27",
+  "direction": "long",
+  "result": "L",
+  "r": -1.1,
+  "pnl": -110.0,
+  "chart": "https://www.tradingview.com/x/HINsAVH1/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-05",
+  "direction": "short",
+  "result": "W",
+  "r": 2.05,
+  "pnl": 205.0,
+  "chart": "https://www.tradingview.com/x/VVPdxUt5/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-06",
+  "direction": "long",
+  "result": "BE",
+  "r": -0.14,
+  "pnl": -14.0,
+  "chart": "https://www.tradingview.com/x/aewBcuk4/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-10",
+  "direction": "short",
+  "result": "L",
+  "r": -1.08,
+  "pnl": -108.0,
+  "chart": "https://www.tradingview.com/x/9SP4evki/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-11",
+  "direction": "long",
+  "result": "BE",
+  "r": -0.07,
+  "pnl": -7.0,
+  "chart": "https://www.tradingview.com/x/eMxftuLV/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-12",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.02,
+  "pnl": 2.0,
+  "chart": "https://www.tradingview.com/x/DILhx5CO/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-13",
+  "direction": "long",
+  "result": "L",
+  "r": -1.08,
+  "pnl": -108.0,
+  "chart": "https://www.tradingview.com/x/f8Nw01Tq/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-16",
+  "direction": "long",
+  "result": "L",
+  "r": -1.1,
+  "pnl": -110.0,
+  "chart": "https://www.tradingview.com/x/6oaHmUFV/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-17",
+  "direction": "short",
+  "result": "W",
+  "r": 2.01,
+  "pnl": 201.0,
+  "chart": "https://www.tradingview.com/x/2G0Ifptm/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-18",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": -100.0,
+  "chart": "https://www.tradingview.com/x/mxKTSpVY/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-23",
+  "direction": "short",
+  "result": "L",
+  "r": -1.1,
+  "pnl": -110.0,
+  "chart": "https://www.tradingview.com/x/O9fSgxIN/",
+  "notes": ""
+ },
+ {
+  "date": "2026-03-24",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/Hh4yVlvY/",
+  "notes": ""
+ },
+ {
+  "date": "2026-05-05",
+  "direction": "short",
+  "result": "L",
+  "r": -1.05,
+  "pnl": -105.0,
+  "chart": "https://www.tradingview.com/x/j5hgaWKN/",
+  "notes": "M30 ITH (asia high) + M15 FVG + M3 ifvg"
+ },
+ {
+  "date": "2026-05-05",
+  "direction": "short",
+  "result": "W",
+  "r": 1.08,
+  "pnl": 108.0,
+  "chart": "https://www.tradingview.com/x/KmJCQoXR/",
+  "notes": "stop hunt after a valid trade w/ M3 ifvg"
+ },
+ {
+  "date": "2026-05-06",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/iqcJlUAM/",
+  "notes": "I moved SL to BE (is it fear? idk)"
+ },
+ {
+  "date": "2026-05-07",
+  "direction": "short",
+  "result": "W",
+  "r": 1.0,
+  "pnl": 100.0,
+  "chart": "https://www.tradingview.com/x/iPz4Jr24/",
+  "notes": "almost fucked it up but gj"
+ },
+ {
+  "date": "2026-05-08",
+  "direction": "short",
+  "result": "W",
+  "r": 1.02,
+  "pnl": 102.0,
+  "chart": "https://www.tradingview.com/x/lBBgfad7/",
+  "notes": "always hesitatnt use market execution always"
+ },
+ {
+  "date": "2026-05-12",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.02,
+  "pnl": 2.0,
+  "chart": "https://www.tradingview.com/x/AFnWfYJ5/",
+  "notes": "CPI in 30 minutes"
+ },
+ {
+  "date": "2026-05-12",
+  "direction": "long",
+  "result": "L",
+  "r": -1.03,
+  "pnl": -103.0,
+  "chart": "https://www.tradingview.com/x/IEAYibuu/",
+  "notes": "M15 big candle aka structure is bad"
+ },
+ {
+  "date": "2026-05-13",
+  "direction": "long",
+  "result": "L",
+  "r": -1.08,
+  "pnl": -108.0,
+  "chart": "https://www.tradingview.com/x/6rodifXy/",
+  "notes": "fake ITL + weird how it hit SL"
+ },
+ {
+  "date": "2026-05-13",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -104.0,
+  "chart": "https://www.tradingview.com/x/6rodifXy/",
+  "notes": "beware of low quality ITL/H"
+ },
+ {
+  "date": "2026-05-14",
+  "direction": "short",
+  "result": "W",
+  "r": 1.09,
+  "pnl": 109.0,
+  "chart": "",
+  "notes": "real ITH on M15/M30/H1"
+ },
+ {
+  "date": "2026-05-15",
+  "direction": "long",
+  "result": "L",
+  "r": -0.63,
+  "pnl": -63.0,
+  "chart": "https://www.tradingview.com/x/vJ0DgYDB/",
+  "notes": ""
+ },
+ {
+  "date": "2026-05-15",
+  "direction": "short",
+  "result": "L",
+  "r": -0.09,
+  "pnl": -9.0,
+  "chart": "",
+  "notes": "GAMBLING"
+ },
+ {
+  "date": "2026-05-15",
+  "direction": "short",
+  "result": "L",
+  "r": -1.06,
+  "pnl": -106.0,
+  "chart": "",
+  "notes": "EMOTIONS AND GAMBLING"
+ },
+ {
+  "date": "2026-05-18",
+  "direction": "short",
+  "result": "W",
+  "r": 1.39,
+  "pnl": 174.0,
+  "chart": "https://www.tradingview.com/x/Vyghj9la/",
+  "notes": "always goes back to BE after a 1RR"
+ },
+ {
+  "date": "2026-05-20",
+  "direction": "short",
+  "result": "L",
+  "r": -1.01,
+  "pnl": -127.0,
+  "chart": "https://www.tradingview.com/x/gJbOBtJ4/",
+  "notes": "the ifvg is not a v-shape, 2nd trade worked"
+ },
+ {
+  "date": "2026-05-21",
+  "direction": "short",
+  "result": "L",
+  "r": -1.09,
+  "pnl": -136.0,
+  "chart": "https://www.tradingview.com/x/pDTbYPDD/",
+  "notes": "literally no mistake, hit SL then TP..."
+ },
+ {
+  "date": "2026-05-26",
+  "direction": "short",
+  "result": "W",
+  "r": 1.21,
+  "pnl": 121.0,
+  "chart": "https://www.tradingview.com/x/yM0aKAp9/",
+  "notes": "m2 IFVG"
+ },
+ {
+  "date": "2026-05-28",
+  "direction": "short",
+  "result": "BE",
+  "r": -0.01,
+  "pnl": -1.0,
+  "chart": "https://www.tradingview.com/x/toWuRNAU/",
+  "notes": "almost 1RR and closed BE bc of fear (m3 exec should be TP)"
+ },
+ {
+  "date": "2026-05-28",
+  "direction": "short",
+  "result": "L",
+  "r": -0.98,
+  "pnl": -123.0,
+  "chart": "https://www.tradingview.com/x/toWuRNAU/",
+  "notes": "which led to this tight SL trade"
+ },
+ {
+  "date": "2026-05-28",
+  "direction": "short",
+  "result": "L",
+  "r": -0.29,
+  "pnl": -29.0,
+  "chart": "https://www.tradingview.com/x/toWuRNAU/",
+  "notes": "and this trade should be BE lol"
+ },
+ {
+  "date": "2026-05-29",
+  "direction": "short",
+  "result": "W",
+  "r": 0.57,
+  "pnl": 57.0,
+  "chart": "https://www.tradingview.com/x/rq6oqArO/",
+  "notes": "starting to get 0.5RR"
+ },
+ {
+  "date": "2026-05-29",
+  "direction": "short",
+  "result": "W",
+  "r": 0.53,
+  "pnl": 53.0,
+  "chart": "https://www.tradingview.com/x/DESTNWfX/",
+  "notes": "this is insane i love this"
+ },
+ {
+  "date": "2026-06-01",
+  "direction": "long",
+  "result": "W",
+  "r": 0.56,
+  "pnl": 56.0,
+  "chart": "https://www.tradingview.com/x/HDowA0Gl/",
+  "notes": "high cortisol ngl"
+ },
+ {
+  "date": "2026-06-01",
+  "direction": "long",
+  "result": "L",
+  "r": -1.05,
+  "pnl": -105.0,
+  "chart": "https://www.tradingview.com/x/lKcKOpc6/",
+  "notes": "the ifvg was not in the last leg"
+ },
+ {
+  "date": "2026-06-02",
+  "direction": "long",
+  "result": "W",
+  "r": 0.52,
+  "pnl": 52.0,
+  "chart": "https://www.tradingview.com/x/guFqzn46/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-02",
+  "direction": "long",
+  "result": "L",
+  "r": -0.12,
+  "pnl": -12.0,
+  "chart": "https://www.tradingview.com/x/WlOPbBa3/",
+  "notes": "i gambled also big ass SL"
+ },
+ {
+  "date": "2026-06-03",
+  "direction": "short",
+  "result": "W",
+  "r": 1.02,
+  "pnl": 102.0,
+  "chart": "https://www.tradingview.com/x/8f8Rzwwc/",
+  "notes": "idk why am i trading continuation m5 ITH"
+ },
+ {
+  "date": "2026-06-03",
+  "direction": "short",
+  "result": "W",
+  "r": 1.14,
+  "pnl": 114.0,
+  "chart": "https://www.tradingview.com/x/6QW316bf/",
+  "notes": "pattern recognition trade"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "short",
+  "result": "BE",
+  "r": -0.02,
+  "pnl": -2.0,
+  "chart": "https://www.tradingview.com/x/jM2oH1bw/",
+  "notes": "m1 ifvg and closed breakeven bc fear maybe"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "short",
+  "result": "W",
+  "r": 0.46,
+  "pnl": 46.0,
+  "chart": "https://www.tradingview.com/x/x2QoBOTO/",
+  "notes": "good trade but that damn $4"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "short",
+  "result": "L",
+  "r": -0.56,
+  "pnl": -56.0,
+  "chart": "https://www.tradingview.com/x/x2QoBOTO/",
+  "notes": "Gambling"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "short",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -104.0,
+  "chart": "https://www.tradingview.com/x/x2QoBOTO/",
+  "notes": "Gambling"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/x2QoBOTO/",
+  "notes": "Gambling"
+ },
+ {
+  "date": "2026-06-04",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -104.0,
+  "chart": "https://www.tradingview.com/x/x2QoBOTO/",
+  "notes": "Gambling"
+ },
+ {
+  "date": "2026-06-05",
+  "direction": "long",
+  "result": "W",
+  "r": 0.95,
+  "pnl": 95.0,
+  "chart": "https://www.tradingview.com/x/0U1GynAx/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-08",
+  "direction": "short",
+  "result": "W",
+  "r": 0.41,
+  "pnl": 41.0,
+  "chart": "https://www.tradingview.com/x/AVwdd9iV/",
+  "notes": "i was afraid a moved SL to 0.5RR and got 0.4RR instead then went full 1RR"
+ },
+ {
+  "date": "2026-06-09",
+  "direction": "long",
+  "result": "L",
+  "r": -1.03,
+  "pnl": -103.0,
+  "chart": "https://www.tradingview.com/x/9e2RsINA/",
+  "notes": "valid loss"
+ },
+ {
+  "date": "2026-06-09",
+  "direction": "long",
+  "result": "L",
+  "r": -0.66,
+  "pnl": -66.0,
+  "chart": "https://www.tradingview.com/x/9e2RsINA/",
+  "notes": "it did not close, mistake"
+ },
+ {
+  "date": "2026-06-10",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.02,
+  "pnl": 2.0,
+  "chart": "https://www.tradingview.com/x/KoPvGGzk/",
+  "notes": "idk spread became big it should be a win and i move to BE lol"
+ },
+ {
+  "date": "2026-06-10",
+  "direction": "long",
+  "result": "W",
+  "r": 1.09,
+  "pnl": 109.0,
+  "chart": "https://www.tradingview.com/x/PGQk4xtX/",
+  "notes": "data low + m5 ITL"
+ },
+ {
+  "date": "2026-06-11",
+  "direction": "short",
+  "result": "W",
+  "r": 1.28,
+  "pnl": 128.0,
+  "chart": "https://www.tradingview.com/x/EpzUktuV/",
+  "notes": "m2 ifvg targetting EQL"
+ },
+ {
+  "date": "2026-06-12",
+  "direction": "long",
+  "result": "W",
+  "r": 1.07,
+  "pnl": 107.0,
+  "chart": "https://www.tradingview.com/x/7fjxHev0/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-15",
+  "direction": "short",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -104.0,
+  "chart": "https://www.tradingview.com/x/mRFJdbOO/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-16",
+  "direction": "short",
+  "result": "W",
+  "r": 1.05,
+  "pnl": 105.0,
+  "chart": "https://www.tradingview.com/x/Iqs6snlS/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-17",
+  "direction": "short",
+  "result": "L",
+  "r": -1.06,
+  "pnl": -106.0,
+  "chart": "https://www.tradingview.com/x/LZ8EmyP6/",
+  "notes": "place your SL on a high not random"
+ },
+ {
+  "date": "2026-06-18",
+  "direction": "short",
+  "result": "W",
+  "r": 1.11,
+  "pnl": 111.0,
+  "chart": "https://www.tradingview.com/x/BX8Pj8CP/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-19",
+  "direction": "long",
+  "result": "W",
+  "r": 1.1,
+  "pnl": 110.0,
+  "chart": "https://www.tradingview.com/x/jQZCH681/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-23",
+  "direction": "long",
+  "result": "L",
+  "r": -0.61,
+  "pnl": -61.0,
+  "chart": "https://www.tradingview.com/x/3lnFeemb/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-24",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": -100.0,
+  "chart": "https://www.tradingview.com/x/pDrBq4CU/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-25",
+  "direction": "long",
+  "result": "W",
+  "r": 2.37,
+  "pnl": 237.0,
+  "chart": "https://www.tradingview.com/x/6tVO4bpr/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-26",
+  "direction": "short",
+  "result": "L",
+  "r": -0.51,
+  "pnl": -51.0,
+  "chart": "https://www.tradingview.com/x/iRXqMxXn/",
+  "notes": "m30 FVG refersed from"
+ },
+ {
+  "date": "2026-06-29",
+  "direction": "short",
+  "result": "L",
+  "r": -0.7,
+  "pnl": -70.0,
+  "chart": "https://www.tradingview.com/x/flpa5W2c/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-29",
+  "direction": "short",
+  "result": "L",
+  "r": -0.55,
+  "pnl": -55.0,
+  "chart": "https://www.tradingview.com/x/z5d5bNwp/",
+  "notes": ""
+ },
+ {
+  "date": "2026-06-30",
+  "direction": "long",
+  "result": "W",
+  "r": 1.08,
+  "pnl": 108.0,
+  "chart": "https://www.tradingview.com/x/rpEhFlWd/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-01",
+  "direction": "short",
+  "result": "L",
+  "r": -0.98,
+  "pnl": -98.0,
+  "chart": "https://www.tradingview.com/x/rd8dUEXh/",
+  "notes": "m15 close and wicks"
+ },
+ {
+  "date": "2026-07-02",
+  "direction": "long",
+  "result": "W",
+  "r": 1.09,
+  "pnl": 109.0,
+  "chart": "https://www.tradingview.com/x/bghK9NIU/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-03",
+  "direction": "long",
+  "result": "W",
+  "r": 1.43,
+  "pnl": 143.0,
+  "chart": "https://www.tradingview.com/x/5Dainzv0/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-08",
+  "direction": "long",
+  "result": "L",
+  "r": -0.5,
+  "pnl": -50.0,
+  "chart": "https://www.tradingview.com/x/kEeKGTih/",
+  "notes": "i watched m15 fvg got taken"
+ },
+ {
+  "date": "2026-07-09",
+  "direction": "long",
+  "result": "BE",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/55HhBg0F/",
+  "notes": "m5 Nested Low .... really....! closed BE bc i broke rules"
+ },
+ {
+  "date": "2026-07-09",
+  "direction": "short",
+  "result": "L",
+  "r": -1.07,
+  "pnl": -107.0,
+  "chart": "https://www.tradingview.com/x/SjYTtqsS/",
+  "notes": "after 13h no trade not a good idea TBH"
+ },
+ {
+  "date": "2026-07-10",
+  "direction": "long",
+  "result": "W",
+  "r": 1.17,
+  "pnl": 117.0,
+  "chart": "https://www.tradingview.com/x/za45dQDW/",
+  "notes": "price so close to NL but did not sweep it all"
+ },
+ {
+  "date": "2026-07-14",
+  "direction": "short",
+  "result": "W",
+  "r": 1.03,
+  "pnl": 103.0,
+  "chart": "https://www.tradingview.com/x/micQNjmL/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-16",
+  "direction": "short",
+  "result": "BE",
+  "r": -0.04,
+  "pnl": -4.0,
+  "chart": "https://www.tradingview.com/x/hlFLJOGj/",
+  "notes": "I got out bc price reactde from opposite m30 FVG"
+ },
+ {
+  "date": "2026-07-17",
+  "direction": "long",
+  "result": "L",
+  "r": -1.0,
+  "pnl": -100.0,
+  "chart": "https://www.tradingview.com/x/DoNU2Wdy/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-20",
+  "direction": "long",
+  "result": "W",
+  "r": 1.04,
+  "pnl": 104.0,
+  "chart": "https://www.tradingview.com/x/mHZcbfgn/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-21",
+  "direction": "long",
+  "result": "W",
+  "r": 0.98,
+  "pnl": 98.0,
+  "chart": "https://www.tradingview.com/x/ZGff96gX/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-23",
+  "direction": "long",
+  "result": "W",
+  "r": 0.86,
+  "pnl": 86.0,
+  "chart": "https://www.tradingview.com/x/3tx1eREU/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-28",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.05,
+  "pnl": 2.0,
+  "chart": "https://www.tradingview.com/x/YYTcgW7N/",
+  "notes": "what a trade.... managed the trade perfectly"
+ },
+ {
+  "date": "2026-07-30",
+  "direction": "short",
+  "result": "L",
+  "r": -1.06,
+  "pnl": -53.0,
+  "chart": "https://www.tradingview.com/x/LOfymkzo/",
+  "notes": ""
+ },
+ {
+  "date": "2026-07-31",
+  "direction": "long",
+  "result": "L",
+  "r": -0.53,
+  "pnl": -27.0,
+  "chart": "https://www.tradingview.com/x/o9qIINgo/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-03",
+  "direction": "long",
+  "result": "L",
+  "r": -0.52,
+  "pnl": -52.0,
+  "chart": "https://www.tradingview.com/x/TtuKRNxq/",
+  "notes": "wrong risk + did not reach 1RR"
+ },
+ {
+  "date": "2026-08-04",
+  "direction": "long",
+  "result": "L",
+  "r": -0.99,
+  "pnl": -49.0,
+  "chart": "https://www.tradingview.com/x/wxf9kyXW/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-05",
+  "direction": "long",
+  "result": "W",
+  "r": 1.12,
+  "pnl": 56.0,
+  "chart": "https://www.tradingview.com/x/kP0CadiV/",
+  "notes": "SL is in a bad place"
+ },
+ {
+  "date": "2026-08-07",
+  "direction": "short",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -51.0,
+  "chart": "https://www.tradingview.com/x/ouAChG2v/",
+  "notes": "m5/15 closed but multiple fvgs on m1/m3"
+ },
+ {
+  "date": "2026-08-10",
+  "direction": "short",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -102.0,
+  "chart": "https://www.tradingview.com/x/J91ofAr4/",
+  "notes": "becareful of NH and NL and becareful of JPY gap at 3"
+ },
+ {
+  "date": "2026-08-11",
+  "direction": "long",
+  "result": "W",
+  "r": 0.98,
+  "pnl": 98.0,
+  "chart": "https://www.tradingview.com/x/kzzG8vBS/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-12",
+  "direction": "long",
+  "result": "W",
+  "r": 1.01,
+  "pnl": 101.0,
+  "chart": "https://www.tradingview.com/x/dB5fU2js/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-13",
+  "direction": "long",
+  "result": "missed",
+  "r": 0.0,
+  "pnl": 0.0,
+  "chart": "https://www.tradingview.com/x/8ihEMfLk/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-14",
+  "direction": "short",
+  "result": "W",
+  "r": 1.27,
+  "pnl": 127.0,
+  "chart": "https://www.tradingview.com/x/tSpCta0z/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-17",
+  "direction": "long",
+  "result": "W",
+  "r": 1.83,
+  "pnl": 183.0,
+  "chart": "https://www.tradingview.com/x/MTYaGDdv/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-18",
+  "direction": "long",
+  "result": "L",
+  "r": -0.64,
+  "pnl": -64.0,
+  "chart": "https://www.tradingview.com/x/BWNso42R/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-19",
+  "direction": "long",
+  "result": "L",
+  "r": -1.06,
+  "pnl": -106.0,
+  "chart": "https://www.tradingview.com/x/8ObVySzN/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-20",
+  "direction": "long",
+  "result": "L",
+  "r": -1.08,
+  "pnl": -108.0,
+  "chart": "https://www.tradingview.com/x/rzLWiMJK/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-21",
+  "direction": "short",
+  "result": "BE",
+  "r": 0.03,
+  "pnl": 3.0,
+  "chart": "https://www.tradingview.com/x/j4RasAuX/",
+  "notes": "supposedly losing trade"
+ },
+ {
+  "date": "2026-08-26",
+  "direction": "short",
+  "result": "W",
+  "r": 2.07,
+  "pnl": 207.0,
+  "chart": "https://www.tradingview.com/x/Cr7aonXU/",
+  "notes": "never move to BE"
+ },
+ {
+  "date": "2026-08-27",
+  "direction": "short",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -102.0,
+  "chart": "https://www.tradingview.com/x/4Wr1MOCF/",
+  "notes": ""
+ },
+ {
+  "date": "2026-08-31",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -104.0,
+  "chart": "https://www.tradingview.com/x/K7FSUOxE/",
+  "notes": ""
+ },
+ {
+  "date": "2026-09-01",
+  "direction": "long",
+  "result": "L",
+  "r": -1.09,
+  "pnl": -163.0,
+  "chart": "https://www.tradingview.com/x/fC3Y5E3h/",
+  "notes": "i risked 3% and even so its a loss"
+ },
+ {
+  "date": "2026-09-02",
+  "direction": "long",
+  "result": "L",
+  "r": -1.31,
+  "pnl": -65.0,
+  "chart": "https://www.tradingview.com/x/jn2f9NLM/",
+  "notes": ""
+ },
+ {
+  "date": "2026-09-07",
+  "direction": "long",
+  "result": "L",
+  "r": -1.04,
+  "pnl": -52.0,
+  "chart": "https://www.tradingview.com/x/tRwu6oVy/",
+  "notes": ""
+ },
+ {
+  "date": "2026-09-16",
+  "direction": "long",
+  "result": "L",
+  "r": -1.02,
+  "pnl": -51.0,
+  "chart": "https://www.tradingview.com/x/trPf18bn/",
+  "notes": ""
+ }
+]
