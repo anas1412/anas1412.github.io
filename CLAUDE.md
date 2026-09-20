@@ -85,6 +85,32 @@ Check before pushing:
 python3 scripts/wikilinks.py --check    # lists unresolved links, changes nothing
 ```
 
+## File naming
+
+Posts are named `NN-slug.md` — a zero-padded two-digit number, then the title
+slugified.
+
+```
+content/posts/03-shadow-work-making-the-unconscious-conscious.md
+content/posts/18-conclusion-the-edge-of-transformation.md
+```
+
+- **`NN`** — two digits, zero-padded (`01`, not `1`). For a series it matches
+  `series_order`. Otherwise continue from the highest number in `content/posts/`.
+- **slug** — the title, lowercased, non-alphanumerics collapsed to single
+  hyphens, no trailing hyphen. Keep it under ~60 characters.
+- The number is part of the URL: `03-shadow-work-…` serves at
+  `/posts/03-shadow-work-…/`.
+
+**Renaming a file changes its URL** and breaks every existing link to it,
+including `[[wikilinks]]` in other posts. Pick the name once. If you must
+rename, add the old path to the post's frontmatter so the old URL keeps
+working:
+
+```yaml
+aliases: ["/posts/old-slug/"]
+```
+
 ## Writing a post
 
 Frontmatter, matching `content/templates/post.md`:
