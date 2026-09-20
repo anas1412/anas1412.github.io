@@ -44,22 +44,6 @@ def load(text):
 
 
 def page(rows):
-    taken = [r for r in rows if r["outcome"] != "missed"]
-    wins = [r for r in rows if r["outcome"] == "W"]
-    gross_win = sum(p for p in (money(r["pnl ($)"]) for r in rows) if p > 0)
-    gross_loss = abs(sum(p for p in (money(r["pnl ($)"]) for r in rows) if p < 0))
-    net = sum(money(r["pnl ($)"]) for r in rows)
-    total_r = sum(num(r["RR Return"]) or 0 for r in rows)
-    pf = gross_win / gross_loss if gross_loss else float("inf")
-    wr = len(wins) / len(rows) * 100 if rows else 0
-
-    # cumulative R, for the equity curve
-    cum, labels, series = 0.0, [], []
-    for r in rows:
-        cum += num(r["RR Return"]) or 0
-        labels.append(datetime.strptime(r["date"], "%B %d, %Y").strftime("%d %b"))
-        series.append(round(cum, 2))
-
     by_month = OrderedDict()
     for r in rows:
         k = datetime.strptime(r["date"], "%B %d, %Y").strftime("%B %Y")
@@ -73,37 +57,8 @@ def page(rows):
         "showDate: false",
         "---",
         "",
-        "Every trade, win or lose, with the chart I took it from. Numbers are",
-        f"live from my journal — last synced {datetime.now():%-d %B %Y}.",
-        "",
-        "## Where it stands",
-        "",
-        "| | |",
-        "|---|---|",
-        f"| Trades taken | {len(taken)} of {len(rows)} logged |",
-        f"| Win rate | {wr:.1f}% |",
-        f"| Profit factor | {pf:.2f} |",
-        f"| Total R | {total_r:+.2f}R |",
-        f"| Net P&L | {'-' if net < 0 else ''}${abs(net):,.0f} |",
-        "",
-        "## Equity curve",
-        "",
-        "Cumulative R, in the order the trades were taken.",
-        "",
-        "{{< chart >}}",
-        "type: 'line',",
-        "data: {",
-        f"  labels: {labels},",
-        "  datasets: [{",
-        "    label: 'Cumulative R',",
-        f"    data: {series},",
-        "    borderWidth: 2,",
-        "    tension: 0.15,",
-        "    pointRadius: 3",
-        "  }]",
-        "},",
-        "options: { scales: { y: { title: { display: true, text: 'R' } } } }",
-        "{{< /chart >}}",
+        "Every trade, win or lose, with the chart I took it from.",
+        f"Last synced {datetime.now():%-d %B %Y}.",
         "",
     ]
 

@@ -106,6 +106,9 @@ The CSV snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats
 
 To change what the page shows, edit `page()` in the script, not the markdown.
 
+It is deliberately a **journal, not a dashboard** — no win rate, profit factor
+or equity curve. Just the trades, month by month.
+
 ## File naming
 
 Posts are named `NN-slug.md` — a zero-padded two-digit number, then the title

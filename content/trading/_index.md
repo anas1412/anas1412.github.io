@@ -5,37 +5,8 @@ showTableOfContents: true
 showDate: false
 ---
 
-Every trade, win or lose, with the chart I took it from. Numbers are
-live from my journal — last synced 20 September 2026.
-
-## Where it stands
-
-| | |
-|---|---|
-| Trades taken | 16 of 17 logged |
-| Win rate | 29.4% |
-| Profit factor | 0.78 |
-| Total R | -3.13R |
-| Net P&L | -$198 |
-
-## Equity curve
-
-Cumulative R, in the order the trades were taken.
-
-{{< chart >}}
-type: 'line',
-data: {
-  labels: ['10 Aug', '11 Aug', '12 Aug', '13 Aug', '14 Aug', '17 Aug', '18 Aug', '19 Aug', '20 Aug', '21 Aug', '26 Aug', '27 Aug', '31 Aug', '01 Sep', '02 Sep', '07 Sep', '16 Sep'],
-  datasets: [{
-    label: 'Cumulative R',
-    data: [-1.02, -0.04, 0.97, 0.97, 2.24, 4.07, 3.43, 2.37, 1.29, 1.32, 3.39, 2.37, 1.33, 0.24, -1.07, -2.11, -3.13],
-    borderWidth: 2,
-    tension: 0.15,
-    pointRadius: 3
-  }]
-},
-options: { scales: { y: { title: { display: true, text: 'R' } } } }
-{{< /chart >}}
+Every trade, win or lose, with the chart I took it from.
+Last synced 20 September 2026.
 
 ## August 2026
 
