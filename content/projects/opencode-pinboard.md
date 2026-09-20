@@ -9,7 +9,12 @@ demo: "https://anas1412.github.io/opencode-pinboard/"
 tech: ["Bun", "React", "Fastify", "SQLite", "Electrobun"]
 showDate: false
 ---
+
 Tickets, git worktrees and pull requests for AI coding sessions, running locally.
+
+![opencode-pinboard](https://raw.githubusercontent.com/anas1412/opencode-pinboard/main/public/OG-preview.png)
+
+<div class="mt-8">{{< button href="https://anas1412.github.io/opencode-pinboard/" target="_blank" >}}Open the live version{{< /button >}}</div>
 
 ## Why
 
@@ -26,12 +31,6 @@ curl -fsSL https://raw.githubusercontent.com/anas1412/opencode-pinboard/main/pin
 
 There's a compiled installer binary on the releases page too.
 
-## Screenshot
-
-![opencode-pinboard](https://raw.githubusercontent.com/anas1412/opencode-pinboard/main/public/OG-preview.png)
-
 ---
 
 {{< github repo="anas1412/opencode-pinboard" showThumbnail=false >}}
-
-{{< button href="https://anas1412.github.io/opencode-pinboard/" target="_blank" >}}Open the live version{{< /button >}}

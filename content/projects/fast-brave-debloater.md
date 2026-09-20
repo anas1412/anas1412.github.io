@@ -8,8 +8,11 @@ repo: "https://github.com/anas1412/fast-brave-debloater"
 tech: ["Bash"]
 showDate: false
 ---
+
 Removes the parts of Brave nobody asked for: crypto wallet popups, VPN
 promotions, rewards notifications, AI chat suggestions.
+
+![fast-brave-debloater](https://raw.githubusercontent.com/anas1412/fast-brave-debloater/main/screenshot.png)
 
 ## Why
 
@@ -23,10 +26,6 @@ cd fast-brave-debloater
 chmod +x brave_debloat.sh
 sudo ./brave_debloat.sh
 ```
-
-## Screenshot
-
-![fast-brave-debloater](https://raw.githubusercontent.com/anas1412/fast-brave-debloater/main/screenshot.png)
 
 ---
 

@@ -99,6 +99,19 @@ graph LR
 
 ## Notes
 
+- **Block shortcodes carry no outer margin.** `github`, `button`, `cta`,
+  `chart` and friends render as bare `<div>`/`<a>` elements, not paragraphs,
+  so a blank line between two of them produces **zero** visual gap. Wrapping
+  in `<p>` does *not* work — goldmark drops it. Wrap in a `<div>` with one of
+  the theme's spacing classes instead; these are confirmed present in the
+  compiled CSS: `mt-4 mt-6 mt-8 my-8 mb-6 mb-8 pt-8`.
+
+  ```
+  ![screenshot](…)
+
+  <div class="mt-8">{{< button href="…" >}}Open the live version{{< /button >}}</div>
+  ```
+
 - Shortcodes render only through Hugo. **Obsidian shows them as raw text** —
   expected, not a bug.
 - `{{< … >}}` vs `{{% … %}}` matters: use the percent form when the body is

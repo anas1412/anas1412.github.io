@@ -9,8 +9,15 @@ demo: "https://anas1412.github.io/ytmgo/"
 tech: ["Go", "yt-dlp"]
 showDate: false
 ---
+
 A YouTube Music client that lives in the terminal. Search, download audio,
 manage a play queue, bookmark favourites, and play — all from the keyboard.
+
+![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/ytmgo.png)
+
+![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/screenshot-catppuccin.png)
+
+<div class="mt-8">{{< button href="https://anas1412.github.io/ytmgo/" target="_blank" >}}Open the live version{{< /button >}}</div>
 
 ## Why
 
@@ -37,14 +44,6 @@ go build -o ytmgo . && ./ytmgo
 
 `Tab` focuses search, `Enter` queues a result, `↑↓`/`jk` move.
 
-## Screenshot
-
-![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/ytmgo.png)
-
-![ytmgo](https://raw.githubusercontent.com/anas1412/ytmgo/main/screenshot-catppuccin.png)
-
 ---
 
 {{< github repo="anas1412/ytmgo" showThumbnail=false >}}
-
-{{< button href="https://anas1412.github.io/ytmgo/" target="_blank" >}}Open the live version{{< /button >}}

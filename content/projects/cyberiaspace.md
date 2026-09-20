@@ -9,9 +9,14 @@ demo: "https://cyberiaspace.app"
 tech: ["TypeScript", "IndexedDB", "OpenRouter"]
 showDate: false
 ---
+
 Four views over one set of data. Ideas exist as physical objects on an infinite
 canvas, drift through a custom physics engine, snap into kanban columns, align on
 a time grid, or surface through search.
+
+![cyberiaspace](https://raw.githubusercontent.com/anas1412/cyberiaspace/main/public/preview.png)
+
+<div class="mt-8">{{< button href="https://cyberiaspace.app" target="_blank" >}}Open the live version{{< /button >}}</div>
 
 ## Why
 
@@ -35,12 +40,6 @@ bun run dev
 Serves on `http://localhost:5173`. Or use the hosted build — it's local-only
 either way, nothing leaves the browser.
 
-## Screenshot
-
-![cyberiaspace](https://raw.githubusercontent.com/anas1412/cyberiaspace/main/public/preview.png)
-
 ---
 
 {{< github repo="anas1412/cyberiaspace" showThumbnail=false >}}
-
-{{< button href="https://cyberiaspace.app" target="_blank" >}}Open the live version{{< /button >}}

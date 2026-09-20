@@ -8,10 +8,13 @@ repo: "https://github.com/anas1412/dotfiles"
 tech: ["Fish", "Kitty", "Kvantum", "GNU Stow"]
 showDate: false
 ---
+
 Tokyo Night across the whole desktop — Plasma 6 on Wayland, Kitty, Fish, Kvantum.
 
 Managed with GNU Stow so each config is a symlink farm rather than a pile of
 copies. Same palette as this site.
+
+![dotfiles](https://raw.githubusercontent.com/anas1412/dotfiles/main/screenshot.png)
 
 ## Get it
 
@@ -24,10 +27,6 @@ cd ~/dotfiles
 
 Or just some of it: `./install.sh fish kitty`. Stow refuses rather than
 overwriting an existing config — move the old one aside and re-run.
-
-## Screenshot
-
-![dotfiles](https://raw.githubusercontent.com/anas1412/dotfiles/main/screenshot.png)
 
 ---
 
