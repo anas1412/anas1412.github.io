@@ -9,17 +9,17 @@ GitHub Pages on every push to `main`.
 Open **`content/`** as your Obsidian vault. Write into `content/posts/`.
 
 ```sh
-git add -A && git commit -m "new note" && git push   # ~1 min to live
+git add -A && git commit -m "new post" && git push   # ~1 min to live
 ```
 
-**Every note needs frontmatter** — without a `title:` Hugo publishes an
+**Every post needs frontmatter** — without a `title:` Hugo publishes an
 untitled page. Set it up once so you never think about it again:
 
 1. Obsidian → Settings → Core plugins → enable **Templates**
 2. Templates → Template folder location → `templates`
-3. New note → `Ctrl+P` → *Insert template* → `note`
+3. New note → `Ctrl+P` → *Insert template* → `post`
 
-Set `draft: true` to keep a note private; it stays in the repo but is never
+Set `draft: true` to keep a post unpublished; it stays in the repo but is never
 built. Remove it to publish.
 
 ## Local preview
