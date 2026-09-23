@@ -18,6 +18,8 @@ Your internal state is weather. It does not change the facts in front of you.
 It changes how many of them you can see, and how well you choose between
 them.
 
+{{< figure src="/images/notes/08.jpg" alt="A tiny figure on a shore beneath a vast grey sky" caption="Caspar David Friedrich, *The Monk by the Sea*, 1808 to 1810. One small figure, and nothing but weather. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Monk_by_the_Sea.jpg)" >}}
+
 ## Fear or trust
 
 Underneath the models in this series is one question: are you acting from

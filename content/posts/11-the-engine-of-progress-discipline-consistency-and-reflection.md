@@ -75,6 +75,12 @@ I log every trade I take, and the log shows me things I could never see in
 the moment: the setups that actually pay, the mistakes that repeat, the days
 of the week I should not trade. Memory edits. A journal does not.
 
+Marcus Aurelius ran the Roman Empire and still kept one. We know it as
+*Meditations*. He never meant anyone to read it. It was written to himself,
+to correct himself.
+
+{{< figure src="/images/notes/11.jpg" alt="Marble bust of Marcus Aurelius" caption="Marcus Aurelius, Capitoline Museums, Rome. Photo: Jean-Pol Grandmont, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:0_Marcus_Aurelius_-_Palazzo_Nuovo_-_Musei_Capitolini_%281%29.JPG)." >}}
+
 Questions worth asking it, weekly:
 
 - What did I do that the person I am trying to become would do?

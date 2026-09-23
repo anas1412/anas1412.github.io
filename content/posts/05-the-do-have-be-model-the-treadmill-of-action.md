@@ -17,6 +17,8 @@ permission never works. It deserves credit. Action beats waiting. Doing
 builds skill, and skill compounds. Most of the celebrated careers you know
 were built by people running this model hard.
 
+{{< figure src="/images/notes/05.jpg" alt="Engraving of prisoners climbing a large treadwheel" caption="The treadmill at Brixton Prison, London, early 1800s. The original treadmill was a punishment: prisoners climbed for hours and went nowhere. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Treadmill_at_Brixton_Prison_in_London_%28cropped%29.jpg)" >}}
+
 It still has the same flaw in a different place.
 
 ## Three ways it breaks

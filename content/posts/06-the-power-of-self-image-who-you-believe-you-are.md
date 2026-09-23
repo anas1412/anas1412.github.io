@@ -18,6 +18,8 @@ It had not changed the picture they held of themselves, and the picture won.
 He spent the rest of his career on that picture. He called it self-image, and
 wrote about it in *Psycho-Cybernetics*.
 
+{{< figure src="/images/notes/06.jpg" alt="A young man leaning over water, gazing at his reflection" caption="Caravaggio, *Narcissus*, about 1597 to 1599. A man held in place by the picture of himself. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Narcissus-Caravaggio_%281594-96%29_edited.jpg)" >}}
+
 ## The thermostat
 
 Self-image works like a thermostat. Set it to twenty degrees and open a

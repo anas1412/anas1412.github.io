@@ -17,6 +17,8 @@ Every decision you make is made on a map, not on the world itself. Nobody can
 hold the whole territory in their head. The question is only whether your
 maps are good ones, and whether you carry more than one.
 
+{{< figure src="/images/notes/14.jpg" alt="Mercator's 1569 world map" caption="Gerardus Mercator's world map, 1569. It is still how most people picture the world, and it inflates everything near the poles: Greenland looks the size of Africa, which is about fourteen times larger. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mercator_1569_world_map_composite.jpg)" >}}
+
 A mental model is a map. Here are six worth carrying.
 
 | Model | The question it asks |

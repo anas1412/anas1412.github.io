@@ -17,6 +17,8 @@ Jung called it the shadow: the parts of yourself you have decided are not
 you. Envy, fear, the need to be approved of, laziness, rage. Not evil, just
 disowned.
 
+{{< figure src="/images/notes/03.jpg" alt="Carl Jung standing in a dark suit, 1910" caption="Carl Jung in 1910. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Jung_1910-crop.jpg)" >}}
+
 Disowning them does not switch them off. It only moves them out of sight,
 where they keep working, and you experience the results as bad luck.
 

@@ -25,6 +25,8 @@ like how things work.
 
 It has two flaws, and both are fatal.
 
+{{< figure src="/images/notes/04.jpg" alt="Tantalus straining upward toward fruit just out of reach" caption="Gioacchino Assereto, *Tantalus*, 1640s. Condemned to stand beneath fruit that pulls away every time he reaches for it. Have-Do-Be, painted four centuries early. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tantalus_Gioacchino_Assereto_circa1640s.jpg)" >}}
+
 **The "have" keeps moving.** Psychologists call it hedonic adaptation: every
 acquisition resets your baseline. The raise feels enormous for a month and
 normal by the third. So the list of things you need before you can begin is

@@ -17,6 +17,8 @@ everyone has felt: you decide one thing, and then you do another.
 
 In these notes it is a rider and a horse.
 
+{{< figure src="/images/notes/02.jpg" alt="A chestnut horse rearing against a plain background" caption="George Stubbs, *Whistlejacket*, about 1762. No rider and no background, only strength. That is the horse. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Whistlejacket_by_George_Stubbs.jpg)" >}}
+
 | | The rider | The horse |
 |---|---|---|
 | Is | your conscious mind | habits, moods, the body |

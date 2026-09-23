@@ -18,6 +18,8 @@ Most high achievers know the feeling. The promotion, the first big payout,
 the finished project. A week of relief, and then a strange flatness, and then
 the next goal, already chosen, already urgent.
 
+{{< figure src="/images/notes/17.jpg" alt="Peasants harvesting wheat and resting in a golden field" caption="Pieter Bruegel the Elder, *The Harvesters*, 1565 (detail). The work and the rest, in the same field. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder-_The_Harvesters_-_Google_Art_Project_%28cropped%29.jpg)" >}}
+
 ## Two things that are often confused
 
 | Achievement | Fulfilment |

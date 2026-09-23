@@ -58,6 +58,8 @@ that flow is not random. It appears in a specific place.
 | **High challenge** | anxiety | **flow** |
 | **Low challenge** | apathy | boredom |
 
+{{< figure src="/images/notes/10.jpg" alt="Diagram of challenge against skill with eight zones including flow, anxiety and boredom" caption="Csikszentmihalyi's fuller eight-channel version. Flow sits where high challenge meets high skill. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Challenge_vs_skill.svg)" >}}
+
 Flow lives where a hard problem meets real skill. Too easy and you drift.
 Too hard and you panic. So the path to flow is not trying harder. It is
 choosing work at the edge of your ability, then protecting the energy,

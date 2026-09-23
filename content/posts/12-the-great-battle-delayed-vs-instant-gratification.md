@@ -17,6 +17,8 @@ taken every time, leads nowhere near where they meant to go.
 That is the whole fight, repeated a hundred times a day: **what you want now
 against what you want most.**
 
+{{< figure src="/images/notes/12.jpg" alt="Ulysses bound to a ship's mast while sirens circle overhead" caption="John William Waterhouse, *Ulysses and the Sirens*, 1891. Tied to the mast before the singing starts. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:John_William_Waterhouse_-_Ulysses_and_the_Sirens_-_Google_Art_Project.jpg)" >}}
+
 ## The marshmallow test, updated
 
 In the 1960s Walter Mischel offered young children one marshmallow now, or

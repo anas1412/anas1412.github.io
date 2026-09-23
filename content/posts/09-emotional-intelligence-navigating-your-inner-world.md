@@ -18,6 +18,8 @@ fails, and it fails for a reason: try hard not to think of a white bear and
 you will think of little else. Suppressed feelings do not leave. They go
 underground and steer.
 
+{{< figure src="/images/notes/09.jpg" alt="Marble bust of Aristotle" caption="Aristotle, a Roman copy of a bronze by Lysippos. Palazzo Altemps, Rome. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aristotle_Altemps_Inv8575.jpg)" >}}
+
 Real control is narrower and more useful. It is **the gap between feeling
 something and acting on it**, and the ability to widen that gap by half a
 second when it counts.

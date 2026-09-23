@@ -17,6 +17,8 @@ and many people do. It changes nothing about the hand you were dealt.
 The useful question is never *why is it like this?* It is *given that it is
 like this, what now?*
 
+{{< figure src="/images/notes/15.jpg" alt="Two cardsharps cheating a young man at cards" caption="Caravaggio, *The Cardsharps*, about 1594. The accomplice reads the young man's cards over his shoulder. The game was never fair. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caravaggio_%28Michelangelo_Merisi%29_-_The_Cardsharps_-_Google_Art_Project.jpg)" >}}
+
 ## Paradox
 
 Once you stop demanding that the game be fair, you start to notice it is also

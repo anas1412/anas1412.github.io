@@ -47,6 +47,8 @@ repetition and never by argument. Almost every failure described in these
 notes is a rider who believes he is in charge of an animal he has never
 trained.
 
+{{< figure src="/images/notes/01.jpg" alt="A calm rider on a rearing white horse, crossing a mountain pass" caption="Jacques-Louis David, *Napoleon Crossing the Alps*, 1801. The rider calm, the horse rearing: the image this whole series leans on. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:David_-_Napoleon_crossing_the_Alps_-_Malmaison1.jpg)" >}}
+
 > "The real voyage of discovery consists not in seeking new landscapes, but in having new eyes."
 > Marcel Proust
 

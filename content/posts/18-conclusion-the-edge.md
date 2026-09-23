@@ -49,6 +49,8 @@ this list works from the middle of your comfort. All of it asks you to stand
 at the edge a little longer than feels natural, and do the uncomfortable
 thing again.
 
+{{< figure src="/images/notes/18.jpg" alt="A man standing on a rocky edge above a sea of fog" caption="Caspar David Friedrich, *Wanderer above the Sea of Fog*, about 1818. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg)" >}}
+
 Those two meanings turn out to be one. You find out whether you have an edge
 by standing at the edge, repeatedly, long after the novelty has gone and
 before the results have come.

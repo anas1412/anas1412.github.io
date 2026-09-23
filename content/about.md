@@ -21,13 +21,13 @@ showWordCount: false
 
 {{< timeline >}}
 
-{{< timelineItem icon="shield" header="Site Reliability Engineer & IT Consultant" badge="Aug 2026 - Present" subheader="Full-time" md=true >}}
+{{< timelineItem icon="shield" header="Site Reliability Engineer & IT Consultant" badge="Aug 2026 - Now" subheader="Scientific Consulting" md=true >}}
 - Recovered a production ingress outage onto a new OVH Octavia load balancer, restoring all 134 hostnames with zero Ingress changes and keeping git and cluster state in sync.
 - Migrated production log shipping from end-of-life Promtail to Grafana Alloy and fixed Loki persistence, preventing volume loss on scale-down and eliminating a silent log-drop window on every restart.
 - Restructured the Envoy Gateway into a base-plus-overlay layout admitting all namespaces, unblocking the Gateway API rollout across both clusters.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="scale-balanced" header="Propfirm Trader" badge="Oct 2022 - Present" subheader="Self-employed" md=true >}}
+{{< timelineItem icon="scale-balanced" header="Propfirm Trader" badge="Oct 2022 - Now" subheader="Self-employed" md=true >}}
 - Managing multiple funded accounts from multiple modern prop firms.
 - Implemented a precise systematic edge on the M5 timeframe with precise risk management that yields consistently minimum 4% monthly.
 - Rewarded with countless verified payouts, averaging 5 figures per month.

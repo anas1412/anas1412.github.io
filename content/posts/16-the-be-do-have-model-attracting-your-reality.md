@@ -29,6 +29,8 @@ Begin by being the person who would achieve what you want. Not pretending to
 have the results, but adopting the identity: the standards, the habits, the
 way of deciding.
 
+{{< figure src="/images/notes/16.jpg" alt="An unfinished marble figure still emerging from the block" caption="Michelangelo, *Awakening Slave*, left unfinished. A figure still emerging from the block. Photo: Jörg Bittner Unna, CC BY-SA 3.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:%27Awakening_Slave%27_by_Michelangelo_-_JBU_02.jpg)." >}}
+
 If you want to be a professional trader, be one now, on a small account. A
 professional sizes correctly, follows his plan, journals every trade, and
 stops for the day when the day is done. None of that requires a large

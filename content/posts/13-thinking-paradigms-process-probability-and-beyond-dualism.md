@@ -53,6 +53,8 @@ by enough, often enough, is.
 
 The part that breaks people is the losing run.
 
+{{< figure src="/images/notes/13.jpg" alt="A Galton board shown before and after the balls fall into a bell curve" caption="A Galton board, before and after. Every ball's path is random. The shape of the pile is not. Photo: Rodrigo Tetsuo Argenton, exhibit by Estes Objethos Atelier, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tabuleiros_de_Galton_%28antes_e_depois%29.jpg)." >}}
+
 With a genuine fifty-fifty edge, the chance of hitting at least **five losses
 in a row somewhere in a hundred trades is about 81%**. At a 40% win rate it
 is about 98%. Five losses in a row is not a sign that something is broken. It

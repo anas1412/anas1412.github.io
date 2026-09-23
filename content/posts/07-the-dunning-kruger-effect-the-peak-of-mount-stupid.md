@@ -14,6 +14,8 @@ You have probably seen the chart. Confidence shoots up to a peak labelled
 "Mount Stupid", crashes into a "Valley of Despair", then climbs slowly toward
 a plateau of real expertise.
 
+{{< figure src="/images/notes/07a.jpg" alt="The popular Dunning-Kruger curve with Mount Stupid and the Valley of Despair" caption="The chart everyone shares. It is not from the paper. Illustration CC0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Dunning%E2%80%93Kruger_Effect_01.svg)." >}}
+
 It is not in the paper. The label comes from an internet comic, not from
 psychology. Millions of people have confidently shared a chart they never
 checked, about the danger of confidence without knowledge. It is hard to
@@ -55,6 +57,8 @@ Two findings, not one:
 Later researchers have argued part of the pattern is a statistical artefact.
 The practical lesson survives the argument: your confidence is a poor
 measurement of your competence, and worst exactly where you know least.
+
+{{< figure src="/images/notes/07b.jpg" alt="Scatter plot of subjective against objective IQ with a shallow trend line" caption="Self-estimates that are merely noisy, plotted against real scores. Noise alone flattens the line: low scorers appear to overestimate and high scorers to underestimate. Simulation by Phlsph7, CC BY-SA 4.0, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Dunning-kruger_effect_-_simulation1.svg)." >}}
 
 > "The fundamental cause of the trouble is that in the modern world the stupid are cocksure while the intelligent are full of doubt."
 > Bertrand Russell, *The Triumph of Stupidity*
