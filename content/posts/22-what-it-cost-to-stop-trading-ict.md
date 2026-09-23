@@ -3,21 +3,25 @@ title: "What It Cost to Stop Trading ICT"
 date: 2026-09-20
 draft: false
 tags: ["trading", "systems", "vwap"]
-summary: "Three years of concepts, and the simpler thing that replaced them."
+series: ["Getting Funded"]
+series_order: 4
+summary: "Years inside a framework that could explain every loss, and the simpler one that replaced it because it could not."
 showTableOfContents: true
 ---
 
-I traded ICT concepts for about three years. Inversion fair value gaps, change
-in state of delivery, stop hunts, SMT divergence, m1 and m3 and m5 alignment.
-I did not abandon them because someone argued me out of it. I abandoned them
-because my own journal argued me out of it, and it took about nine months of
-reading my own notes before I listened.
+Getting [[21-first-funded-account|funded]] changed how I behaved. It did not
+change what I believed about the market, and for years what I believed was
+ICT: inversion fair value gaps, change in state of delivery, stop hunts, SMT
+divergence, m1 and m3 and m5 alignment.
+
+Nobody argued me out of it. My own journal did, and I can show you the four
+months where it happened.
 
 ## The notes were the evidence
 
-I log every trade. That turned out to be the thing that killed the method,
-because the notes stopped being about the market and started being about the
-rules.
+I log every trade. That turned out to be what killed the method, because
+somewhere along the way the notes stopped being about the market and started
+being about the rules.
 
 | Date | What I wrote |
 |---|---|
@@ -28,34 +32,64 @@ rules.
 | 13 Jan 2026 | 50/50 area where both condition for longs and shorts are present |
 | 10 Feb 2026 | plateform is shit first its fake confirmation |
 
-Read those in order. In November I am refining the rules. Three weeks later I
-am contradicting the refinement. By December I am asking myself a question I
-cannot answer. By January the setup gives a long and a short signal in the
-same place. By February I am blaming the broker.
+Read them in order. In late November I rewrite the entry rules twice in two
+days. A week later I break the version I have just written. By December I am asking myself a question I cannot answer. By
+January the setup is signalling long and short in the same place. By February
+I am blaming the platform.
 
 That is not a trader improving. That is a framework failing and a person
 patching it.
 
-## Why it fails the way it does
+## Epicycles
 
-ICT concepts are not wrong as descriptions. Price does sweep liquidity. Gaps
-do get filled. The problem is that they are **descriptive, not decidable**.
+This has happened before, on a much larger scale.
 
-A fair value gap is obvious afterwards. In the moment there are four candidate
-gaps on three timeframes, and the rule for which one counts is your own
-judgement. So every losing trade has an explanation available: wrong gap,
-wrong timeframe, did not wait for the close. The method can never be falsified,
-only re-specified. That is why my notes multiply rules instead of removing
-them.
+For about fourteen centuries, astronomy ran on Ptolemy's model, with the Earth
+at the centre and everything circling it. It predicted the sky reasonably
+well, until it did not: planets drifted, stalled, ran backwards. Each time an
+observation disagreed, astronomers added another circle riding on the first,
+an epicycle, and the model fitted again.
 
-A system you cannot be wrong about is a system you cannot improve.
+{{< figure src="/images/funded/22a.jpg" alt="Engraved plate of the Earth-centred Ptolemaic universe" caption="Andreas Cellarius, the Ptolemaic system, from *Harmonia Macrocosmica*, 1660. It fitted the sky well enough, as long as you kept adding circles. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Cellarius_ptolemaic_system.jpg)." >}}
+
+It never broke, and that was the problem. A model that can absorb any
+observation by adding one more circle can never be shown to be wrong, and a
+model that cannot be wrong cannot get better.
+
+ICT concepts work the same way. They are not wrong as descriptions. Price
+does sweep liquidity, and gaps do fill. The trouble is that they are
+**descriptive, not decidable**.
+
+A fair value gap is obvious afterwards. In the moment there are four
+candidates across three timeframes, and the rule for which one counts is your
+own judgement. So every loss comes with an explanation already attached:
+wrong gap, wrong timeframe, did not wait for the close. The method is never
+falsified, only re-specified. Each new rule in my journal was an epicycle.
+
+A system you cannot be wrong about is a system you cannot improve. It is the
+same test as in [[07-the-dunning-kruger-effect-the-peak-of-mount-stupid|Mount Stupid]]:
+ask what would prove you wrong. If the answer is nothing, you are not holding
+a method. You are holding a story.
 
 ## What replaced it
 
-VWAP fades. One instrument, one setup, one target.
+Astronomy was not fixed by a better epicycle. It was fixed by simpler models
+that made sharp predictions and could fail in public. Copernicus moved the
+Sun to the centre, though he still needed some circles of his own. Kepler's
+ellipses finally let them go.
 
-Price leaves the mean, stays away long enough to prove it was not noise, then
-comes back. I take the come-back.
+{{< figure src="/images/funded/22b.jpg" alt="Engraved plate of the Sun-centred Copernican universe" caption="Andreas Cellarius, the Copernican system, from the same atlas, 1660. The sky did not change. The model did. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Andreas_Cellarius_-_Scenographia_Systematis_Copernicani.jpg)." >}}
+
+Mine was VWAP fades. One instrument, one setup, one target.
+
+**VWAP** is the volume-weighted average price: the average price actually paid
+across the session, weighted by how much traded at each level. It is where
+the market's money has, on average, changed hands. Bands drawn a set distance
+above and below it mark where price has stretched unusually far from that
+average.
+
+The idea is simple. Price leaves the mean, stays away long enough to prove it
+was not noise, then comes back. I take the come-back.
 
 ### The long
 
@@ -74,14 +108,14 @@ data: {
 options: { scales: { y: { title: { display: true, text: 'Price' } }, x: { title: { display: true, text: 'M5 candles' } } } }
 {{< /chart >}}
 
-Bars 5 to 14 sit below the lower band. That is the part that matters. Bar 15
-is the first M5 candle to **close** back above it, and that close is the
-entry. Stop goes under the extreme at 97.5. Target is one R, which the fade
-reaches before it gets anywhere near VWAP.
+Candles 7 to 14 close below the lower band. That is the part that matters.
+Candle 15 is the first M5 candle to **close** back above it, and that close is
+the entry. The stop goes under the extreme. The target is 1R, which the fade
+reaches well before it gets anywhere near VWAP.
 
 ### The short
 
-Same thing upside down. Price pushes above the upper band, holds above it,
+The same thing upside down: price pushes above the upper band, holds there,
 then an M5 candle closes back below.
 
 {{< chart >}}
@@ -104,8 +138,8 @@ options: { scales: { y: { title: { display: true, text: 'Price' } }, x: { title:
 It is not a reversal trade. I am not calling a top or a bottom.
 
 Price has to **break the band, stay outside it, and then revert**. The staying
-is the whole filter. A wick through the band and an immediate snap back is not
-acceptance, it is noise, and it is the trade that looks most like the setup
+is the whole filter. A wick through the band that snaps straight back is not
+acceptance. It is noise, and it is the trade that looks most like the setup
 while being nothing like it.
 
 {{< mermaid >}}
@@ -128,21 +162,22 @@ graph TD
 | Trigger | M5 **close** back inside | trading the wick in real time |
 | Target | 1R | held for the full move to VWAP |
 
-## Why this is better, and it is not the win rate
+## Why it is better, and it is not the win rate
 
 The win rate is not obviously higher. The difference is that **I can be wrong
 about it**.
 
-Every term in the setup is a number a computer could check. Did the candle
-close outside the band, yes or no. Did it stay out for N candles, yes or no.
-Did an M5 candle close back inside, yes or no. There is no timeframe to argue
-with afterwards and no fourth gap I should have used instead.
+Every part of the setup is something a computer could check. Did the candle
+close outside the band, yes or no. Did it stay outside for several candles,
+yes or no. Did an M5 candle close back inside, yes or no. There is no
+timeframe to argue with afterwards, and no fourth gap I should have used
+instead.
 
-That means a losing month is information rather than an excuse. If the edge
-stops working I will see it in the data, because the data is answering the
-same question every time. Under ICT I could never tell the difference between
-a bad month and a misapplication, so I always concluded misapplication, so I
-always added a rule.
+That turns a losing month into information rather than an excuse. If the edge
+stops working, the data will show it, because the data is answering the same
+question every time. Under ICT I could never tell a bad month from a
+misapplication, so I always concluded misapplication, and I always added
+another circle.
 
-Three years to learn that the value of a system is not how well it describes
-the market. It is whether it can tell you that you are wrong.
+The value of a system is not how well it describes the market. It is whether
+it can tell you that you are wrong.

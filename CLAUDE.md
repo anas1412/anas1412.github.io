@@ -15,6 +15,8 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/trading/` | **generated** - one article per month, do not hand-edit |
 | `scripts/sync_trades.py` | pulls the journal from Google Sheets |
 | `scripts/data/trades.json` | committed snapshot, so builds work offline |
+| `scripts/commons_image.py` | finds and fetches freely licensed images from Wikimedia Commons |
+| `static/images/` | post images: `notes/` for the essay series, `funded/` for Getting Funded |
 | `content/templates/post.md` | Obsidian template for a standalone post |
 | `content/templates/series-post.md` | Obsidian template for a post in a series |
 | `content/templates/project.md` | Obsidian template for a project |
@@ -226,6 +228,166 @@ sheet notes on every sync so the trading pages comply automatically.
 - No filler openers, no "in today's world", no summarising what you're about
   to say before saying it.
 
+## Editing like a professional writer
+
+When asked to write, rewrite or improve a post, work as a professional writer
+and editor who has published books and articles. **Editorial licence is
+unconstrained**: rewrite freely, restructure, retitle, cut whole sections, add
+new ones, reorder arguments, add images, charts, tables and diagrams. The only
+hard limits are the truth rules below and the house rules above.
+
+Keep filenames unchanged when rewriting. Titles can change freely (wikilinks
+resolve by filename), but the filename is the URL and other posts link to it.
+Titles the author has set by hand stay unless he asks.
+
+### How the rewrites are done
+
+- **Open on something concrete**: a scene, a fact, a claim. Never a greeting,
+  a preamble, or a summary of what is coming. "Greetings, Seeker" was cut for
+  this reason.
+- **One idea per post.** Every section serves it. If a paragraph restates the
+  point, delete it.
+- **Ground every abstraction in the author's world.** He is a prop firm
+  trader and a site reliability engineer. Revenge trading illustrates the
+  shadow; the daily loss limit illustrates emotional control; incident drills
+  illustrate training the horse. General examples are fine too, but the
+  specific ones are what make it his.
+- **No formulaic closers.** A recurring image (the rider and the horse) is used
+  where it illuminates, never bolted onto the end of every post.
+- **Resolve contradictions across posts** instead of repeating both sides.
+  "Burn the bridges, no plan B" and "think in probabilities" were reconciled:
+  burn bridges on identity, never on risk.
+- **Link the series together** with wikilinks where ideas genuinely overlap,
+  and link forward and back between series.
+- **Short, specific titles.** "Have-Do-Be", "The Weather Inside",
+  "Someone Else's Capital", not "X: A Journey Into Y".
+
+### Truth rules
+
+These do not bend, however much licence the writing has.
+
+- **Never invent the author's life.** No made-up events, amounts, durations,
+  feelings or firm names. Anchor personal claims to something verifiable:
+  `content/about.md`, verbatim journal notes in `scripts/data/trades.json`
+  (check the date and wording before quoting), git history, or what the author
+  has said. Write in first person only about established facts. When a claim
+  cannot be verified, rephrase it so it no longer needs to be, and tell the
+  author what was changed.
+- **Compute every number** with a script before it appears in prose. Probabilities,
+  expectancy, compounding, percentages: run them, do not estimate them.
+- **Prose must match its chart.** If the text says "candles 7 to 14" or
+  "finishes at +7R", check it against the chart data. Two such errors were
+  caught this way.
+- **Label synthetic charts as illustrations** in italics under the chart.
+- **Quotes must be real and sourced.** Prefer the primary wording over the
+  popular paraphrase (Jung from *Aion*, Russell from *The Triumph of
+  Stupidity*). Drop misattributed or unsourced lines (the Lincoln, Tesla,
+  Drucker and "Unknown" quotes were removed).
+- **Science needs a name and its caveats.** Cite the actual research
+  (Mullainathan and Shafir on scarcity, Kruger and Dunning 1999) and mention
+  known replication problems (the 2018 marshmallow replication). No
+  pseudoscience: no "frequencies", "vibration" or unfalsifiable energy claims.
+- **Verify external facts** (a firm's rules, a date, a figure) from the source
+  at the time of writing, and say "as it stands today" where it can change.
+
+## Images
+
+Every post should carry at least one image that says something. Sources, in
+order of preference:
+
+1. **The author's own material** (his TradingView snapshots, project
+   screenshots from his repos).
+2. **Wikimedia Commons**, licences **Public domain, CC0, CC BY or CC BY-SA
+   only**. Never an image found through a general web search: that is
+   somebody's copyright.
+
+Use the script:
+
+```sh
+python3 scripts/commons_image.py search "Wanderer above the Sea of Fog"
+python3 scripts/commons_image.py fetch "Wanderer above the Sea of Fog" 0 static/images/notes/18.jpg
+```
+
+`fetch` resizes to 1400px, flattens transparent diagrams onto white (black
+lines vanish on the dark theme otherwise), saves a JPEG and prints the licence,
+author and Commons URL.
+
+**Choosing.** Pick images that carry the idea, not decoration. The best ones
+are metaphors the reader gets instantly:
+
+| Idea | Image |
+|---|---|
+| a goal that keeps receding | Assereto, *Tantalus* |
+| effort that goes nowhere | the Brixton prison treadmill |
+| committing in advance | Waterhouse, *Ulysses and the Sirens* |
+| a framework patched instead of falsified | Cellarius, Ptolemy's epicycles |
+| randomness with a predictable shape | a Galton board |
+| a rigged game | Caravaggio, *The Cardsharps* |
+
+Where the text quotes a person, their portrait works. Avoid artwork dominated
+by nudity; there is almost always a clothed alternative (Waterhouse's Sirens
+over Draper's).
+
+**Review before placing.** Build a contact sheet and look at every candidate:
+
+```sh
+magick montage static/images/notes/*.jpg -geometry 260x260+6+6 -tile 5x -background '#1e293b' /tmp/sheet.jpg
+```
+
+Reject blurry scans, library rulers in the margin, cluttered photos, and
+diagrams that need a paragraph to explain.
+
+**Placing.** Store under `static/images/<series>/NN.jpg`. Insert with `figure`
+directly after the paragraph it illustrates, never as a detached gallery:
+
+```
+{{< figure src="/images/notes/04.jpg" alt="Tantalus straining toward fruit just out of reach" caption="Gioacchino Assereto, *Tantalus*, 1640s. Condemned to stand beneath fruit that pulls away every time he reaches for it. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:...)." >}}
+```
+
+- **alt**: what the image shows, for screen readers.
+- **caption**: artist, *title*, year; one sentence on why it is here; then the
+  credit. For CC BY and CC BY-SA, name the photographer or author and the
+  licence. Encode `(` and `)` in Commons URLs as `%28` and `%29`, or the
+  markdown link breaks.
+- No double quotes inside captions: the caption is itself a quoted parameter.
+
+## Charts, diagrams and tables
+
+Use whichever carries the idea fastest:
+
+| Use | For |
+|---|---|
+| **Chart.js** (`chart`) | a mechanism with numbers: equity curves, two traders on the same trades, a challenge passing and failing, compounding |
+| **Mermaid** (`mermaid`) | a decision or a cycle: entry rules, Be-Do-Have |
+| **Table** | a comparison: rider vs horse, the four boxes of decision vs outcome, qualifies vs does not |
+
+Original charts built from computed data are better than a stock image of a
+chart. Mixed charts work (`type: 'bar'` with a `type: 'line'` dataset for a
+limit line).
+
+## Verifying before publishing
+
+Screenshots in the preview browser are unreliable for anything below the fold,
+so verify in the DOM and the built HTML:
+
+1. No em dashes, en dashes or emojis in any changed file.
+2. `python3 scripts/wikilinks.py --check` reports nothing unresolved.
+3. `rm -rf public && ./scripts/build.sh` builds clean.
+4. Count what should exist in `public/`: canvases, `not-prose mermaid`
+   blocks, figures, Commons credit links, and zero raw `[[`.
+5. In the browser, confirm charts drew (`Chart.getChart(canvas)`, non-zero
+   height) and images loaded (`img.naturalWidth > 0`).
+6. **Stage only the files you changed.** Obsidian drops untracked files into
+   `content/` (canvases, `.base`, daily notes); `git add -A` would publish them.
+7. Commit without any AI attribution trailer, push, then `curl` the live pages.
+
+## The series
+
+| Series | Posts | About |
+|---|---|---|
+| Notes from the Edge | 01 to 18 | the author's philosophy: three models, the rider and the horse, the edge |
+| Getting Funded | 19 to 22 | his path in trading, October 2022 onward, ending with leaving ICT for VWAP fades |
+
 ### Shortcodes for visuals
 
 Full reference for all 46: [`docs/shortcodes.md`](docs/shortcodes.md).
@@ -256,7 +418,7 @@ Also available: `alert`, `lead`, `badge`, `timeline`, `steps`, `tabs`,
 `gallery`, `stat`, `katex`, `video`, `youtubeLite`, `github`, `carousel`,
 `accordion`, `swatches`, `typeit`. Run
 `ls $(hugo mod vendor >/dev/null; echo _vendor/github.com/nunocoracao/blowfish/v3/layouts/shortcodes)`
-to see all 44, then delete `_vendor/`.
+to see all 46, then delete `_vendor/`.
 
 ## Publishing
 
