@@ -1,55 +1,81 @@
 ---
-title: "The Day I Started Trading"
+title: "20 October 2022"
 date: 2022-10-20
 draft: false
 tags: ["trading", "beginnings"]
 series: ["Getting Funded"]
 series_order: 1
-summary: "20 October 2022. The day I opened an account, and the year of being wrong that followed."
+summary: "The day I opened a trading account, and the engineering instinct I had to unlearn before anything else."
 ---
 
-20 October 2022. That is the date on the account.
+20 October 2022 is the date on the account.
 
-I was an engineer. I had spent years learning that systems behave in ways you
-can reason about: you read the logs, you form a hypothesis, you test it, you
-fix the cause. I assumed markets were the same kind of problem. Harder, maybe,
-but the same shape.
+I was still an engineering student. A few weeks earlier I had finished a
+DevOps internship, a summer spent building deployment pipelines and watching
+dashboards. That kind of work teaches a very specific confidence: systems are
+deterministic. Something breaks, you read the logs, you find the cause, you
+fix it, and it stays fixed.
 
-That assumption cost me about fourteen months.
+I walked into the market carrying that confidence. It was the wrong tool.
 
-## What I thought the job was
+{{< figure src="/images/funded/19.jpg" alt="Merchants gathered in the arcaded courtyard of the old Amsterdam exchange" caption="Job Berckheyde, *The Courtyard of the Old Exchange in Amsterdam*, late 1600s. People have been trying to read markets in rooms like this for four hundred years. Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Berckheyde,_Job_Adriaensz.%E2%80%94Binnenplaats_van_de_Oude_Beurs_te_Amsterdam_na_1668%E2%80%94c.1670%E2%80%94Museum_Boijmans_Van_Beuningen%E2%80%941043_%28OK%29%E2%80%94WD_item_Q19924911.jpg)." >}}
 
-I thought trading was prediction. Find the pattern, call the direction, get
-paid for being right. It is the obvious reading, and it is wrong in a way that
-is hard to see from the outside.
+## A system with no bug
 
-The market is not a system you debug. It has no source code and no stack
-trace. The same setup that paid yesterday loses today, and no amount of
-reading the logs tells you which one you are in. An engineer's instinct is to
-find the bug. There is no bug.
+Markets look like systems. There are inputs and outputs, and patterns that
+seem to repeat. So the engineer's instinct is to debug: find the setup that
+works, remove the one that does not, and ship.
 
-## What actually determines the outcome
+But the same setup that paid on Tuesday loses on Wednesday, and nothing is
+broken. There is no stack trace, because there is no bug. A market is not
+deterministic. The most you can hold is an
+[[01-introduction-the-rider-s-quest-to-the-edge|edge]]: an advantage that
+shows up across many trades and is invisible in any single one.
 
-Two traders can take the identical entry and end the year in opposite places.
-The difference is not the entry.
+That was hard to accept, because every loss felt like a defect I should have
+been able to find.
+
+## Entries were not where the money went
+
+I spent my first months on entries. Which pattern, which confirmation, which
+candle. It took far too long to see that entries were not where the result
+was being decided.
+
+{{< chart >}}
+type: 'line',
+data: {
+  labels: ['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'],
+  datasets: [
+    { label: 'Takes every loss at 1R', data: [0,2,1,0,2,1,3,2,1,3,5,4,3,5,4,6,5,4,6,5,7], borderWidth: 2.5, tension: 0.2, pointRadius: 0 },
+    { label: 'Lets four losses run to 3R', data: [0,2,1,-2,0,-1,1,-2,-3,-1,1,-2,-3,-1,-2,0,-3,-4,-2,-3,-1], borderWidth: 2.5, tension: 0.2, pointRadius: 0, borderDash: [6,4] }
+  ]
+},
+options: { scales: { x: { title: { display: true, text: 'Trade' } }, y: { title: { display: true, text: 'Cumulative R' } } } }
+{{< /chart >}}
+
+*An illustration. Twenty identical trades, nine winners and eleven losers,
+the same entries and the same winners for both. One trader takes every loss
+at 1R. The other holds four of them to 3R, hoping they come back. One finishes
+at +7R, the other at -1R.*
+
+Nothing about the entries changed. The difference was four decisions, made in
+the minutes when a position was going wrong.
 
 | What I focused on | What actually moved the number |
 |---|---|
-| finding the right setup | how much I lost when wrong |
-| being right more often | whether the winners were bigger than the losers |
-| more indicators, more confluence | taking the same trade the same way every time |
-| the trade | the thousand trades |
+| finding the right setup | how much I lost when I was wrong |
+| being right more often | whether the winners outweighed the losers |
+| more indicators, more confirmation | taking the same trade the same way every time |
+| the trade in front of me | the next thousand |
 
-I would not have believed that table in October 2022. I had to pay for it.
+## Why this is the first post
 
-## Why this is post one
-
-Because the date matters more than the details. Everything I have written
+Because the beliefs matter more than the details. Everything I have written
 since about [[11-the-engine-of-progress-discipline-consistency-and-reflection|discipline]],
 [[12-the-great-battle-delayed-vs-instant-gratification|delayed gratification]]
 and [[13-thinking-paradigms-process-probability-and-beyond-dualism|thinking in probabilities]]
-came out of this period. Not from reading about them. From being on the wrong
-side of each one with money attached.
+started here. Not from reading about them. From being on the wrong side of
+each one, with money attached.
 
-The useful part of a beginning is not what you did. It is what you believed,
-so you can watch it break.
+The useful thing about a beginning is not what you did. It is what you
+believed, so you can watch it break.
