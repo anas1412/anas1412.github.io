@@ -1,19 +1,85 @@
 ---
-title: "The Engine of Progress: Discipline, Consistency, and Reflection"
+title: "Discipline, Obsession, and the Journal"
 date: 2025-08-08
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 11
+summary: "Discipline starts things. Consistency makes them stick. Reflection keeps them pointed the right way."
 ---
 
-Flow states are powerful, but they are not accidental. They are the result of a deep, underlying structure of **discipline** and **consistency**. While focus gets you into the zone, it is discipline that builds the runway for takeoff. Discipline is the conscious choice to do what needs to be done, even when you don't feel like it. It is the bridge between your goals and your accomplishments.
-
 > "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
-> Will Durant
+> Will Durant, summarising Aristotle
 
-**Consistency** is the force multiplier of discipline. It is the relentless application of effort over time, in significant volume, that forges new habits and rewires your subconscious. A single, heroic effort is impressive, but it is the steady, daily practice that creates lasting change. In our analogy, this is the rider training the horse every single day, not just when the mood strikes. This consistent training builds the trust and muscle memory that makes complex maneuvers seem effortless in the future.
+That line is usually credited to Aristotle. It is actually Will Durant's
+summary of him, which is a small lesson in itself: repeat something often
+enough and it becomes true in people's heads regardless of where it came
+from. That is how habits work too.
 
-However, for true mastery, discipline often needs to evolve into something more profound: **obsession**. While discipline is the conscious choice to do what needs to be done, obsession is the burning, unyielding desire that makes the 'doing' not just a choice, but an absolute necessity. It's the relentless pursuit that transcends mere habit, transforming effort into an almost involuntary drive. For the Seeker aiming for unparalleled heights, remember: obsession always beats discipline. It is the fuel that sustains the journey when discipline alone might falter, pushing you beyond perceived limits and into the realm of extraordinary achievement. This healthy obsession, when integrated with the '[[16-the-be-do-have-model-attracting-your-reality|Be-Do-Have]]' model, becomes a powerful force. It ensures that your 'doing' is not just consistent, but also intensely focused and driven by an internal fire, making the manifestation of your desired 'have' almost inevitable.
+## Discipline
 
-This journey of disciplined action must be paired with **reflection**. To ensure you are on the right path, you must regularly pause to review your progress. A powerful tool for this is **journaling**. By externalizing your thoughts, you can analyze your actions, celebrate your wins, and learn from your setbacks with greater objectivity. It provides a space to ask critical questions: Are my actions aligned with my identity? Am I moving closer to my goals? What adjustments do I need to make? This reflective practice is the rider consulting his map and compass, ensuring that the consistent movement is in the right direction, and making course corrections as needed.
+Discipline is doing what needs doing when you do not feel like it. It is the
+rider overruling the horse.
+
+It is necessary, and it is not enough. Anyone who has relied on discipline
+alone knows it gives out on exactly the days you need it: the tired ones, the
+bad-news ones, the ones after a loss.
+
+## Consistency
+
+Consistency is what discipline is for. Its job is not to win the day. It is
+to repeat until the behaviour moves from the rider to the horse, where it no
+longer needs to be won at all.
+
+Nobody improves by exactly one percent a day, but the shape of the arithmetic
+is worth seeing.
+
+{{< chart >}}
+type: 'line',
+data: {
+  labels: ['0','30','60','90','120','150','180','210','240','270','300','330','360'],
+  datasets: [
+    { label: '1% better each day', data: [1,1.35,1.82,2.45,3.3,4.45,6.0,8.08,10.89,14.68,19.79,26.67,35.95], borderWidth: 2.5, tension: 0.3, pointRadius: 0 },
+    { label: '1% worse each day', data: [1,0.74,0.55,0.41,0.3,0.22,0.16,0.12,0.09,0.07,0.05,0.04,0.03], borderWidth: 2.5, tension: 0.3, pointRadius: 0, borderDash: [6,4] }
+  ]
+},
+options: { scales: { x: { title: { display: true, text: 'Days' } }, y: { title: { display: true, text: 'Relative to day 0' } } } }
+{{< /chart >}}
+
+For the first two months the two lines are barely apart. That is why
+consistency is so hard: the difference is invisible for exactly as long as it
+takes most people to quit.
+
+## Obsession
+
+Discipline is what you need when you do not want to. Obsession is when
+wanting does the work for you. The obsessed person does not need to force
+himself to practise, because practising is what he would rather be doing
+anyway.
+
+That is why obsession beats discipline. But it cannot be manufactured. The
+useful move is to notice what you are already obsessed with and build there,
+instead of fighting yourself toward something you only think you should want.
+
+Obsession has one weakness: it is intensity pointed wherever it happens to be
+pointed. Which is why it needs the last piece.
+
+## Reflection
+
+The journal is where you find out what is actually happening, as opposed to
+what you remember happening.
+
+I log every trade I take, and the log shows me things I could never see in
+the moment: the setups that actually pay, the mistakes that repeat, the days
+of the week I should not trade. Memory edits. A journal does not.
+
+Questions worth asking it, weekly:
+
+- What did I do that the person I am trying to become would do?
+- What did I repeat that I keep saying I will stop?
+- What would I change if nobody were watching the results, only the process?
+
+Discipline gets you moving. Consistency makes it automatic. Obsession makes
+it effortless. Reflection makes sure you are going somewhere worth going.

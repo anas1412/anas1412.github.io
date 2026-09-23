@@ -1,15 +1,59 @@
 ---
-title: "Shadow Work: Making the Unconscious Conscious"
+title: "Shadow Work"
 date: 2025-07-23
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 3
+summary: "The parts of yourself you refuse to look at do not go away. They start making decisions."
 ---
 
-The psychologist Carl Jung introduced a profound concept for self-mastery: the **Shadow**. The Shadow is the part of our unconscious mind that contains all the traits, impulses, and desires we repress or deny - the aspects of ourselves we deem unacceptable. Engaging in **Shadow Work** is the courageous process of bringing these hidden elements into conscious awareness, not to eliminate them, but to understand and integrate them.
+> "The psychological rule says that when an inner situation is not made conscious, it happens outside, as fate."
+> Carl Jung, *Aion*
 
-> "Until you make the unconscious conscious, it will direct your life and you will call it fate."
-> Carl Jung
+Jung called it the shadow: the parts of yourself you have decided are not
+you. Envy, fear, the need to be approved of, laziness, rage. Not evil, just
+disowned.
 
-When we fail to confront our Shadow, it projects itself onto our lives, causing us to act in ways we don't understand and leading to outcomes we blame on external forces. This brings us back to our analogy. The horse represents the unconscious, and its hidden fears, stubborn resistance, or sudden bolts of panic are manifestations of the rider's unacknowledged Shadow. If the rider ignores these behaviors, he will be constantly thwarted, believing his journey is cursed by "fate." However, by courageously exploring *why* the horse is afraid or resistant - by doing the shadow work - the rider can integrate this powerful, wild energy. He learns to work *with* the horse, transforming its raw power from an obstacle into a source of immense strength, ensuring the journey is one of conscious choice, not unconscious compulsion.
+Disowning them does not switch them off. It only moves them out of sight,
+where they keep working, and you experience the results as bad luck.
+
+## What fate looks like up close
+
+A trader takes a loss. Within a minute he takes another trade, bigger than
+the first. Ask him why and he will tell you the setup was there.
+
+It was not. The real reason is that he cannot stand being wrong, and he needs
+to get back to even before the feeling settles. As long as he calls it "the
+setup", he will do it again next week, and the week after, and one day he
+will describe his account as cursed.
+
+That is what Jung meant by fate. A pattern you cannot see, repeating.
+
+The horse bolts at the same bend in the road every time. A rider who calls it
+bad luck gets thrown again. A rider who asks what the horse is afraid of can
+do something about it.
+
+## How to find it
+
+The shadow is hidden by definition, so you find it by its tracks.
+
+- **Count the repeats.** The same outcome three times is not luck. Ask what
+  you are doing that keeps producing it.
+- **Watch what irritates you in other people.** A trait you cannot stand in
+  someone else is often one you refuse to see in yourself.
+- **Write down what you would never say out loud.** Then read it back a day
+  later.
+- **Change the question.** "Why does this keep happening to me?" has no
+  answer. "What am I doing that makes this happen?" usually does.
+
+## Integrate, do not exterminate
+
+The goal is not to kill the shadow. It is to make it yours again.
+
+The same fear that makes a trader revenge-trade is, once he admits it, the
+fear that makes him respect risk. Unacknowledged, it sabotages. Acknowledged,
+it serves. The energy was always there. Shadow work is deciding who gets to
+point it.

@@ -1,18 +1,59 @@
 ---
-title: "The Man and His Horse: An Analogy for Mind and Body"
+title: "The Man and His Horse"
 date: 2025-07-21
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 2
+summary: "The image the whole series leans on, and why the rider is weaker than he thinks."
 ---
 
-Before we explore these paradigms, let's consider a powerful analogy that will help illuminate the dynamics at play within ourselves: the man and his horse. Imagine you are a rider, and your body is a magnificent, powerful horse.
+Plato described the mind as a charioteer driving two horses. Twenty-four
+centuries later the psychologist Jonathan Haidt updated it to a rider on an
+elephant. The image keeps getting reinvented because it describes something
+everyone has felt: you decide one thing, and then you do another.
 
-> "The body is the instrument of our soul, and the mind is its conductor."
-> B.K.S. Iyengar
+In these notes it is a rider and a horse.
 
-- **The Man (Your Mind):** The rider represents your conscious mind. He is the strategist, the planner, the one who understands maps and directions. He thinks in concepts, recognizes patterns, and can process information at incredible speeds. He can envision distant goals and devise complex routes to reach them. He is fast, analytical, and driven by purpose.
-- **The Horse (Your Body):** The horse represents your physical body and its subconscious processes. It is powerful and capable, but it understands through feelings, sensations, and repetition. It thrives on comfort, seeks familiar paths, and can be resistant to change. It learns through consistent training and habit, not through abstract thought. The horse is slow to change its ways, but once a habit is ingrained, it can carry you forward with immense momentum.
+| | The rider | The horse |
+|---|---|---|
+| Is | your conscious mind | habits, moods, the body |
+| Speaks in | words and plans | feelings and urges |
+| Learns from | one good explanation | a hundred repetitions |
+| Changes | in a second | over months |
+| Strength | small | enormous |
+| Wants | the destination | comfort, now |
 
-For true progress, the man and the horse must work in harmony. A rider who constantly battles his horse, or one who lets the horse wander aimlessly, will never reach his destination efficiently. The man must guide with clear intent, and the horse must be trained to follow, even when the path is unfamiliar or uncomfortable. Throughout this message, keep this analogy in mind, as it will help you understand the interplay between your conscious intentions and your ingrained patterns.
+## The rider's mistake
+
+The rider narrates, so he assumes he is in charge.
+
+Decide tonight that you will stop checking your phone first thing in the
+morning. The rider has decided. Tomorrow at 7am the horse reaches for the
+phone before the rider is fully awake. Nothing was wrong with the decision.
+It simply never reached the animal that makes the move.
+
+Traders know this better than anyone. Every trader knows the rule: never
+widen your stop. That knowledge belongs to the rider. Then the position goes
+against you, your face gets hot, and the horse drags the stop further away.
+Knowing the rule was never the problem. The rule has to live in the horse.
+
+## Two bad riders, one good one
+
+There are two ways to fail.
+
+- **The fighter** whips the horse forward every day on willpower. It works
+  until the rider is tired, which is every evening and every bad week.
+- **The passenger** lets the horse wander wherever it likes and calls it
+  following his instincts.
+
+The good rider trains. Small asks, repeated, the same way at the same time,
+until the horse does it without being asked. Engineers do this with incident
+drills: at 3am nobody reasons their way through an outage, they execute what
+they rehearsed. Once a behaviour lives in the horse, the horse's strength
+works for you instead of against you.
+
+Every piece after this one is about one of three things: understanding the
+horse, training it, or getting the rider out of its way.

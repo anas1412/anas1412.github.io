@@ -1,40 +1,82 @@
 ---
-title: "The Dunning-Kruger Effect: The Peak of \"Mount Stupid\""
+title: "The Peak of Mount Stupid"
 date: 2025-07-31
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 7
+summary: "The famous confidence curve is not in the paper it is named after. That turns out to be the best illustration of the effect there is."
 ---
 
-As we explore the power of [[06-the-power-of-self-image-who-you-believe-you-are|self-image]], we must also acknowledge a significant pitfall: the **Dunning-Kruger effect**. This cognitive bias describes a phenomenon where individuals with low ability in a specific area tend to overestimate their competence. In essence, they are too unskilled to recognize their own lack of skill. This can lead to a dangerous, unearned confidence - a phenomenon sometimes humorously called the "Peak of Mount Stupid."
+You have probably seen the chart. Confidence shoots up to a peak labelled
+"Mount Stupid", crashes into a "Valley of Despair", then climbs slowly toward
+a plateau of real expertise.
 
-> "The whole problem with the world is that fools and fanatics are always so certain of themselves, and wiser people so full of doubts."
-> Bertrand Russell
+It is not in the paper. The label comes from an internet comic, not from
+psychology. Millions of people have confidently shared a chart they never
+checked, about the danger of confidence without knowledge. It is hard to
+imagine a better demonstration of the idea.
 
-The shape everyone draws - confidence against competence:
+## What Kruger and Dunning actually found
+
+In 1999 David Dunning and Justin Kruger gave people tests of humour, grammar
+and logic, then asked them to guess how they had done compared with everyone
+else.
 
 {{< chart >}}
 type: 'line',
 data: {
-  labels: ['Know nothing', 'Peak of Mount Stupid', 'Valley of Despair', 'Slope of Enlightenment', 'Plateau of Sustainability'],
-  datasets: [{
-    label: 'Confidence',
-    data: [5, 95, 20, 55, 80],
-    borderWidth: 2,
-    tension: 0.4,
-    pointRadius: 4
-  }]
+  labels: ['Bottom quartile', 'Second', 'Third', 'Top quartile'],
+  datasets: [
+    { label: 'Where they thought they ranked', data: [62, 63, 68, 75], borderWidth: 2.5, tension: 0.3, pointRadius: 4 },
+    { label: 'Where they actually ranked', data: [12, 37, 62, 87], borderWidth: 2.5, tension: 0.3, pointRadius: 4, borderDash: [6,4] }
+  ]
 },
 options: {
-  plugins: { legend: { display: false } },
   scales: {
-    x: { title: { display: true, text: 'Competence →' } },
-    y: { min: 0, max: 100, title: { display: true, text: 'Confidence' } }
+    y: { min: 0, max: 100, title: { display: true, text: 'Percentile' } },
+    x: { title: { display: true, text: 'Grouped by actual score' } }
   }
 }
 {{< /chart >}}
 
-*The popular illustration, not data from the original 1999 paper - the named stages are folklore, but the trap they describe is real.*
+*Approximate. The bottom-quartile figures, 12th percentile actual against 62nd
+estimated, are from the paper's abstract; the other points show the shape.*
 
-For the Seeker, the Dunning-Kruger effect is a critical trap. It can prevent you from seeking knowledge, ignoring constructive feedback, and making costly mistakes, all while believing you are on the right path. In our analogy, this is the rider who, having only glanced at a map, confidently leads his horse into a swamp, dismissing the horse's hesitation and the rustling sounds in the bushes as irrelevant. Overcoming this requires a commitment to intellectual humility, a continuous quest for knowledge, and the courage to embrace the discomfort of not knowing. True wisdom begins when we become aware of the vastness of our own ignorance.
+Two findings, not one:
+
+- **The least skilled overestimate badly.** The skills you need to be good at
+  something are the same skills you need to notice you are bad at it.
+- **The most skilled slightly underestimate.** They assume what is easy for
+  them is easy for everyone.
+
+Later researchers have argued part of the pattern is a statistical artefact.
+The practical lesson survives the argument: your confidence is a poor
+measurement of your competence, and worst exactly where you know least.
+
+> "The fundamental cause of the trouble is that in the modern world the stupid are cocksure while the intelligent are full of doubt."
+> Bertrand Russell, *The Triumph of Stupidity*
+
+## The trader's version
+
+In trading, Mount Stupid usually has a specific shape: a small sample in a
+friendly market.
+
+Thirty trades in a clean trend, most of them winners. The trader concludes he
+has an edge. But thirty trades cannot tell edge from luck, and the trend that
+paid him will not last. The confidence arrives long before the evidence
+does.
+
+## Staying off the mountain
+
+- **Ask what would prove you wrong.** If nothing could, you are not holding a
+  belief, you are holding an identity.
+- **Count your sample.** Ten good results is an anecdote.
+- **Find people better than you.** Their feedback is the only mirror that
+  works when your own judgement is the thing in question.
+- **Treat certainty as a warning light**, not a green light.
+
+This is the counterweight to [[06-the-power-of-self-image-who-you-believe-you-are|self-image]].
+Believe in your process. Hold your conclusions loosely.

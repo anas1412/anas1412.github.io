@@ -1,19 +1,74 @@
 ---
-title: "Thinking Paradigms: Process, Probability, and Beyond Dualism"
+title: "Thinking in Probabilities"
 date: 2025-08-12
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 13
+summary: "Outcomes are noisy. Decisions are what you control. Judge the decision."
 ---
 
-Our approach to goals is also shaped by how we perceive reality. A crucial distinction lies between **process-oriented thinking** and **outcome-oriented thinking**. The [[04-the-have-do-be-model-the-illusion-of-external-success|Have-Do-Be]] and [[05-the-do-have-be-model-the-treadmill-of-action|Do-Have-Be]] models are heavily outcome-oriented. The focus is solely on the end result, and if that result isn't achieved, it can lead to disappointment and a sense of failure. This can make the journey feel like a means to an end, rather than a valuable experience in itself.
+A man drives home drunk and arrives safely. Good outcome. Terrible decision.
 
-> "The journey of a thousand miles begins with a single step."
-> Lao Tzu
+Another man drives home sober and careful, and is hit by someone running a
+red light. Bad outcome. Good decision.
 
-The [[16-the-be-do-have-model-attracting-your-reality|Be-Do-Have]] model, however, encourages **process-oriented thinking**. While outcomes are important, the primary focus is on the journey of becoming and the actions taken along the way. It's about enjoying the learning, the growth, and the daily steps. When you are process-oriented, you find joy and fulfillment in the present moment, and the outcomes become a natural byproduct of a well-executed process. This approach fosters resilience, as setbacks are seen as part of the learning process, not as definitive failures. In the man and horse analogy, this is the rider focusing on the rhythm of the ride, the training of the horse, and the beauty of the landscape, knowing that the destination will be reached in due course.
+Everyone agrees on those two. Yet almost all of us judge our own decisions by
+how they turned out. The poker player and writer Annie Duke calls this
+**resulting**, and it quietly ruins how most people learn.
 
-Finally, consider how we perceive reality: through a **dualistic** or **probabilistic** lens. **Dualistic thinking** sees the world in terms of rigid binaries: right/wrong, success/failure, good/bad. This black-and-white perspective can lead to extreme judgments, fear of failure, and a limited view of a possibility. It often fuels the outcome-oriented mindset, where anything less than perfect success is deemed a complete failure.
+## Four boxes
 
-**Probabilistic thinking**, on the other hand, embraces nuance and uncertainty. It understands that life is a spectrum of possibilities, and that outcomes are rarely guaranteed but rather exist on a scale of likelihood. This mindset allows for flexibility, adaptation, and a more realistic approach to challenges. Instead of fearing failure, you assess probabilities, learn from experiences, and adjust your approach. It fosters a growth mindset, where every attempt, regardless of its immediate outcome, provides valuable data for future endeavors. This perspective aligns beautifully with the Be-Do-Have model, as it encourages continuous evolution and a deeper understanding of the interconnectedness of being, doing, and having. It's like the rider understanding that the journey isn't always a straight line, and sometimes the horse will stumble, but with a flexible approach, they will still reach their destination.
+| | Good outcome | Bad outcome |
+|---|---|---|
+| **Good decision** | deserved win | bad luck |
+| **Bad decision** | dumb luck | deserved loss |
+
+The dangerous box is dumb luck. A bad decision that pays teaches you to make
+it again.
+
+A trader who breaks his rules and wins has had the worst possible result: he
+has been paid to be undisciplined. A trader who follows his rules and loses
+has had a good day. Only one of them is learning the right lesson.
+
+## Win rate is not the point
+
+Binary thinking asks *will this work?* Probabilistic thinking asks *how
+often, how much, and what happens when it does not?*
+
+| Win rate | Average win | Result per trade |
+|---|---|---|
+| 70% | 0.4R | **-0.02R** |
+| 55% | 1R | +0.10R |
+| 40% | 2R | +0.20R |
+| 30% | 3R | +0.20R |
+
+A strategy that wins seven times in ten can lose money. One that loses seven
+times in ten can make it. Being right more often is not the goal. Being right
+by enough, often enough, is.
+
+## Streaks are normal
+
+The part that breaks people is the losing run.
+
+With a genuine fifty-fifty edge, the chance of hitting at least **five losses
+in a row somewhere in a hundred trades is about 81%**. At a 40% win rate it
+is about 98%. Five losses in a row is not a sign that something is broken. It
+is what a working edge looks like on a normal month.
+
+A dualistic thinker sees five losses and concludes the method has failed. A
+probabilistic thinker checks whether the losses were good decisions, and if
+they were, takes the next trade.
+
+## Process over outcome
+
+This is the mindset the [[16-the-be-do-have-model-attracting-your-reality|Be-Do-Have]]
+model depends on. You control the decision. You do not control the outcome of
+any single attempt. So measure yourself on the decision, run the process
+enough times for the probabilities to show up, and let the results be what
+they are going to be.
+
+The rider does not judge the journey by one stumble. He judges it by whether
+the horse is on the right road.

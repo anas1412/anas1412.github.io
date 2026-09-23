@@ -1,31 +1,66 @@
 ---
-title: "The Energetic Blueprint: Frequencies, Mindsets, and Manifestation"
+title: "The Weather Inside"
 date: 2025-08-02
 draft: false
-tags: ["notes-from-the-edge"]
-series: ["Notes from the Edge"]
+tags:
+  - notes-from-the-edge
+series:
+  - Notes from the Edge
 series_order: 8
+summary: "Fear and scarcity do not just feel bad. They change what you are able to see."
 ---
 
-Beyond the purely tangible, our internal states - our thoughts, emotions, and beliefs - profoundly influence our physiological responses, cognitive patterns, and behavioral tendencies. This intricate interplay forms a dynamic internal 'blueprint' that shapes how we perceive and interact with the world. Understanding this fundamental principle is key to consciously shaping your reality.
+Weather does not change the terrain. It changes how far you can see. Fog,
+storm and clear skies cover the same valley, and the same traveller makes
+very different decisions in each.
 
-> "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration."
-> Nikola Tesla
+Your internal state is weather. It does not change the facts in front of you.
+It changes how many of them you can see, and how well you choose between
+them.
 
 ## Fear or trust
 
-Underlying all these models is our fundamental mindset. Are we operating from a place of **fear** or **faith/trust**? Fear-based thinking often drives the [[04-the-have-do-be-model-the-illusion-of-external-success|Have-Do-Be]] and [[05-the-do-have-be-model-the-treadmill-of-action|Do-Have-Be]] models. We fear not having enough, not being good enough, or not achieving external markers of success. This fear can lead to anxiety, constant striving, and a feeling of never being truly satisfied.
+Underneath the models in this series is one question: are you acting from
+fear, or from trust?
 
-In contrast, operating from a place of **faith or trust** (whether in oneself, the universe, or a higher power) aligns more with the [[16-the-be-do-have-model-attracting-your-reality|Be-Do-Have]] model. It's the belief that by focusing on who you are becoming and taking aligned action, the desired outcomes will manifest. This doesn't mean passive waiting, but rather a confident and purposeful engagement with life, knowing that your efforts are guided and supported. This faith, when coupled with a healthy obsession, transforms mere effort into an unstoppable force, propelling you towards your goals with unwavering conviction. For many, this faith extends to a belief in God, providing a profound sense of peace and assurance that their path is divinely guided, and that challenges are opportunities for growth. In the analogy, this faith is the rider's unwavering belief in his ability to guide the horse, and the horse's trust in the rider's direction, even when the path is uncertain.
+Fear drives both of the failing models. [[04-the-have-do-be-model-the-illusion-of-external-success|Have-Do-Be]]
+is the fear of not having enough. [[05-the-do-have-be-model-the-treadmill-of-action|Do-Have-Be]]
+is the fear of not doing enough. Both keep you moving, and neither lets you
+arrive.
 
-## Scarcity or abundance
+Trust is what lets you act without a guarantee: trust in your process, in
+your own ability to handle what comes, and for many people, trust in God.
+It is not passivity. It is what makes committed action possible when the
+outcome is uncertain, which it always is.
 
-This understanding profoundly impacts your mindset. A **scarcity mindset** is characterized by a persistent focus on perceived limitations, fear, and competition. This cognitive pattern can trigger physiological stress responses, narrow attentional focus, and lead to behaviors such as hoarding, a reluctance to collaborate, and chronic anxiety about resources or missed opportunities. In this state, your internal system is primed to detect and reinforce perceived lack.
+## Scarcity narrows the tunnel
 
-Conversely, an **abundance mindset** fosters a state of gratitude, generosity, and collaboration. This cognitive and emotional orientation promotes neural pathways associated with positive affect and open-mindedness, leading to behaviors such as freely sharing knowledge, celebrating the successes of others, and confidently pursuing new ventures. This mindset cultivates an internal environment conducive to recognizing and attracting opportunities.
+The economist Sendhil Mullainathan and the psychologist Eldar Shafir spent
+years studying people who have too little, of money or of time. Their finding
+was not that scarcity feels bad. It was that **scarcity captures attention**.
+The mind tunnels onto the shortage and has less left for everything else, and
+people under scarcity score measurably worse on unrelated reasoning tests.
 
-## Emotions as signals
+Traders learn this the hard way. A trader who needs this month's payout to
+pay rent does not trade the same way as one who does not. The need tunnels
+him onto the P&L. He takes trades he would normally skip and holds losers he
+would normally cut. "Never trade with money you need" sounds like moral
+advice. It is cognitive advice.
 
-Your emotions are powerful indicators of your current internal state. Chronic engagement with emotions like shame, guilt, apathy, grief, fear, and anger can lead to sustained physiological stress responses and reinforce limiting cognitive biases. In contrast, cultivating emotions such as courage, neutrality, willingness, acceptance, reason, love, joy, peace, and enlightenment promotes states of well-being and cognitive flexibility. To shift towards more adaptive internal states, cultivate practices like mindfulness, daily gratitude, positive affirmations, acts of selfless service, and spending time in nature. These practices consciously influence your neurochemistry and cognitive patterns, fostering an internal environment aligned with growth and opportunity. This conscious cultivation of your internal blueprint is a vital component of the 'Be' in the Be-Do-Have model, allowing you to attract your desired reality by first embodying it internally.
+## Abundance is the absence of the tunnel
 
-In the analogy of the [[02-the-man-and-his-horse-an-analogy-for-mind-and-body|man and his horse]], this 'energetic blueprint' is akin to the overall 'mood' or 'disposition' of the horse, which is heavily influenced by the rider's (your conscious mind's) consistent guidance and internal state. A rider who constantly projects fear and scarcity will find his horse anxious and resistant, prone to stumbling or shying away from challenges. Conversely, a rider who embodies confidence and abundance, consistently guiding him with clear, positive intent, will find the horse responsive, powerful, and eager to move forward, even through unfamiliar terrain. Your conscious choices as the 'rider' directly shape the 'horse's' (your subconscious and physiological responses) readiness to navigate the journey of manifestation.
+An abundance mindset is often sold as magical thinking. It is simpler than
+that. When you are not desperate you can wait, you can walk away from bad
+deals, you can share what you know without feeling it cost you. Abundance is
+what good decisions look like from the outside.
+
+## Emotions are data, not orders
+
+An emotion is information about your state. Fear says *there is risk here*.
+It does not say *run*. Anger says *something crossed a line*. It does not say
+*retaliate*. Read the gauge, then decide.
+
+None of the usual practices are magic, but they all widen the tunnel a
+little: sleep, time outside, gratitude written down rather than thought,
+helping someone with nothing to gain. A frightened horse sees only the thing
+it is afraid of. A calm one sees the whole path.
