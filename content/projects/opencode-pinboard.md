@@ -2,7 +2,7 @@
 title: "Pinboard"
 date: 2026-07-06
 draft: false
-weight: 4
+weight: 6
 tags: ["tooling", "bun", "react"]
 summary: "A local ticket workspace for opencode - turns AI coding sessions into tickets, worktrees and PRs."
 repo: "https://github.com/anas1412/opencode-pinboard"

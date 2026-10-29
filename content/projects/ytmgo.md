@@ -1,7 +1,8 @@
 ---
 title: "ytmgo"
 date: 2026-09-17
-draft: true
+draft: false
+weight: 7
 tags: ["go", "cli", "music"]
 summary: "A terminal YouTube Music client in Go - search, queue, bookmark and play without leaving the keyboard."
 repo: "https://github.com/anas1412/ytmgo"
