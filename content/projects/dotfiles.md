@@ -1,7 +1,7 @@
 ---
 title: "dotfiles"
 date: 2026-09-15
-draft: false
+draft: true
 tags: ["linux", "ricing"]
 summary: "Tokyo Night on Arch (CachyOS) with KDE Plasma 6 on Wayland, managed with GNU Stow."
 repo: "https://github.com/anas1412/dotfiles"

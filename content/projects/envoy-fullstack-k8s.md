@@ -2,6 +2,7 @@
 title: "Envoy Full-Stack Reference"
 date: 2026-08-15
 draft: false
+weight: 1
 tags: ["kubernetes", "envoy", "observability"]
 summary: "Envoy as the single ingress: L7 routing, L4 Postgres proxying, per-route auth and Prometheus metrics through one gateway."
 repo: "https://github.com/anas1412/envoy-fullstack-k8s"

@@ -1,7 +1,7 @@
 ---
 title: "fast-brave-debloater"
 date: 2026-09-10
-draft: false
+draft: true
 tags: ["shell", "linux"]
 summary: "A bash script that strips Brave of crypto wallets, VPN promos, rewards and AI suggestions."
 repo: "https://github.com/anas1412/fast-brave-debloater"

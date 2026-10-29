@@ -1,61 +1,61 @@
 ---
 title: About
-showTableOfContents: true
+showTableOfContents: false
 showDate: false
 showReadingTime: false
 showWordCount: false
 ---
-## Interests
+I'm a site reliability and DevOps engineer based in Hammamet, Tunisia, working remotely. I run Kubernetes in production every day: GitOps, gateways, monitoring and incident recovery.
 
-- New experiences and exploring the world and the unknown
-- Financial, location and time freedom.
-- Generational wealth, healthy body, long-term relationships and the freedom of choice.
-- Continuous learning and leveling by reading and taking action.
+## Work with me
 
-## Education
+**Kubernetes/Docker audit in one week.** I review your setup for security, cloud costs and reliability. You get a written report and I fix the top issues. Fixed price.
 
-- **National Engineering Diploma in Computer Science** - ESPRIT: Private School of Engineering and Technology (2024)
-- **National Diploma of Applied License in Embedded Systems** - ISI: Higher Institute of Computer Science (2020)
+I take fixed-scope missions as a registered auto-entrepreneur, so I can invoice. Write to [anas.bassoumi@gmail.com](mailto:anas.bassoumi@gmail.com) or message me on [LinkedIn](https://www.linkedin.com/in/anas-bassoumi).
 
 ## Experience
 
 {{< timeline >}}
 
-{{< timelineItem icon="shield" header="Site Reliability Engineer & IT Consultant" badge="Aug 2026 - Now" subheader="Scientific Consulting" md=true >}}
-- Recovered a production ingress outage onto a new OVH Octavia load balancer, restoring all 134 hostnames with zero Ingress changes and keeping git and cluster state in sync.
-- Migrated production log shipping from end-of-life Promtail to Grafana Alloy and fixed Loki persistence, preventing volume loss on scale-down and eliminating a silent log-drop window on every restart.
-- Restructured the Envoy Gateway into a base-plus-overlay layout admitting all namespaces, unblocking the Gateway API rollout across both clusters.
+{{< timelineItem icon="shield" header="IT Consultant (Site Reliability Engineering)" badge="Aug 2026 - Now" subheader="Scientific Consulting" md=true >}}
+- Run 2 Kubernetes clusters on OVH (15 production nodes, about 50 customer tenants) with GitOps (Flux).
+- Recovered a production ingress outage onto a new OVH Octavia load balancer, restoring all 134 hostnames with zero Ingress changes.
+- Built alerting end to end: Alertmanager to Mattermost, 52 alert rules, uptime probes on 48 tenant sites.
+- Migrated log shipping from end-of-life Promtail to Grafana Alloy and fixed Loki persistence, closing a silent log-drop window on every restart.
+- Restructured the Envoy Gateway into a base-plus-overlay layout, unblocking the Gateway API rollout across both clusters.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="code" header="DevOps & Software Solutions Provider" badge="Aug 2023 - Aug 2026" subheader="Self-employed" md=true >}}
-- Delivering high-impact, tailored software solutions to optimize client workflows.
-- Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.
-- Delivered 'FIDO' Dashboard, a fee management platform, enhancing reporting and data processing.
+{{< timelineItem icon="code" header="Founder and Engineer" badge="Feb 2024 - Aug 2026" subheader="Cyberia AI Studio, self-employed" md=true >}}
+- Delivered automation and web apps with AI integration for up to 8 clients at the same time.
+- Automated accounting workflows for accounting firms for about a year, including the FIDO fee management dashboard.
+- Built and launched Cyberia Space, an open-source AI workspace with 50+ users.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="docker" header="DevOps Engineer" badge="Jan 2023 - Jan 2024" subheader="Kamioun" md=true >}}
-- Containerized Magento infrastructure using Docker.
-- Built CI/CD pipelines using GitLab CI for automated deployments.
-- Integrated monitoring and code quality tools (Grafana, SonarQube).
-- Improved deployment efficiency by ~25%.
+- Containerized the Magento infrastructure with Docker.
+- Built GitLab CI pipelines for automated deployments; deployments about 25% more efficient.
+- Added monitoring and code quality tooling (Grafana, SonarQube).
 {{< /timelineItem >}}
 
-{{< timelineItem icon="cloud" header="Intern Cloud/DevOps Engineer" badge="Jun 2022 - Aug 2022" subheader="Beirdo Digital Studio" md=true >}}
-- Built a GitOps CI/CD pipeline with Kaniko and ArgoCD, improving deployment efficiency by 35% and accelerating releases.
-- Deployed monitoring, logging, and backup tools on Kubernetes, enhancing reliability by 15% and ensuring data integrity.
-- Automated infrastructure scaling and updates, reducing manual intervention by 40% and improving system uptime.
-{{< /timelineItem >}}
-
-{{< timelineItem icon="globe" header="Intern Software Developer" badge="Jul 2021 - Aug 2021" subheader="YES INTERNET" md=true >}}
-- Implemented APIs for real estate websites, boosting data integration by 40%.
-- Enhanced user experience by simplifying data presentation, resulting in a 15% increase in engagement.
-- Collaborated with backend and frontend team members to streamline functionality and optimize performance.
-{{< /timelineItem >}}
-
-{{< timelineItem icon="wand-magic-sparkles" header="Intern Automation Engineer" badge="Jan 2020 - Jun 2020" subheader="Upgrade Factory" md=true >}}
-- Contacted several companies and negotiated the prices that led to 25% total reduced costs.
-- Wrote a ST code for a Siemens PLC to fully automate a cutting/folding machine that optimized the automation process by 80%.
-- Collaborated with cross-functional teams to deliver solutions on time.
+{{< timelineItem icon="cloud" header="Cloud/DevOps Engineer (intern)" badge="Jun 2022 - Aug 2022" subheader="Beirdo Digital Studio" md=true >}}
+- Built a GitOps CI/CD pipeline with Kaniko and ArgoCD.
+- Deployed Backstage; the product team shipped code 20% faster.
+- Added Loki for push-based log monitoring.
 {{< /timelineItem >}}
 
 {{< /timeline >}}
+
+Earlier: software developer intern at YES INTERNET (2021) and automation engineer intern at Upgrade Factory (2020).
+
+## Skills
+
+- **Containers and orchestration:** Kubernetes, Docker, Flux and ArgoCD (GitOps), Envoy Gateway, Kaniko
+- **Infrastructure as code:** Terraform, Ansible
+- **CI/CD:** GitLab CI, SonarQube, Backstage
+- **Observability:** Prometheus, Alertmanager, Grafana, Loki, Alloy
+- **Cloud and systems:** OVH, AWS, Google Cloud, Linux, Bash, networking
+
+## Education
+
+- **Engineering Degree (Diplôme National d'Ingénieur), Computer Engineering**, ESPRIT, 2024
+- **Applied Bachelor's Degree in Embedded Systems**, ISI (Higher Institute of Computer Science), 2020

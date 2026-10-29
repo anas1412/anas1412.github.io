@@ -2,6 +2,7 @@
 title: "Cyberia Space"
 date: 2026-07-23
 draft: false
+weight: 3
 tags: ["product", "typescript", "ai"]
 summary: "A local-only thinking workspace where the same ideas flow through spatial, kanban, calendar and directory views."
 repo: "https://github.com/anas1412/cyberiaspace"
