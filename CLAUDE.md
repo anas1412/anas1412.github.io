@@ -12,11 +12,8 @@ Pages on every push to `main`. Live at <https://anas1412.github.io>.
 | `content/_index.md` | the homepage paragraph |
 | `content/about.md` | experience, education, skills |
 | `content/projects/` | one file per project |
-| `content/trading/` | **generated** - one article per month, do not hand-edit |
-| `scripts/sync_trades.py` | pulls the journal from Google Sheets |
-| `scripts/data/trades.json` | committed snapshot, so builds work offline |
 | `scripts/commons_image.py` | finds and fetches freely licensed images from Wikimedia Commons |
-| `static/images/` | post images: `notes/` for the essay series, `funded/` for Getting Funded |
+| `static/images/` | post images: `notes/` for the essay series |
 | `content/templates/post.md` | Obsidian template for a standalone post |
 | `content/templates/series-post.md` | Obsidian template for a post in a series |
 | `content/templates/project.md` | Obsidian template for a project |
@@ -92,65 +89,6 @@ Check before pushing:
 ```sh
 python3 scripts/wikilinks.py --check    # lists unresolved links, changes nothing
 ```
-
-## Trading journal
-
-`content/trading/_index.md` is **generated**. Edits to it are overwritten.
-To refresh after logging trades:
-
-```sh
-python3 scripts/sync_trades.py     # fetch the sheet, rebuild the page
-python3 scripts/sync_trades.py --local   # rebuild from the committed CSV
-```
-
-The sheets must stay link-viewable. The script reads **two journals**:
-
-| Journal | Instrument | Tabs | Logs |
-|---|---|---|---|
-| gold | GOLD | 4 (gid 0 is an empty template, skipped) | dollars + R |
-| trading edge | NQ | 7 | risk/return as percentages, no dollars |
-
-They cover different periods, so together they run from January 2024.
-
-**De-duplication is asymmetric, deliberately.** The gold tabs cover distinct
-periods and several days hold two or three trades sharing one screenshot - so
-gold is never de-duplicated. The NQ sheet is a master tab plus per-period
-subsets that repeat it, so it is, on date + chart + result + R + notes.
-Widening that key is what stops real same-day trades being collapsed.
-
-Each tab's last rows are a TOTAL plus blank padding; the script drops them, so
-`TOTAL trades` never leaks onto the page.
-
-The tabs use three different outcome vocabularies. They are normalised to the
-newest one:
-
-| Older tabs | Becomes | Why |
-|---|---|---|
-| `Win` / `Loss` / `Breakeven` | `W` / `L` / `BE` | newest tab's spelling |
-| `Tape Reading` | `missed` | no P&L, risk or RR - the trade wasn't taken |
-| `Performance Mistake`, `Analysis Mistake` | `W`/`L`/`BE` by P&L | real trades; the label is prepended to the notes so it isn't lost |
-
-The snapshot lives in `scripts/data/`, **not** `data/`: Hugo treats `data/` as
-a data directory and fails the build trying to parse files there.
-
-The script writes one article per month (`YYYY-MM.md`) plus `_index.md`, and
-deletes any month file matching that pattern before regenerating - the sheet is
-the source of truth, so hand edits are lost.
-
-To change what the pages show, edit `month_page()` in the script, not the
-markdown.
-
-It is deliberately a **journal, not a dashboard** - no win rate, profit factor
-or equity curve. Each month page is: a table of that month's trades for
-scanning, then **one block per trade** - heading, the TradingView chart
-inline, the note at full width - for re-reading.
-
-Charts are hotlinked from TradingView's snapshot bucket:
-`s3.tradingview.com/snapshots/<first letter, lowercased>/<ID>.png`, derived
-from the `tradingview.com/x/<ID>/` share links in the sheet (`snapshot()` in
-the script). 96% of trades have one. If that URL scheme ever changes, every
-inline chart breaks at once - the `view` link in the table still works, and
-the fix is one function.
 
 ## File naming
 
@@ -386,7 +324,6 @@ so verify in the DOM and the built HTML:
 | Series | Posts | About |
 |---|---|---|
 | Notes from the Edge | 01 to 18 | the author's philosophy: three models, the rider and the horse, the edge |
-| Getting Funded | 19 to 22 | his path in trading, October 2022 onward, ending with leaving ICT for VWAP fades |
 
 ### Shortcodes for visuals
 

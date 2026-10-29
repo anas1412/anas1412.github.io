@@ -11,13 +11,13 @@ title = "Anas B."
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Site Reliability Engineer | Software Engineer | Propfirm Trader"
+  description = "Site Reliability Engineer | DevOps | Kubernetes"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
   name = "Anas Bassoumi"
-  headline = "Site Reliability Engineer | Software Engineer | Propfirm Trader"
-  bio = "Based in Tunisia. Site reliability and software engineering, with funded prop firm trading on the side."
+  headline = "Site Reliability Engineer | DevOps | Kubernetes"
+  bio = "Based in Tunisia. Site reliability and DevOps engineering: Kubernetes, Docker, CI/CD."
   links = [
     { email = "mailto:anas.bassoumi@gmail.com" },
     { github = "https://github.com/anas1412" },

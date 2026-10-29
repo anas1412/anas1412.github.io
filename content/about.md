@@ -27,12 +27,6 @@ showWordCount: false
 - Restructured the Envoy Gateway into a base-plus-overlay layout admitting all namespaces, unblocking the Gateway API rollout across both clusters.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="scale-balanced" header="Propfirm Trader" badge="Oct 2022 - Now" subheader="Self-employed" md=true >}}
-- Managing multiple funded accounts from multiple modern prop firms.
-- Implemented a precise systematic edge on the M5 timeframe with precise risk management that yields consistently minimum 4% monthly.
-- Rewarded with countless verified payouts, averaging 5 figures per month.
-{{< /timelineItem >}}
-
 {{< timelineItem icon="code" header="DevOps & Software Solutions Provider" badge="Aug 2023 - Aug 2026" subheader="Self-employed" md=true >}}
 - Delivering high-impact, tailored software solutions to optimize client workflows.
 - Developed, deployed, and maintained multiple e-commerce WordPress websites, leveraging design best practices to boost conversion rates by 5%.
