@@ -1,7 +1,7 @@
 ---
 title: "Be-Do-Have"
 date: 2025-08-18
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

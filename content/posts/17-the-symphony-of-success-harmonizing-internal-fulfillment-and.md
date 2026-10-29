@@ -1,7 +1,7 @@
 ---
 title: "Achievement and Fulfilment"
 date: 2025-08-20
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

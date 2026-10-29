@@ -1,7 +1,7 @@
 ---
 title: The Edge
 date: 2025-08-22
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

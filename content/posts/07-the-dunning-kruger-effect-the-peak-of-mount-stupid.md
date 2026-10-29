@@ -1,7 +1,7 @@
 ---
 title: "The Peak of Mount Stupid"
 date: 2025-07-31
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

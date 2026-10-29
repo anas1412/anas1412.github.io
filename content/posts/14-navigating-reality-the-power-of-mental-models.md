@@ -1,7 +1,7 @@
 ---
 title: "Better Maps"
 date: 2025-08-14
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

@@ -1,7 +1,7 @@
 ---
 title: The Rider's Quest to the Edge
 date: 2025-07-19
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

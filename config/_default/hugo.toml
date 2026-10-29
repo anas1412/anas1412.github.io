@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 # theme = "blowfish" # UNCOMMENT THIS LINE
-baseURL = "https://anas1412.github.io/"
+baseURL = "https://anas.cyberia.tn/"
 defaultContentLanguage = "en"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
@@ -17,7 +17,7 @@ buildFuture = false
 enableEmoji = true
 
 # Obsidian keeps its config and trash inside the vault; never build them.
-ignoreFiles = ['\.obsidian', '\.trash', 'content/templates/']
+ignoreFiles = ['\.obsidian', '\.trash', 'content/templates/', 'Untitled', 'content/\d{4}-\d{2}-\d{2}\.md$']
 
 # googleAnalytics = "G-XXXXXXXXX"
 

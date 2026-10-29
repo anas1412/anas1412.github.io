@@ -1,7 +1,7 @@
 ---
 title: "Now or Later"
 date: 2025-08-10
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

@@ -1,7 +1,7 @@
 ---
 title: "The Man and His Horse"
 date: 2025-07-21
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

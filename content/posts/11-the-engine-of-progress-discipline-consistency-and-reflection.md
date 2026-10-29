@@ -1,7 +1,7 @@
 ---
 title: "Discipline, Obsession, and the Journal"
 date: 2025-08-08
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

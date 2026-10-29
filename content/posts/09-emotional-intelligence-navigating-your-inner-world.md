@@ -1,7 +1,7 @@
 ---
 title: "Emotional Control"
 date: 2025-08-04
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

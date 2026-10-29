@@ -1,7 +1,7 @@
 ---
 title: "Thinking in Probabilities"
 date: 2025-08-12
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

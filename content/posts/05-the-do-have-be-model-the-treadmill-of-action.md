@@ -1,7 +1,7 @@
 ---
 title: "Do-Have-Be"
 date: 2025-07-27
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

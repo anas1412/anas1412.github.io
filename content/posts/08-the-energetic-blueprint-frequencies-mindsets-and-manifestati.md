@@ -1,7 +1,7 @@
 ---
 title: "The Weather Inside"
 date: 2025-08-02
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

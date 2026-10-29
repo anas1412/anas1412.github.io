@@ -1,7 +1,7 @@
 ---
 title: "Energy, Clarity, Focus"
 date: 2025-08-06
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

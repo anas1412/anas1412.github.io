@@ -1,7 +1,7 @@
 ---
 title: "Shadow Work"
 date: 2025-07-23
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:

@@ -1,7 +1,7 @@
 ---
 title: "Self-Image"
 date: 2025-07-29
-draft: false
+draft: true
 tags:
   - notes-from-the-edge
 series:
