@@ -11,12 +11,12 @@ title = "Anas Bassoumi"
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Site Reliability Engineer | DevOps | Kubernetes"
+  description = "IT Consultant | Site Reliability Engineer | DevOps | Kubernetes"
   # copyright = "Copy, _right?_ :thinking_face:"
 
 [params.author]
   name = "Anas Bassoumi"
-  headline = "Site Reliability Engineer | DevOps | Kubernetes"
+  headline = "IT Consultant | Site Reliability Engineer | DevOps | Kubernetes"
   bio = "Based in Tunisia. Site reliability and DevOps engineering: Kubernetes, Docker, CI/CD."
   links = [
     { email = "mailto:anas.bassoumi@gmail.com" },
