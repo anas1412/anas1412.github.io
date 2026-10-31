@@ -1,30 +1,31 @@
 ---
-title: "LLMP - your LLM keys, shared safely on Kubernetes"
+title: "Valetkey - minimal LLM proxy for Kubernetes"
 date: 2026-07-17
 draft: false
 weight: 3
 tags: ["kubernetes", "llm", "go"]
-summary: "A Kubernetes-native LLM proxy. Each tenant gets its own API key for OpenAI, Anthropic or any OpenAI-compatible model, with limits, a dashboard and an audit trail. No database."
-repo: "https://github.com/anas1412/llmp"
-demo: "https://anas.cyberia.tn/llmp/"
-tech: ["Go", "Kubernetes", "CRDs", "Prometheus"]
+summary: "Per-tenant API keys for OpenAI, Anthropic and any OpenAI-compatible model, configured as CRDs. One small image, no database, no passwords."
+repo: "https://github.com/anas1412/valetkey"
+demo: "https://anas.cyberia.tn/valetkey/"
+tech: ["Go", "Kubernetes", "CRDs", "Helm", "Prometheus"]
 showDate: false
 ---
 
-Give each app or team its own API key for OpenAI, Anthropic or any OpenAI-compatible model. Your real provider keys never leave the cluster.
+Give each team or app its own API key for OpenAI, Anthropic or any OpenAI-compatible model. Your real provider keys never leave the cluster.
 
-![LLMP dashboard](https://raw.githubusercontent.com/anas1412/llmp/main/docs/public/screenshots/overview-dark.png)
+![Valetkey dashboard](https://raw.githubusercontent.com/anas1412/valetkey/main/docs/public/screenshots/overview-dark.png)
 
-<div class="mt-8">{{< button href="https://anas.cyberia.tn/llmp/" target="_blank" >}}Read the docs{{< /button >}}</div>
+<div class="mt-8">{{< button href="https://anas.cyberia.tn/valetkey/" target="_blank" >}}Read the docs{{< /button >}}</div>
 
 ## What it does
 
-- **Virtual keys per tenant:** each app gets its own `sk-proxy-…` key. Disable, rotate or delete it without touching the provider.
+- **Provider keys stay secret:** each tenant gets its own `sk-proxy-…` key. Disable, rotate or revoke it without touching the provider.
+- **Configured as CRDs:** providers, tenants and keys are Kubernetes objects. Keep them in Git and deploy them with Argo CD or Flux.
+- **No passwords:** Kubernetes RBAC decides who can change what, and the Kubernetes audit log records it.
 - **Any provider:** OpenAI, Anthropic, and anything OpenAI-compatible (vLLM, Ollama, OpenRouter, Groq, DeepSeek, Azure).
-- **Limits per key:** allowed models, IP ranges, requests and tokens per minute. Automatic failover between providers.
-- **Built-in dashboard:** add a provider by pasting its key, create keys with copy-paste examples, watch usage live.
-- **Audited admin access:** sign-in lockout, revocable sessions, and every admin change in the activity log.
-- **Small to run:** one 32 MB image, about 15 MB of memory, no database, no Redis.
+- **Rules per key:** allowed models, IP ranges, requests and tokens per minute. Automatic failover between providers.
+- **Dollar budgets:** per key, tenant and model, per day, week or month, with alerts before a budget runs out.
+- **No prompts stored:** it only counts requests and tokens.
 
 ## How it works
 
@@ -32,9 +33,9 @@ Give each app or team its own API key for OpenAI, Anthropic or any OpenAI-compat
 |---|---|---|
 | Provider | `Channel` | An upstream API and its real key |
 | Tenant | `Group` | A namespace allowed to use some providers |
-| API key | `ProxyKey` | A virtual key in the tenant's namespace |
+| API key | `ProxyKey` | A virtual key, written into a Secret in the tenant's namespace |
 
-All three can be managed from the dashboard or with `kubectl`.
+Apps call Valetkey like any OpenAI endpoint. The `valetkeyctl` CLI and an optional dashboard cover status, provider checks and key rotation.
 
 ## Why
 
@@ -44,13 +45,12 @@ already stores. CRDs and Secrets are the database.
 ## Get it
 
 ```bash
-kubectl create namespace llmproxy-system
-kubectl apply -f https://raw.githubusercontent.com/anas1412/llmp/main/deploy/crds.yaml
-kubectl apply -f https://raw.githubusercontent.com/anas1412/llmp/main/deploy/operator.yaml
+helm install valetkey oci://ghcr.io/anas1412/charts/valetkey \
+  -n valetkey-system --create-namespace
 ```
 
-The [quick start](https://anas.cyberia.tn/llmp/guide/quick-start) covers turning on the dashboard and creating your first key.
+The [quick start](https://anas.cyberia.tn/valetkey/guide/quick-start) walks through your first provider, tenant and key.
 
 ---
 
-{{< github repo="anas1412/llmp" showThumbnail=false >}}
+{{< github repo="anas1412/valetkey" showThumbnail=false >}}
