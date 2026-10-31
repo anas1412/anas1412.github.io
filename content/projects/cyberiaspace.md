@@ -1,5 +1,5 @@
 ---
-title: "Cyberia Space"
+title: "Cyberia Space - an idea canvas with four views"
 date: 2026-07-23
 draft: false
 weight: 4

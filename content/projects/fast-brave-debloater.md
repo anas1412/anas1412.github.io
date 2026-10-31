@@ -1,5 +1,5 @@
 ---
-title: "fast-brave-debloater"
+title: "Brave Debloater - strips ads and crypto from Brave"
 date: 2026-09-10
 draft: true
 tags: ["shell", "linux"]

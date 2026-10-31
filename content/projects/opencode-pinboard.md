@@ -1,5 +1,5 @@
 ---
-title: "Pinboard"
+title: "Pinboard - tickets for AI coding sessions"
 date: 2026-07-06
 draft: false
 weight: 6

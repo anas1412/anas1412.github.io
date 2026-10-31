@@ -1,5 +1,5 @@
 ---
-title: "ytmgo"
+title: "ytmgo - YouTube Music in the terminal"
 date: 2026-09-17
 draft: false
 weight: 7

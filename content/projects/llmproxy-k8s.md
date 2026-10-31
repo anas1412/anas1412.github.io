@@ -1,5 +1,5 @@
 ---
-title: "llmproxy-k8s"
+title: "LLM Proxy - per-team AI API keys on Kubernetes"
 date: 2026-07-17
 draft: false
 weight: 3

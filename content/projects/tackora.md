@@ -1,5 +1,5 @@
 ---
-title: "Tackora"
+title: "Tackora - a team board for coding agents"
 date: 2026-10-15
 draft: false
 weight: 5

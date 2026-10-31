@@ -1,5 +1,5 @@
 ---
-title: "kube-health-widget"
+title: "Kube Health - Kubernetes status on your desktop"
 date: 2026-10-20
 draft: false
 weight: 2

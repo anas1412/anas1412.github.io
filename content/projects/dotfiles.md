@@ -1,5 +1,5 @@
 ---
-title: "dotfiles"
+title: "Dotfiles - my Tokyo Night Linux desktop"
 date: 2026-09-15
 draft: true
 tags: ["linux", "ricing"]

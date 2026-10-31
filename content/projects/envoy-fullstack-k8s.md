@@ -1,5 +1,5 @@
 ---
-title: "Envoy Full-Stack Reference"
+title: "Envoy Gateway - one entry point for a whole Kubernetes app"
 date: 2026-08-15
 draft: false
 weight: 1
